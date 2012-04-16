@@ -1,0 +1,21 @@
+diff -crB code/client/snd_openal.c ../../code/client//snd_openal.c
+*** code/client/snd_openal.c	2010-02-23 00:19:29.000000000 +0300
+--- ../../code/client//snd_openal.c	2010-07-19 16:09:30.000000000 +0400
+***************
+*** 113,120 ****
+  		return;
+  	if(error != AL_NO_ERROR)
+  	{
+! 		Com_Printf(S_COLOR_YELLOW "WARNING: unhandled AL error: %s\n",
+! 			S_AL_ErrorMsg(error));
+  	}
+  }
+  
+--- 113,119 ----
+  		return;
+  	if(error != AL_NO_ERROR)
+  	{
+! 		//Com_Printf(S_COLOR_YELLOW "WARNING: unhandled AL error: %s\n", S_AL_ErrorMsg(error));
+  	}
+  }
+  
