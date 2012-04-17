@@ -20,3 +20,9 @@ IUSE=""
 
 RDEPEND="dev-python/django"
 DEPEND="${RDEPEND}"
+
+src_unpack() {
+	subversion_src_unpack
+	cd ./django-pyodbc-${PV}
+	epatch ${FILESDIR}/asp.patch
+}

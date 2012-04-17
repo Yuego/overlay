@@ -1,0 +1,19 @@
+--- sql_server/pyodbc/_base.py	2011-08-08 11:21:11.000000000 +0400
++++ sql_server/pyodbc/base.py	2011-08-08 11:22:04.000000000 +0400
+@@ -241,7 +241,8 @@
+                 self.features.can_return_id_from_insert = False
+ 
+             if self.driver_needs_utf8 is None:
+-                self.driver_needs_utf8 = True
++	    	### Yuego's ####
++                self.driver_needs_utf8 = False
+                 self.drv_name = self.connection.getinfo(Database.SQL_DRIVER_NAME).upper()
+                 if self.drv_name in ('SQLSRV32.DLL', 'SQLNCLI.DLL', 'SQLNCLI10.DLL'):
+                     self.driver_needs_utf8 = False
+@@ -363,4 +364,4 @@
+         return getattr(self.cursor, attr)
+     
+     def __iter__(self):
+-        return iter(self.cursor)
+\ В конце файла нет новой строки
++        return iter(self.cursor)
