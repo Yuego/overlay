@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit distutils git-2
+inherit eutils distutils git-2
 
 EGIT_REPO_URI="https://github.com/wardi/django-filebrowser-no-grappelli.git"
 DESCRIPTION="django-filebrowser for default Django admin site."
@@ -21,6 +21,10 @@ PYTHON_MODNAME="filebrowser"
 
 src_test() {
 	python setup.py test || die "tests failed"
+}
+
+src_prepare() {
+	epatch ${FILESDIR}/mp.patch
 }
 
 src_install () {
