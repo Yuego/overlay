@@ -24,3 +24,5 @@ dev-python/yandex-maps
 
 dev-python/django-tinymce
 dev-python/django-loginza
+
+dev-python/django-feedgrabber
