@@ -6,19 +6,18 @@ EAPI="4"
 
 inherit distutils git-2
 
-EGIT_REPO_URI="git://github.com/Yuego/django-feedgrabber.git"
-DESCRIPTION="A RSS/Atom feeds grabber, for your Django websites. "
-HOMEPAGE="https://github.com/Fantomas42/django-feedgrabber"
+EGIT_REPO_URI="https://github.com/j2a/pytils.git"
+DESCRIPTION="Pytils is a Russian-specific string utils (transliteration, numeral is words, russian dates, etc)"
+HOMEPAGE="https://github.com/j2a/pytils"
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.0
-	dev-python/feedparser"
+RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="feedgrabber"
+PYTHON_MODNAME="pytils"
 
 src_test() {
 	python setup.py test || die "tests failed"
@@ -27,5 +26,5 @@ src_test() {
 src_install () {
 	distutils_src_install
 	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	dodoc LICENSE.txt README.rst
+	dodoc LICENSE README.md
 }
