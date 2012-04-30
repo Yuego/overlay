@@ -15,7 +15,8 @@ KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.0
-	dev-python/feedparser"
+	dev-python/feedparser
+	dev-python/pytils"
 DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="feedgrabber"
