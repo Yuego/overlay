@@ -27,3 +27,4 @@ dev-python/django-loginza
 
 dev-python/feedparser
 dev-python/pytils
+dev-python/lxml
