@@ -26,3 +26,4 @@ dev-python/django-tinymce
 dev-python/django-loginza
 
 dev-python/feedparser
+dev-python/pytils
