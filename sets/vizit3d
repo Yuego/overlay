@@ -1,5 +1,6 @@
 
 www-servers/nginx
+dev-db/postgresql-server
 
 dev-python/flup
 
