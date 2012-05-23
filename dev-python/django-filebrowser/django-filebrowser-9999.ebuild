@@ -23,10 +23,6 @@ src_test() {
 	python setup.py test || die "tests failed"
 }
 
-src_prepare() {
-	epatch ${FILESDIR}/mp.patch
-}
-
 src_install () {
 	distutils_src_install
 	#rm -fr "${D}"usr/lib*/python*/site-packages/tests

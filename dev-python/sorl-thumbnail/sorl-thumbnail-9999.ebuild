@@ -12,11 +12,13 @@ HOMEPAGE="http://thumbnail.sorl.net/index.html"
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
-IUSE="+memcached"
+IUSE="-memcached +redis"
 
 RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools
-	memcached? ( dev-python/python-memcached )"
+	memcached? ( dev-python/python-memcached )
+	redis? ( dev-python/redis-py
+		dev-db/redis )"
 
 PYTHON_MODNAME="sorl"
 

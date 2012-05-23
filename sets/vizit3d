@@ -2,13 +2,17 @@
 www-servers/nginx
 dev-db/postgresql-server
 
+media-gfx/imagemagick
+
 dev-python/flup
 
-dev-python/django
 
 net-misc/memcached
 dev-python/python-memcached
 
+dev-python/django
+
+dev-python/django-redis
 dev-python/django-admin-tools
 dev-python/django-annoying
 dev-python/django-fein-cms
