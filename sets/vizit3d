@@ -10,9 +10,6 @@ dev-python/redis-py
 dev-db/redis
 dev-python/django-cacheops
 
-net-misc/memcached
-dev-python/python-memcached
-
 dev-python/django
 
 dev-python/django-admin-tools
