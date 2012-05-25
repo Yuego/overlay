@@ -12,6 +12,7 @@ dev-python/django-cacheops
 
 dev-python/django
 
+dev-python/django-redis
 dev-python/django-admin-tools
 dev-python/django-annoying
 dev-python/django-fein-cms
