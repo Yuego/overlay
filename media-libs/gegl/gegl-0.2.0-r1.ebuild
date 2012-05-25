@@ -96,5 +96,5 @@ src_install() {
 	default
 	find "${ED}" -name '*.la' -delete
 	#emake install DESTDIR=${D} || die "emake install failed"
-	#dodoc AUTHORS COPYING INSTALL HACKING NEWS
+	dodoc AUTHORS COPYING HACKING NEWS
 }
