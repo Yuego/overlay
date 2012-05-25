@@ -19,7 +19,7 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.3
 	>=dev-db/redis-2.4.12
 	>=dev-python/simplejson-2.1.5
-	dev-python/redis-py"
+	>=dev-python/redis-py-2.4.12"
 DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="cacheops"
