@@ -21,7 +21,7 @@ RDEPEND=">=dev-python/django-1.3
 	dev-python/redis-py"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_geoip"
+PYTHON_MODNAME="django_redis"
 
 src_test() {
 	python setup.py test || die "tests failed"
