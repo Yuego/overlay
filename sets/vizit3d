@@ -8,6 +8,7 @@ dev-python/flup
 
 dev-python/redis-py
 dev-db/redis
+dev-python/django-cacheops
 
 net-misc/memcached
 dev-python/python-memcached
