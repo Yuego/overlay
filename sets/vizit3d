@@ -15,6 +15,7 @@ dev-python/django
 dev-python/django-redis
 dev-python/django-admin-tools
 dev-python/django-annoying
+dev-python/django-crispy-forms
 dev-python/django-fein-cms
 dev-python/django-nested-sets
 dev-python/django-sitetree
