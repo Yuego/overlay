@@ -46,7 +46,7 @@ DEPEND=">=media-libs/babl-0.1.11
 	>=sys-devel/automake-1.7.9"
 RDEPEND="${DEPEND}"
 
-DOCS="AUTHORS COPYING ChangeLog.pre-0-1 HACKING MAINTAINERS NEWS"
+DOCS="AUTHORS COPYING HACKING MAINTAINERS NEWS"
 
 RESTRICT="test"
 
@@ -96,5 +96,4 @@ src_install() {
 	default
 	find "${ED}" -name '*.la' -delete
 	#emake install DESTDIR=${D} || die "emake install failed"
-	dodoc AUTHORS COPYING HACKING NEWS
 }
