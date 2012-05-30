@@ -10,6 +10,10 @@ dev-python/redis-py
 dev-db/redis
 dev-python/django-cacheops
 
+
+dev-python/django-compressor
+dev-java/yuicompressor
+
 dev-python/django
 
 dev-python/django-redis
