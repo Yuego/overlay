@@ -14,6 +14,10 @@ dev-python/django-cacheops
 dev-python/django-compressor
 dev-java/yuicompressor
 
+dev-python/django-templated-emails
+dev-python/django-model-utils
+dev-python/django-tastypie
+
 dev-python/django
 
 dev-python/django-redis
