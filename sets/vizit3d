@@ -6,8 +6,6 @@ media-gfx/imagemagick
 
 dev-python/flup
 
-dev-python/redis-py
-dev-db/redis
 dev-python/django-cacheops
 
 
