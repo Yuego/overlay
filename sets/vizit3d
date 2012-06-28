@@ -8,6 +8,7 @@ dev-python/flup
 
 dev-python/django-cacheops
 
+dev-python/django-salmonella
 
 dev-python/django-compressor
 dev-java/yuicompressor
