@@ -15,7 +15,6 @@ dev-java/yuicompressor
 
 dev-python/django-templated-emails
 dev-python/django-model-utils
-dev-python/django-tastypie
 
 dev-python/django-celery
 dev-python/kombu
