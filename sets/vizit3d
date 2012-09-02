@@ -1,5 +1,7 @@
 
 www-servers/nginx
+www-servers/uwsgi
+
 dev-db/postgresql-server
 
 media-gfx/imagemagick
