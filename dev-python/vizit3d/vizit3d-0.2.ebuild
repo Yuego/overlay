@@ -9,7 +9,8 @@ DESCRIPTION="Vizit3d meta"
 HOMEPAGE="http://vizit3d.ru"
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="-annoying +crispy debug -feincms imagemagick -loginza -nested -robokassa -sitetree"
+IUSE="-annoying +crispy debug -feincms imagemagick -loginza -nested -robokassa
+-sitetree -vim"
 
 RDEPEND="dev-python/django[postgres]"
 
@@ -37,6 +38,11 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-java/yuicompressor
     imagemagick? ( media-gfx/imagemagick )
+
+	vim? ( app-editors/vim[python,vim-pager]
+			app-vim/vimpython
+			app-vim/zencoding-vim
+			app-vim/vimcommander )
 "
 
 # Django apps
