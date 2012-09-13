@@ -64,7 +64,8 @@ RDEPEND="${RDEPEND}
 	sitetree? ( dev-python/django-sitetree )
 	dev-python/django-smart-selects
 	dev-python/django-templated-emails
-	dev-python/django-tinymce
+	dev-python/django-markdown
+	dev-python/markdown
 "
 
 #DEBUG
