@@ -29,6 +29,7 @@ RDEPEND="${RDEPEND}
 	dev-python/lxml
 	dev-python/pymorphy
 	dev-python/pytils
+	dev-python/pytz
 	dev-python/sorl-thumbnail[redis]
 	dev-python/south
 	dev-python/yandex-maps
