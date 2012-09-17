@@ -21,7 +21,7 @@ RDEPEND="dev-db/sqlite:3
 	gnome-base/libglade:2.0
 	gnome-keyring? ( gnome-base/gnome-keyring )
 	kde? ( kde-base/kwalletd )
-	media-gfx/exiv2
+	media-gfx/exiv2[xmp]
 	virtual/jpeg
 	media-libs/lcms:2
 	>=media-libs/lensfun-0.2.3
