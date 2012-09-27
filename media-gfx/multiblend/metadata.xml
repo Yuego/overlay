@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+<email>maekke@gentoo.org</email>
+<name>Markus Meier</name>
+</maintainer>
+<longdescription lang="en">
+multiblend is a multi-level image blender for the seamless blending of panoramic images, such as those created with PTAssembler (my personal favourite), Hugin, or PTGui. It is a significantly faster drop-in alternative to Enblend, although it lacks Enblend's advanced features.
+</longdescription>
+</pkgmetadata>
+

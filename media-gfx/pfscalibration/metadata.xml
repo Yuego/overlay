@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>graphics</herd>
+<longdescription lang="en">
+pfs calibration package provides an implementation of the Robertson et al. 2003 and Mitsunaga and Nayar 1999 methods for the photometric calibration of cameras and for the recovery of high dynamic range (HDR) images from the set of low dynamic range (LDR) exposures.
+</longdescription>
+</pkgmetadata>

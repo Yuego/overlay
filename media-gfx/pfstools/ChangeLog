@@ -1,0 +1,23 @@
+# ChangeLog for media-gfx/pfstools
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*pfstools-1.8.4 (05 Jul 2011)
+
+  05 Jul 2011; Markus Meier <maekke@gentoo.org> pfstools-1.8.1.ebuild,
+  +pfstools-1.8.4.ebuild:
+  version bump, qt4 support disabled as detection doesn't work yet. remove qt3
+  support from 1.8.1
+
+  24 Oct 2010; Markus Meier <maekke@gentoo.org> pfstools-1.8.1.ebuild:
+  virtual/glut -> media-libs/freeglut
+
+  30 Oct 2009; Markus Meier <maekke@gentoo.org> pfstools-1.8.1.ebuild:
+  add amd64 keyword
+
+*pfstools-1.8.1 (29 Oct 2009)
+
+  29 Oct 2009; Markus Meier <maekke@gentoo.org> +pfstools-1.8.1.ebuild,
+  +files/pfstools-1.8.1-glibc-2.10.patch, +metadata.xml:
+  initial import of pfstools, ebuild by me
+

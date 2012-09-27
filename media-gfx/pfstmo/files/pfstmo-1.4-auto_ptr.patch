@@ -1,0 +1,11 @@
+diff -ru pfstmo-1.4.orig/src/mantiuk08/display_adaptive_tmo.h pfstmo-1.4/src/mantiuk08/display_adaptive_tmo.h
+--- pfstmo-1.4.orig/src/mantiuk08/display_adaptive_tmo.h	2009-10-29 12:31:11.000000000 +0100
++++ pfstmo-1.4/src/mantiuk08/display_adaptive_tmo.h	2009-10-29 12:31:39.000000000 +0100
+@@ -33,6 +33,7 @@
+ #include "display_size.h"
+ 
+ #include "pfstmo.h"
++#include <backward/auto_ptr.h>
+ 
+ class datmoToneCurve
+ {
