@@ -24,7 +24,6 @@ RDEPEND="${RDEPEND}
 # Libs
 RDEPEND="${RDEPEND}
 	dev-python/feedparser
-	dev-python/flup
 	dev-python/kombu
 	dev-python/lxml
 	dev-python/pymorphy
@@ -49,6 +48,7 @@ RDEPEND="${RDEPEND}
 # Django apps
 RDEPEND="${RDEPEND}
 	dev-python/django-admin-tools
+	dev-python/django-hosts
 	annoying? ( dev-python/django-annoying )
 	dev-python/django-cacheops
 	dev-python/django-celery
