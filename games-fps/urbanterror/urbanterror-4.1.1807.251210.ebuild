@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=4
 
 inherit subversion eutils games toolchain-funcs versionator
 
@@ -16,6 +16,7 @@ MY_REV="$(get_version_component_range 3)"
 ESVN_REPO_URI="svn://svn.icculus.org/quake3/trunk"
 ESVN_REVISION="${MY_REV}"
 SRC_URI="http://www0.org/urt/ioq3-$(get_version_component_range 3)-urt-$(get_version_component_range 4)-git.tar.lzma
+	http://dev.gentoo.org/~hasufell/distfiles/ioq3-$(get_version_component_range 3)-urt-$(get_version_component_range 4)-git-nobumpy.tar.xz
 	http://urt.hsogaming.com/mirror/currentversion/UrbanTerror_${MY_VER}_FULL.zip
 	ftp://ftp.snt.utwente.nl/pub/games/${PN}/UrbanTerror_${MY_VER}_FULL.zip
 	http://upload.wikimedia.org/wikipedia/en/5/56/Urbanterror.svg -> ${PN}.svg"
@@ -23,7 +24,7 @@ SRC_URI="http://www0.org/urt/ioq3-$(get_version_component_range 3)-urt-$(get_ver
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+client +curl openal server speex vorbis"
+IUSE="+bumpy +client +curl openal server speex vorbis"
 
 COMMON_DEPEND="
 	client? (
@@ -49,7 +50,9 @@ src_unpack() {
 }
 
 src_prepare() {
-	patch -p0 < "../ioq3-${MY_REV}-urt-$(get_version_component_range 4)-git.patch"
+	#epatch "${FILESDIR}/ftgl_include.patch"
+	use bumpy && epatch "../ioq3-${MY_REV}-urt-$(get_version_component_range 4)-git.patch" || epatch "../ioq3-${MY_REV}-urt-$(get_version_component_range 4)-git-nobumpy.patch"
+	epatch "${FILESDIR}/ftgl_include.patch"
 	mv ../q3ut4/* ../UrbanTerror/q3ut4
 	einfo "remove bundled include files"
 	rm -rf code/{SDL12,libs/win{32,64}} || die
@@ -75,7 +78,7 @@ src_compile() {
 		USE_CURL=$(buildit curl) \
 		USE_VOIP=$(buildit speex) \
 		USE_INTERNAL_SPEEX=0 \
-		USE_INTERNAL_ZLIB=0 \
+		USE_INTERNAL_ZLIB=1 \
 		USE_LOCAL_HEADERS=0 \
 		release || die
 	#BASE_CFLAGS="${CFLAGS} -DUSE_ICON -DPRODUCT_VERSION=\\\"$(VERSION)\\\"" \

@@ -14,7 +14,7 @@ DESCRIPTION="Hollywood tactical shooter based on the ioquake3 engine"
 HOMEPAGE="http://www.urbanterror.info/home/"
 SRC_URI="http://dev.gentoo.org/~hasufell/distfiles/ioquake3-${IOQ3_SVN}.tar.bz2
 	http://dev.gentoo.org/~hasufell/distfiles/${IOQ3_PATCH}.tar.lzma
-	ftp://ftp.snt.utwente.nl/pub/games/${PN}/old/UrbanTerror_${MY_PV:0:2}_FULL.zip
+	ftp://ftp.snt.utwente.nl/pub/games/urbanterror/full_install/linux_or_mac/UrbanTerror${MY_PV}.zip
 	http://upload.wikimedia.org/wikipedia/en/5/56/Urbanterror.svg -> ${PN}.svg"
 
 LICENSE="GPL-2 Q3AEULA"
