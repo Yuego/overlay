@@ -30,3 +30,4 @@ dev-python/pymorphy ~amd64
 dev-java/yuicompressor ~amd64
 dev-python/south ~amd64
 dev-libs/jemalloc ~amd64
+dev-python/versiontools ~amd64
