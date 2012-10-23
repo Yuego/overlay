@@ -18,8 +18,7 @@ IUSE="digest lxml pyyaml biplist"
 
 RDEPEND=">=dev-python/django-1.3
 	>=dev-python/mimeparse-0.1.3
-	>=dev-python/python-dateutil-1.5
-	<=dev-python/python-dateutil-2.0
+	>=dev-python/python-dateutil-2.1
 	digest? ( dev-python/python-digest )
 	lxml? ( dev-python/lxml )
 	pyyaml? ( dev-python/pyyaml )

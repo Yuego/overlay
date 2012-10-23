@@ -9,8 +9,7 @@ DESCRIPTION="Vizit3d meta"
 HOMEPAGE="http://vizit3d.ru"
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="-annoying +crispy debug -feincms imagemagick -loginza -nested -robokassa
--sitetree -vim"
+IUSE="-annoying +crispy debug -feincms imagemagick -loginza -nested -robokassa -sitetree +storages -vim"
 
 RDEPEND="dev-python/django[postgres]"
 
@@ -67,6 +66,10 @@ RDEPEND="${RDEPEND}
 	dev-python/django-templated-emails
 	dev-python/django-markdown
 	dev-python/markdown
+
+	storages? ( dev-python/django-storages )
+	dev-python/django-widget-tweaks
+	dev-python/django-tastypie
 "
 
 #DEBUG
