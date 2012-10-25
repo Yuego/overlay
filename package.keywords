@@ -35,3 +35,4 @@ dev-python/django-storages ~amd64
 dev-python/django-widget-tweaks ~amd64
 dev-python/django-tastypie ~amd64
 dev-python/mimeparse ~amd64
+dev-python/twitter ~amd64

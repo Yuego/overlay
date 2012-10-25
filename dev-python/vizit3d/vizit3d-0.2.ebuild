@@ -70,6 +70,8 @@ RDEPEND="${RDEPEND}
 	storages? ( dev-python/django-storages )
 	dev-python/django-widget-tweaks
 	dev-python/django-tastypie
+
+	dev-python/twitter
 "
 
 #DEBUG
