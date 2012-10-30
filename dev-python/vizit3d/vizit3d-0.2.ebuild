@@ -66,6 +66,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-templated-emails
 	dev-python/django-markdown
 	dev-python/markdown
+	dev-python/django-tinymce
 
 	storages? ( dev-python/django-storages )
 	dev-python/django-widget-tweaks
