@@ -1,29 +1,20 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
-EAPI="2"
+EAPI="4"
 
-ESVN_REPO_URI="http://django-grappelli.googlecode.com/svn/trunk/"
-
-inherit distutils eutils subversion webapp
+inherit distutils eutils git-2
 
 WEBAPP_MANUAL_SLOT="yes"
 
+EGIT_REPO_URI="https://github.com/sehmaschine/django-grappelli.git"
 DESCRIPTION="A jazzy skin for the Django admin interface"
-HOMEPAGE="http://code.google.com/p/django-grappelli/"
+HOMEPAGE="http://www.grappelliproject.com/"
 LICENSE="BSD-4"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-RDEPEND="dev-python/django"
+RDEPEND=">=dev-python/django-1.4"
 DEPEND="${RDEPEND}"
 
-src_install() {
-	distutils_src_install
-
-	insinto "${MY_HTDOCSDIR#${EPREFIX}}"
-	doins -r grappelli/media/* || die "doins failed"
-
-	webapp_src_instal
-}
