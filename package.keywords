@@ -37,3 +37,4 @@ dev-python/django-tastypie ~amd64
 dev-python/mimeparse ~amd64
 dev-python/twitter ~amd64
 dev-python/django-grappelli ~amd64
+dev-python/django-tinymce ~amd64
