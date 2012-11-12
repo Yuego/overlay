@@ -1,0 +1,12 @@
+--- setup.py	2012-11-12 12:20:53.981329973 +0400
++++ setup.py_	2012-11-12 12:23:25.488323218 +0400
+@@ -12,7 +12,8 @@
+     version='3.1.2',
+     packages = [
+         "redis_cache",
+-        "redis_cache.stats"
++        "redis_cache.stats",
++	"redis_cache.client"
+     ],
+     description = description.strip(),
+     install_requires=[

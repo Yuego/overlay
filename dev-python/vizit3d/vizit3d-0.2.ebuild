@@ -9,7 +9,7 @@ DESCRIPTION="Vizit3d meta"
 HOMEPAGE="http://vizit3d.ru"
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="-annoying +crispy debug -feincms imagemagick -loginza -nested -robokassa -sitetree +storages -vim"
+IUSE="-annoying debug -feincms imagemagick -loginza -nested -robokassa -sitetree +storages -vim"
 
 RDEPEND="dev-python/django[postgres]"
 
@@ -52,7 +52,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-cacheops
 	dev-python/django-celery
 	dev-python/django-compressor
-	crispy? ( dev-python/django-crispy-forms )
 	feincms? ( dev-python/django-fein-cms )
 	dev-python/django-filebrowser
 	loginza? ( dev-python/django-loginza )

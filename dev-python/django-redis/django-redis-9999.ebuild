@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit distutils git-2
+inherit eutils distutils git-2
 
 DESCRIPTION="It is a fork of django-redis-cache. And the reasons are: The author seems to have abandoned the project and has significant bugs that have not been fixed."
 HOMEPAGE="https://github.com/niwibe/django-redis"
@@ -23,6 +23,9 @@ DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="django_redis"
 
+src_prepare() {
+	epatch ${FILESDIR}/missing_client_package.patch
+}
 src_test() {
 	python setup.py test || die "tests failed"
 }
