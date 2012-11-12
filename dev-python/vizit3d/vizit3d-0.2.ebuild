@@ -72,6 +72,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-tastypie
 
 	dev-python/twitter
+	dev-python/django-inplaceedit
 "
 
 #DEBUG

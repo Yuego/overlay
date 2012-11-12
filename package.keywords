@@ -38,3 +38,5 @@ dev-python/mimeparse ~amd64
 dev-python/twitter ~amd64
 dev-python/django-grappelli ~amd64
 dev-python/django-tinymce ~amd64
+dev-python/django-inplaceedit-extra-fields ~amd64
+dev-python/django-inplaceedit ~amd64
