@@ -20,7 +20,7 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.3"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="model_util"
+PYTHON_MODNAME="model_utils"
 
 src_test() {
 	python setup.py test || die "tests failed"
