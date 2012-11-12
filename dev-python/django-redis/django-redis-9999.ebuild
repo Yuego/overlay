@@ -21,7 +21,7 @@ RDEPEND=">=dev-python/django-1.3
 	dev-python/redis-py"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_redis"
+PYTHON_MODNAME="redis_cache"
 
 src_prepare() {
 	epatch ${FILESDIR}/missing_client_package.patch
