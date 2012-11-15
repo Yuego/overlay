@@ -1,6 +1,7 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
+EAPI=4
 
 ESVN_REPO_URI="http://django-comment-utils.googlecode.com/svn/trunk/"
 
