@@ -14,7 +14,7 @@ EHG_REPO_URI="https://code.google.com/p/rawtherapee/"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE="bzip2 doc openmp"
 
 RDEPEND="bzip2? ( app-arch/bzip2 )
