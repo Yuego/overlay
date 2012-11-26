@@ -1,0 +1,2 @@
+
+>=dev-libs/jemalloc-3.2.0

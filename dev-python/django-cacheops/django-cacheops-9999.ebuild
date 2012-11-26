@@ -9,7 +9,7 @@ inherit distutils git-2
 DESCRIPTION="A slick app that supports automatic or manual queryset caching and automatic granular event-driven invalidation."
 HOMEPAGE="https://github.com/Suor/django-cacheops"
 
-EGIT_REPO_URI="https://github.com/Suor/django-cacheops.git"
+EGIT_REPO_URI="https://github.com/Yuego/django-cacheops.git"
 
 LICENSE="as-is"
 SLOT="0"
