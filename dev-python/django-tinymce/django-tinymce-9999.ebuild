@@ -18,7 +18,7 @@ IUSE=""
 RDEPEND="dev-python/django"
 DEPEND="${RDEPEND}"
 
-DOCS="docs/* README.txt"
+DOCS="docs/* README.md"
 
 src_install() {
 #	distutils_python_version
