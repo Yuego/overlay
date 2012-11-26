@@ -23,9 +23,6 @@ DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="redis_cache"
 
-src_prepare() {
-	epatch ${FILESDIR}/missing_client_package.patch
-}
 src_test() {
 	python setup.py test || die "tests failed"
 }
