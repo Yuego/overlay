@@ -13,7 +13,7 @@ dashboard, a customizable menu bar and tools to make admin ui theming easier."
 HOMEPAGE="https://bitbucket.org/izi/django-admin-tools/wiki/Home"
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.0"
