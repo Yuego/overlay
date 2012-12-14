@@ -81,6 +81,7 @@ RDEPEND="${RDEPEND}
 
 	debug? ( 	dev-python/pep8
 				dev-python/pyflakes
+				dev-python/django-any
 				dev-python/coverage
 				dev-python/webtest )
 "

@@ -20,7 +20,7 @@ RDEPEND=">=dev-python/django-1.3
 "
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_jenkins"
+PYTHON_MODNAME="django_any"
 
 src_test() {
 	python setup.py test || die "tests failed"

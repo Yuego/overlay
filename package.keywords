@@ -40,3 +40,7 @@ dev-python/django-grappelli ~amd64
 dev-python/django-tinymce ~amd64
 dev-python/django-inplaceedit-extra-fields ~amd64
 dev-python/django-inplaceedit ~amd64
+
+
+dev-python/pep8 ~amd64
+dev-python/django-any ~amd64
