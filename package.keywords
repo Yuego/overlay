@@ -26,6 +26,7 @@ dev-python/django-filebrowser ~amd64
 dev-python/django-redis ~amd64
 dev-python/django-redis-sessions ~amd64
 dev-db/redis ~amd64
+dev-python/django-pickling ~amd64
 dev-python/django-model-utils ~amd64
 dev-python/pymorphy ~amd64
 dev-java/yuicompressor ~amd64
