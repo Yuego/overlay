@@ -59,6 +59,7 @@ RDEPEND="${RDEPEND}
 	nested? ( dev-python/django-nested-sets )
 	dev-python/django-redis
 	dev-python/django-redis-sessions
+	dev-python/django-pickling
 	robokassa? ( dev-python/django-robokassa )
 	dev-python/django-salmonella
 	sitetree? ( dev-python/django-sitetree )
