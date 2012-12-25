@@ -75,6 +75,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/twitter
 	dev-python/django-inplaceedit
+	dev-python/django-sphinx
 "
 
 #DEBUG
