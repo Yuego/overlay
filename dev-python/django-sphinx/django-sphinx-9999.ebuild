@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
-	app-misc/sphinx
+	app-misc/sphinx[id64,stemmer]
 	dev-python/sphinx-api
 "
 DEPEND="dev-python/setuptools"
