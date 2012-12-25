@@ -46,3 +46,7 @@ dev-python/django-inplaceedit ~amd64
 
 dev-python/pep8 ~amd64
 dev-python/django-any ~amd64
+
+dev-python/django-sphinx ~amd64
+dev-python/django-haystack ~amd64
+dev-python/sphinx-haystack ~amd64

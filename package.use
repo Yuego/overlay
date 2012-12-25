@@ -1,2 +1,3 @@
 
 dev-python/django postgres
+app-misc/sphinx id64 postgres
