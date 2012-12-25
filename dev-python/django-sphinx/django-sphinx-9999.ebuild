@@ -7,9 +7,9 @@ EAPI="4"
 inherit eutils distutils git-2
 
 DESCRIPTION="A transparent layer for full-text search using Sphinx and Django"
-HOMEPAGE="https://github.com/freshlimestudio/django-sphinx"
+HOMEPAGE="https://github.com/Yuego/django-sphinx"
 
-EGIT_REPO_URI="https://github.com/freshlimestudio/django-sphinx.git"
+EGIT_REPO_URI="https://github.com/Yuego/django-sphinx.git"
 
 LICENSE="BSD"
 SLOT="0"
@@ -18,6 +18,7 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
 	app-misc/sphinx
+	dev-python/sphinx-api
 "
 DEPEND="dev-python/setuptools"
 
