@@ -11,7 +11,7 @@ ESVN_REPO_URI="http://sphinxsearch.googlecode.com/svn/trunk/"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~ppc-macos ~x86-macos ~sparc-solaris ~sparc64-solaris"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND="app-misc/sphinx"
