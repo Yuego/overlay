@@ -86,7 +86,9 @@ RDEPEND="${RDEPEND}
 				dev-python/pyflakes
 				dev-python/django-any
 				dev-python/coverage
-				dev-python/webtest )
+				dev-python/webtest
+				dev-python/mock
+			)
 "
 DEPEND="${RDEPEND}"
 
