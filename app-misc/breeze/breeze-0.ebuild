@@ -49,7 +49,7 @@ RDEPEND="${RDEPEND}
 	tinymce? ( dev-python/django-tinymce )
 
 	dev-python/django-widget-tweaks
-
+	dev-python/django-imagestore
 "
 
 #DEBUG

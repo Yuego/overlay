@@ -56,3 +56,8 @@ dev-python/django-cms ~amd64
 dev-python/django-sekizai ~amd64
 dev-python/django-nested-sets ~amd64
 dev-python/django-classy-tags ~amd64
+
+dev-python/django-fancy-autocomplete ~amd64
+dev-python/django-imagestore ~amd64
+
+dev-python/django-tagging ~amd64
