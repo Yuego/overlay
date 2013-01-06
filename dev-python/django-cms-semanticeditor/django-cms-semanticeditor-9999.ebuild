@@ -10,7 +10,6 @@ DESCRIPTION="Semantic Editor is a Django CMS plugin for text editing."
 HOMEPAGE="https://bitbucket.org/spookylukey/semanticeditor/overview"
 
 EHG_REPO_URI="https://bitbucket.org/spookylukey/semanticeditor"
-EHG_REVISION="b30fe33d3f05"
 
 LICENSE="as-is"
 SLOT="0"
@@ -18,6 +17,9 @@ KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
+	>=dev-python/django-cms-2
+	>=dev-python/pyquery-0.3.1
+	dev-python/lxml
 "
 DEPEND="dev-python/setuptools"
 
