@@ -50,6 +50,9 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-widget-tweaks
 	dev-python/django-imagestore
+
+	dev-python/django-cms-youtube
+	dev-python/django-cms-disqus
 "
 
 #DEBUG
