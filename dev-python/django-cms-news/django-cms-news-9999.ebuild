@@ -11,8 +11,8 @@ RESTRICT_PYTHON_ABIS="3.*"
 inherit distutils mercurial
 
 DESCRIPTION=""
-HOMEPAGE="https://bitbucket.org/chernysh/cmsplugin-advancednews/overview"
-EHG_REPO_URI="https://bitbucket.org/chernysh/cmsplugin-advancednews"
+HOMEPAGE="https://bitbucket.org/zerok/cmsplugin-news"
+EHG_REPO_URI="https://bitbucket.org/zerok/cmsplugin-news"
 
 LICENSE="as-is"
 SLOT="0"
@@ -22,9 +22,9 @@ IUSE=""
 S="${WORKDIR}/cmsplugin-advancednews"
 
 DEPEND="dev-python/setuptools
-	dev-python/django-cms
-	dev-python/django-multilingual
+	>=dev-python/django-cms-2
+	dev-python/imaging
 "
 RDEPEND=""
 
-PYTHON_MODNAME="cmsplugin_advancednews"
+PYTHON_MODNAME="cmsplugin_news"
