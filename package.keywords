@@ -61,3 +61,6 @@ dev-python/django-fancy-autocomplete ~amd64
 dev-python/django-imagestore ~amd64
 
 dev-python/django-tagging ~amd64
+
+dev-python/django-cms-youtube ~amd64
+dev-python/django-cms-disqus ~amd64
