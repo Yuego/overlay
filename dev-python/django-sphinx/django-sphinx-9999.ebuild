@@ -18,6 +18,8 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
 	>=app-misc/sphinx-2.0.2[id64,stemmer]
+	dev-python/mysql-python
+	dev-python/six
 "
 DEPEND="dev-python/setuptools"
 
