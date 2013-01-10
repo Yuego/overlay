@@ -64,3 +64,6 @@ dev-python/django-tagging ~amd64
 
 dev-python/django-cms-youtube ~amd64
 dev-python/django-cms-disqus ~amd64
+dev-python/django-hvad ~amd64
+dev-python/django-cms-advancednews ~amd64
+dev-python/django-multilingual ~amd64

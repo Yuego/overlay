@@ -9,7 +9,7 @@ DESCRIPTION="Vizit3d meta"
 HOMEPAGE="http://vizit3d.ru"
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="tinymce"
+IUSE=""
 
 RDEPEND="dev-python/django[postgres]
 	dev-python/django-cms
@@ -46,7 +46,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-pickling
 	dev-python/django-salmonella
 	dev-python/django-templated-emails
-	tinymce? ( dev-python/django-tinymce )
+	dev-python/django-tinymce
 
 	dev-python/django-widget-tweaks
 	dev-python/django-imagestore
