@@ -27,7 +27,7 @@ src_test() {
 }
 
 src_install () {
-	distutils_src_install
+	distutils-r1_src_install
 	rm -fr "${D}"usr/lib*/python*/site-packages/test_proj
 	dodoc AUTHORS CHANGELOG INSTALL LICENSE README
 }
