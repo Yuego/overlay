@@ -1,3 +1,5 @@
+dev-python/py-amqp ~amd64
+dev-python/setuptools ~amd64
 dev-java/jargs ~amd64
 dev-python/django ~amd64
 dev-python/pynliner ~amd64
