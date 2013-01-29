@@ -1,6 +1,9 @@
+dev-lang/python ~amd64
 dev-python/py-amqp ~amd64
 dev-python/setuptools ~amd64
 dev-java/jargs ~amd64
+dev-python/psycopg ~amd64
+dev-python/imaging ~amd64
 dev-python/django ~amd64
 dev-python/pynliner ~amd64
 dev-python/pytils ~amd64

@@ -2,7 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=5
+SLOT="4.1"
 
 inherit subversion eutils games toolchain-funcs versionator
 
@@ -19,10 +20,9 @@ SRC_URI="http://www0.org/urt/ioq3-$(get_version_component_range 3)-urt-$(get_ver
 	http://dev.gentoo.org/~hasufell/distfiles/ioq3-$(get_version_component_range 3)-urt-$(get_version_component_range 4)-git-nobumpy.tar.xz
 	http://urt.hsogaming.com/mirror/currentversion/UrbanTerror_${MY_VER}_FULL.zip
 	ftp://ftp.snt.utwente.nl/pub/games/${PN}/UrbanTerror_${MY_VER}_FULL.zip
-	http://upload.wikimedia.org/wikipedia/en/5/56/Urbanterror.svg -> ${PN}.svg"
+	http://upload.wikimedia.org/wikipedia/en/5/56/Urbanterror.svg -> ${PN}-${SLOT}.svg"
 
 LICENSE="GPL-2"
-SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="+bumpy +client +curl openal server speex vorbis"
 
@@ -50,7 +50,6 @@ src_unpack() {
 }
 
 src_prepare() {
-	#epatch "${FILESDIR}/ftgl_include.patch"
 	use bumpy && epatch "../ioq3-${MY_REV}-urt-$(get_version_component_range 4)-git.patch" || epatch "../ioq3-${MY_REV}-urt-$(get_version_component_range 4)-git-nobumpy.patch"
 	epatch "${FILESDIR}/ftgl_include.patch"
 	mv ../q3ut4/* ../UrbanTerror/q3ut4
@@ -72,7 +71,7 @@ src_compile() {
 		BUILD_CLIENT=$(buildit client) \
 		BUILD_CLIENT_SMP=$(buildit client) \
 		CC="$(tc-getCC)" \
-		DEFAULT_BASEDIR="${GAMES_DATADIR}/${PN}" \
+		DEFAULT_BASEDIR="${GAMES_DATADIR}/${PN}-${SLOT}" \
 		USE_CODEC_VORBIS=$(buildit vorbis) \
 		USE_OPENAL=$(buildit openal) \
 		USE_CURL=$(buildit curl) \
@@ -88,21 +87,18 @@ src_install() {
 	local my_arch=i386
 	use amd64 && my_arch=x86_64
 
-	if use client || use server ; then # just kidding
-		insinto /usr/share/pixmaps
-		doins "${DISTDIR}"/${PN}.svg || die
-	fi
+	doicon -s scalable "${DISTDIR}"/${PN}-${SLOT}.svg
 
 	if use client ; then
-		newgamesbin build/release-linux-${my_arch}/ioquake3-smp.${my_arch} ${PN} || die
-		make_desktop_entry ${PN} "UrbanTerror" ${PN}
+		newgamesbin build/release-linux-${my_arch}/ioquake3-smp.${my_arch} ${PN}-${SLOT} || die
+		make_desktop_entry ${PN}-${SLOT} "UrbanTerror 4.1" ${PN}-${SLOT}
 	fi
 
 	if use server ; then
-			newgamesbin build/release-linux-${my_arch}/ioquake3-smp.${my_arch} ${PN}-dedicated || die
-			make_desktop_entry ${PN}-dedicated "UrbanTerror dedicated" ${PN}
+			newgamesbin build/release-linux-${my_arch}/ioquake3-smp.${my_arch} ${PN}-${SLOT}-dedicated || die
+			make_desktop_entry ${PN}-${SLOT}-dedicated "UrbanTerror 4.1 dedicated" ${PN}-${SLOT}
 
-			insinto "${GAMES_DATADIR}"/${PN}/q3ut4
+			insinto "${GAMES_DATADIR}"/${PN}-${SLOT}/q3ut4
 			doins dedicated.cfg || die
 	fi
 
@@ -110,7 +106,7 @@ src_install() {
 
 	cd "${WORKDIR}"/UrbanTerror/q3ut4 || die
 
-	insinto "${GAMES_DATADIR}"/${PN}/q3ut4
+	insinto "${GAMES_DATADIR}"/${PN}-${SLOT}/q3ut4
 	doins -r *.pk3 autoexec.cfg demos/ description.txt mapcycle.txt screenshots/ \
 		glsl/ scripts/ textures/ || die
 
