@@ -53,6 +53,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-cms-youtube
 	dev-python/django-cms-disqus
+	dev-python/django-cms-news-ng
 "
 
 #DEBUG

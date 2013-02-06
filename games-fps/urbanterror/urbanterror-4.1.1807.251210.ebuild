@@ -18,8 +18,10 @@ ESVN_REPO_URI="svn://svn.icculus.org/quake3/trunk"
 ESVN_REVISION="${MY_REV}"
 SRC_URI="http://www0.org/urt/ioq3-$(get_version_component_range 3)-urt-$(get_version_component_range 4)-git.tar.lzma
 	http://dev.gentoo.org/~hasufell/distfiles/ioq3-$(get_version_component_range 3)-urt-$(get_version_component_range 4)-git-nobumpy.tar.xz
-	http://urt.hsogaming.com/mirror/currentversion/UrbanTerror_${MY_VER}_FULL.zip
-	ftp://ftp.snt.utwente.nl/pub/games/${PN}/UrbanTerror_${MY_VER}_FULL.zip
+	ftp://ftp.snt.utwente.nl/pub/games/${PN}/full_install/linux_or_mac/UrbanTerror411.zip
+	http://www.iourt.com/files/UrbanTerror411.zip
+	http://urbanterror.mtc-team.fr/UrbanTerror411.zip
+	http://clanurt.es/descargas/UrbanTerror411.zip
 	http://upload.wikimedia.org/wikipedia/en/5/56/Urbanterror.svg -> ${PN}-${SLOT}.svg"
 
 LICENSE="GPL-2"

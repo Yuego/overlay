@@ -9,7 +9,7 @@ inherit eutils distutils git-2
 DESCRIPTION="An Advanced Django CMS."
 HOMEPAGE="https://github.com/divio/django-cms"
 
-EGIT_REPO_URI="https://github.com/divio/django-cms.git"
+EGIT_REPO_URI="https://github.com/Yuego/django-cms.git"
 
 LICENSE="as-is"
 SLOT="0"

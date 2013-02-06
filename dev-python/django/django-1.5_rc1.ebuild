@@ -16,7 +16,7 @@ SRC_URI="https://www.djangoproject.com/m/releases/$(get_version_component_range 
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE="doc mysql postgres sqlite test"
 
 RDEPEND="dev-python/imaging

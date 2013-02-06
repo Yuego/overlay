@@ -9,7 +9,8 @@ inherit distutils git-2
 DESCRIPTION="Creating delicious APIs for Django apps since 2010."
 HOMEPAGE="http://tastypieapi.org/"
 
-EGIT_REPO_URI="https://github.com/toastdriven/django-tastypie.git"
+EGIT_REPO_URI="https://github.com/marblar/django-tastypie.git"
+EGIT_BRANCH="AUTH_USER_MODEL_FINAL"
 
 LICENSE="as-is"
 SLOT="0"

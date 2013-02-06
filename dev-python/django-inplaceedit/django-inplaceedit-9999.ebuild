@@ -9,7 +9,7 @@ inherit distutils git-2
 DESCRIPTION="Django application that allows you to inline edition of some data from the database"
 HOMEPAGE="http://pypi.python.org/pypi/django-inplaceedit"
 
-EGIT_REPO_URI="https://github.com/Yaco-Sistemas/django-inplaceedit.git"
+EGIT_REPO_URI="https://github.com/Yuego/django-inplaceedit.git"
 
 LICENSE="LGPL"
 SLOT="0"
