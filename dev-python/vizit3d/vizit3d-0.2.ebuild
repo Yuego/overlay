@@ -58,14 +58,11 @@ RDEPEND="${RDEPEND}
 	dev-python/django-model-utils
 	nested? ( dev-python/django-nested-sets )
 	dev-python/django-redis
-	dev-python/django-redis-sessions
 	dev-python/django-pickling
 	robokassa? ( dev-python/django-robokassa )
 	dev-python/django-salmonella
 	sitetree? ( dev-python/django-sitetree )
-	dev-python/django-smart-selects
 	dev-python/django-templated-emails
-	dev-python/django-markdown
 	dev-python/markdown
 	dev-python/django-tinymce
 
