@@ -17,7 +17,7 @@ IUSE="+speedups cdb sqlite"
 
 RDEPEND=">=dev-python/django-1.0
 	cdb? ( dev-python/python-cdb )
-	sqlite? ( dev-python/pysqlite )"
+	sqlite? ( dev-lang/python[sqlite] )"
 DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="pymorphy"
