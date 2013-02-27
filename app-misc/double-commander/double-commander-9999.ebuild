@@ -25,10 +25,10 @@ DEPEND="${RDEPEND}
 "
 
 src_prepare(){
-    use qt4 && use gtk2 && die "Select only one flag: 'qt' or 'gtk2'"
-    ! use qt4 && ! use gtk2 && die "Select flag: 'qt' or 'gtk2'"
+    #use qt4 && use gtk2 && die "Select only one flag: 'qt' or 'gtk2'"
+    #! use qt4 && ! use gtk2 && die "Select flag: 'qt' or 'gtk2'"
 
-    use qt4 && export lcl="qt" || export lcl="gtk2"
+    #use qt4 && export lcl="qt" || export lcl="gtk2"
     use amd64 && export CPU_TARGET="x86_64" || export CPU_TARGET="i386"
 
     export lazpath="/usr/share/lazarus"
