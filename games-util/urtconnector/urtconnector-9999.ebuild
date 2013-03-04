@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=5
 
 inherit games cmake-utils subversion
 
@@ -15,7 +15,7 @@ KEYWORDS="~x86 ~amd64"
 SLOT="0"
 IUSE=""
 
-RDEPEND="x11-libs/qt-gui:4
+RDEPEND="dev-qt/qtgui:4
 		media-libs/phonon
         games-util/qstat
 		dev-libs/boost"
