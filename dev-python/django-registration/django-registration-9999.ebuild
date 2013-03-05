@@ -4,7 +4,7 @@
 
 EAPI=4
 
-EHG_REPO_URI="http://bitbucket.org/ubernostrum/django-registration"
+EHG_REPO_URI="http://bitbucket.org/Yuego/django-registration"
 
 inherit distutils eutils mercurial
 
@@ -18,7 +18,7 @@ IUSE=""
 RDEPEND="dev-python/django"
 DEPEND="${RDEPEND}"
 
-DOCS="docs/* AUTHORS.txt CHANGELOG.txt README.txt"
+DOCS="docs/* AUTHORS CHANGELOG README"
 
 S="${WORKDIR}/${PN}"
 
