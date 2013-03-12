@@ -4,16 +4,16 @@
 
 EAPI="4"
 
-inherit eutils distutils git-2
+inherit eutils distutils
 
 DESCRIPTION="Class based template tags for django"
 HOMEPAGE="https://github.com/ojii/django-classy-tags.git"
 
-EGIT_REPO_URI="https://github.com/ojii/django-classy-tags.git"
+SRC_URI="https://github.com/ojii/django-classy-tags/archive/${PV}.tar.gz -> django-classy-tags-${PV}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.2"

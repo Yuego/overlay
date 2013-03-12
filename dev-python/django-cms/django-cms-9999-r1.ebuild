@@ -16,12 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE="test"
 
-RDEPEND=">=dev-python/django-1.3
-	dev-python/django-nested-sets
-	dev-python/django-classy-tags
-	dev-python/django-sekizai
-	dev-python/south
-	dev-python/pip
+RDEPEND=">=dev-python/django-1.3.1
+	<dev-python/django-nested-sets-0.5.3
+	>=dev-python/django-nested-sets-0.5.1
+
+	>=dev-python/django-classy-tags-0.3.4.1
+	>=dev-python/django-sekizai-0.7
+	>=dev-python/south-0.7.2
 	dev-python/imaging
 	dev-python/html5lib
 	test? ( ~dev-python/jinja-2.6

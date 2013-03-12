@@ -11,7 +11,7 @@ DESCRIPTION="Utilities for implementing a modified pre-order traversal tree in d
 HOMEPAGE="https://github.com/django-mptt/django-mptt"
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.0"
