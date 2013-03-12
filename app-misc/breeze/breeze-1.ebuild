@@ -12,7 +12,6 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="dev-python/django[postgres]
-	dev-python/django-cms
 "
 
 # Servers
@@ -31,6 +30,7 @@ RDEPEND="${RDEPEND}
 # Utils
 RDEPEND="${RDEPEND}
 	dev-java/yuicompressor
+	dev-python/virtualenv
 "
 
 # Django apps
@@ -51,9 +51,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-widget-tweaks
 	dev-python/django-imagestore
 
-	dev-python/django-cms-youtube
-	dev-python/django-cms-disqus
-	dev-python/django-cms-news-ng
 "
 
 #DEBUG
