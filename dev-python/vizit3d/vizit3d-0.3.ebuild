@@ -74,6 +74,9 @@ RDEPEND="${RDEPEND}
 	dev-python/django-inplaceedit
 	dev-python/django-sphinx
 	dev-python/django-registration
+
+	dev-python/django-jsonfield
+	dev-python/django-extensions
 "
 
 #DEBUG
