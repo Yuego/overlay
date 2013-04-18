@@ -31,6 +31,8 @@ RDEPEND="${RDEPEND}
 	dev-python/sorl-thumbnail[redis]
 	dev-python/south
 	dev-python/yandex-maps
+	
+	dev-libs/geoip[city]
 "
 
 # Utils

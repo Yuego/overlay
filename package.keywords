@@ -67,3 +67,4 @@ www-servers/uwsgi ~amd64
 dev-python/django-registration ~amd64
 dev-python/django-jsonfield ~amd64
 dev-python/django-extensions ~amd64
+dev-libs/geoip ~amd64

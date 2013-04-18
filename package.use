@@ -1,3 +1,4 @@
 
 dev-python/django postgres -sqlite
 app-misc/sphinx id64 postgres stemmer
+dev-libs/geoip city
