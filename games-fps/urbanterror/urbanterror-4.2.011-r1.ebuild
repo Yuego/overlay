@@ -1,6 +1,6 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-fps/urbanterror/urbanterror-4.2.009.ebuild,v 1.1 2012/12/23 16:13:44 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-fps/urbanterror/urbanterror-4.2.011.ebuild,v 1.2 2013/04/12 20:08:43 hasufell Exp $
 
 EAPI=5
 SLOT="4.2"
@@ -9,14 +9,14 @@ inherit check-reqs eutils gnome2-utils games
 
 DESCRIPTION="Hollywood tactical shooter based on the ioquake3 engine"
 HOMEPAGE="http://www.urbanterror.info/home/"
-SRC_URI="http://cdn.urbanterror.info/urt/42/zips/UrbanTerror42_full_${PV:4:3}.zip
-    https://github.com/Barbatos/ioq3-for-UrbanTerror-4/archive/${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="http://cdn.urbanterror.info/urt/42/zips/UrbanTerror42_full${PV:4:3}.zip
+	https://github.com/Barbatos/ioq3-for-UrbanTerror-4/archive/release-${PV}.tar.gz -> ${P}.tar.gz
 	http://upload.wikimedia.org/wikipedia/en/5/56/Urbanterror.svg -> ${PN}-${SLOT}.svg"
 
 LICENSE="GPL-2 Q3AEULA"
 KEYWORDS="~amd64 ~x86"
 IUSE="+curl debug dedicated openal +sdl server smp vorbis"
-RESTRICT="mirror"
+#RESTRICT="mirror"
 
 RDEPEND="
 	!dedicated? (
@@ -35,7 +35,7 @@ DEPEND="${RDEPEND}
 	app-arch/unzip
 	dedicated? ( curl? ( net-misc/curl ) )"
 
-S=${WORKDIR}/ioq3-for-UrbanTerror-4-4.2.010
+S=${WORKDIR}/ioq3-for-UrbanTerror-4-release-${PV}
 S_DATA=${WORKDIR}/UrbanTerror42
 
 CHECKREQS_DISK_BUILD="2700M"
@@ -81,7 +81,6 @@ src_compile() {
 src_install() {
 	local my_arch=$(usex amd64 "x86_64" "i386")
 
-	doicon -s scalable "${DISTDIR}"/${PN}-${SLOT}.svg
 	dodoc ChangeLog README md4-readme.txt
 	dodoc "${S_DATA}"/q3ut4/readme42.txt
 	insinto "${GAMES_DATADIR}"/${PN}-${SLOT}/q3ut4
@@ -89,13 +88,14 @@ src_install() {
 
 	if use !dedicated ; then
 		newgamesbin build/$(usex debug "debug" "release")-linux-${my_arch}/Quake3-UrT$(usex smp "-smp" "").${my_arch} ${PN}-${SLOT}
-		make_desktop_entry ${PN}-${SLOT} "UrbanTerror ${SLOT}" ${PN}-${SLOT}
+		doicon -s scalable "${DISTDIR}"/${PN}-${SLOT}.svg
+		make_desktop_entry ${PN}-${SLOT} "UrbanTerror ${SLOT}"
 	fi
 
 	if use dedicated || use server ; then
 		newgamesbin build/$(usex debug "debug" "release")-linux-${my_arch}/Quake3-UrT-Ded.${my_arch} ${PN}-${SLOT}-dedicated
 		docinto examples
-		dodoc "${S_DATA}"/q3ut4/{server.cfg,mapcycle.txt}
+		dodoc "${S_DATA}"/q3ut4/{server_example.cfg,mapcycle_example.txt}
 	fi
 
 	prepgamesdirs
@@ -103,12 +103,12 @@ src_install() {
 
 pkg_preinst() {
 	games_pkg_preinst
-	gnome2_icon_savelist
+	use dedicated || gnome2_icon_savelist
 }
 
 pkg_postinst() {
 	games_pkg_postinst
-	gnome2_icon_cache_update
+	use dedicated || gnome2_icon_cache_update
 
 	if use openal && ! use dedicated ; then
 		einfo
@@ -120,5 +120,5 @@ pkg_postinst() {
 }
 
 pkg_postrm() {
-	gnome2_icon_cache_update
+	use dedicated || gnome2_icon_cache_update
 }
