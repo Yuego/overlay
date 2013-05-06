@@ -26,7 +26,6 @@ RDEPEND="${RDEPEND}
 	dev-python/feedparser
 	dev-python/kombu
 	dev-python/lxml
-	dev-python/pymorphy
 	dev-python/pytils
 	dev-python/pytz
 	dev-python/sorl-thumbnail[redis]
@@ -34,6 +33,8 @@ RDEPEND="${RDEPEND}
 	dev-python/yandex-maps
 	
 	dev-libs/geoip[city]
+
+	dev-python/django-pymorphy2
 "
 
 # Utils
