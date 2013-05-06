@@ -5,16 +5,16 @@
 EAPI="5"
 PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
 
-inherit distutils-r1 git-2
+inherit distutils-r1
 
 DESCRIPTION="POS tagger / inflection engine for Russian language."
 HOMEPAGE="http://pymorphy2.readthedocs.org/"
 
-EGIT_REPO_URI="https://github.com/kmike/pymorphy2.git"
+SRC_URI="https://github.com/kmike/pymorphy2/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE="django test"
 
 RDEPEND="
