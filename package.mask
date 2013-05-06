@@ -1,2 +1,2 @@
 
-
+>=sys-devel/automake-1.13

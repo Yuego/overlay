@@ -9,13 +9,14 @@ DESCRIPTION="Vizit3d meta"
 HOMEPAGE="http://vizit3d.ru"
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="-annoying debug -feincms imagemagick -loginza -nested -robokassa -sitetree +storages -vim"
+IUSE="debug imagemagick +storages -vim"
 
 RDEPEND="dev-python/django[postgres]"
 
 # Servers
 RDEPEND="${RDEPEND}
 	dev-db/postgresql-server
+	dev-db/postgis
 	www-servers/nginx
     www-servers/uwsgi[python]	
 "
@@ -50,20 +51,14 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-python/django-admin-tools
 	dev-python/django-hosts
-	annoying? ( dev-python/django-annoying )
 	dev-python/django-cacheops
 	dev-python/django-celery
 	dev-python/django-compressor
-	feincms? ( dev-python/django-fein-cms )
 	dev-python/django-filebrowser
-	loginza? ( dev-python/django-loginza )
 	dev-python/django-model-utils
-	nested? ( dev-python/django-nested-sets )
 	dev-python/django-redis
 	dev-python/django-pickling
-	robokassa? ( dev-python/django-robokassa )
 	dev-python/django-salmonella
-	sitetree? ( dev-python/django-sitetree )
 	dev-python/django-templated-emails
 	dev-python/markdown
 	dev-python/django-tinymce
