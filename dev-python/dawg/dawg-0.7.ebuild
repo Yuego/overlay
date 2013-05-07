@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
 
 inherit distutils-r1
 
-DESCRIPTION="DAWG-based dictionary-like read-only objects for Python. Based on `dawgdic` C++ library."
+DESCRIPTION="DAWG-based dictionary-like read-only objects for Python. Based on 'dawgdic' C++ library."
 HOMEPAGE="https://github.com/kmike/DAWG"
 
 SRC_URI="https://github.com/kmike/DAWG/archive/${PV}.tar.gz -> dawg-${PV}.tar.gz"
