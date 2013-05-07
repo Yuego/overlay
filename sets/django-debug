@@ -1,8 +1,0 @@
-
-dev-python/pep8
-dev-python/pyflakes
-
-dev-python/django-debug-toolbar
-
-dev-python/coverage
-dev-python/webtest
