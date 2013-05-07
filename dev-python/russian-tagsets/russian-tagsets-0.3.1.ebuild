@@ -7,25 +7,22 @@ PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
 
 inherit distutils-r1
 
-DESCRIPTION="Django and PyMorphy2 integration"
-HOMEPAGE="https://github.com/Yuego/django-pymorphy2"
+DESCRIPTION="Russian morphological tagset converters library."
+HOMEPAGE="https://pypi.python.org/pypi/russian-tagsets/"
 
-SRC_URI="https://github.com/Yuego/django-pymorphy2/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/kmike/russian-tagsets/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="compat"
+IUSE="test"
 
 RDEPEND="
-	dev-python/pymorphy2
-	dev-python/pymorphy2-dicts
-	>=dev-python/django-1.3
-	compat? ( >=dev-python/russian-tagsets-0.3.1 )
+	test? ( dev-python/tox )
 "
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_pymorphy2"
+PYTHON_MODNAME="russian_tagsets"
 
 src_test() {
 	python setup.py test || die "tests failed"
