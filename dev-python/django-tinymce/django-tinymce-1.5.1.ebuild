@@ -4,13 +4,13 @@
 
 EAPI=4
 
-EGIT_REPO_URI="https://github.com/aljosa/django-tinymce.git"
-EGIT_COMMIT="04986a21e57553a01356c869f84e52e3a0dca324"
-
-inherit distutils eutils git-2
+inherit distutils 
 
 DESCRIPTION="TinyMCE widget for Django"
 HOMEPAGE="https://github.com/aljosa/django-tinymce"
+
+VER="release-${PV}"
+SRC_URI="https://github.com/aljosa/django-tinymce/archive/${VER}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
@@ -20,13 +20,8 @@ RDEPEND="dev-python/django"
 DEPEND="${RDEPEND}"
 
 DOCS="docs/* README.md"
+S="${WORKDIR}/${PN}-${VER}"
 
 src_install() {
-#	distutils_python_version
-#
-#	site_pkgs="$(python_get_sitedir)"
-#	export PYTHONPATH="${PYTHONPATH}:${D}/${site_pkgs}"
-#	dodir ${site_pkgs}
-	distutils_src_install
 	rm -fr "${D}"usr/lib*/python*/site-packages/testtinymce
 }

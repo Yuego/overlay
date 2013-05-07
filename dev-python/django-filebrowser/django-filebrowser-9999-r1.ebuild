@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit eutils distutils git-2
+inherit distutils git-2
 
 EGIT_REPO_URI="https://github.com/wardi/django-filebrowser-no-grappelli.git"
 DESCRIPTION="django-filebrowser for default Django admin site."
@@ -16,15 +16,10 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.3"
 DEPEND="dev-python/setuptools"
+DOCS="LICENSE"
 
 PYTHON_MODNAME="filebrowser"
 
 src_test() {
 	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils_src_install
-	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	dodoc LICENSE
 }

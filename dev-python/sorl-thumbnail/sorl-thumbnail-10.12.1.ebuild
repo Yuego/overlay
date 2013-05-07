@@ -4,14 +4,14 @@
 
 EAPI="4"
 
-inherit distutils git-2
+inherit distutils
 
-EGIT_REPO_URI="https://github.com/sorl/sorl-thumbnail.git"
+SRC_URI="https://github.com/sorl/sorl-thumbnail/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 DESCRIPTION=""
 HOMEPAGE="http://thumbnail.sorl.net/index.html"
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE="-memcached +redis +imagemagick"
 
 RDEPEND=">=dev-python/django-1.0"

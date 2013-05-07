@@ -4,15 +4,14 @@
 
 EAPI=4
 
-inherit distutils git-2
+inherit distutils
 
 DESCRIPTION="A configurable set of panels that display various debug information about the current request/response."
 HOMEPAGE="https://github.com/django-debug-toolbar/django-debug-toolbar"
-EGIT_REPO_URI="https://github.com/django-debug-toolbar/django-debug-toolbar.git"
-
+SRC_URI="https://github.com/django-debug-toolbar/django-debug-toolbar/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""
 
 RDEPEND="dev-python/django"
@@ -29,4 +28,6 @@ pkg_postinst() {
 	elog "Toolbar panels palced in:"
 	elog "  'debug_toolbar.panels.*'"
 	elog
+
+
 }
