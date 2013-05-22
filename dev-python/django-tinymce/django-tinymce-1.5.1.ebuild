@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit distutils 
+inherit distutils
 
 DESCRIPTION="TinyMCE widget for Django"
 HOMEPAGE="https://github.com/aljosa/django-tinymce"
@@ -23,5 +23,6 @@ DOCS="docs/* README.md"
 S="${WORKDIR}/${PN}-${VER}"
 
 src_install() {
+	distutils_src_install
 	rm -fr "${D}"usr/lib*/python*/site-packages/testtinymce
 }
