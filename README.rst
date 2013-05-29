@@ -8,15 +8,14 @@
 
         overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
 
-добавьте
+добавьте::
 
         https://raw.github.com/Yuego/overlay/master/repo.xml
 
 должно получиться так::
 
         overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
-        https://raw.github.com/Yuego/overlay/master/repo.xml
-
+                    https://raw.github.com/Yuego/overlay/master/repo.xml
 
 после этого выполните::
 
