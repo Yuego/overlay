@@ -1,61 +1,62 @@
-dev-db/redis ~amd64
-dev-java/jargs ~amd64
-dev-java/yuicompressor ~amd64
-dev-lang/python ~amd64
-dev-libs/jemalloc ~amd64
-dev-python/amqplib ~amd64
-dev-python/anyjson ~amd64
-dev-python/billiard ~amd64
-dev-python/celery ~amd64
-dev-python/django-admin-tools ~amd64
-dev-python/django ~amd64
-dev-python/django-any ~amd64
-dev-python/django-appconf ~amd64
-dev-python/django-celery ~amd64
-dev-python/django-classy-tags ~amd64
-dev-python/django-cms-advancednews ~amd64
-dev-python/django-cms ~amd64
-dev-python/django-cms-disqus ~amd64
-dev-python/django-cms-news-ng ~amd64
-dev-python/django-cms-youtube ~amd64
-dev-python/django-fancy-autocomplete ~amd64
-dev-python/django-filebrowser ~amd64
-dev-python/django-grappelli ~amd64
-dev-python/django-haystack ~amd64
-dev-python/django-hvad ~amd64
-dev-python/django-imagestore ~amd64
-dev-python/django-inplaceedit ~amd64
-dev-python/django-inplaceedit-extra-fields ~amd64
-dev-python/django-markdown ~amd64
-dev-python/django-multilingual ~amd64
-dev-python/django-nested-sets ~amd64
-dev-python/django-pickling ~amd64
-dev-python/django-sekizai ~amd64
-dev-python/django-smart-selects ~amd64
-dev-python/django-sphinx ~amd64
-dev-python/django-storages ~amd64
-dev-python/django-tagging ~amd64
-dev-python/django-tastypie ~amd64
-dev-python/imaging ~amd64
-dev-python/kombu ~amd64
-dev-python/mimeparse ~amd64
-dev-python/pep8 ~amd64
-dev-python/psycopg ~amd64
-dev-python/py-amqp ~amd64
-dev-python/pymorphy ~amd64
-dev-python/pynliner ~amd64
-dev-python/pytils ~amd64
-dev-python/setuptools ~amd64
-dev-python/south ~amd64
-dev-python/sphinx-haystack ~amd64
-dev-python/twitter ~amd64
-dev-python/versiontools ~amd64
-dev-python/yandex-maps ~amd64
-www-servers/uwsgi ~amd64
-dev-python/django-registration ~amd64
-dev-python/django-jsonfield ~amd64
-dev-python/django-extensions ~amd64
-dev-libs/geoip ~amd64
+dev-db/redis
+dev-java/jargs
+dev-java/yuicompressor
+dev-lang/python
+dev-libs/jemalloc
+dev-python/amqplib
+dev-python/anyjson
+dev-python/billiard
+dev-python/celery
+dev-python/django-admin-tools
+dev-python/django
+dev-python/django-any
+dev-python/django-appconf
+dev-python/django-celery
+dev-python/django-classy-tags
+dev-python/django-cms-advancednews
+dev-python/django-cms
+dev-python/django-cms-disqus
+dev-python/django-cms-news-ng
+dev-python/django-cms-youtube
+dev-python/django-fancy-autocomplete
+dev-python/django-filebrowser
+dev-python/django-grappelli
+dev-python/django-haystack
+dev-python/django-hvad
+dev-python/django-imagestore
+dev-python/django-inplaceedit
+dev-python/django-inplaceedit-extra-fields
+dev-python/django-markdown
+dev-python/django-multilingual
+dev-python/django-nested-sets
+dev-python/django-pickling
+dev-python/django-sekizai
+dev-python/django-smart-selects
+dev-python/django-sphinx
+dev-python/django-storages
+dev-python/django-tagging
+dev-python/django-tastypie
+dev-python/imaging
+dev-python/kombu
+dev-python/mimeparse
+dev-python/pep8
+dev-python/psycopg
+dev-python/py-amqp
+dev-python/pymorphy
+dev-python/pynliner
+dev-python/pytils
+dev-python/setuptools
+dev-python/south
+dev-python/sphinx-haystack
+dev-python/twitter
+dev-python/versiontools
+dev-python/yandex-maps
+www-servers/uwsgi
+dev-python/django-registration
+dev-python/django-jsonfield
+dev-python/django-extensions
+dev-libs/geoip
 
-=dev-python/six-1.3.0 ~amd64
-=dev-python/python-dateutil-2.1-r1 ~amd64
+=dev-python/six-1.3.0
+=dev-python/python-dateutil-2.1-r1
+dev-python/django-admin-sortable
