@@ -18,6 +18,9 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}
 	media-gfx/krpanotools-binaries[viewer]
+	media-gfx/enblend
+	media-libs/exiftool
+	media-gfx/imagemagick[openmp,raw,tiff]
 "
 
 src_install() {
@@ -35,4 +38,8 @@ src_install() {
 
 	#IMAGES
 	doins -r ${S}/images/
+	
+	insopts -m0655
+	#SCRIPTS
+	doins -r ${S}/scripts/
 }
