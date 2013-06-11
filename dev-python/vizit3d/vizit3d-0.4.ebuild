@@ -51,6 +51,7 @@ RDEPEND="${RDEPEND}
 # Django apps
 RDEPEND="${RDEPEND}
 	dev-python/django-admin-tools
+	dev-python/django-bitfield
 	dev-python/django-hosts
 	dev-python/django-cacheops
 	dev-python/django-celery
