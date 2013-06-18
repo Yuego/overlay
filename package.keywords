@@ -13,11 +13,6 @@ dev-python/django-any
 dev-python/django-appconf
 dev-python/django-celery
 dev-python/django-classy-tags
-dev-python/django-cms-advancednews
-dev-python/django-cms
-dev-python/django-cms-disqus
-dev-python/django-cms-news-ng
-dev-python/django-cms-youtube
 dev-python/django-fancy-autocomplete
 dev-python/django-filebrowser
 dev-python/django-grappelli
@@ -28,7 +23,6 @@ dev-python/django-inplaceedit
 dev-python/django-inplaceedit-extra-fields
 dev-python/django-markdown
 dev-python/django-multilingual
-dev-python/django-nested-sets
 dev-python/django-pickling
 dev-python/django-sekizai
 dev-python/django-smart-selects

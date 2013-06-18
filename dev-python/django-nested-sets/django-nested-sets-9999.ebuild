@@ -2,7 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
+
 
 inherit distutils git-2
 
@@ -14,7 +16,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.0"
+RDEPEND=">=dev-python/django-1.4.2"
 DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="mptt"
@@ -23,8 +25,3 @@ src_test() {
 	python setup.py test || die "tests failed"
 }
 
-src_install () {
-	distutils_src_install
-	rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	dodoc INSTALL LICENSE NOTES README.rst
-}
