@@ -55,4 +55,6 @@ dev-libs/geoip
 =dev-python/python-dateutil-2.1-r1
 dev-python/django-admin-sortable
 dev-python/django-tagging
-dev-python/unidecode
+dev-python/django-eventlog
+dev-python/pytz
+dev-python/pinax-account
