@@ -52,6 +52,7 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-python/django-admin-tools
 	dev-python/django-bitfield
+	dev-python/django-pgfields
 	dev-python/django-hosts
 	dev-python/django-cacheops
 	dev-python/django-celery
