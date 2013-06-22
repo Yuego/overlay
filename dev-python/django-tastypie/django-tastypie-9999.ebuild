@@ -14,7 +14,7 @@ EGIT_BRANCH="AUTH_USER_MODEL_FINAL"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE="digest lxml pyyaml biplist"
 
 RDEPEND=">=dev-python/django-1.3

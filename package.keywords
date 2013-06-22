@@ -38,7 +38,6 @@ dev-python/django-sphinx
 dev-python/django-storages
 dev-python/django-tagging
 dev-python/django-tagging
-dev-python/django-tastypie
 dev-python/imaging
 dev-python/kombu
 dev-python/mimeparse

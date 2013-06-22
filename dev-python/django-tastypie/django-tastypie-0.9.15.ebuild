@@ -2,19 +2,19 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
 
-inherit distutils git-2
+inherit distutils
 
 DESCRIPTION="Creating delicious APIs for Django apps since 2010."
 HOMEPAGE="http://tastypieapi.org/"
 
-EGIT_REPO_URI="https://github.com/marblar/django-tastypie.git"
-EGIT_BRANCH="AUTH_USER_MODEL_FINAL"
+SRC_URI="https://github.com/toastdriven/django-tastypie/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS="x86 amd64"
 IUSE="digest lxml pyyaml biplist"
 
 RDEPEND=">=dev-python/django-1.3
