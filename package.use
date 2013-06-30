@@ -9,3 +9,5 @@ sci-libs/hdf5 szip
 sys-libs/zlib minizip
 
 net-misc/openssh hpn
+
+dev-python/pymorphy2 dicts django

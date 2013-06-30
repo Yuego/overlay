@@ -7,22 +7,22 @@ PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
 
 inherit distutils-r1
 
-DESCRIPTION="Django and PyMorphy2 integration"
-HOMEPAGE="https://github.com/Yuego/django-pymorphy2"
+DESCRIPTION="DAWG-based dictionary-like read-only objects for Python. Based on 'dawgdic' C++ library."
+HOMEPAGE="https://github.com/kmike/DAWG"
 
-SRC_URI="https://github.com/Yuego/django-pymorphy2/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/kmike/DAWG/archive/${PV}.tar.gz -> dawg-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="test"
 
-RDEPEND="
-	>=dev-python/django-1.3
-"
+RDEPEND=""
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_pymorphy2"
+S="${WORKDIR}/DAWG-${PV}"
+
+PYTHON_MODNAME="dawg_python"
 
 src_test() {
 	python setup.py test || die "tests failed"
