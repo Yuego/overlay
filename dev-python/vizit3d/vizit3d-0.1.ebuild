@@ -33,7 +33,7 @@ RDEPEND="${RDEPEND}
 	dev-python/yandex-maps
 	dev-python/pymorphy2[django,dicts]	
 	dev-libs/geoip[city]
-
+	dev-python/django-fias
 "
 
 # Utils

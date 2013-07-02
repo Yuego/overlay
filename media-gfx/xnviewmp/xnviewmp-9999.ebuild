@@ -8,15 +8,15 @@ inherit eutils versionator
 
 DESCRIPTION="XnView MP image viewer/converter"
 HOMEPAGE="http://www.xnview.com/"
-CH_PV="$(get_major_version  $(replace_version_separator '.' '' ${PV}))"
-SRC_URI="x86? ( http://download.xnview.com/old_versions/XnViewMP-${CH_PV}-linux.tgz )
-       amd64? ( http://download.xnview.com/old_versions/XnViewMP-${CH_PV}-linux-x64.tgz )"
+
+SRC_URI="x86? ( http://download.xnview.com/XnViewMP-linux.tgz )
+       amd64? ( http://download.xnview.com/XnViewMP-linux-x64.tgz )"
 
 SLOT="0"
 LICENSE="free-noncomm as-is"
 RESTRICT="mirror"
 
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 IUSE=""
 
 LANGS="ar bg ca cs da de es et fa fi fr gl he hu hy il it ja ko lt nb nl pl pt pt_BR ru sk sl sv tw uk zh"
