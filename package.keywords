@@ -4,6 +4,7 @@ dev-java/jargs
 dev-java/yuicompressor
 dev-lang/python
 dev-lang/python:3.3 **
+dev-python/pillow
 dev-libs/geoip
 dev-libs/jemalloc
 dev-python/amqplib
