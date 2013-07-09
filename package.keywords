@@ -3,6 +3,7 @@ dev-db/redis
 dev-java/jargs
 dev-java/yuicompressor
 dev-lang/python
+dev-lang/python:3.3 **
 dev-libs/geoip
 dev-libs/jemalloc
 dev-python/amqplib
