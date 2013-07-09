@@ -2,20 +2,23 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy{1_9,2_0} )
 
-inherit distutils git-2
+inherit distutils-r1
 
-EGIT_REPO_URI="https://github.com/matthiask/feincms.git"
 DESCRIPTION="UNOFFICIAL and often experimental version of FeinCMS."
 HOMEPAGE="https://github.com/matthiask/feincms"
+
+SRC_URI="https://github.com/feincms/feincms/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
-	dev-python/django-nested-sets"
+	dev-python/django-mptt"
 DEPEND="dev-python/setuptools"
 
 PYTHON_MODNAME="feincms"
@@ -24,8 +27,3 @@ src_test() {
 	python setup.py test || die "tests failed"
 }
 
-src_install () {
-	distutils_src_install
-	rm -fr "${D}"usr/lib*/python*/site-packages/{tests,example}
-	dodoc AUTHORS LICENSE QUICKSTART.rst README.rst
-}
