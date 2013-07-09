@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_7,3_3} pypy{1_9,2_0} )
 
 inherit distutils-r1
 
@@ -15,13 +15,10 @@ SRC_URI="https://github.com/Yuego/django-pymorphy2/archive/${PV}.tar.gz -> ${P}.
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="compat"
+IUSE=""
 
 RDEPEND="
-	dev-python/pymorphy2
-	dev-python/pymorphy2-dicts
 	>=dev-python/django-1.3
-	compat? ( >=dev-python/russian-tagsets-0.3.1 )
 "
 DEPEND="dev-python/setuptools"
 
