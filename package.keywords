@@ -35,7 +35,6 @@ dev-python/django-pgfields
 dev-python/django-pickling
 dev-python/django-registration
 dev-python/django-sekizai
-dev-python/django-smart-selects
 dev-python/django-sphinx
 dev-python/django-storages
 dev-python/django-tagging
