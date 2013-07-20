@@ -22,7 +22,6 @@ dev-python/django-eventlog
 dev-python/django-extensions
 dev-python/django-fancy-autocomplete
 dev-python/django-filebrowser
-dev-python/django-grappelli
 dev-python/django-haystack
 dev-python/django-hvad
 dev-python/django-imagestore

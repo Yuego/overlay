@@ -49,6 +49,7 @@ RDEPEND="${RDEPEND}
 
 # Django apps
 RDEPEND="${RDEPEND}
+	dev-python/django-autocomplete-light
 	dev-python/django-admin-tools
 	dev-python/django-bitfield
 	dev-python/django-pgfields
