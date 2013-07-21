@@ -49,6 +49,9 @@ RDEPEND="${RDEPEND}
 
 # Django apps
 RDEPEND="${RDEPEND}
+	dev-python/djorm-ext-pool
+	dev-python/djorm-ext-pgarray	
+
 	dev-python/django-autocomplete-light
 	dev-python/django-admin-tools
 	dev-python/django-bitfield
