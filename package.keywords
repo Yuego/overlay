@@ -36,8 +36,6 @@ dev-python/django-registration
 dev-python/django-sekizai
 dev-python/django-sphinx
 dev-python/django-storages
-dev-python/django-tagging
-dev-python/django-tagging
 dev-python/imaging
 dev-python/kombu
 dev-python/mimeparse

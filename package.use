@@ -11,3 +11,5 @@ sys-libs/zlib minizip
 net-misc/openssh hpn
 
 dev-python/pymorphy2 dicts django
+
+dev-python/sqlalchemy postgres

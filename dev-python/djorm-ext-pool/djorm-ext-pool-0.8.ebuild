@@ -15,11 +15,13 @@ SRC_URI="https://github.com/niwibe/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="mysql +postgres sqlite"
 
 RDEPEND="
 	>=dev-python/django-1.3
-	>=dev-python/sqlalchemy-0.7.5
+	mysql? ( >=dev-python/sqlalchemy-0.7.5[mysql] )
+    postgres? ( >=dev-python/sqlalchemy-0.7.5[postgres] )
+    sqlite? ( >=dev-python/sqlalchemy-0.7.5[sqlite] )
 "
 DEPEND="dev-python/setuptools"
 

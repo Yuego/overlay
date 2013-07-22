@@ -82,7 +82,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-extensions
 
 	dev-python/django-tagging
-	dev-python/django-tagging-autosuggest
 "
 
 #DEBUG

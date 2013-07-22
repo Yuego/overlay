@@ -15,11 +15,13 @@ EGIT_REPO_URI="git://github.com/niwibe/${PN}.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="mysql +postgres sqlite"
 
 RDEPEND="
 	>=dev-python/django-1.3
-	>=dev-python/sqlalchemy-0.7.5
+	mysql? ( >=dev-python/sqlalchemy-0.7.5[mysql] )
+	postgres? ( >=dev-python/sqlalchemy-0.7.5[postgres] )
+	sqlite? ( >=dev-python/sqlalchemy-0.7.5[sqlite] )
 "
 DEPEND="dev-python/setuptools"
 
