@@ -4,22 +4,23 @@
 
 EAPI="4"
 
-inherit distutils mercurial
+inherit distutils git-2
 
-EHG_REPO_URI="https://bitbucket.org/salvator/django-admintools-bootstrap"
 DESCRIPTION="https://bitbucket.org/salvator/django-admintools-bootstrap"
 HOMEPAGE="https://bitbucket.org/salvator/django-admintools-bootstrap/"
-LICENSE="as-is"
+
+EGIT_REPO_URI="git://github.com/buttscicles/django-admintools-bootstrap.git"
+
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
-	dev-python/django-admin-tools"
+	>=dev-python/django-admin-tools-0.4.1
+	>=dev-python/beautifulsoup-3.2.0
+	>=dev-python/django-appconf-0.4.1
+	>=dev-python/versiontools-1.8.2
+"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="admintools_bootstrap"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}

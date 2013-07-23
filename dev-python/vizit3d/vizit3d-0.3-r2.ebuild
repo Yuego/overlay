@@ -34,6 +34,10 @@ RDEPEND="${RDEPEND}
 	dev-python/pymorphy2[django,dicts]	
 	dev-libs/geoip[city]
 	dev-python/django-fias
+
+	dev-python/djorm-ext-pool
+	dev-python/djorm-ext-pgarray
+	dev-python/djorm-ext-indexes
 "
 
 # Utils
