@@ -38,6 +38,8 @@ RDEPEND="${RDEPEND}
 	dev-python/djorm-ext-pool
 	dev-python/djorm-ext-pgarray
 	dev-python/djorm-ext-indexes
+
+	dev-python/phonenumbers
 "
 
 # Utils
@@ -86,6 +88,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-extensions
 
 	dev-python/django-tagging
+	dev-python/djorm-hstore-editor
 "
 
 #DEBUG
