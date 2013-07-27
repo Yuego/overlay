@@ -15,4 +15,5 @@ dev-python/pymorphy2 dicts django
 dev-python/sqlalchemy postgres
 
 dev-lang/php -berkdb bzip2 cli crypt ctype curl exif fileinfo filter fpm gd gdbm hash iconv imap ipv6 json mhash mysql mysqli nls opcache pdo phar posix postgres readline session simplexml sockets spell ssl tokenizer truetype unicode xml zip zlib
+app-admin/eselect-php fpm
 dev-db/mysql community ssl -cluster -debug -extraengine jemalloc -latin1 -max-idx-128 -minimal -profiling -selinux -static -systemtap -tcmalloc -test
