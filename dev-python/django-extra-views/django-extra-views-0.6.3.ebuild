@@ -7,10 +7,10 @@ PYTHON_COMPAT=( python{2_7,3_3} pypy{1_9,2_0} )
 
 inherit distutils
 
-DESCRIPTION="The best way to have DRY Django forms."
-HOMEPAGE="https://github.com/maraujop/django-crispy-forms"
+DESCRIPTION="Django's class-based generic views are awesome, let's have more of them."
+HOMEPAGE="https://github.com/AndrewIngram/django-extra-views"
 
-SRC_URI="https://github.com/maraujop/django-crispy-forms/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/AndrewIngram/django-extra-views/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,10 +19,4 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.3"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="crispy_forms"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 
