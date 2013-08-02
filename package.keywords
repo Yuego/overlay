@@ -58,3 +58,12 @@ dev-python/yandex-maps
 www-servers/uwsgi
 dev-python/rarfile
 dev-python/django-select2
+
+dev-python/python-novaclient
+dev-python/iso8601
+dev-python/prettytable
+dev-python/requests
+dev-python/httplib2
+dev-python/charade
+
+dev-python/python-swiftclient
