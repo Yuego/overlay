@@ -32,6 +32,10 @@ RDEPEND="${RDEPEND}
 	dev-python/south
 	dev-python/yandex-maps
 	dev-python/pymorphy2[django,dicts]	
+
+	dev-python/python-swiftclient
+	dev-python/scandir
+
 	dev-libs/geoip[city]
 	dev-python/django-fias
 
