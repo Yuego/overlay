@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/Yuego/django-tagging"
 EGIT_REPO_URI="git://github.com/Yuego/django-tagging.git"
 
 LICENSE="as-is"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 SLOT="0"
 IUSE=""
 
