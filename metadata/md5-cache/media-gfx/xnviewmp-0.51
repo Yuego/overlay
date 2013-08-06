@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=XnView MP image viewer/converter
+EAPI=4
+HOMEPAGE=http://www.xnview.com/
+IUSE=linguas_ar linguas_bg linguas_ca linguas_cs linguas_da linguas_de linguas_es linguas_et linguas_fa linguas_fi linguas_fr linguas_gl linguas_he linguas_hu linguas_hy linguas_il linguas_it linguas_ja linguas_ko linguas_lt linguas_nb linguas_nl linguas_pl linguas_pt linguas_pt_BR linguas_ru linguas_sk linguas_sl linguas_sv linguas_tw linguas_uk linguas_zh
+KEYWORDS=~x86 ~amd64
+LICENSE=free-noncomm as-is
+RDEPEND=>=dev-libs/glib-2 x11-libs/libX11 x11-libs/libXi x11-libs/libXt media-libs/libpng:1.2 virtual/jpeg || ( dev-qt/qtcore:4 ( dev-qt/qtgui:4 ) )
+RESTRICT=strip
+SLOT=0
+SRC_URI=x86? ( http://download.xnview.com/old_versions/XnViewMP-051-linux.tgz ) amd64? ( http://download.xnview.com/old_versions/XnViewMP-051-linux-x64.tgz )
+_eclasses_=eutils	63afaaed8aa819fdcb814c7cd39495a2	multilib	892e597faee02a5b94eb02ab512e7622	toolchain-funcs	7ffd28a8c7eea27218865352bfd3ab2f	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=91cbeca67c8cd273a374b809be9c5abd

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-lang/lua x11-wm/awesome dev-libs/oocairo vicious? ( x11-plugins/vicious ) task-warrior? ( app-misc/task[lua] ) dev-vcs/git
+DESCRIPTION=Blingbling is a graphical widget library for Awesome Windows Manager
+EAPI=4
+HOMEPAGE=http://awesome.naquadah.org/wiki/Blingbling
+IUSE=+vicious +task-warrior
+LICENSE=GPL-2
+RDEPEND=dev-lang/lua x11-wm/awesome dev-libs/oocairo vicious? ( x11-plugins/vicious ) task-warrior? ( app-misc/task[lua] )
+SLOT=0
+_eclasses_=git-2	e92e09651292b1bef5656592364550f7
+_md5_=a6ad06b8bc785ec65ea78c391dcef2d6

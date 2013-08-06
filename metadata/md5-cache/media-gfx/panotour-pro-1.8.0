@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=PanoTour Pro
+EAPI=4
+HOMEPAGE=http://www.kolor.com
+KEYWORDS=amd64 x86
+LICENSE=as-is
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://download.kolor.com/ptp/stable/linux64tar -> panotour-pro-1.8.0.tar.gz http://www.kolor.com/images/stories/download/download-panotour/logo-ptp-128.png -> panotour-pro.png
+_eclasses_=eutils	63afaaed8aa819fdcb814c7cd39495a2	multilib	892e597faee02a5b94eb02ab512e7622	toolchain-funcs	7ffd28a8c7eea27218865352bfd3ab2f	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=59c042c77ca0cb289d5bf4f569b8fd7e
