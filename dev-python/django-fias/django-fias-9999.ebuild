@@ -21,6 +21,8 @@ RDEPEND=">=dev-python/django-1.4
 	dev-python/django-select2
 	dev-python/pysimplesoap
 	dev-python/rarfile
+	dev-python/suds
+	dev-python/lxml
 "
 DEPEND="dev-python/setuptools"
 
