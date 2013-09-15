@@ -18,7 +18,7 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=app-misc/sphinx-2.0.2
+	>=app-misc/sphinx-2.0.6
 	dev-python/six
 	>=dev-python/oursql-0.9.3
 "
