@@ -19,15 +19,11 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.4
 	dev-python/django-select2
+	>=dev-python/sphinxit-0.3.2
 	>=dev-python/suds-0.4
 	dev-python/rarfile
 	dev-python/lxml
 "
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="fias"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 
