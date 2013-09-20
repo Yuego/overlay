@@ -17,8 +17,8 @@ SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE="digest lxml pyyaml biplist"
 
-RDEPEND=">=dev-python/django-1.3
-	>=dev-python/mimeparse-0.1.3
+RDEPEND=">=dev-python/django-1.5
+	>=dev-python/mimeparse-0.1.4
 	>=dev-python/python-dateutil-2.1
 	digest? ( dev-python/python-digest )
 	lxml? ( dev-python/lxml )
@@ -26,10 +26,4 @@ RDEPEND=">=dev-python/django-1.3
 	biplist? ( dev-python/biplist )
 	"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="tastypie"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 
