@@ -44,6 +44,8 @@ RDEPEND="${RDEPEND}
 	dev-python/djorm-ext-indexes
 
 	dev-python/phonenumbers
+
+	
 "
 
 # Utils
@@ -55,6 +57,7 @@ RDEPEND="${RDEPEND}
 			app-vim/vimpython
 			app-vim/zencoding-vim
 			app-vim/vimcommander )
+	media-gfx/krpanotools
 "
 
 # Django apps
