@@ -23,6 +23,6 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}"
 
 src_install() {
-	insinto "/opt/krpanotools/license/"
+	insinto "/opt/krpanotools/bin/"
 	doins "${S}"/*
 }
