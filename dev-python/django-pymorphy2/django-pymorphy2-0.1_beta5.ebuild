@@ -19,12 +19,8 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.3
+	dev-python/pymorphy2
+	dev-python/pymorphy2-dicts
 "
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="django_pymorphy2"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

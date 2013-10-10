@@ -31,7 +31,7 @@ RDEPEND="${RDEPEND}
 	dev-python/sorl-thumbnail[redis]
 	dev-python/south
 	dev-python/yandex-maps
-	dev-python/pymorphy2[django,dicts]	
+	dev-python/django-pymorphy2
 
 	dev-python/python-swiftclient
 	dev-python/scandir

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_7,3_3} pypy{1_9,2_0} )
 
 inherit distutils-r1 git-2
 
@@ -19,9 +19,9 @@ IUSE=""
 
 RDEPEND="dev-python/pymorphy2
 "
-DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="pymorphy2_dicts"
+DEPEND="dev-python/setuptools
+	${RDEPEND}
+"
 
 src_prepare() {
 	ewarn '***'
@@ -32,7 +32,4 @@ src_prepare() {
 	./update.py
 }
 
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

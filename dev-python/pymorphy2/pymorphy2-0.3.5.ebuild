@@ -15,7 +15,7 @@ SRC_URI="https://github.com/kmike/pymorphy2/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="django +dicts test"
+IUSE="django test"
 
 RDEPEND="
 	dev-python/dawg
@@ -23,7 +23,6 @@ RDEPEND="
 		>=dev-python/django-1.3
 		dev-python/django-pymorphy2
 	)
-	dicts? ( dev-python/pymorphy2-dicts )
 	test? ( dev-python/tox )
 "
 DEPEND="dev-python/setuptools"
