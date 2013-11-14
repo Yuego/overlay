@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Painless translations in django, using the regular ORM. Integrates
 easily into existing projects and apps. Easy convertible from
@@ -20,10 +21,4 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.2"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="hvad"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

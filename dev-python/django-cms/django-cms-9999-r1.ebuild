@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="An Advanced Django CMS."
 HOMEPAGE="https://github.com/divio/django-cms"
@@ -33,10 +34,4 @@ RDEPEND=">=dev-python/django-1.3.1
 	)
 	"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="cms"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

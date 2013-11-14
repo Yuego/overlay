@@ -2,13 +2,14 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils 
+inherit distutils-r1
 
 DESCRIPTION="Yandex.Maps API python wrapper with optional django integration."
 HOMEPAGE="http://pypi.python.org/pypi/yandex-maps"
-SRC_URI="http://pypi.python.org/packages/source/y/yandex-maps/yandex-maps-0.5.1.tar.gz"
+SRC_URI="http://pypi.python.org/packages/source/y/yandex-maps/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,12 +18,6 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="yandex_maps"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 
 src_install () {
 	distutils_src_install

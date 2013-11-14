@@ -1,11 +1,13 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
-EAPI=4
+
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 ESVN_REPO_URI="http://django-comment-utils.googlecode.com/svn/trunk/"
 
-inherit distutils eutils subversion
+inherit distutils-r1 subversion
 
 MY_P="comment_utils-${PV}"
 
@@ -24,11 +26,11 @@ DOCS="docs/* CHANGELOG.txt README.txt"
 S="${WORKDIR}/${MY_P}"
 
 src_install() {
-	distutils_python_version
+	distutils-r1_python_version
 
 	site_pkgs="$(python_get_sitedir)"
 	export PYTHONPATH="${PYTHONPATH}:${D}/${site_pkgs}"
 	dodir ${site_pkgs}
 
-	distutils_src_install
+	distutils-r1_src_install
 }

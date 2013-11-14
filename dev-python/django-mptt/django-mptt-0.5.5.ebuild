@@ -3,9 +3,9 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
 DESCRIPTION="Utilities for implementing a modified pre-order traversal tree in django."
 HOMEPAGE="https://github.com/django-mptt/django-mptt"
@@ -18,11 +18,5 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.4.2"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="mptt"
-
 S="${WORKDIR}/django-mptt-${PV}"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

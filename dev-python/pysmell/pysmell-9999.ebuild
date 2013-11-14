@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="PySmell is a python IDE completion helper."
 HOMEPAGE="http://code.google.com/p/pysmell/"
@@ -19,12 +20,6 @@ IUSE=""
 RDEPEND="dev-lang/python
 	"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="pysmell"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 
 src_install () {
 	distutils_src_install

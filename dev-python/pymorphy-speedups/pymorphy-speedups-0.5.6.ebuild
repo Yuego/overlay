@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
 SRC_URI="http://pypi.python.org/packages/source/p/pymorphy-speedups/pymorphy-speedups-0.5.6.tar.gz"
 DESCRIPTION="Pymorphy speedups"
@@ -19,14 +20,3 @@ DEPEND="dev-python/setuptools
 	simplejson? ( dev-python/simplejson )
 	dev-python/pymorphy"
 
-PYTHON_MODNAME="pymorphy_speedups"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils_src_install
-	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	#dodoc *.txt
-}

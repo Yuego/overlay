@@ -2,11 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=4
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 EHG_REPO_URI="http://bitbucket.org/Yuego/django-registration"
 
-inherit distutils eutils mercurial
+inherit distutils-r1 mercurial
 
 DESCRIPTION="A user-registration application for Django"
 HOMEPAGE="http://www.bitbucket.org/ubernostrum/django-registration/wiki/Home"

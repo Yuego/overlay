@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
 MY_P=SQLAlchemy-${PV/_}
 
@@ -35,7 +35,6 @@ DEPEND="dev-python/setuptools
 		>=dev-python/nose-0.10.4
 		|| ( >=dev-lang/python-2.5[sqlite] dev-python/pysqlite )
 	)"
-RESTRICT_PYTHON_ABIS="3.*"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -47,7 +46,7 @@ src_test() {
 }
 
 src_install() {
-	distutils_src_install
+	distutils-r1_src_install
 
 	use doc && dohtml doc/*
 

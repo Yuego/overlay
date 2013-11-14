@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils subversion
+inherit distutils-r1 subversion
 
 ESVN_REPO_URI="http://django-blocks.googlecode.com/svn/trunk/"
 DESCRIPTION="Django Blocks will provide an easier way to build Web apps more quickly and with almost no code."
@@ -18,14 +19,3 @@ RDEPEND=">=dev-python/django-1.0
 	dev-python/django-tagging"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="blocks"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils_src_install
-	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	#dodoc *.txt
-}

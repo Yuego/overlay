@@ -3,9 +3,9 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_7,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
 DESCRIPTION="The best way to have DRY Django forms."
 HOMEPAGE="https://github.com/maraujop/django-crispy-forms"
@@ -20,9 +20,4 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.3"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="crispy_forms"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

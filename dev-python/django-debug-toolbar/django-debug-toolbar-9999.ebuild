@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=4
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="A configurable set of panels that display various debug information about the current request/response."
 HOMEPAGE="https://github.com/django-debug-toolbar/django-debug-toolbar"
@@ -15,12 +16,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""
 
-RDEPEND="dev-python/django"
+RDEPEND="
+	>=dev-python/django-1.4.2
+    <dev-python/django-1.7
+    dev-python/python-sqlparse
+"
 DEPEND="${RDEPEND}"
 
 DOCS="AUTHORS LICENSE README.rst"
-
-PYTHON_MODNAME="debug_toolbar"
 
 pkg_postinst() {
 	elog
@@ -30,3 +33,9 @@ pkg_postinst() {
 	elog "  'debug_toolbar.panels.*'"
 	elog
 }
+
+src_prepare() {
+    sed -i "s#exclude=('tests'#exclude=('tests','tests.*'#g" setup.py
+    distutils-r1_src_prepare
+}
+

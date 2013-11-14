@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils 
+inherit distutils-r1
 
 DESCRIPTION="django-sitetree is a reusable application for Django, introducing site tree, menu and breadcrumbs navigation elements."
 HOMEPAGE="http://pypi.python.org/pypi/django-sitetree/0.7"
@@ -18,13 +19,5 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="sitetree"
+DOCS="AUTHORS README CHANGELOG"
 
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils_src_install
-	dodoc AUTHORS README CHANGELOG
-}

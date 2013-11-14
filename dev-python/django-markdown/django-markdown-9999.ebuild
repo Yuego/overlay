@@ -2,11 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=4
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 EGIT_REPO_URI="https://github.com/klen/django_markdown.git"
 
-inherit distutils eutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Django markdown support and wysiwig"
 HOMEPAGE="http://klen.github.com/git-markdown-ru.html"

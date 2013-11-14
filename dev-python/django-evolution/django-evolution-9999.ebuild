@@ -2,11 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 ESVN_REPO_URI="http://django-evolution.googlecode.com/svn/trunk/"
 
-inherit distutils subversion
+inherit distutils-r1 subversion
 
 DESCRIPTION="Schema Evolution for the Django Project"
 HOMEPAGE="http://code.google.com/p/django-evolution/"
@@ -18,14 +19,8 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_evolution"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
 src_install () {
-        distutils_src_install
-        rm -fr "${D}"usr/lib*/python*/site-packages/tests
+    distutils_src_install
+	rm -fr "${D}"usr/lib*/python*/site-packages/tests
 	dodoc docs/*
 }

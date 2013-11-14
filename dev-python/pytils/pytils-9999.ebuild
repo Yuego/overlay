@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 EGIT_REPO_URI="https://github.com/j2a/pytils.git"
 DESCRIPTION="Pytils is a Russian-specific string utils (transliteration, numeral is words, russian dates, etc)"
@@ -17,14 +18,8 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="pytils"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
 src_install () {
-	distutils_src_install
+	distutils-r1_src_install
 	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
 	dodoc LICENSE README.md
 }

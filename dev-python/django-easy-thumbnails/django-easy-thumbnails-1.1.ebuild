@@ -2,14 +2,15 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils
+inherit eutils distutils-r1
 
 DESCRIPTION="Easy thumbnails for Django"
 HOMEPAGE="https://github.com/SmileyChris/easy-thumbnails.git"
 
-SRC_URI="https://github.com/SmileyChris/easy-thumbnails/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/SmileyChris/easy-thumbnails/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"
@@ -19,11 +20,6 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.3"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="easy_thumbnails"
-
 S=${WORKDIR}/easy-thumbnails-${PV}
 
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

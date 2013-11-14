@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Typogrify is a collection of Django template filters that help
 prettify your web typography by preventing ugly quotes and widows and providing
@@ -22,10 +23,4 @@ RDEPEND=">=dev-python/django-1.3
 	~dev-python/smartypants-1.6
 "
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="typogrify"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

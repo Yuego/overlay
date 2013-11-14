@@ -2,11 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=4
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 EGIT_REPO_URI="https://github.com/stephenmcd/django-email-extras.git"
 
-inherit distutils eutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="A Django reusable app providing the ability to send PGP encrypted and multipart emails using Django templates."
 HOMEPAGE="https://github.com/stephenmcd/django-email-extras"

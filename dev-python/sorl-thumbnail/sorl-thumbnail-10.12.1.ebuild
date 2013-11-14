@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
 SRC_URI="https://github.com/sorl/sorl-thumbnail/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 DESCRIPTION=""
@@ -21,14 +22,8 @@ DEPEND="dev-python/setuptools
 			 dev-db/redis )
 	imagemagick? ( media-gfx/imagemagick )"
 
-PYTHON_MODNAME="sorl"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
 src_install () {
-	distutils_src_install
+	distutils-r1_src_install
 	rm -fr "${D}"usr/lib*/python*/site-packages/tests
 	dodoc LICENSE README.rst
 }

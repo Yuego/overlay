@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Makes django models pickling 2-3 times faster and compact."
 HOMEPAGE="https://github.com/Suor/django-pickling"
@@ -19,9 +20,4 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.4"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_pickling"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

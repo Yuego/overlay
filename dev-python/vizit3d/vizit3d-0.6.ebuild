@@ -2,7 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=4
+EAPI=5
+
+LICENSE="as-is"
 
 SRC_URI=""
 DESCRIPTION="Vizit3d meta"

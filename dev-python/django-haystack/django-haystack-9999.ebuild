@@ -3,9 +3,9 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Modular search for Django."
 HOMEPAGE="http://haystacksearch.org/"
@@ -14,7 +14,7 @@ EGIT_REPO_URI="https://github.com/toastdriven/django-haystack.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.5

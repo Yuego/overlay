@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
 DESCRIPTION="A slick app that supports automatic or manual queryset caching and automatic granular event-driven invalidation."
 HOMEPAGE="https://github.com/Suor/django-cacheops"
@@ -21,10 +22,4 @@ RDEPEND=">=dev-python/django-1.4
 	>=dev-python/simplejson-2.1.5
 	>=dev-python/redis-py-2.4.12"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="cacheops"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

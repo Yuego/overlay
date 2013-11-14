@@ -2,12 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils mercurial
+inherit distutils-r1 mercurial
 
 EHG_REPO_URI="http://bitbucket.org/kmike/django-assist-ru/"
-DESCRIPTION="django-assist-ru - это приложение для интеграции платежной системы ASSIST в проекты на Django."
+DESCRIPTION="ASSIST integration into Django."
 HOMEPAGE="http://pypi.python.org/pypi/django-assist-ru/"
 LICENSE="MIT"
 SLOT="0"
@@ -17,14 +18,3 @@ IUSE=""
 RDEPEND=">=dev-python/django-1.3"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="assist"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils_src_install
-	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	#dodoc *.txt
-}

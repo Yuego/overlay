@@ -3,9 +3,9 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_7,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Awesome web-browseable Web APIs."
 HOMEPAGE="https://github.com/tomchristie/django-rest-framework"

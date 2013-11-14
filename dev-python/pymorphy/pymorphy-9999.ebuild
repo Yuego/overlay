@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_5,2_6,2_7} pypy2_0 )
 
 inherit distutils-r1 git-2
 
@@ -21,14 +21,3 @@ RDEPEND=">=dev-python/django-1.0
 
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="pymorphy"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils-r1_src_install
-	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	#dodoc *.txt
-}

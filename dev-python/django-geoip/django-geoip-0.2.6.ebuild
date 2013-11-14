@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="App to figure out where your visitors are from by their IP address."
 HOMEPAGE="http://django-geoip.readthedocs.org/en/latest/index.html"
@@ -21,10 +22,4 @@ RDEPEND=">=dev-python/django-1.3
 	dev-python/django-appconf
 	dev-python/progressbar"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="django_geoip"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

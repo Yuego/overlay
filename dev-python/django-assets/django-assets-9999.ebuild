@@ -2,11 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=4
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 EGIT_REPO_URI="https://github.com/miracle2k/django-assets.git"
 
-inherit distutils eutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="Django webassets integration."
 HOMEPAGE="https://github.com/miracle2k/django-assets"
@@ -26,6 +27,6 @@ src_install() {
 #	site_pkgs="$(python_get_sitedir)"
 #	export PYTHONPATH="${PYTHONPATH}:${D}/${site_pkgs}"
 #	dodir ${site_pkgs}
-	distutils_src_install
+	distutils-r1_src_install
 	rm -fr "${D}"usr/lib*/python*/site-packages/tests
 }

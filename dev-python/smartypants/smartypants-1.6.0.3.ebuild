@@ -2,16 +2,17 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils
+inherit eutils distutils-r1
 
 DESCRIPTION="SmartyPants is a free web publishing plug-in for Movable Type,
 Blosxom, and BBEdit that easily translates plain ASCII punctuation characters
-into “smart” typographic punctuation HTML entities."
+into 'smart' typographic punctuation HTML entities."
 HOMEPAGE="http://web.chad.org/projects/smartypants.py/"
 
-SRC_URI="http://pypi.python.org/packages/source/s/smartypants/smartypants-1.6.0.3.tar.gz"
+SRC_URI="http://pypi.python.org/packages/source/s/smartypants/${P}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"

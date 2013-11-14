@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit eutils distutils mercurial
+inherit distutils-r1 mercurial
 
 DESCRIPTION="Semantic Editor is a Django CMS plugin for text editing."
 HOMEPAGE="https://bitbucket.org/spookylukey/semanticeditor/overview"
@@ -22,10 +23,4 @@ RDEPEND=">=dev-python/django-1.3
 	dev-python/lxml
 "
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="semanticeditor"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

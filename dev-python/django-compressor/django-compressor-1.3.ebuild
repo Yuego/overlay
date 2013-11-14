@@ -2,11 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils
+inherit distutils-r1
 
-DESCRIPTION="ompresses linked and inline javascript or CSS into a single cached file."
+DESCRIPTION="Compresses linked and inline javascript or CSS into a single cached file."
 HOMEPAGE="https://github.com/jezdez/django_compressor"
 
 SRC_URI="https://github.com/jezdez/django_compressor/archive/${PV}.tar.gz -> ${P}.tar.gz"
@@ -29,11 +30,5 @@ RDEPEND=">=dev-python/django-1.3
 	"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="compressor"
-
 S="${WORKDIR}/${PN/-/_}-${PV}/"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

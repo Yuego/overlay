@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils mercurial
+inherit distutils-r1 mercurial
 
 EHG_REPO_URI="https://bitbucket.org/kmike/pymorphy"
 EHG_REVISION="f85d1f11a405" #0.5.6
@@ -20,14 +21,3 @@ RDEPEND=">=dev-python/django-1.0
 	sqlite? ( dev-lang/python[sqlite] )"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="pymorphy"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
-src_install () {
-	distutils_src_install
-	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	#dodoc *.txt
-}

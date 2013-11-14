@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DESCRIPTION="https://bitbucket.org/salvator/django-admintools-bootstrap"
 HOMEPAGE="https://bitbucket.org/salvator/django-admintools-bootstrap/"
