@@ -22,9 +22,3 @@ DEPEND="dev-python/setuptools"
 
 S="${WORKDIR}/DAWG-${PV}"
 
-PYTHON_MODNAME="dawg_python"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
