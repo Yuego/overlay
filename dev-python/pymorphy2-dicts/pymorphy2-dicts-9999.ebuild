@@ -19,7 +19,6 @@ IUSE=""
 
 RDEPEND="
 	dev-python/pymorphy2
-	dev-python/opencorpora
 "
 DEPEND="dev-python/setuptools
 	${RDEPEND}
