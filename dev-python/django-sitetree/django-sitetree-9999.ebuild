@@ -13,10 +13,10 @@ EGIT_REPO_URI="https://github.com/idlesign/django-sitetree.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.0"
 DEPEND="dev-python/setuptools"
 
-DOCS="AUTHORS README CHANGELOG"
+DOCS="AUTHORS README.rst CHANGELOG"
