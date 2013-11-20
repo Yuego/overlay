@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Yandex maps API"
 HOMEPAGE="https://github.com/kmike/yandex-maps"
 
-SRC_URI="https://github.com/kmike/yandex-maps/archive/${PV}.tar.gz -> ${P}"
+SRC_URI="https://github.com/kmike/yandex-maps/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
