@@ -1,4 +1,4 @@
 
-net-print/cups  avahi zeroconf
+net-print/cups usb avahi zeroconf
 
 net-print/hplip hpcups -X hpijs -kde -qt4 scanner snmp static-ppds
