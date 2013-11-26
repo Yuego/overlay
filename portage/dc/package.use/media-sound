@@ -1,0 +1,2 @@
+
+media-sound/mpd alsa bzip2 curl ffmpeg fifo id3tag -ipv6 mad network tcpd unicode aac -ao audiofile -cdio cue -debug flac -fluidsynth inotify -jack lame lastfmradio libsamplerate mikmod -mms -modplug mpg123 musepack ogg openal -oss -pipe -profile -pulseaudio -sid sndfile -sqlite -tcpd twolame vorbis wavpack -wildmidi -zeroconf zip

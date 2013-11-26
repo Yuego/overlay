@@ -1,0 +1,7 @@
+
+media-gfx/sane-backends usb threads xinetd
+
+media-gfx/ufraw openmp contrast -fits -gimp -gnome -gtk -timezone
+media-gfx/exiv2 xmp
+
+media-gfx/imagemagick bzip2 cxx jpeg jpeg2k openmp png tiff truetype zlib -X -autotrace -corefonts -djvu fftw -fontconfig -fpx -graphviz hdri -jbig -lcms lqr lzma -opencl openexr -pango -perl -postscript -q32 -q64 -q8 raw -static-libs -svg -test -webp -wmf -xml

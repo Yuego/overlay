@@ -1,0 +1,4 @@
+
+dev-python/imaging ~amd64
+dev-python/py-amqp ~amd64
+dev-python/psycopg ~amd64
