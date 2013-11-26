@@ -1,0 +1,3 @@
+
+dev-python/django postgres mysql
+dev-python/pymorphy -sqlite

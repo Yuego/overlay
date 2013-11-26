@@ -1,0 +1,3 @@
+
+net-analyzer/icinga -apache2 idoutils -mysql plugins ssl vim-syntax web contrib eventhandler -lighttpd -perl postgres
+net-analyzer/nagios-plugins ipv6 jabber -samba ssl suid gnutls -ldap -mysql nagios-dns -nagios-game nagios-ntp nagios-ping nagios-ssh postgres -radius smart -snmp sudo -ups

@@ -1,0 +1,6 @@
+
+www-servers/uwsgi ~amd64
+#required by =sys-libs/libstdc++-v3-3.3.6-r1 (argument)
+=sys-libs/libstdc++-v3-3.3.6-r1 ~amd64
+
+www-servers/nginx 

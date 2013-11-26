@@ -1,0 +1,4 @@
+
+dev-lang/python sqlite
+dev-lang/php -cgi curl fpm mysql mysqli pdo postgres sockets zip
+

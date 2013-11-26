@@ -1,0 +1,3 @@
+
+sys-boot/grub ~amd64
+sys-boot/efibootmgr ~amd64

@@ -1,0 +1,2 @@
+
+net-p2p/opentracker fullscrapes gzip -ipv6 -blacklist -debug -examples -fullscrapes_modest -gzip_always -ip_from_proxy -ip_from_query -live_sync -live_sync_unicast -log_networks_full -log_numwant -persistence -restrict_stats -spot_woodpeckers -syslog -whitelist

@@ -1,0 +1,16 @@
+sys-apps/portage python3
+app-admin/eselect-php fpm
+app-misc/sphinx id64 postgres stemmer
+dev-db/mysql community ssl -cluster -debug -extraengine jemalloc -latin1 -max-idx-128 -minimal -profiling -selinux -static -systemtap -tcmalloc -test
+dev-lang/php -berkdb bzip2 cli crypt ctype curl exif fileinfo filter fpm gd gdbm hash iconv imap ipv6 json mhash mysql mysqli nls opcache pdo phar posix postgres readline session simplexml sockets spell ssl tokenizer truetype unicode xml zip zlib
+dev-lang/python sqlite
+dev-libs/geoip city
+dev-python/django postgres -sqlite
+dev-python/pymorphy2 dicts django
+dev-python/sqlalchemy postgres
+net-misc/openssh hpn
+sci-libs/fftw threads
+sci-libs/gdal aux_xml gif jpeg jpeg2k pdf png -armadillo curl -debug -doc -ecwj2k -fits geos -gml hdf5 -java -mdb -mysql -netcdf -odbc -ogdi opencl -perl postgres python -ruby -spatialite -sqlite threads -xls
+sci-libs/geos python
+sci-libs/hdf5 -cxx -fortran -mpi szip
+sys-libs/zlib minizip

@@ -1,0 +1,9 @@
+
+app-emulation/wine
+app-emulation/winetricks
+
+app-emulation/vmware-workstation
+app-emulation/vmware-modules
+app-emulation/vmware-vix
+app-emulation/vmware-tools
+

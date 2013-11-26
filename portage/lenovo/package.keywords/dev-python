@@ -1,0 +1,22 @@
+dev-python/pypy
+dev-python/pypy-bin
+dev-python/python-augeas
+
+dev-python/pep8
+dev-python/py-amqp
+=dev-pytho/django-1.5_rc1 **
+dev-python/tox
+dev-python/virtualenv
+dev-python/six
+dev-python/python-dateutil
+
+# for x11-wm/xpra
+dev-python/ipython
+dev-python/decorator
+dev-python/pexpect
+dev-python/pyzmq
+dev-python/simplegeneric
+dev-python/cython
+# for winswitch
+dev-python/gst-python
+dev-python/netifaces

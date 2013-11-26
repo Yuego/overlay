@@ -1,0 +1,8 @@
+
+media-libs/vigra ~amd64
+
+
+#media-libs/gegl **
+#media-libs/babl **
+
+media-libs/gd fontconfig

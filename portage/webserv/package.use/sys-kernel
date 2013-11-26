@@ -1,0 +1,4 @@
+
+
+sys-kernel/calckernel bash-completion
+sys-kernel/calculate-sources minimal symlink vmlinuz
