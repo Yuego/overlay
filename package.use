@@ -1,3 +1,4 @@
+sys-apps/portage python3
 app-admin/eselect-php fpm
 app-misc/sphinx id64 postgres stemmer
 dev-db/mysql community ssl -cluster -debug -extraengine jemalloc -latin1 -max-idx-128 -minimal -profiling -selinux -static -systemtap -tcmalloc -test
