@@ -1,2 +1,2 @@
 
-net-dns/avahi mdnsresponder-compat python
+net-dns/avahi mdnsresponder-compat python dbus
