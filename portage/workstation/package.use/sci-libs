@@ -1,0 +1,2 @@
+
+sci-libs/hdf5 -cxx -mpi -fortran

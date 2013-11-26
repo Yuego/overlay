@@ -1,0 +1,5 @@
+
+media-gfx/exiv2 xmp
+media-gfx/darktable geo opencl
+media-gfx/hugin lapack python sift
+media-gfx/enblend gpu
