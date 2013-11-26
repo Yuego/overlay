@@ -1,4 +1,4 @@
 
-net-print/cups  acl filters jpeg pam png ssl threads tiff -X avahi -dbus -debug -gnutls -java -kerberos -ldap -perl -python -slp -static-libs usb -xinetd zeroconf
+net-print/cups  avahi zeroconf
 
-net-print/hplip hpcups -X -doc -fax hpijs -kde -libnotify -minimal -parport -policykit -qt4 scanner snmp static-ppds
+net-print/hplip hpcups -X hpijs -kde -qt4 scanner snmp static-ppds
