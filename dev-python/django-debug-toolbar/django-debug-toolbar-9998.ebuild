@@ -14,7 +14,7 @@ EGIT_COMMIT="5ae6fcc61c7596b4980e85186f3737fad01a0ad4"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 ia64 ppc ppc64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="dev-python/django"
