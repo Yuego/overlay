@@ -47,7 +47,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/phonenumbers
 
-	
+	dev-python/transliterate
 "
 
 # Utils
