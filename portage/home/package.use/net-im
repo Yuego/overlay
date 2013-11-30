@@ -1,0 +1,3 @@
+
+net-im/psi crypt dbus extras spell ssl webkit xscreensaver -debug -doc -enchant iconsets -jingle plugins -powersave -whiteboarding
+net-im/psi-plugins-meta -attention autoreply birthdayreminder captchaforms chess cleaner conferencelogger contentdownloader extendedmenu extendedoptions gmailservice historykeeper icqdie image -juick -screenshot skins stopspam -storagenotes -translate -watcher qipxstatuses videostatus

@@ -1,0 +1,6 @@
+
+sys-fs/lvm2 static-libs
+sys-fs/cryptsetup static
+sys-fs/udev static-libs
+sys-fs/udisks -crypt
+

@@ -1,0 +1,13 @@
+
+dev-python/vizit3d debug imagemagick vim
+dev-python/PyQt4 declarative script
+dev-python/imaging X -scanner
+
+dev-python/django postgres -sqlite mysql
+dev-python/pyodbc mssql
+dev-python/pymorphy cdb sqlite
+
+dev-python/numpy python_targets_python3_3
+dev-python/setuptools python_targets_python3_3
+
+dev-python/pyside script

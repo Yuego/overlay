@@ -1,0 +1,4 @@
+
+net-fs/samba winbind
+net-fs/cifs-utils upcall ads
+

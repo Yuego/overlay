@@ -1,0 +1,15 @@
+
+# For Steam
+#x11-proto/fixesproto abi_x86_32
+#x11-proto/kbproto abi_x86_32
+#x11-proto/xcb-proto abi_x86_32
+#x11-proto/xextproto abi_x86_32
+#x11-proto/randrproto abi_x86_32
+#x11-proto/scrnsaverproto abi_x86_32
+#x11-proto/inputproto abi_x86_32
+#x11-proto/xineramaproto abi_x86_32
+#x11-proto/xf86bigfontproto abi_x86_32
+#x11-proto/renderproto abi_x86_32
+#x11-proto/xf86vidmodeproto abi_x86_32
+#x11-proto/xproto abi_x86_32
+

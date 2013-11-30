@@ -1,0 +1,5 @@
+
+app-office/akonadi-server postgres mysql sqlite
+
+app-office/libreoffice gtk3 java -nsplugin jemalloc
+app-office/libreoffice-bin java

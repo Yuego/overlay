@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://github.com/django-debug-toolbar/django-debug-toolbar.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND="
@@ -23,7 +23,7 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-DOCS="AUTHORS LICENSE README.rst"
+DOCS="LICENSE README.rst"
 
 pkg_postinst() {
 	elog

@@ -1,0 +1,6 @@
+
+=sys-devel/gcc-4.6.0
+<=sys-devel/gcc-4.6.3
+#required by @selected, required by @world (argument)
+# /etc/portage/package.mask:
+>=dev-python/pygame-1.9.2_pre3082

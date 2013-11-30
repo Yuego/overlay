@@ -1,0 +1,24 @@
+
+x11-wm/cairo-compmgr **
+#required by x11-wm/enlightenment-9999, required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=media-libs/edje-9999 **
+#required by dev-libs/embryo-9999, required by media-libs/edje-9999, required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=dev-libs/eina-9999 **
+#required by x11-wm/enlightenment-9999[e_modules_connman], required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=dev-libs/e_dbus-9999 **
+#required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=x11-wm/enlightenment-9999 **
+#required by x11-plugins/ecomorph (argument)
+=x11-plugins/ecomorph-9999 **
+#required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=x11-wm/ecomp-9999 **
+#required by x11-wm/enlightenment-9999, required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=dev-libs/efreet-9999 **
+#required by dev-libs/ecore-9999[evas], required by media-libs/edje-9999, required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=media-libs/evas-9999 **
+#required by media-libs/edje-9999, required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=dev-libs/embryo-9999 **
+#required by dev-libs/e_dbus-9999, required by x11-wm/enlightenment-9999[e_modules_connman], required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=dev-libs/ecore-9999 **
+#required by media-libs/edje-9999, required by x11-plugins/ecomorph-9999, required by x11-plugins/ecomorph (argument)
+=dev-libs/eet-9999 **

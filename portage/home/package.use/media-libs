@@ -1,0 +1,19 @@
+
+media-libs/babl introspection a
+media-libs/gegl cairo ffmpeg jpeg jpeg2k mmx png sdl sse svg -debug introspection lensfun openexr raw umfpack
+
+media-libs/libraw demosaic
+media-libs/libjpeg-turbo static-libs
+media-libs/gd fontconfig
+media-libs/lcms static-libs python
+media-libs/libpng apng static-libs
+media-libs/jpeg static-libs
+media-libs/libmng static-libs
+media-libs/freetype static-libs infinality
+media-libs/mesa g3dvl
+
+media-libs/sdl-mixer -midi
+media-libs/libsdl abi_x86_32
+
+
+media-libs/harfbuzz icu

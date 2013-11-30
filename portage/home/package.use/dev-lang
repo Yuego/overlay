@@ -1,0 +1,4 @@
+
+dev-lang/fpc source
+dev-lang/python sqlite
+dev-lang/php curl fpm gd mhash mysql mysqli pdo postgres sockets zip

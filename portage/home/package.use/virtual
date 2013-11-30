@@ -1,0 +1,4 @@
+virtual/jpeg static-libs
+virtual/ffmpeg threads
+virtual/mysql embedded
+virtual/udev static-libs

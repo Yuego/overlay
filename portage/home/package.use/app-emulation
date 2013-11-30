@@ -1,0 +1,7 @@
+
+app-emulation/vmware-workstation -cups -doc ovftool -server vix vmware-tools
+
+app-emulation/wine -scanner -ldap
+app-emulation/winetricks gtk
+
+app-emulation/virtualbox extensions

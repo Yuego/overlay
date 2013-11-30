@@ -1,0 +1,12 @@
+
+>=dev-libs/elfutils-0.154-r1 static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/popt static-libs
+dev-libs/libgcrypt static-libs
+dev-libs/protobuf -java
+dev-libs/libxml2 icu
+dev-libs/redland berkdb ssl xml mysql -odbc -postgres sqlite
+
+# For Steam
+#dev-libs/libpthread-stubs abi_x86_32
+dev-libs/boost python

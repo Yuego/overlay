@@ -1,0 +1,3 @@
+
+net-libs/ptlib wav -ieee1394 http dtmf
+net-libs/opal sip sipim

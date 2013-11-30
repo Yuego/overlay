@@ -1,0 +1,2 @@
+
+media-plugins/audacious-plugins -adplug -bs2b cue -fluidsynth -gnome -lame -libsamplerate -midi -mms -mtp -oss -pulseaudio -scrobbler -sid -sndfile wavpack

@@ -1,0 +1,4 @@
+
+dev-db/freetds odbc mssql
+dev-db/mysql embedded
+dev-db/sqlite icu

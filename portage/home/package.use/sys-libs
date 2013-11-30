@@ -1,0 +1,5 @@
+
+sys-libs/gpm static-libs
+>=sys-libs/e2fsprogs-libs-1.42.4 static-libs
+sys-libs/zlib minizip static-libs
+sys-libs/talloc python

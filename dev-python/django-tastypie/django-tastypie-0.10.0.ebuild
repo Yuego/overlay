@@ -17,7 +17,8 @@ SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE="digest lxml pyyaml biplist"
 
-RDEPEND=">=dev-python/django-1.5
+RDEPEND="
+	>=dev-python/django-1.5
 	>=dev-python/mimeparse-0.1.4
 	>=dev-python/python-dateutil-2.1
 	digest? ( dev-python/python-digest )

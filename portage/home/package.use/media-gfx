@@ -1,0 +1,9 @@
+
+media-gfx/nip2 fftw -goffice gsl
+media-gfx/blender -collada cycles fftw jpeg2k -tweak-mode python_single_target_python3_3 python_targets_python3_3
+media-gfx/gimp -jpeg2k
+media-gfx/enblend gpu
+media-gfx/hugin lapack python sift
+media-gfx/ufraw gimp
+media-gfx/splashutils fbcondecor truetype
+media-gfx/imagemagick raw
