@@ -60,6 +60,8 @@ RDEPEND="${RDEPEND}
 			app-vim/zencoding-vim
 			app-vim/vimcommander )
 	media-gfx/krpanotools
+	media-video/ffmpeg[encode,mp3,theora,vorbis]
+	virtual/ffmpeg[encode,mp3,theora]
 "
 
 # Django apps
