@@ -1,5 +1,4 @@
 
->=sys-devel/automake-1.13
 =net-misc/openssh-6.2_p1
 
 >=dev-db/postgresql-base-9.3
