@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI="5"
+EAPI=5
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 EGIT_REPO_URI="https://github.com/stephenmcd/django-forms-builder.git"
