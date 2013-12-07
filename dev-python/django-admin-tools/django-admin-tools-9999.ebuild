@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
 
 inherit distutils-r1 mercurial
 
-EHG_REPO_URI="https://bitbucket.org/Yuego/django-admin-tools"
+EHG_REPO_URI="https://bitbucket.org/izi/django-admin-tools"
 DESCRIPTION="django-admin-tools is a collection of tools for the django
 administration interface, it includes a full featured and customizable
 dashboard, a customizable menu bar and tools to make admin ui theming easier."
