@@ -12,7 +12,7 @@ DESCRIPTION=""
 HOMEPAGE="http://thumbnail.sorl.net/index.html"
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE="-memcached +redis +imagemagick"
 
 RDEPEND=">=dev-python/django-1.0"
