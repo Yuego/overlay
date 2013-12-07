@@ -5,16 +5,16 @@
 EAPI=5
 PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
 
-inherit distutils-r1 mercurial
+inherit distutils-r1
 
-EHG_REPO_URI="https://bitbucket.org/Yuego/django-admin-tools"
+SRC_URI="https://bitbucket.org/izi/django-admin-tools/downloads/${P}.tar.gz"
 DESCRIPTION="django-admin-tools is a collection of tools for the django
 administration interface, it includes a full featured and customizable
 dashboard, a customizable menu bar and tools to make admin ui theming easier."
 HOMEPAGE="https://bitbucket.org/izi/django-admin-tools/wiki/Home"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.0"

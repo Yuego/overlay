@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/Suor/django-cacheops"
 
 SRC_URI="https://github.com/Suor/django-cacheops/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="as-is"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""
