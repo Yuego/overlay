@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
 
 inherit distutils-r1 git-2
 
@@ -14,12 +14,14 @@ EGIT_REPO_URI="https://github.com/Yuego/django-cacheops.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.4
-	>=dev-db/redis-2.4
-	>=dev-python/simplejson-2.1.5
-	>=dev-python/redis-py-2.4.12"
+	>=dev-db/redis-2.4.12
+	>=dev-python/simplejson-2.2.0
+	>=dev-python/redis-py-2.4.12
+	>=dev-python/six-1.4.0
+"
 DEPEND="dev-python/setuptools"
 
