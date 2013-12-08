@@ -22,9 +22,3 @@ RDEPEND=">=dev-python/django-1.3
 	>=dev-python/redis-py-2.7.0"
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="redis_cache"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
