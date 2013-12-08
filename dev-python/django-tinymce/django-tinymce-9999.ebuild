@@ -13,7 +13,7 @@ DESCRIPTION="TinyMCE widget for Django"
 HOMEPAGE="https://github.com/aljosa/django-tinymce"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND="dev-python/django"
