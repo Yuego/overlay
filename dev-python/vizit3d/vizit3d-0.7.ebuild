@@ -31,6 +31,7 @@ RDEPEND="${RDEPEND}
 	dev-python/pytils
 	dev-python/pytz
 	dev-python/sorl-thumbnail[redis]
+	!=dev-python/south-0.8.3
 	dev-python/south
 	dev-python/yandex-maps
 	dev-python/django-pymorphy2
@@ -53,6 +54,8 @@ RDEPEND="${RDEPEND}
 # Utils
 RDEPEND="${RDEPEND}
 	dev-java/yuicompressor
+	dev-lang/closure-compiler-bin
+
     imagemagick? ( media-gfx/imagemagick )
 
 	vim? ( app-editors/vim[python,vim-pager]
