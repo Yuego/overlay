@@ -81,21 +81,19 @@ RDEPEND="${RDEPEND}
 	dev-python/django-celery
 	dev-python/django-compressor
 	dev-python/django-filebrowser
+	dev-python/django-flatblocks
 	dev-python/django-model-utils
 	dev-python/django-redis
 	dev-python/django-pickling
 	dev-python/django-salmonella
 	dev-python/django-templated-emails
-	dev-python/markdown
 	dev-python/django-tinymce
 	dev-python/django-modeltranslation
 
-	storages? ( dev-python/django-storages )
 	dev-python/django-widget-tweaks
 	dev-python/django-tastypie
 
 	dev-python/twitter
-	dev-python/django-inplaceedit
 	dev-python/django-sphinx
 	dev-python/django-registration
 
@@ -104,8 +102,6 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-tagging
 	dev-python/djorm-hstore-editor
-
-	dev-python/django-dajax
 "
 
 #DEBUG

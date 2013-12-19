@@ -5,15 +5,15 @@
 EAPI=5
 PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
 
-EGIT_REPO_URI="https://github.com/funkybob/django-flatblocks.git"
+inherit distutils-r1
 
-inherit distutils-r1 git-2
+SRC_URI="https://github.com/funkybob/django-flatblocks/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 DESCRIPTION="django-flatblocks is a simple application for handling small text-blocks on websites"
 HOMEPAGE="https://github.com/funkybob/django-flatblocks"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.4"
