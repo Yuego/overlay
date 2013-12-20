@@ -2,13 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=5
 
 inherit eutils
 
 DESCRIPTION="Krpano Tools License"
 HOMEPAGE="http://krpano.com"
-SRC_URI="http://krpano.com/krpano-license.tar.gz"
+SRC_URI="http://krpano.com/${P}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"

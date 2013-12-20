@@ -14,14 +14,14 @@ SRC_URI="http://krpano.com/download/download.php?file=krpanotools${PV//./}linux$
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="+license +viewer"
 
 RESTRICT="strip"
 
 DEPEND=""
 RDEPEND="${DEPEND}
-	license? ( media-gfx/krpano-license )
+	license? ( =media-gfx/krpano-license-2 )
 	viewer? ( =media-gfx/krpanotools-viewer-${PV} )
 "
 

@@ -21,7 +21,7 @@ RESTRICT="strip"
 
 DEPEND=""
 RDEPEND="${DEPEND}
-	license? ( media-gfx/krpano-license )
+	license? ( =media-gfx/krpano-license-1 )
 	viewer? ( =media-gfx/krpanotools-viewer-${PV} )
 "
 
