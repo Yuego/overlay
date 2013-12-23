@@ -14,3 +14,6 @@ sci-libs/gdal aux_xml gif jpeg jpeg2k pdf png -armadillo curl -debug -doc -ecwj2
 sci-libs/geos python
 sci-libs/hdf5 -cxx -fortran -mpi szip
 sys-libs/zlib minizip
+
+media-video/ffmpeg mp3 theora vorbis
+virtual/ffmpeg theora mp3
