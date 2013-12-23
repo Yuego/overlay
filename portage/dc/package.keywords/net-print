@@ -1,3 +1,5 @@
 
 #net-print/cups
 #net-print/cups-filters
+#
+=net-print/hplip-plugin-3.13.9 ~amd64
