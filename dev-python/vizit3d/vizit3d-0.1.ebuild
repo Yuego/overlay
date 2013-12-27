@@ -102,6 +102,8 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-tagging
 	dev-python/djorm-hstore-editor
+
+	dev-python/tourmaker
 "
 
 #DEBUG
