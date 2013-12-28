@@ -11,6 +11,7 @@ DESCRIPTION="Something for Django"
 HOMEPAGE="https://github.com/Yuego/django-v3dlibs"
 
 EGIT_REPO_URI="https://github.com/Yuego/django-v3dlibs.git"
+EGIT_BRANCH="develop"
 
 LICENSE="MIT"
 SLOT="0"

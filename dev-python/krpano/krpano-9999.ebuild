@@ -11,6 +11,7 @@ DESCRIPTION="Django Krpano app"
 HOMEPAGE="https://bitbucket.org/Yuego/krpano"
 
 EGIT_REPO_URI="git@bitbucket.org:Yuego/krpano.git"
+EGIT_BRANCH="develop"
 
 LICENSE="as-is"
 SLOT="0"

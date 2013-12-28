@@ -11,6 +11,7 @@ DESCRIPTION="Django TourMaker app"
 HOMEPAGE="https://bitbucket.org/Yuego/tourmaker"
 
 EGIT_REPO_URI="git@bitbucket.org:Yuego/tourmaker.git"
+EGIT_BRANCH="develop"
 
 LICENSE="as-is"
 SLOT="0"
