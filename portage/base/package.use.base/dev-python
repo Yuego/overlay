@@ -1,0 +1,3 @@
+dev-python/django postgres -sqlite
+dev-python/pymorphy2 dicts django
+dev-python/sqlalchemy postgres

@@ -1,4 +1,2 @@
 >=dev-db/postgresql-base-9.3
 >=dev-db/postgresql-server-9.3
-=dev-python/suds-0.4-r1
-=net-misc/openssh-6.2_p1

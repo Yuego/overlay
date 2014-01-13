@@ -1,0 +1,4 @@
+sci-libs/fftw threads
+sci-libs/gdal aux_xml gif jpeg jpeg2k pdf png -armadillo curl -debug -doc -ecwj2k -fits geos -gml hdf5 -java -mdb -mysql -netcdf -odbc -ogdi opencl -perl postgres python -ruby -spatialite -sqlite threads -xls
+sci-libs/geos python
+sci-libs/hdf5 -cxx -fortran -mpi szip
