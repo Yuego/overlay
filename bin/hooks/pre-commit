@@ -1,0 +1,6 @@
+#!/bin/sh
+
+LAST_ID=`git rev-parse HEAD`
+echo "$LAST_ID" > .join-cats
+
+

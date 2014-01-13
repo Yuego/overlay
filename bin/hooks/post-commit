@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -a .join-cats ]; then
+	LAST_ID=`git rev-parse HEAD`
+	SAVED_ID=`cat .join-cats`
+	rm .join-cats
+	find portage/base/* -type d -exec bin/join-categories.sh {} \;
+	git add portage/base/*
+	git commit --amend -C HEAD --no-verify
+fi
