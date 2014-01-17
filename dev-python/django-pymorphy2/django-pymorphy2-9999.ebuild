@@ -25,9 +25,3 @@ RDEPEND="
 "
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="django_pymorphy2"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
-
