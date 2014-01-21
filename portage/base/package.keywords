@@ -1,9 +1,13 @@
+
+app-editors/vim
+app-editors/vim-core
 dev-db/redis
 dev-java/jargs
 dev-java/yuicompressor
 dev-lang/closure-compiler-bin
 dev-lang/python
-dev-lang/python:3.3 **
+dev-lang/python:3.3
+dev-lang/luajit
 dev-libs/geoip
 dev-libs/jemalloc
 dev-python/d2to1
