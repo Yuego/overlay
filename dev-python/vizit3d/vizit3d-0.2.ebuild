@@ -49,6 +49,10 @@ RDEPEND="${RDEPEND}
 	dev-python/phonenumbers
 
 	dev-python/transliterate
+
+	dev-python/django-disqus
+	dev-python/django-floppyforms
+    
 "
 
 # Utils
