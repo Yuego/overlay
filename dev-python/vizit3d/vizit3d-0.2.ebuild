@@ -20,11 +20,12 @@ RDEPEND="${RDEPEND}
 	dev-db/postgresql-server
 	dev-db/postgis
 	www-servers/nginx
-    www-servers/uwsgi[python]	
+    www-servers/uwsgi[python]
 "
 
 # Libs
 RDEPEND="${RDEPEND}
+	net-libs/nodejs[npm]
 	dev-python/feedparser
 	dev-python/kombu
 	dev-python/lxml
