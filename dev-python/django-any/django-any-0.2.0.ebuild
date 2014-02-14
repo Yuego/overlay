@@ -5,16 +5,16 @@
 EAPI=5
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1
 
 DESCRIPTION="Unobtrusive test models creation for django"
 HOMEPAGE="https://github.com/kmmbvnr/django-any/"
 
-EGIT_REPO_URI="git://github.com/kmmbvnr/django-any.git"
+SRC_URI="https://github.com/kmmbvnr/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
