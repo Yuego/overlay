@@ -22,5 +22,3 @@ RDEPEND="
 "
 DEPEND="dev-python/setuptools"
 
-PYTHON_MODNAME="autocomplete_light"
-

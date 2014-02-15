@@ -8,13 +8,13 @@ PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 inherit distutils-r1 git-2
 
 DESCRIPTION="Support for many storages (S3, MogileFS, etc) in Django."
-HOMEPAGE="https://github.com/ennio/django-hosts"
+HOMEPAGE="https://github.com/iserko/django-storages"
 
-EGIT_REPO_URI="https://github.com/iserko/django-storages.git"
+EGIT_REPO_URI="git://github.com/iserko/django-storages.git"
 
-LICENSE="as-is"
+LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3

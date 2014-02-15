@@ -10,7 +10,7 @@ inherit distutils-r1 git-2
 EGIT_REPO_URI="https://github.com/sorl/sorl-thumbnail.git"
 DESCRIPTION=""
 HOMEPAGE="http://thumbnail.sorl.net/index.html"
-LICENSE="as-is"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS=""
 IUSE="-memcached +redis +imagemagick"
