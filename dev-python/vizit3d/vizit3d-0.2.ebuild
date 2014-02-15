@@ -109,6 +109,7 @@ RDEPEND="${RDEPEND}
 	dev-python/djorm-hstore-editor
 
 	dev-python/tourmaker
+	dev-python/django-ratings
 "
 
 #DEBUG
