@@ -44,8 +44,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-fias
 
 	dev-python/djorm-ext-pool
-	dev-python/djorm-ext-pgarray
-	dev-python/djorm-ext-indexes
 
 	dev-python/phonenumbers
 
@@ -74,8 +72,6 @@ RDEPEND="${RDEPEND}
 
 # Django apps
 RDEPEND="${RDEPEND}
-	dev-python/djorm-ext-pool
-	dev-python/djorm-ext-pgarray	
 
 	dev-python/django-autocomplete-light
 	dev-python/django-admin-tools
@@ -94,6 +90,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-templated-emails
 	dev-python/django-tinymce
 	dev-python/django-modeltranslation
+	dev-python/django-hstore
 
 	dev-python/django-widget-tweaks
 	dev-python/django-tastypie
@@ -106,7 +103,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-extensions
 
 	dev-python/django-tagging
-	dev-python/djorm-hstore-editor
 
 	dev-python/tourmaker
 	dev-python/django-ratings

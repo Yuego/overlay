@@ -5,5 +5,5 @@ media-gfx/gimp -jpeg2k
 media-gfx/enblend gpu
 media-gfx/hugin lapack python sift
 media-gfx/ufraw gimp
-media-gfx/splashutils fbcondecor truetype
+media-gfx/splashutils fbcondecor truetype -mng
 media-gfx/imagemagick raw
