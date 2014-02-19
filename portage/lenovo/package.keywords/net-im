@@ -19,3 +19,6 @@ net-im/psi-qipxstatuses **
 net-im/psi-extendedmenu **
 net-im/psi-chess **
 net-im/qutim
+
+
+x11-plugins/pidgin-bot-sentry

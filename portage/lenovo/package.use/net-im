@@ -3,3 +3,5 @@ net-im/psi crypt dbus extras spell ssl webkit xscreensaver -debug -doc -enchant 
 net-im/psi-plugins-meta -attention autoreply birthdayreminder captchaforms chess cleaner conferencelogger contentdownloader extendedmenu extendedoptions gmailservice historykeeper icqdie image -juick -screenshot skins stopspam -storagenotes -translate -watcher qipxstatuses videostatus
 
 net-im/qutim crypt dbus irc jabber kde oscar sdl ssl webkit xscreensaver aspell histman kinetic mrim multimedia otr phonon purple qml -telepathy vkontakte
+
+net-im/pidgin gnutls idn prediction python sasl
