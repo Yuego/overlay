@@ -1,4 +1,5 @@
 
+media-libs/gexiv2 introspection
 media-libs/lcms python
 media-libs/vips exif imagemagick jpeg openexr orc png tiff fftw -fits lcms python
 media-libs/freetype infinality
