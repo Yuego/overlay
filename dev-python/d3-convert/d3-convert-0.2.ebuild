@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_7,3_2,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{3_2,3_3} pypy2_0 )
 
 inherit eutils distutils-r1
 
@@ -22,6 +22,7 @@ RDEPEND="
 	dev-python/scandir
 	media-libs/gexiv2
 	dev-python/lxml
+	dev-python/py3-daemon
 
 	media-libs/exiftool
 	media-gfx/ufraw
@@ -41,9 +42,12 @@ DEPEND="
 src_install(){
 	distutils-r1_src_install
 
+	dobin d3-convert-daemon
 	dobin d3-converter
 	dobin d3-blender
 
+	doconfd data/conf.d/d3-convert
+    doinitd data/init.d/d3-convert
 
 	#MENU
 	insopts -m0644
