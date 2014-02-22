@@ -24,6 +24,7 @@ RDEPEND="
 	media-libs/gexiv2
 	dev-python/lxml
 	dev-python/py3-daemon
+	dev-python/psutil
 
 	media-libs/exiftool
 	media-gfx/ufraw
