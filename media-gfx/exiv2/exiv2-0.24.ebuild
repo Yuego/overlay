@@ -4,7 +4,7 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python{2_6,2_7} )
+PYTHON_COMPAT=( python{2_6,2_7,3_2,3_3} )
 inherit eutils multilib toolchain-funcs python-single-r1 autotools-multilib
 
 DESCRIPTION="EXIF and IPTC metadata C++ library and command line utility"
@@ -13,7 +13,7 @@ SRC_URI="http://www.exiv2.org/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0/12"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd"
+KEYWORDS="amd64 x86"
 IUSE_LINGUAS="de es fi fr pl ru sk"
 IUSE="contrib doc examples nls xmp zlib static-libs $(printf 'linguas_%s ' ${IUSE_LINGUAS})"
 
