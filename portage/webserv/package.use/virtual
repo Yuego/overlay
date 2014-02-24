@@ -1,2 +1,3 @@
 
+virtual/jpeg static-libs
 virtual/ffmpeg encode mp3 theora
