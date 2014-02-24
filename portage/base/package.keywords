@@ -10,6 +10,7 @@ dev-lang/python:3.3
 dev-lang/luajit
 dev-libs/geoip
 dev-libs/jemalloc
+dev-python/psutil
 dev-python/d2to1
 dev-python/six
 dev-python/pbr
