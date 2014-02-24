@@ -11,6 +11,7 @@ dev-lang/luajit
 dev-libs/geoip
 dev-libs/jemalloc
 dev-python/psutil
+dev-python/chardet
 dev-python/d2to1
 dev-python/six
 dev-python/pbr
@@ -74,4 +75,6 @@ dev-python/charade
 dev-python/python-swiftclient
 dev-python/scandir
 net-misc/geoipupdate
+
+sys-libs/timezone-data
 www-servers/uwsgi
