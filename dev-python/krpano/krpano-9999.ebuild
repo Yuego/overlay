@@ -21,6 +21,7 @@ IUSE=""
 RDEPEND="
 	>=dev-python/django-1.5
 	dev-python/django-v3dlibs
+	dev-python/djorm-ext-pgarray
 	dev-python/six
 "
 DEPEND="dev-python/setuptools"
