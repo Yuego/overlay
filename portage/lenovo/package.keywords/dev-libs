@@ -1,6 +1,5 @@
 
 dev-libs/liborcus
-dev-libs/boost
 dev-libs/intel-common
 dev-libs/icu
 

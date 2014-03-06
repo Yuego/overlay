@@ -1,2 +1,4 @@
 dev-libs/geoip
 dev-libs/jemalloc
+
+=dev-libs/boost-1.53.0-r1
