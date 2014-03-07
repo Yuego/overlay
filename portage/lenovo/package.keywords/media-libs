@@ -1,5 +1,6 @@
 
-media-libs/vigra ~amd64
+media-libs/glm
+media-libs/vigra
 
 
 #media-libs/gegl **
