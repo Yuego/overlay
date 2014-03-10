@@ -1,6 +1,7 @@
 
 media-libs/glm
 media-libs/vigra
+media-libs/libpano13
 
 
 #media-libs/gegl **
