@@ -23,7 +23,8 @@ RDEPEND="
 	media-libs/gexiv2
 	dev-python/lxml
 	dev-python/py3-daemon
-	dev-python/psutil
+	>dev-python/psutil-1.0.0
+	<dev-python/psutil-2
 
 	media-libs/exiftool
 	media-gfx/ufraw
