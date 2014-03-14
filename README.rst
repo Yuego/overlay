@@ -3,6 +3,14 @@
 
 Установка
 ---------
+Вариант 1:
+
+Выполните::
+
+        layman -o https://raw.github.com/Yuego/overlay/master/layman.overlay -f -a Yuego
+
+
+Вариант 2:
 
 Чтобы добавить его в список layman`a, откройте **/etc/layman/layman.cfg** и сразу после строки::
 
