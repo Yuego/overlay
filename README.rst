@@ -7,7 +7,7 @@
 
 Выполните::
 
-        layman -o https://raw.github.com/Yuego/overlay/master/repo.xml -f -a Yuego
+        layman -o https://raw.github.com/Yuego/overlay/master/repo.xml -f -a yuego
 
 
 Вариант 2:
