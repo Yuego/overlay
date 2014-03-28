@@ -14,7 +14,7 @@ SRC_URI="http://krpano.com/download/download.php?file=krpanotools${PV//./}linux$
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE="+license +viewer"
 
 RESTRICT="strip"

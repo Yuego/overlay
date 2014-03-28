@@ -2,3 +2,5 @@ virtual/jpeg static-libs
 virtual/ffmpeg threads
 virtual/mysql embedded
 virtual/udev static-libs
+virtual/libudev static-libs
+virtual/libgudev static-libs
