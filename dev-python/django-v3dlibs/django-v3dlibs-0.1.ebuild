@@ -21,6 +21,7 @@ RDEPEND="
 	>=dev-python/django-1.3
 	virtual/python-imaging
 	dev-python/six
+	dev-python/django-hosts
 "
 DEPEND="dev-python/setuptools"
 
