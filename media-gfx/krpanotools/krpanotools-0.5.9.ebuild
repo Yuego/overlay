@@ -39,7 +39,7 @@ src_install() {
 	#IMAGES
 	doins -r ${S}/images/
 	
-	#insopts -m0655
-	#SCRIPTS
-	#doins -r ${S}/scripts/
+	insopts -m0655
+	SCRIPTS
+	doins -r ${S}/scripts/
 }
