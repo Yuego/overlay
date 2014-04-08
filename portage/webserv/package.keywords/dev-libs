@@ -1,3 +1,4 @@
 
 dev-libs/jemalloc
 dev-libs/libowfat
+=dev-libs/openssl-1.0.1g
