@@ -11,6 +11,7 @@ dev-lang/python:3.3
 dev-lang/luajit
 dev-libs/geoip
 dev-libs/jemalloc
+=dev-libs/openssl-1.0.1g
 
 dev-python/psutil
 dev-python/chardet
