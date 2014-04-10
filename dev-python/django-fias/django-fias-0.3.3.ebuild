@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Django FIAS"
 HOMEPAGE="https://github.com/Yuego/django-fias"
 
-SRC_URI="https://github.com/Yuego/django-fias/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/Yuego/django-fias/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
