@@ -22,14 +22,14 @@ LICENSE="1CEnterprise_en"
 KEYWORDS="amd64 x86"
 RESTRICT="fetch strip"
 
-IUSE="+nls"
+IUSE="+nls hdri"
 
 RDEPEND="~app-office/1C_Enterprise-common-${PV}:${SLOT}
 	~app-office/1C_Enterprise-server-${PV}:${SLOT}
 	>=dev-libs/icu-4.6
 	net-libs/webkit-gtk:2
 	app-crypt/mit-krb5
-	media-gfx/imagemagick
+	media-gfx/imagemagick[hdri=]
 	net-print/cups
 	x11-libs/libSM
 	dev-libs/atk
@@ -52,6 +52,8 @@ src_install() {
 	dodir /opt /usr
 	mv "${WORKDIR}"/opt/* "${D}"/opt
 	domenu "${WORKDIR}"/usr/share/applications/{1cv8,1cv8c,1cestart}.desktop
-	use x86 && dosym /usr/"$(get_libdir)"/libMagickWand.so /opt/1C/v"${SLOT}"/i386/libWand.so
-	use amd64 && dosym /usr/"$(get_libdir)"/libMagickWand.so /opt/1C/v"${SLOT}"/x86_64/libWand.so
+	name=libMagickWand.so
+	use hdri && name=libMagickWand-6.Q16HDRI.so
+	use x86 && dosym /usr/"$(get_libdir)"/"$name" /opt/1C/v"${SLOT}"/i386/libWand.so
+	use amd64 && dosym /usr/"$(get_libdir)"/"$name" /opt/1C/v"${SLOT}"/x86_64/libWand.so
 }
