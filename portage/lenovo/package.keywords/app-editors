@@ -1,2 +1,3 @@
 
-app-vim/command-t ~amd64
+app-vim/command-t
+app-editors/wxhexeditor
