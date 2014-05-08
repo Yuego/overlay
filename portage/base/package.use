@@ -14,6 +14,8 @@ dev-python/django postgres -sqlite
 dev-python/pymorphy2 dicts django
 dev-python/sqlalchemy postgres
 
+dev-python/celery redis
+
 media-gfx/imagemagick corefonts
 
 media-libs/gexiv2 introspection
