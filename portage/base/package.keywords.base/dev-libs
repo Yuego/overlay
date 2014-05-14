@@ -2,3 +2,4 @@ dev-libs/geoip
 dev-libs/jemalloc
 =dev-libs/openssl-1.0.1g
 
+dev-libs/snowball-stemmer

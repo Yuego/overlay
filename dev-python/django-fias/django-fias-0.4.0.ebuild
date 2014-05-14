@@ -19,6 +19,7 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.4
 	dev-python/django-select2
+	>=app-misc/sphinx-2.1
 	>=dev-python/sphinxit-0.3.2
 	>=dev-python/suds-0.4
 	dev-python/rarfile
