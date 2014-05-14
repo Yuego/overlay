@@ -8,7 +8,7 @@ inherit eutils
 
 DESCRIPTION="Krpano Tools"
 HOMEPAGE="https://github.com/Yuego/krpanotools"
-SRC_URI="https://github.com/Yuego/krpanotools/archive/v${PV}.tar.gz -> krpanotools-${PV}.tar.gz"
+SRC_URI="https://github.com/Yuego/krpanotools/archive/${PV}.tar.gz -> krpanotools-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -40,6 +40,6 @@ src_install() {
 	doins -r ${S}/images/
 	
 	insopts -m0655
-	#SCRIPTS
+	SCRIPTS
 	doins -r ${S}/scripts/
 }
