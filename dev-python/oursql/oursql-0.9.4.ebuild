@@ -3,17 +3,17 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_5,2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python3_3 pypy2_0 )
 
 inherit eutils distutils-r1
 
 DESCRIPTION="Oursql is a new set of MySQL bindings for python 2.4+, including python 3.x"
 HOMEPAGE="http://pythonhosted.org/oursql/"
 
-SRC_URI="https://launchpad.net/oursql/trunk/${PV}/+download/${P}.zip"
+SRC_URI="https://launchpad.net/oursql/py3k/py3k-${PV}/+download/${P}.tar.gz"
 
 LICENSE="BSD"
-SLOT="2"
+SLOT="3"
 KEYWORDS="amd64 x86"
 IUSE=""
 
