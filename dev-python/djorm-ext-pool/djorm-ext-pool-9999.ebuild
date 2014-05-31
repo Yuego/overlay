@@ -18,11 +18,13 @@ KEYWORDS=""
 IUSE="mysql +postgres sqlite"
 
 RDEPEND="
-	>=dev-python/django-1.3
-	mysql? ( >=dev-python/sqlalchemy-0.7.5[mysql] )
-	postgres? ( >=dev-python/sqlalchemy-0.7.5[postgres] )
-	sqlite? ( >=dev-python/sqlalchemy-0.7.5[sqlite] )
+    >=dev-python/django-1.3
+    >=dev-python/sqlalchemy-0.7.5
+    mysql? ( dev-python/mysql-python )
+    postgres? ( dev-python/psycopg:2 )
+    sqlite? ( dev-db/sqlite )
 "
+
 DEPEND="dev-python/setuptools"
 
 
