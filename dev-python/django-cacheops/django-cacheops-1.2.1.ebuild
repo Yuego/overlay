@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy2_0 )
 
 inherit distutils-r1
 
@@ -17,8 +17,7 @@ SLOT="0"
 KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.4
-	>=dev-db/redis-2.4.12
+RDEPEND=">=dev-python/django-1.3
 	>=dev-python/simplejson-2.2.0
 	>=dev-python/redis-py-2.4.12
 	>=dev-python/six-1.4.0
