@@ -25,3 +25,5 @@ RDEPEND=">=dev-python/django-1.3
 "
 DEPEND="dev-python/setuptools"
 
+
+S="${WORKDIR}/${PN}-${MY_PV}"
