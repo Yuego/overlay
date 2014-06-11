@@ -16,7 +16,7 @@ HOMEPAGE="https://github.com/philippWassibauer/templated-emails"
 EGIT_REPO_URI="https://github.com/aldarund/templated-emails.git"
 EGIT_COMMIT="66e5b6b6a88bbf67c950278aba30ade63340db3c"
 
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""

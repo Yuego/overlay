@@ -13,11 +13,11 @@ text), and email.html (html email, optional) in a folder. When you send the
 email you only have to specify the folder and the context."
 HOMEPAGE="https://github.com/philippWassibauer/templated-emails"
 
-EGIT_REPO_URI="https://github.com/aldarund/templated-emails.git"
+EGIT_REPO_URI="git://github.com/Yuego/templated-emails.git"
 
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
