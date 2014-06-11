@@ -79,6 +79,7 @@ dev-python/requests
 dev-python/httplib2
 dev-python/charade
 dev-python/python-swiftclient
+dev-python/redis-py
 dev-python/scandir
 
 net-misc/geoipupdate
