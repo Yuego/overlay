@@ -1,2 +1,2 @@
-dev-lang/php -berkdb bzip2 cli crypt ctype curl exif fileinfo filter fpm gd gdbm hash iconv imap ipv6 json mhash mysql mysqli nls opcache pdo phar posix postgres readline session simplexml sockets spell ssl tokenizer truetype unicode xml zip zlib
+dev-lang/php -berkdb bzip2 cli crypt ctype curl exif fileinfo filter fpm gd gdbm hash iconv imap ipv6 json mhash mysql mysqli nls opcache pdo phar posix postgres readline session simplexml sockets spell ssl tokenizer truetype unicode xml zip zlib calendar ftp inifile soap sqlite xslt
 dev-lang/python sqlite
