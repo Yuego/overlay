@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="PostgreSQL native array fields extension for Django."
 HOMEPAGE="https://github.com/niwibe/djorm-ext-pgarray"
 
+MY_PN="djorm-pgarray"
 SRC_URI="https://github.com/niwibe/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -21,5 +22,7 @@ RDEPEND="
 	>=dev-python/django-1.3[postgres]
 "
 DEPEND="dev-python/setuptools"
+
+S="$WORKDIR/$MY_PN-$PV"
 
 
