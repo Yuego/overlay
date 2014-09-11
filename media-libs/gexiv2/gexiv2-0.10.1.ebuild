@@ -33,10 +33,11 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
 	tc-export CXX
-	sed -e 's:CFLAGS:CXXFLAGS:g' -i Makefile || die
+	#sed -e 's:CFLAGS:CXXFLAGS:g' -i Makefile || die
 }
 
 src_configure() {
+	./autogen.sh
 	./configure \
 		--prefix=/usr \
 		$(use_enable introspection) \
