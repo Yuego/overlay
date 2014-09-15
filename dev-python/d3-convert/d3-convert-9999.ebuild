@@ -20,12 +20,11 @@ IUSE="-test"
 
 RDEPEND="
 	dev-python/docopt
-	dev-python/scandir
+	>=dev-python/scandir-0.9
 	media-libs/gexiv2
 	dev-python/lxml
 	dev-python/py3-daemon
-	>dev-python/psutil-1.0.0
-	<dev-python/psutil-2
+	dev-python/psutil
 
 	media-libs/exiftool
 	media-gfx/ufraw
