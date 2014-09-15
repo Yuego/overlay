@@ -22,3 +22,5 @@ dev-python/cython
 # for winswitch
 dev-python/gst-python
 dev-python/netifaces
+
+dev-python/d3-convert **
