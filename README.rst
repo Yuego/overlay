@@ -7,7 +7,7 @@
 
 Выполните::
 
-        layman -o https://raw.github.com/Yuego/overlay/master/repo.xml -f -a yuego
+        layman -o https://raw.github.com/rugubara/overlay/master/repo.xml -f -a rugubara
 
 
 Вариант 2:
@@ -18,15 +18,15 @@
 
 добавьте::
 
-        https://raw.github.com/Yuego/overlay/master/repo.xml
+        https://raw.github.com/rugubara/overlay/master/repo.xml
 
 должно получиться так::
 
         overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
-                    https://raw.github.com/Yuego/overlay/master/repo.xml
+                    https://raw.github.com/rugubara/overlay/master/repo.xml
 
 после этого выполните::
 
         layman -L
-        layman -a yuego
+        layman -a rugubara
 
