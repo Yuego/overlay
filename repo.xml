@@ -2,13 +2,13 @@
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
   <repo priority="100" quality="experimental" status="unofficial">
-    <name><![CDATA[yuego]]></name>
-    <description lang="en"><![CDATA[Yuego`s personal overlay]]></description>
-    <homepage>https://github.com/Yuego/overlay</homepage>
+    <name><![CDATA[rugubara]]></name>
+    <description lang="en"><![CDATA[rugubara`s personal overlay]]></description>
+    <homepage>https://github.com/rugubara/overlay</homepage>
     <owner type="person">
-      <email>root@proscript.ru</email>
-      <name><![CDATA[Yuego]]></name>
+      <email>anton.gubarkov@gmail.com</email>
+      <name><![CDATA[rugubara]]></name>
     </owner>
-    <source type="git">git://github.com/Yuego/overlay.git</source>
+    <source type="git">git://github.com/rugubara/overlay.git</source>
   </repo>
 </repositories>
