@@ -17,7 +17,7 @@ RDEPEND="dev-python/django[postgres]"
 
 # Servers
 RDEPEND="${RDEPEND}
-	dev-db/postgresql-server
+	dev-db/postgresql[server]
 	dev-db/postgis
 	www-servers/nginx
     www-servers/uwsgi[python]
