@@ -30,6 +30,7 @@ sci-libs/hdf5 -cxx -fortran -mpi szip
 sys-apps/portage python3
 sys-libs/zlib minizip
 virtual/ffmpeg theora mp3
+>=virtual/postgresql-9.4 server
 
 
 www-servers/uwsgi python

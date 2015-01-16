@@ -17,7 +17,7 @@ RDEPEND="dev-python/django[postgres]"
 
 # Servers
 RDEPEND="${RDEPEND}
-	dev-db/postgresql-server
+	dev-db/postgresql[server]
 	dev-db/postgis
 	www-servers/nginx
     www-servers/uwsgi[python]
@@ -40,7 +40,7 @@ RDEPEND="${RDEPEND}
 	dev-python/python-swiftclient
 	dev-python/scandir
 
-	dev-libs/geoip[city]
+	dev-libs/geoip
 	dev-python/django-fias
 
 	dev-python/djorm-ext-pool
