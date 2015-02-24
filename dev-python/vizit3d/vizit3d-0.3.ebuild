@@ -63,7 +63,6 @@ RDEPEND="${RDEPEND}
 
 	vim? ( app-editors/vim[python,vim-pager]
 			app-vim/vimpython
-			app-vim/zencoding-vim
 			app-vim/vimcommander )
 	media-gfx/krpanotools
 	media-video/ffmpeg[encode,mp3,theora,vorbis]
