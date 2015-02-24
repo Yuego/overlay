@@ -1,3 +1,7 @@
+dev-python/django-downloadview
+dev-python/pyjon-utils
+dev-python/py3o
+dev-python/odfpy
 dev-python/chardet
 dev-python/py
 dev-python/pypy

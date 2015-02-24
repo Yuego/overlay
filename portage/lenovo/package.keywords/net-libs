@@ -1,4 +1,5 @@
 
 net-libs/libtorrent
 
-net-libs/nodejs ~amd64
+net-libs/nodejs
+=net-libs/libndp-1.4
