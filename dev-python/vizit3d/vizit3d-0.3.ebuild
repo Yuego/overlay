@@ -65,7 +65,6 @@ RDEPEND="${RDEPEND}
 			app-vim/vimpython
 			app-vim/vimcommander )
 	media-gfx/krpanotools
-	media-video/ffmpeg[encode,mp3,theora,vorbis]
 	virtual/ffmpeg[encode,mp3,theora]
 "
 
