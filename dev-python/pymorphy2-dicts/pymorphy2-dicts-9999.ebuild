@@ -33,8 +33,13 @@ src_prepare() {
 	./update.py ru
 }
 
-src_compile() {
-	cd 'pymorphy2-dicts'
+src_compile(){
+	cd pymorphy2-dicts	
 	distutils-r1_src_compile
+}
+
+src_install(){
+	cd pymorphy2-dicts
+	distutils-r1_src_install
 }
 
