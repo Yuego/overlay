@@ -29,8 +29,12 @@ src_prepare() {
 	ewarn 'conversion of the dictionary can take a long time!'
 	ewarn '***'
 
-	mkdir 'pymorphy2_dicts/data'
-	./update.py
+	mkdir 'pymorphy2-dicts/pymorphy2_dicts/data'
+	./update.py ru
 }
 
+src_compile() {
+	cd 'pymorphy2-dicts'
+	distutils-r1_src_compile
+}
 
