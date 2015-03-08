@@ -24,7 +24,7 @@ RDEPEND=">=dev-python/django-1.4
 	>=dev-python/suds-jurko-0.6
 	dev-python/rarfile
 	dev-python/lxml
-	>=dev-python/south-1.0
+	|| ( >=dev-python/south-1.0 >=dev-python/django-1.7 )
 "
 DEPEND="dev-python/setuptools"
 
