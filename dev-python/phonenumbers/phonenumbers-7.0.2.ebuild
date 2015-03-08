@@ -3,16 +3,14 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_5,2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_5,2_6,2_7,3_3,3_4} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1
 
 DESCRIPTION="Python port of Google's libphonenumber"
 HOMEPAGE="https://github.com/daviddrysdale/python-phonenumbers"
 
-VER="${PV/_beta/b}"
-EGIT_REPO_URI="git://github.com/daviddrysdale/python-phonenumbers.git"
-EGIT_MASTER="release-${VER}"
+SRC_URI="https://github.com/daviddrysdale/python-phonenumbers/archive/release-${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -22,8 +20,4 @@ IUSE=""
 RDEPEND="
 "
 DEPEND="dev-python/setuptools"
-
-src_compile() {
-	cd $S/python
-	distutils-r1_src_compile
-}
+S="${WORKDIR}/python-${PN}-release-${PV}"
