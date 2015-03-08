@@ -7,19 +7,16 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
 
 inherit distutils-r1
 
-DESCRIPTION="The best way to have DRY Django forms."
-HOMEPAGE="https://github.com/maraujop/django-crispy-forms"
+DESCRIPTION="Reusable, generic mixins for Django"
+HOMEPAGE="https://github.com/brack3t/django-braces"
 
-SRC_URI="https://github.com/maraujop/django-crispy-forms/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/brack3t/django-braces/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="
-	>=dev-python/django-1.3
-"
+RDEPEND=">=dev-python/django-1.5"
 DEPEND="dev-python/setuptools"
-
 
