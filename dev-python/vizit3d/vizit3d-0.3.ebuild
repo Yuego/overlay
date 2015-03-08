@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE="debug imagemagick +storages -vim"
 
-RDEPEND="dev-python/django[postgres]"
+RDEPEND="dev-python/django"
 
 # Servers
 RDEPEND="${RDEPEND}
@@ -33,7 +33,7 @@ RDEPEND="${RDEPEND}
 	dev-python/pytz
 	dev-python/sorl-thumbnail[redis]
 	!=dev-python/south-0.8.3
-	dev-python/south
+	|| ( dev-python/south >=dev-python/django-1.7 )
 	dev-python/yandex-maps
 	dev-python/django-pymorphy2
 
@@ -65,7 +65,6 @@ RDEPEND="${RDEPEND}
 			app-vim/vimpython
 			app-vim/vimcommander )
 	media-gfx/krpanotools
-	media-video/ffmpeg[encode,mp3,theora,vorbis]
 	virtual/ffmpeg[encode,mp3,theora]
 "
 

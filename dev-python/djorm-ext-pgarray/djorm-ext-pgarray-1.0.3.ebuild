@@ -19,7 +19,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.3[postgres]
+	>=dev-python/django-1.3
 "
 DEPEND="dev-python/setuptools"
 
