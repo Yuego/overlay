@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/dev-python/suds/suds-0.4-r1.ebuild,v 1.2 2013/10/04 16:20:09 mgorny Exp $
 
 EAPI="5"
-PYTHON_COMPAT=( python2_6 python2_7 )
+PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} )
 
 inherit distutils-r1
 
