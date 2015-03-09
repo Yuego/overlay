@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy2_0 )
 
 inherit distutils-r1 git-2
 
@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/ojii/django-sekizai"
 
 EGIT_REPO_URI="https://github.com/ojii/django-sekizai.git"
 
-LICENSE="as-is"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS=""
 IUSE=""

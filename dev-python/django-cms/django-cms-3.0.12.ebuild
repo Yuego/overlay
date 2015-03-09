@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy2_0 )
 
 inherit distutils-r1 git-2
 
@@ -12,9 +12,9 @@ HOMEPAGE="https://github.com/divio/django-cms"
 
 EGIT_REPO_URI="https://github.com/Yuego/django-cms.git"
 
-LICENSE="as-is"
+LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="test"
 
 RDEPEND=">=dev-python/django-1.3.1

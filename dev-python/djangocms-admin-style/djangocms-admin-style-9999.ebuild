@@ -7,16 +7,18 @@ PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy2_0 )
 
 inherit distutils-r1 git-2
 
-DESCRIPTION="Class based template tags for django"
-HOMEPAGE="https://github.com/ojii/django-classy-tags"
+DESCRIPTION="An Advanced Django CMS."
+HOMEPAGE="https://github.com/divio/djangocms-admin-style"
 
-EGIT_REPO_URI="https://github.com/ojii/django-classy-tags.git"
+EGIT_REPO_URI="git://github.com/divio/djangocms-admin-style.git"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="test"
 
-RDEPEND=">=dev-python/django-1.3"
+RDEPEND="
+	>=dev-python/django-1.6
+"
 DEPEND="dev-python/setuptools"
 
