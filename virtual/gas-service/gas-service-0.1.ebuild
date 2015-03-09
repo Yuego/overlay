@@ -30,7 +30,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/py3o
 	dev-python/django-downloadview
-	dev-python/v3d_libs
+	dev-python/django-v3dlibs
 "
 DEPEND="${RDEPEND}"
 
