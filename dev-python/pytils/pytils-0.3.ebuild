@@ -11,10 +11,11 @@ DESCRIPTION="Pytils is a Russian-specific string utils (transliteration, numeral
 HOMEPAGE="https://github.com/j2a/pytils"
 
 EGIT_REPO_URI="https://github.com/j2a/pytils.git"
+EGIT_COMMIT="d5bb6907595bdac3edaba41bb8e0e78fa0f529bc"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.0"
