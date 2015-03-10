@@ -1,3 +1,4 @@
 
+app-emulation/wine staging
 app-emulation/vmware-workstation ovftool server vix vmware-tools
 app-emulation/vmware-tools vmware_guest_windows
