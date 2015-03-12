@@ -1,4 +1,7 @@
 
 media-libs/openal alsa
 media-libs/flac ogg
+media-libs/libjpeg-turbo static-libs
+media-libs/libpng static-libs
+media-libs/freetype static-libs
 
