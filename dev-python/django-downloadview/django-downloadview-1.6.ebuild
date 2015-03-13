@@ -14,7 +14,7 @@ SRC_URI="https://github.com/benoitbryon/django-downloadview/archive/${PV}.tar.gz
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND="

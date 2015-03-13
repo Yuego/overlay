@@ -14,7 +14,7 @@ SRC_URI="https://bitbucket.org/jon1012/pyjon.utils/get/${PV}.tar.bz2"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 S="${WORKDIR}/jon1012-pyjon.utils-e9012f3086b0"

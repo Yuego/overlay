@@ -15,7 +15,7 @@ SRC_URI="https://bitbucket.org/faide/py3o.template/get/${PV}.tar.bz2"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 S="${WORKDIR}/faide-py3o.template-ff9c5df82888"
