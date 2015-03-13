@@ -22,6 +22,7 @@ RDEPEND="${RDEPEND}
 	dev-db/postgresql[server]
 	www-servers/nginx
     www-servers/uwsgi[python]
+	
 "
 
 # Libs
@@ -31,6 +32,8 @@ RDEPEND="${RDEPEND}
 	dev-python/py3o
 	dev-python/django-downloadview
 	dev-python/django-v3dlibs
+
+	dev-python/django-cacheops
 "
 DEPEND="${RDEPEND}"
 
