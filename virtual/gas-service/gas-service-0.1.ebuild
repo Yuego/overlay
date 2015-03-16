@@ -35,6 +35,9 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-cacheops
 	dev-python/django-redis
+
+	dev-python/django-hstore
+	dev-python/phonenumbers
 "
 DEPEND="${RDEPEND}"
 
