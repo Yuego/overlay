@@ -34,6 +34,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-v3dlibs
 
 	dev-python/django-cacheops
+	dev-python/django-redis
 "
 DEPEND="${RDEPEND}"
 
