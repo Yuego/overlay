@@ -40,6 +40,8 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-hstore
 	dev-python/phonenumbers
+
+	dev-python/django-rest-framework
 "
 DEPEND="${RDEPEND}"
 
