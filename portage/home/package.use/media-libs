@@ -17,3 +17,5 @@ media-libs/libsdl abi_x86_32
 
 
 media-libs/harfbuzz icu
+
+media-libs/phonon designer
