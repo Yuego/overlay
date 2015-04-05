@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 EAPI=5
-PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
 
 GIT_REPO_URI="https://github.com/sehmaschine/django-grappelli.git"
 
@@ -15,7 +15,7 @@ DESCRIPTION="A jazzy skin for the Django admin interface"
 HOMEPAGE="http://www.grappelliproject.com/"
 LICENSE="BSD-4"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.4"

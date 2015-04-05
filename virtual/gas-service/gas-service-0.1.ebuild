@@ -42,6 +42,8 @@ RDEPEND="${RDEPEND}
 	dev-python/phonenumbers
 
 	dev-python/django-rest-framework
+
+	dev-python/django-grappelli
 "
 DEPEND="${RDEPEND}"
 
