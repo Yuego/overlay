@@ -82,6 +82,11 @@ dev-python/python-swiftclient
 dev-python/redis-py
 dev-python/suds-jurko
 
+
+
+media-gfx/enblend
+
+media-libs/vigra
 net-misc/geoipupdate
 
 sys-libs/timezone-data
