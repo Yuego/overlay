@@ -1,4 +1,4 @@
 
 app-editors/nano justify
-app-editors/vim lua luajit python vim-pager
+app-editors/vim lua luajit python vim-pager -python_targets_python3_3
 app-editors/gvim lua luajit python
