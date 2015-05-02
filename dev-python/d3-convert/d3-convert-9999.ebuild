@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{3_2,3_3,3_4} pypy2_0 )
+PYTHON_COMPAT=( python{3_3,3_4} pypy2_0 )
 
 inherit eutils distutils-r1 git-2
 
@@ -21,10 +21,11 @@ IUSE="-test"
 RDEPEND="
 	dev-python/docopt
 	>=dev-python/scandir-0.9
+	dev-python/pygobject:3
 	media-libs/gexiv2
 	dev-python/lxml
 	dev-python/py3-daemon
-	dev-python/psutil
+	>=dev-python/psutil-2
 
 	media-libs/exiftool
 	media-gfx/ufraw
