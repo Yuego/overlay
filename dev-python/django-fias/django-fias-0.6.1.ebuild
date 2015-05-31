@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_7,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
 
 inherit distutils-r1
 
@@ -19,11 +19,12 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.4
 	dev-python/django-select2
+	>=app-misc/sphinx-2.1
 	>=dev-python/sphinxit-0.3.2
-	>=dev-python/suds-0.4
+	|| ( dev-python/suds >=dev-python/suds-jurko-0.6 )
 	dev-python/rarfile
 	dev-python/lxml
-	>=dev-python/south-0.8
+	|| ( >=dev-python/south-1.0 >=dev-python/django-1.7 )
 "
 DEPEND="dev-python/setuptools"
 

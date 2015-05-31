@@ -10,8 +10,7 @@ inherit distutils-r1
 DESCRIPTION="A slick app that supports automatic or manual queryset caching and automatic granular event-driven invalidation."
 HOMEPAGE="https://github.com/Suor/django-cacheops"
 
-MY_PV="${PV/_/-}"
-SRC_URI="https://github.com/Suor/django-cacheops/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/Suor/django-cacheops/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -19,11 +18,10 @@ KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.3
-	>=dev-python/simplejson-2.2.0
 	>=dev-python/redis-py-2.9.1
+	>=dev-python/funcy-1.2
+	<dev-python/funcy-2.0
 	>=dev-python/six-1.4.0
 "
 DEPEND="dev-python/setuptools"
 
-
-S="${WORKDIR}/${PN}-${MY_PV}"
