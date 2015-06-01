@@ -24,6 +24,7 @@ RDEPEND="${RDEPEND}
     www-servers/uwsgi[python]
 
 	net-libs/nodejs
+	dev-db/postgis
 	
 "
 
