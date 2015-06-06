@@ -10,7 +10,7 @@ inherit distutils-r1 git-2
 DESCRIPTION="POS tagger / inflection engine for Russian language."
 HOMEPAGE="http://pymorphy2.readthedocs.org/"
 
-EGIT_REPO_URI="https://github.com/kmike/pymorphy2.git"
+EGIT_REPO_URI="git://github.com/kmike/pymorphy2.git"
 
 LICENSE="MIT"
 SLOT="0"
