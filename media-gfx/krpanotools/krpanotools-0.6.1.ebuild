@@ -21,6 +21,7 @@ RDEPEND="${DEPEND}
 	media-gfx/enblend
 	media-libs/exiftool
 	media-gfx/imagemagick[openmp,raw,tiff]
+	kde-apps/konsole
 "
 
 src_install() {

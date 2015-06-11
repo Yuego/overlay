@@ -19,7 +19,7 @@ DEPEND=""
 RDEPEND="${DEPEND}
 	media-gfx/krpanotools-binaries[viewer]
 	media-gfx/imagemagick[jpeg,png,tiff]
-	kde-base/konsole
+	kde-apps/konsole
 "
 
 S="${WORKDIR}"
