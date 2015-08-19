@@ -1,2 +1,3 @@
 
-dev-db/pgadmin3 ~amd64
+dev-db/postgis
+dev-db/pgadmin3
