@@ -83,6 +83,18 @@ dev-python/redis-py
 dev-python/suds-jurko
 
 
+dev-python/distlib
+dev-python/pip
+dev-python/packaging
+dev-python/html5lib
+dev-python/colorama
+dev-python/CacheControl
+dev-python/retrying
+dev-python/progress
+dev-python/lockfile
+
+
+
 
 media-gfx/enblend
 
