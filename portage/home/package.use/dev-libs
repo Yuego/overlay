@@ -1,4 +1,5 @@
 
+dev-libs/libgudev static-libs
 >=dev-libs/elfutils-0.154-r1 static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
@@ -7,7 +8,10 @@ dev-libs/protobuf -java
 dev-libs/libxml2 icu
 dev-libs/redland berkdb ssl xml mysql -odbc -postgres sqlite
 dev-libs/libpcre pcre16
+dev-libs/glib static-libs
 
 # For Steam
 #dev-libs/libpthread-stubs abi_x86_32
 dev-libs/boost python
+media-libs/phonon-vlc qt5
+dev-libs/libdbusmenu-qt qt5
