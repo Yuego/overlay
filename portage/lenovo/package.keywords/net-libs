@@ -5,3 +5,5 @@ net-libs/nodejs
 =net-libs/libndp-1.4
 net-libs/zeromq
 net-libs/libqmi
+
+net-libs/http-parser
