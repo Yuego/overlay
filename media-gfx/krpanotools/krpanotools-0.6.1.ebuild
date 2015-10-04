@@ -13,7 +13,7 @@ SRC_URI="https://github.com/Yuego/krpanotools/archive/${PV}.tar.gz -> krpanotool
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="kde"
 
 DEPEND=""
 RDEPEND="${DEPEND}
@@ -21,7 +21,7 @@ RDEPEND="${DEPEND}
 	media-gfx/enblend
 	media-libs/exiftool
 	media-gfx/imagemagick[openmp,raw,tiff]
-	kde-apps/konsole
+	kde? ( kde-apps/konsole )
 "
 
 src_install() {

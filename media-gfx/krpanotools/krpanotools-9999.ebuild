@@ -13,13 +13,13 @@ EGIT_REPO_URI="https://github.com/Yuego/krpanotools.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="kde"
 
 DEPEND=""
 RDEPEND="${DEPEND}
 	media-gfx/krpanotools-binaries[viewer]
 	media-gfx/imagemagick[jpeg,png,tiff]
-	kde-apps/konsole
+	kde? ( kde-apps/konsole )
 "
 
 S="${WORKDIR}"
