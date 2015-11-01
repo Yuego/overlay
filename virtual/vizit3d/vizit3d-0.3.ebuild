@@ -77,7 +77,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-pgfields
 	dev-python/django-hosts
 	dev-python/django-cacheops
-	dev-python/django-celery
 	dev-python/django-compressor
 	dev-python/django-filebrowser
 	dev-python/django-flatblocks
