@@ -1,9 +1,0 @@
---- filebrowser/templatetags/_fb_tags.py	2012-04-17 11:25:28.000000000 +0400
-+++ filebrowser/templatetags/fb_tags.py	2012-04-17 11:25:44.000000000 +0400
-@@ -151,5 +151,5 @@
-             from django.contrib.admin.templatetags import admin_media_prefix
-         except ImportError:
-             from django.contrib.admin.templatetags.adminmedia import admin_media_prefix
--        return admin_media_prefix
-+        return admin_media_prefix()
- 
