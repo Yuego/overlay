@@ -1,0 +1,10 @@
+1 min from dnxhd to libnvenc
+real	0m28.276s
+user	0m31.684s
+sys	0m0.639s
+
+
+1 min from dnxhd to libx264
+real	0m34.918s
+user	3m52.211s
+sys	0m1.185s
