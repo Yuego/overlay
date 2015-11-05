@@ -1,0 +1,47 @@
+xjadeo - jack video monitor
+===========================
+
+xjadeo is a simple video player that gets sync from jack.
+Please refer to the documentation in the doc folder for any details,
+or visit http://xjadeo.sf.net/
+
+Basic build instructions
+------------------------
+
+git clone git://github.com/x42/xjadeo.git
+./autogen.sh
+./configure
+make
+sudo make install
+
+
+Build Dependencies
+------------------
+
+Development packages for the following software must be available to compile xjadeo:
+
+* ffmpeg (from ffmpeg.org at least version 1.0)
+* jack-audio-connection-kit (jackaudio.org)
+* libX11 (on Linux Only)
+* glu (mandatory for OSX and Windows only, but recommended on GNU/Linux)
+
+Recommended optional dependencies:
+* glu (opengl display)
+* freetype2  (on-screen-display)
+* asound (ALSA MIDI [MTC] support)
+* portmidi, porttime (windows/OSX MIDI [MTC] support)
+* libltc (LTC support)
+* liblo (OSC remote control support)
+
+Options:
+* libxv (on Linux, X-video acceleration)
+* imlib2 (Linux RGB display)
+* SDL (meant for windows only, really - but works on Linux, OSX too)
+
+Deprecated:
+* QT3 or QT4 (for external remote-control GUI)
+
+
+Copyright (C) 2005 - 2014 GPLv2
+ Luis Garrido <luisgarrido@users.sourceforge.net>
+ Robin Gareus <robin@gareus.org>

@@ -1,0 +1,13 @@
+diff -Naur xjadeo-0.6.4.orig/configure.ac xjadeo-0.6.4/configure.ac
+--- xjadeo-0.6.4.orig/configure.ac	2013-03-24 08:28:16.733866229 +0100
++++ xjadeo-0.6.4/configure.ac	2013-03-24 08:30:50.578861156 +0100
+@@ -226,9 +226,6 @@
+ 	fi
+ 	if test "x$FOUND_H_PORTMIDI$FOUND_L_PORTMIDI" = "xyesyes"; then
+ 		MIDI_LIBS="-lportmidi"
+-		if test "$PM_OS" != "mac"; then
+-		  MIDI_LIBS="${MIDI_LIBS} -lporttime"
+-	  fi
+ 	fi
+ 
+ 	if test "x$PORTMIDI" != "xno" -a -n "$portmidisrc" -a -n "$PM_OS"; then
