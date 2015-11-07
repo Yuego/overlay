@@ -1,0 +1,27 @@
+Begin4
+Title:		xjadeo
+Version:	@VERSION@
+Entered-date:	@ISODATE@
+Description:	jack video monitor
+		xjadeo is a software video player that displays a video-clip in sync
+		with an external time source (MTC, LTC, JACK-transport).
+		It has applications in soundtrack composition, video monitoring or
+		any task that requires to associate movie frames with audio events.
+		For instance when a JACK-client (like Muse, Rosegarden or Ardour) acts as
+		timebase master, xjadeo will display the video in sync.
+		xjadeo supports a multitude of video file formats, display libraries and
+		sync sources. It includes an optional GUI that provides file-history and 
+		allows to modify settings of a running instance.
+		see http://xjadeo.sourceforge.net/ for further information.
+		@configure_input@
+Author:		robin@gareus.org
+Keywords:	jack video monitor
+Maintained-by:	robin@gareus.org 
+Primary-site:	http://xjadeo.sourceforge.net/ 
+		212K xjadeo-@VERSION@.tar.gz
+		500  xjadeo.lsm
+Alternate-site: https://github.com/x42/xjadeo
+Original-site:
+Platforms:	any
+Copying-policy:	GPL v2
+End
