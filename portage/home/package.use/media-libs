@@ -3,6 +3,7 @@ media-libs/babl introspection a
 media-libs/gegl cairo ffmpeg jpeg jpeg2k mmx png sdl sse svg -debug introspection lensfun openexr raw umfpack
 
 media-libs/libraw demosaic
+media-libs/libjpeg static-libs
 media-libs/libjpeg-turbo static-libs
 media-libs/gd fontconfig
 media-libs/lcms static-libs python

@@ -1,2 +1,3 @@
 
 sys-kernel/genkernel -cryptsetup
+sys-kernel/genkernel-next plymouth

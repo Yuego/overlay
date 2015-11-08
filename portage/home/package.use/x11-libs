@@ -1,4 +1,5 @@
 
+x11-libs/libdrm libkms
 dev-qt/qtsql postgres mysql
 dev-qt/qtwebkit icu
 x11-libs/cairo xcb
