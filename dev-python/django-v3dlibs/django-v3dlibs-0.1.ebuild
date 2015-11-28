@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.3
-	virtual/python-imaging
+	dev-python/pillow
 	dev-python/six
 	dev-python/django-hosts
 "

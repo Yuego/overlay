@@ -11,7 +11,7 @@ media-libs/libpng apng static-libs
 media-libs/jpeg static-libs
 media-libs/libmng static-libs
 media-libs/freetype static-libs infinality
-media-libs/mesa g3dvl
+media-libs/mesa g3dvl wayland
 
 media-libs/sdl-mixer -midi
 media-libs/libsdl abi_x86_32
@@ -19,5 +19,5 @@ media-libs/libsdl abi_x86_32
 
 media-libs/harfbuzz icu
 
-media-libs/phonon designer qt5
+media-libs/phonon designer qt5 -vlc
 media-libs/phonon-vlc qt5
