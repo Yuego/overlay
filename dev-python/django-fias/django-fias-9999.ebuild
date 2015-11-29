@@ -11,18 +11,23 @@ DESCRIPTION="Django FIAS"
 HOMEPAGE="https://github.com/Yuego/django-fias"
 
 EGIT_REPO_URI="git://github.com/Yuego/django-fias.git"
+EGIT_BRANCH="develop"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="sphinx"
 
-RDEPEND=">=dev-python/django-1.4
-	dev-python/django-select2
-	>=dev-python/sphinxit-0.3.2
+RDEPEND=">=dev-python/django-1.7
+	>=dev-python/django-select2-5.3
 	dev-python/rarfile
-	dev-python/suds
+	dev-python/suds-jurko
 	dev-python/lxml
+	dev-python/dbfread
+	sphinx? (
+		dev-python/mysqlclient
+		app-misc/sphinx
+	)
 "
 DEPEND="dev-python/setuptools"
 
