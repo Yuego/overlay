@@ -2,4 +2,3 @@
 net-p2p/rtorrent color
 
 net-p2p/i2p initscript
-net-p2p/qbittorrent -qt4 qt5

@@ -1,2 +1,2 @@
 
-app-text/poppler qt5
+app-text/poppler -qt4

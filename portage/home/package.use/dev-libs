@@ -13,5 +13,3 @@ dev-libs/glib static-libs
 # For Steam
 #dev-libs/libpthread-stubs abi_x86_32
 dev-libs/boost python
-media-libs/phonon-vlc qt5
-dev-libs/libdbusmenu-qt qt5
