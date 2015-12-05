@@ -5,19 +5,18 @@
 EAPI=5
 PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit eutils distutils-r1
 
-DESCRIPTION="Python interface to opencorpora.org"
-HOMEPAGE="http://opencorpora.org/"
+DESCRIPTION="Read DBF Files with Python"
+HOMEPAGE="https://github.com/olemb/dbfread"
 
-EGIT_REPO_URI="git://github.com/kmike/opencorpora-tools.git"
+SRC_URI="https://github.com/olemb/dbfread/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=""
 DEPEND="dev-python/setuptools"
-
 

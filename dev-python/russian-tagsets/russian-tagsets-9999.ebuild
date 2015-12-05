@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1 git-2
 
@@ -21,10 +21,4 @@ RDEPEND="
 	test? ( dev-python/tox )
 "
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="russian_tagsets"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 

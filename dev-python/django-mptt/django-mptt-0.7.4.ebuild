@@ -3,19 +3,19 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1
 
 DESCRIPTION="Utilities for implementing a modified pre-order traversal tree in django."
 HOMEPAGE="https://github.com/django-mptt/django-mptt"
-SRC_URI="https://github.com/django-mptt/django-mptt/archive/${PV}.tar.gz -> django-mptt-${PV}.tar.gz"
-LICENSE="as-is"
+SRC_URI="https://github.com/django-mptt/django-mptt/archive/${PV}.tar.gz -> ${P}.tar.gz"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.4.2"
+RDEPEND=">=dev-python/django-1.7"
 DEPEND="dev-python/setuptools"
 
 S="${WORKDIR}/django-mptt-${PV}"

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1 git-2
 
@@ -19,14 +19,8 @@ IUSE="django test"
 
 RDEPEND="
 	dev-python/dawg
-	django? ( >=dev-python/django-1.3 )
+	django? ( >=dev-python/django-1.7 )
 	test? ( dev-python/tox )
 "
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="pymorphy2"
-
-src_test() {
-	python setup.py test || die "tests failed"
-}
 
