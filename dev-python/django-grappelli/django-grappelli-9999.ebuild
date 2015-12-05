@@ -2,11 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 EAPI=5
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1 git-2
-
-WEBAPP_MANUAL_SLOT="yes"
 
 EGIT_REPO_URI="https://github.com/sehmaschine/django-grappelli.git"
 DESCRIPTION="A jazzy skin for the Django admin interface"
@@ -16,6 +14,6 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.4"
+RDEPEND=">=dev-python/django-1.7"
 DEPEND="${RDEPEND}"
 
