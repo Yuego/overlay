@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 EGIT_REPO_URI="https://github.com/aljosa/django-tinymce.git"
 
@@ -19,7 +19,7 @@ IUSE=""
 RDEPEND="dev-python/django"
 DEPEND="${RDEPEND}"
 
-DOCS="docs/* README.md"
+DOCS="docs/* README.rst LICENSE.txt CHANGELOG.rst"
 
 src_install() {
 	distutils-r1_src_install
