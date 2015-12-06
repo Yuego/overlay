@@ -5,7 +5,7 @@
 EAPI="5"
 PYTHON_COMPAT=( python2_7 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 MY_PN="Django-Select2"
 

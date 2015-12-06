@@ -2,16 +2,16 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 EGIT_REPO_URI="https://github.com/miracle2k/django-assets.git"
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Django webassets integration."
 HOMEPAGE="https://github.com/miracle2k/django-assets"
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""

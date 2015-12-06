@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Tweak the form field rendering in templates, not in python-level form definitions. CSS classes and HTML attributes can be altered."
 HOMEPAGE="http://pypi.python.org/pypi/django-widget-tweaks"

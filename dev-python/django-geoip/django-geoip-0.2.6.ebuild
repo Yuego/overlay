@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 DESCRIPTION="App to figure out where your visitors are from by their IP address."
 HOMEPAGE="http://django-geoip.readthedocs.org/en/latest/index.html"
@@ -13,7 +13,7 @@ HOMEPAGE="http://django-geoip.readthedocs.org/en/latest/index.html"
 EGIT_REPO_URI="https://github.com/futurecolors/django-geoip.git"
 EGIT_COMMIT="e585bcacf1d89fe044d3916b4849d89586641241"
 
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""

@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 inherit distutils-r1 mercurial
@@ -10,7 +10,7 @@ inherit distutils-r1 mercurial
 EHG_REPO_URI="https://bitbucket.org/offline/django-annoying"
 DESCRIPTION="This is django application that try to eliminate annoying things in Django framework."
 HOMEPAGE="https://bitbucket.org/offline/django-annoying/wiki/Home"
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE=""

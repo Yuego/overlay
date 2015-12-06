@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy2_0 )
 
-inherit eutils distutils-r1 git-2
+inherit eutils distutils-r1 git-r3
 
 DESCRIPTION="Bi-directional transliterator for Python. Transliterates (unicode) strings according to the rules specified in the language packs."
 HOMEPAGE="https://github.com/barseghyanartur/transliterate"

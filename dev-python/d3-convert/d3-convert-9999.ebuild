@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{3_3,3_4,3_5} pypy2_0 )
 
-inherit eutils distutils-r1 git-2
+inherit eutils distutils-r1 git-r3
 
 DESCRIPTION="D3 Converter"
 HOMEPAGE="https://github.com/Yuego/d3-convert"

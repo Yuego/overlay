@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 DESCRIPTION="A configurable set of panels that display various debug information about the current request/response."
 HOMEPAGE="https://github.com/django-debug-toolbar/django-debug-toolbar"

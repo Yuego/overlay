@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy2_0 )
 
-inherit distutils-r1 git-2 python-r1
+inherit distutils-r1 git-r3 python-r1
 
 DESCRIPTION="django-allauth is a reusable Django app that allows for both local and social authentication, with flows that just work."
 HOMEPAGE="http://www.intenct.nl/projects/django-allauth/"

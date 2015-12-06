@@ -2,17 +2,17 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy2_0 )
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Creating delicious APIs for Django apps since 2010."
 HOMEPAGE="http://tastypieapi.org/"
 
 EGIT_REPO_URI="git://github.com/toastdriven/django-tastypie.git"
 
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
 IUSE="digest lxml pyyaml biplist"

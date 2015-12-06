@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
+EAPI=6
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy{2_0,3} )
 
-inherit distutils-r1 git-2
+inherit distutils-r1 git-r3
 
 DESCRIPTION="A generic system for filtering Django QuerySets based on user selections"
 HOMEPAGE="https://github.com/alex/django-filter"
@@ -17,6 +17,6 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.3"
+RDEPEND=">=dev-python/django-1.8"
 DEPEND="dev-python/setuptools"
 

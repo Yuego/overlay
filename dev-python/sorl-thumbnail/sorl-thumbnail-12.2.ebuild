@@ -2,12 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy2_0 )
 
 inherit distutils-r1
 
-MY_PV=`echo $PV | sed -r 's/_beta([0-9]+)/.\1b/g'`
+MY_PV="${PV/_beta/.}b"
 SRC_URI="https://github.com/sorl/sorl-thumbnail/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 DESCRIPTION=""
 HOMEPAGE="http://thumbnail.sorl.net/index.html"

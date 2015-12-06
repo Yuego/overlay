@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 inherit eutils distutils-r1
@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/SmileyChris/easy-thumbnails.git"
 
 SRC_URI="https://github.com/SmileyChris/easy-thumbnails/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 ~ia64 ~ppc ~ppc64 x86"
 IUSE=""

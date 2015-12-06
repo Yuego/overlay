@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
 
 inherit distutils-r1
@@ -14,7 +14,7 @@ one-line definition of Managers returning a custom QuerySet,
 InheritanceCastModel for more efficient use of model inheritance, and
 TimeStampedModel."
 HOMEPAGE="https://bitbucket.org/carljm/django-model-utils/src"
-LICENSE="as-is"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""

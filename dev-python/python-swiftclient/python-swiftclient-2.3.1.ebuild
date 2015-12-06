@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/python-swiftclient/python-swiftclient-2.0.3.ebuild,v 1.1 2014/04/19 04:12:03 prometheanfire Exp $
 
-EAPI=5
+EAPI=6
 PYTHON_COMPAT=( python{2_7,3_3,3_4} )
 
 inherit distutils-r1

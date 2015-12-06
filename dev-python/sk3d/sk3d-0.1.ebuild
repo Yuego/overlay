@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=5
+EAPI=6
 
-LICENSE="as-is"
+LICENSE="MIT"
 
 SRC_URI=""
 DESCRIPTION="sk3d meta"
