@@ -1,2 +1,9 @@
 
 dev-python/krpano **
+
+dev-python/pyrfc3339
+dev-python/pythondialog
+dev-python/parsedatetime
+dev-python/zope-component
+dev-python/pyopenssl
+dev-python/zope-event
