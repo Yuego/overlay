@@ -21,11 +21,5 @@ RDEPEND="
 	>=dev-python/django-1.7
 	dev-python/six
 "
-DEPEND="
-	dev-python/setuptools
-"
-
-src_prepare(){
-	sed -i "s#'nose>=1.0',##g" setup.py
-}
+DEPEND="dev-python/setuptools"
 

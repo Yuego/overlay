@@ -25,6 +25,3 @@ RDEPEND="${RDEPEND}
 DEPEND="${RDEPEND}
 	app-arch/unzip"
 
-src_prepare(){
-	sed -i 's#del sdist.finders\[:\]##g' setup.py
-}
