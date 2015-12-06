@@ -1,4 +1,5 @@
 
+app-emulation/docker aufs btrfs
 app-emulation/vmware-workstation -cups -doc ovftool -server vix vmware-tools
 
 app-emulation/wine -scanner -ldap
