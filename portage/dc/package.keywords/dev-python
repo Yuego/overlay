@@ -1,4 +1,5 @@
 
-dev-python/imaging ~amd64
-dev-python/py-amqp ~amd64
-dev-python/psycopg ~amd64
+dev-python/certifi
+dev-python/imagingd
+dev-python/py-amqp
+dev-python/psycopg
