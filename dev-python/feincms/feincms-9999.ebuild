@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -15,11 +15,14 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.3
-	dev-python/django-mptt"
+RDEPEND="
+	>=dev-python/django-1.7
+    >=dev-python/django-mptt-0.7.1
+    >=dev-python/pillow-2.0.0
+    >=dev-python/feedparser-5.0.0
+    >=dev-python/pytz-2014.10
+"
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="feincms"
 
 src_test() {
 	python setup.py test || die "tests failed"

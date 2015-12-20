@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -15,13 +15,11 @@ SRC_URI="https://github.com/pysimplesoap/pysimplesoap/archive/${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="compat"
+IUSE=""
 
 RDEPEND="
 "
 DEPEND="dev-python/setuptools"
-
-PYTHON_MODNAME="pysimplesoap"
 
 src_test() {
 	python setup.py test || die "tests failed"
