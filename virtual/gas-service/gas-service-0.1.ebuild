@@ -14,7 +14,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
-	dev-python/django
+	<dev-python/django-1.9
 "
 
 # Servers
