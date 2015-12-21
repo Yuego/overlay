@@ -1,3 +1,4 @@
 
-dev-lang/icc ~amd64
-dev-lang/scala ~amd64
+dev-lang/python-exec
+dev-lang/icc
+dev-lang/scala
