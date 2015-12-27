@@ -10,6 +10,7 @@ dev-python/ipython_genutils
 dev-python/jupyter_client
 dev-python/jupyter_core
 dev-python/ipyparallel
+dev-python/pyinsane
 dev-python/traitlets
 dev-python/chardet
 dev-python/py
