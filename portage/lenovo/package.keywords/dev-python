@@ -17,6 +17,9 @@ dev-python/py
 dev-python/pypy
 dev-python/pypy-bin
 dev-python/python-augeas
+dev-python/urllib3
+dev-python/pyparsing
+
 
 dev-python/pep8
 dev-python/py-amqp

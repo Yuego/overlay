@@ -93,6 +93,7 @@ dev-python/retrying
 dev-python/progress
 dev-python/lockfile
 
+dev-python/urllib3
 
 
 
