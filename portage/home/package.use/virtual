@@ -4,3 +4,5 @@ virtual/mysql embedded
 virtual/udev static-libs
 virtual/libudev static-libs
 virtual/libgudev static-libs
+
+virtual/rubygems ruby_targets_ruby23

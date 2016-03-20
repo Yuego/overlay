@@ -12,7 +12,7 @@ MY_P="Genshi-${PV}"
 DESCRIPTION="Python toolkit for stream-based generation of output for the web"
 HOMEPAGE="http://genshi.edgewall.org/ https://pypi.python.org/pypi/Genshi"
 
-ESVN_REPO_URI="http://svn.edgewall.org/repos/genshi/trunk@${PR}"
+ESVN_REPO_URI="https://svn.edgewall.org/repos/genshi/trunk@${PR}"
 
 LICENSE="BSD"
 SLOT="0"
