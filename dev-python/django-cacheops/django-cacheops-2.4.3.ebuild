@@ -18,6 +18,7 @@ KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.7
+	dev-db/redis
 	>=dev-python/redis-py-2.9.1
 	>=dev-python/funcy-1.2
 	<dev-python/funcy-2.0

@@ -19,6 +19,7 @@ dev-python/pypy-bin
 dev-python/python-augeas
 dev-python/urllib3
 dev-python/pyparsing
+dev-python/pluggy
 
 
 dev-python/pep8

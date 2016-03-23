@@ -14,18 +14,18 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="doc test"
 
 RDEPEND="
-	>=dev-python/django-1.4.1[${PYTHON_USEDEP}]
-	dev-python/six[${PYTHON_USEDEP}]"
+	>=dev-python/django-1.7
+	dev-python/six"
 DEPEND="${RDEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	doc? ( dev-python/sphinx[${PYTHON_USEDEP}] )
-	test? ( dev-python/django-discover-runner[${PYTHON_USEDEP}]
-		dev-python/flake8[${PYTHON_USEDEP}]
-		dev-python/coverage[${PYTHON_USEDEP}] )"
+	dev-python/setuptools
+	doc? ( dev-python/sphinx )
+	test? ( dev-python/django-discover-runner
+		dev-python/flake8
+		dev-python/coverage )"
 
 python_compile_all() {
 	use doc && emake -C docs html
