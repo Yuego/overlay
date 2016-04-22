@@ -1,6 +1,1 @@
 
-sys-auth/libfprint
-sys-auth/pam_fprint
-sys-auth/fprint_demo
-sys-auth/fprintd
-sys-auth/fingerprint-gui
