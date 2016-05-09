@@ -3,14 +3,14 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Reusable, generic mixins for Django"
 HOMEPAGE="https://github.com/brack3t/django-braces"
 
-EGIT_REPO_URI="https://github.com/brack3t/django-braces"
+EGIT_REPO_URI="git://github.com/brack3t/django-braces.git"
 
 LICENSE="BSD"
 SLOT="0"

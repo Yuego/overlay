@@ -11,7 +11,7 @@ DESCRIPTION="An easy solution to design reports using OpenOffice"
 HOMEPAGE="https://bitbucket.org/faide/py3o.template"
 
 SRC_URI="https://bitbucket.org/faide/py3o.template/get/${PV}.tar.gz -> ${P}.tar.gz"
-PY3O_COMMIT="feb56b91e31a"
+PY3O_COMMIT="fb5f09a5691a"
 
 
 LICENSE="BSD"

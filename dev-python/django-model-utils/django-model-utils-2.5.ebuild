@@ -3,26 +3,25 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1
 
-COMMIT="92792fb14a51"
-SRC_URI="http://bitbucket.org/carljm/django-model-utils/get/${PV}.tar.bz2 -> ${P}.tar.bz2"
+HOMEPAGE="https://github.com/carljm/django-model-utils"
 DESCRIPTION="Django model mixins and utilities. Includes QueryManager for
 one-line definition of Managers returning a custom QuerySet,
 InheritanceCastModel for more efficient use of model inheritance, and
 TimeStampedModel."
-HOMEPAGE="https://bitbucket.org/carljm/django-model-utils/src"
+
+SRC_URI="https://github.com/carljm/django-model-utils/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ia64 ppc ppc64 x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.3"
+RDEPEND=">=dev-python/django-1.4.2"
 DEPEND="dev-python/setuptools"
 
-S="${WORKDIR}/carljm-${PN}-${COMMIT}/"
 
 src_install () {
 	distutils-r1_src_install

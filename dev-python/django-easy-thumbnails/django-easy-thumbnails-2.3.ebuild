@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit eutils distutils-r1
 
@@ -14,10 +14,11 @@ SRC_URI="https://github.com/SmileyChris/easy-thumbnails/archive/${PV}.tar.gz -> 
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~ia64 ~ppc ~ppc64 x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.3"
+RDEPEND=">=dev-python/django-1.4.2
+	dev-python/pillow"
 DEPEND="dev-python/setuptools"
 
 S=${WORKDIR}/easy-thumbnails-${PV}

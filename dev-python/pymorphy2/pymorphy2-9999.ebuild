@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="POS tagger / inflection engine for Russian language."
-HOMEPAGE="http://pymorphy2.readthedocs.org/"
+HOMEPAGE="http://pymorphy2.readthedocs.org/ https://github.com/kmike/pymorphy2"
 
 EGIT_REPO_URI="git://github.com/kmike/pymorphy2.git"
 

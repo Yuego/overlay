@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4,3_5} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1
 
@@ -18,10 +18,10 @@ KEYWORDS="amd64 ia64 ppc ppc64 x86"
 IUSE=""
 
 RDEPEND=">=dev-python/django-1.4
-	>=dev-python/django-appconf-0.4
+	>=dev-python/django-appconf-1.0
 	
-	dev-python/rcssmin
-	dev-python/rjsmin
+	>=dev-python/rcssmin-1.0.6
+	>=dev-python/rjsmin-1.0.12
 	"
 DEPEND="dev-python/setuptools"
 

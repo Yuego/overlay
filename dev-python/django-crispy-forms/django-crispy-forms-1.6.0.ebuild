@@ -7,17 +7,19 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1
 
-DESCRIPTION="Python interface to opencorpora.org"
-HOMEPAGE="http://opencorpora.org/ https://github.com/kmike/opencorpora-tools"
+DESCRIPTION="The best way to have DRY Django forms."
+HOMEPAGE="https://github.com/maraujop/django-crispy-forms"
 
-SRC_URI="https://github.com/kmike/opencorpora-tools/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/maraujop/django-crispy-forms/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=""
+RDEPEND="
+	>=dev-python/django-1.3
+"
 DEPEND="dev-python/setuptools"
 
-S="${WORKDIR}/${PN}-tools-${PV}/"
+

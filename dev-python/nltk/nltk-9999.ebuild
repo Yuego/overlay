@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Natural Language Toolkit"
-HOMEPAGE="http://nltk.org/"
+HOMEPAGE="http://nltk.org/ https://github.com/nltk/nltk"
 
 EGIT_REPO_URI="git://github.com/nltk/nltk.git"
 

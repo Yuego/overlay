@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_3,3_4} pypy2_0 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1
 # Convert the ebuild version to the upstream mozilla version, used by mozlinguas
@@ -23,7 +23,7 @@ KEYWORDS="amd64 x86"
 IUSE="-m2m"
 
 RDEPEND="
-	>=dev-python/django-1.4
+	>=dev-python/django-1.7
 	>=dev-python/six-1.4
 "
 DEPEND="dev-python/setuptools"

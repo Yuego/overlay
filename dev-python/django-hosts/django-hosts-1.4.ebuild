@@ -14,18 +14,22 @@ SRC_URI="https://github.com/ennio/django-hosts/archive/${PV}.tar.gz -> ${P}.tar.
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ia64 ppc ppc64 x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.7
+	>=dev-python/django-1.8
 "
 
-DEPEND="dev-python/setuptools"
+DEPEND="
+	dev-python/setuptools
+	dev-python/setuptools_scm
+"
 
 src_prepare(){
 	sed -i "s#packages=find_packages()#packages=find_packages(exclude=('tests.*', 'tests'))#g" setup.py
-
+	sed -i "s#use_scm_version=True,##g" setup.py
+	sed -i "s#'setuptools_scm'##g" setup.py
+	distutils-r1_src_prepare
 }
-
 

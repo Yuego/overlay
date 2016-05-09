@@ -15,8 +15,13 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.7"
+RDEPEND=">=dev-python/django-1.8"
 DEPEND="dev-python/setuptools"
 
 S="${WORKDIR}/django-mptt-${PV}"
+
+src_prepare(){
+    sed -i "s#packages=find_packages()#packages=find_packages(exclude=('tests.*', 'tests'))#g" setup.py
+	distutils-r1_src_prepare
+}
 
