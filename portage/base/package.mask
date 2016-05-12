@@ -1,2 +1,3 @@
 =dev-python/suds-0.4-r1
 =net-misc/openssh-6.2_p1
+=net-misc/openssh-7.2_p2
