@@ -7,3 +7,5 @@ dev-python/parsedatetime
 dev-python/zope-component
 dev-python/pyopenssl
 dev-python/zope-event
+
+dev-python/cryptography
