@@ -45,6 +45,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-rest-framework
 
 	dev-python/django-grappelli
+	dev-python/django-grappelli-autocomplete-fk-edit-link
 "
 DEPEND="${RDEPEND}"
 
