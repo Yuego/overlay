@@ -18,5 +18,7 @@ IUSE=""
 
 S="${WORKDIR}/${PN}-release-${PV}"
 
-DEPEND="dev-python/django"
+DEPEND="
+	>=dev-python/django-1.7
+"
 RDEPEND="dev-python/setuptools"

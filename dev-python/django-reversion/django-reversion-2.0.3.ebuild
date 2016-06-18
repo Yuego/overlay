@@ -16,5 +16,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-DEPEND="dev-python/django"
+DEPEND="
+	>=dev-python/django-1.8
+"
 RDEPEND="dev-python/setuptools"
