@@ -9,14 +9,12 @@ inherit distutils-r1
 
 DESCRIPTION="An extension to the Django web framework that provides comprehensive version control facilities."
 HOMEPAGE="http://github.com/etianen/django-reversion"
-SRC_URI="https://github.com/etianen/django-reversion/archive/release-${PV}.tar.gz"
+SRC_URI="https://github.com/etianen/django-reversion/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 x86 x86-fbsd"
+KEYWORDS="amd64 x86"
 IUSE=""
-
-S="${WORKDIR}/${PN}-release-${PV}"
 
 DEPEND="dev-python/django"
 RDEPEND="dev-python/setuptools"
