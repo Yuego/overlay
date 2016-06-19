@@ -47,6 +47,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-grappelli
 	dev-python/django-grappelli-autocomplete-fk-edit-link
 	dev-python/django-constance
+	>=dev-python/django-reversion-2.0.0
 	
 	dev-python/pyyaml
 "
