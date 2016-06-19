@@ -32,7 +32,9 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-python/django-mptt
 
-	dev-python/py3o
+	dev-python/py3o-template
+	dev-python/py3o-types
+
 	dev-python/django-downloadview
 	dev-python/django-v3dlibs
 
