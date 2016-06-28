@@ -1,8 +1,10 @@
+dev-python/prompt_toolkit
 dev-python/django-downloadview
 dev-python/certifi
 dev-python/pyjon-utils
-dev-python/py3o
+dev-python/wcwidth
 dev-python/odfpy
+dev-python/backports-shutil_get_terminal_size
 dev-python/ndg-httpsclient
 dev-python/ipykernel
 dev-python/pickleshare
