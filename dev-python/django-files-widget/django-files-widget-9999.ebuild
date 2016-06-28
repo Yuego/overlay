@@ -7,10 +7,10 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1 git-r3
 
-DESCRIPTION="Upload images via ajax. Images are optionally resized."
-HOMEPAGE="https://github.com/bradleyg/django-ajaximage"
+DESCRIPTION="Django AJAX form widgets and model fields for multiple files/images upload with progress bar"
+HOMEPAGE="https://github.com/Yuego/django-files-widget"
 
-EGIT_REPO_URI="git://github.com/bradleyg/django-ajaximage.git"
+EGIT_REPO_URI="git://github.com/Yuego/django-files-widget.git"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,6 +20,7 @@ IUSE=""
 RDEPEND="
 	>=dev-python/django-1.7
 	dev-python/pillow
+	dev-python/sorl-thumbnail
 "
 DEPEND="dev-python/setuptools"
 

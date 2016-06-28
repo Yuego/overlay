@@ -19,6 +19,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.7
+	dev-python/pillow
 "
 DEPEND="dev-python/setuptools"
 

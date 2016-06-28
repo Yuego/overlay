@@ -23,7 +23,7 @@ DEPEND="dev-python/setuptools
 			 dev-db/redis )
 	imagemagick? ( media-gfx/imagemagick )"
 
-S=$WORKDIR/$PN-$MY_PV
+S=$WORKDIR/$PN-$PV
 
 src_install () {
 	distutils-r1_src_install
