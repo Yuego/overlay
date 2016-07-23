@@ -22,6 +22,7 @@ kde-base/kdepim-runtime google
 media-gfx/imagemagick corefonts
 
 media-libs/gexiv2 introspection
+media-libs/libmypaint gegl
 media-video/ffmpeg mp3 theora vorbis
 net-misc/openssh hpn
 sci-libs/fftw threads
