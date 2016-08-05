@@ -1,4 +1,5 @@
 
+net-misc/openssh -hpn
 net-misc/dropbox librsync-bundled
 net-misc/curl nss
 
