@@ -1,4 +1,8 @@
 dev-python/prompt_toolkit
+dev-python/notebook
+dev-libs/mathjax
+dev-python/nbformat
+dev-python/nbconvert
 dev-python/django-downloadview
 dev-python/certifi
 dev-python/pyjon-utils

@@ -52,6 +52,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/django-reversion-2.0.0
 	
 	dev-python/pyyaml
+	dev-python/pytils
 "
 DEPEND="${RDEPEND}"
 
