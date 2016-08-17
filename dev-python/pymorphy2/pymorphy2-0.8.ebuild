@@ -18,7 +18,7 @@ KEYWORDS="amd64 x86"
 IUSE="django test"
 
 RDEPEND="
-	>=dev-python/dawg-0.7
+	>=dev-python/dawg-0.7.7
 	django? (
 		>=dev-python/django-1.7
 		dev-python/django-pymorphy2

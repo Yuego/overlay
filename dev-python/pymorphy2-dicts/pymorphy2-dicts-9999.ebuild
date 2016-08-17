@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy2_0 )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="OpenCorpora.org dictionaries pre-compiled for pymorphy2"
-HOMEPAGE="http://pypi.python.org/pypi/pymorphy2-dicts"
+HOMEPAGE="https://github.com/kmike/pymorphy2-dicts/ http://pypi.python.org/pypi/pymorphy2-dicts"
 
 EGIT_REPO_URI="https://github.com/kmike/pymorphy2-dicts.git"
 
@@ -19,6 +19,10 @@ IUSE=""
 
 RDEPEND="
 	dev-python/pymorphy2
+	dev-python/tqdm
+	dev-python/wheel
+	>=dev-python/cookiecutter-1.3
+	>=dev-python/LT2OpenCorpora-2.0.3
 "
 DEPEND="dev-python/setuptools
 	${RDEPEND}
