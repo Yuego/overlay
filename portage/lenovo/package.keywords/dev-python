@@ -3,6 +3,7 @@ dev-python/notebook
 dev-libs/mathjax
 dev-python/nbformat
 dev-python/nbconvert
+dev-python/isodate
 dev-python/django-downloadview
 dev-python/certifi
 dev-python/pyjon-utils
