@@ -21,8 +21,7 @@ IUSE="-test"
 RDEPEND="
 	dev-python/docopt
 	>=dev-python/scandir-0.9
-	dev-python/pygobject:3
-	>=media-libs/gexiv2-0.10
+	>=dev-python/pyexiftool-0.2.0
 	dev-python/lxml
 	dev-python/py3-daemon
 	>=dev-python/psutil-2
