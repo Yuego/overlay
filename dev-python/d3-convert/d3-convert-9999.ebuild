@@ -19,16 +19,16 @@ KEYWORDS=""
 IUSE="-test"
 
 RDEPEND="
-	dev-python/docopt
+	>=dev-python/docopt-0.6.2
 	>=dev-python/scandir-0.9
 	>=dev-python/pyexiftool-0.2.0
 	dev-python/lxml
 	dev-python/py3-daemon
-	>=dev-python/psutil-2
+	>=dev-python/psutil-4
 
-	media-libs/exiftool
+	>=media-libs/exiftool-10
 	media-gfx/ufraw
-	media-gfx/enblend
+	>=media-gfx/enblend-4.1
 	
 	test? (
 		dev-python/tox
