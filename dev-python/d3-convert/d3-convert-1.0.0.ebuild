@@ -5,17 +5,16 @@
 EAPI=6
 PYTHON_COMPAT=( python{3_3,3_4,3_5} pypy2_0 )
 
-inherit eutils distutils-r1 git-r3
+inherit eutils distutils-r1
 
 DESCRIPTION="D3 Converter"
 HOMEPAGE="https://github.com/Yuego/d3-convert"
 
-EGIT_REPO_URI="git://github.com/Yuego/d3-convert.git"
-EGIT_BRANCH="develop"
+SRC_URI="https://github.com/Yuego/d3-convert/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE="-test"
 
 RDEPEND="
