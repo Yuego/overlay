@@ -21,7 +21,7 @@ RDEPEND="
 	dev-python/docopt
 	>=dev-python/scandir-0.9
 	dev-python/pygobject:3
-	>=media-libs/gexiv2-0.10
+	>=media-libs/gexiv2-0.10[introspection]
 	dev-python/lxml
 	dev-python/py3-daemon
 	>=dev-python/psutil-2
