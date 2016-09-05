@@ -1,4 +1,9 @@
 dev-python/prompt_toolkit
+dev-python/strict-rfc3339
+dev-python/vcversioner
+dev-python/webcolors
+dev-python/functools32
+dev-python/jsonschema
 dev-python/notebook
 dev-libs/mathjax
 dev-python/nbformat
