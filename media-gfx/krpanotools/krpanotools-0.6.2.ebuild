@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=6
 
 inherit eutils
 
@@ -13,7 +13,7 @@ SRC_URI="https://github.com/Yuego/krpanotools/archive/${PV}.tar.gz -> krpanotool
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="kde"
 
 DEPEND=""
 RDEPEND="${DEPEND}
@@ -21,12 +21,17 @@ RDEPEND="${DEPEND}
 	media-gfx/enblend
 	media-libs/exiftool
 	media-gfx/imagemagick[openmp,raw,tiff]
+	kde? ( kde-apps/konsole )
 "
 
 src_install() {
 	#MENU
 	insopts -m0644
-	insinto "/usr/share/applications/krpano/"
+	# KDE 4
+	insinto "/usr/share/applications/${PN}/"
+	doins "${S}"/menu/*
+	# KDE 5
+	insinto "/usr/share/kservices5/${PN}/"
 	doins "${S}"/menu/*
 
 	#TEMPLATES

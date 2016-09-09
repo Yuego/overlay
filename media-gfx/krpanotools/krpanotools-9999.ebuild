@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=6
 
-inherit eutils git-2
+inherit eutils git-r3
 
 DESCRIPTION="Krpano Tools"
 HOMEPAGE="https://github.com/Yuego/krpanotools"
@@ -27,8 +27,12 @@ S="${WORKDIR}"
 src_install() {
 	#MENU
 	insopts -m0644
-	insinto "/usr/share/applications/krpano/"
-	doins "${S}"/menu/*
+	# KDE 4
+»···insinto "/usr/share/applications/${PN}/"
+»···doins "${S}"/menu/*
+»···# KDE 5
+»···insinto "/usr/share/kservices5/${PN}/"
+»···doins "${S}"/menu/*
 
 	#TEMPLATES
 	insinto "/opt/${PN}/"

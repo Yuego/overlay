@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=6
 
 inherit eutils
 
@@ -27,7 +27,11 @@ RDEPEND="${DEPEND}
 src_install() {
 	#MENU
 	insopts -m0644
-	insinto "/usr/share/applications/krpano/"
+	# KDE 4
+	insinto "/usr/share/applications/${PN}/"
+	doins "${S}"/menu/*
+	# KDE 5
+	insinto "/usr/share/kservices5/${PN}/"
 	doins "${S}"/menu/*
 
 	#TEMPLATES

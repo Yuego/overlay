@@ -25,6 +25,7 @@ dev-python/configargparse
 dev-python/zope-event
 app-crypt/acme
 
+dev-python/pydispatcher
 
 dev-python/psutil
 dev-python/chardet
