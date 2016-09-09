@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/enblend/${MY_P}.tar.gz"
 
 LICENSE="GPL-2 VIGRA"
 SLOT="0"
-KEYWORDS="amd64 ppc x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="debug doc gpu image-cache openmp X"
 
 REQUIRED_USE="openmp? ( !image-cache )"
@@ -28,6 +28,7 @@ RDEPEND="
 	X? ( media-libs/plotutils[X] )
 	media-libs/tiff:=
 	>=media-libs/vigra-1.8.0[openexr]
+	<media-libs/vigra-1.11.0
 	sci-libs/gsl:=
 	virtual/jpeg:0=
 	debug? ( dev-libs/dmalloc )

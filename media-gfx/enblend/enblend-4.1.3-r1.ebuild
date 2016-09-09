@@ -28,6 +28,7 @@ RDEPEND="
 	X? ( media-libs/plotutils[X] )
 	media-libs/tiff:=
 	>=media-libs/vigra-1.8.0[openexr]
+	<media-libs/vigra-1.11.0
 	sci-libs/gsl:=
 	virtual/jpeg:0=
 	debug? ( dev-libs/dmalloc )
