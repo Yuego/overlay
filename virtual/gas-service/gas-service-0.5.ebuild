@@ -53,6 +53,7 @@ RDEPEND="${RDEPEND}
 	
 	dev-python/pyyaml
 	dev-python/pytils
+	>=dev-python/python-dateutil-2.1
 "
 DEPEND="${RDEPEND}"
 
