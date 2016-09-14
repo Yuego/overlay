@@ -24,6 +24,7 @@ media-gfx/imagemagick corefonts
 media-libs/gexiv2 introspection
 media-libs/libmypaint gegl
 media-libs/vigra openexr
+media-libs/freetype cleartype_hinting -infinality
 media-video/ffmpeg mp3 theora vorbis
 net-misc/openssh hpn
 sci-libs/fftw threads
