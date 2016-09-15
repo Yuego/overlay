@@ -15,7 +15,7 @@ SRC_URI="https://github.com/scrapy/scrapy/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="boto ibl ssl"
+IUSE="boto ibl ssl -twisted"
 
 RDEPEND="
 	>=dev-python/twisted-core-10.0.0[${PYTHON_USEDEP}]
