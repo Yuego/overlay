@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy2_0 )
+PYTHON_COMPAT=( python{3_3,3_4,3_5} pypy2_0 )
 
 inherit distutils-r1
 
@@ -18,10 +18,13 @@ KEYWORDS="amd64 x86"
 IUSE="boto ibl ssl -twisted"
 
 RDEPEND="
-	>=dev-python/twisted-core-10.0.0[${PYTHON_USEDEP}]
-	dev-python/twisted-conch[${PYTHON_USEDEP}]
-	dev-python/twisted-mail[${PYTHON_USEDEP}]
-	dev-python/twisted-web[${PYTHON_USEDEP}]
+	twisted? (
+		>=dev-python/twisted-core-10.0.0[${PYTHON_USEDEP}]
+		dev-python/twisted-conch[${PYTHON_USEDEP}]
+		dev-python/twisted-mail[${PYTHON_USEDEP}]
+		dev-python/twisted-web[${PYTHON_USEDEP}]
+	)
+	>=dev-python/twisted-16.4.1[${PYTHON_USEDEP}]
 	>=dev-python/w3lib-1.15.0[${PYTHON_USEDEP}]
 	dev-python/queuelib[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]

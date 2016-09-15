@@ -21,6 +21,7 @@ dev-python/pythondialog
 app-crypt/letsencrypt
 dev-python/parsedatetime
 dev-python/zope-component
+dev-python/zope-interface
 dev-python/configargparse
 dev-python/zope-event
 app-crypt/acme
