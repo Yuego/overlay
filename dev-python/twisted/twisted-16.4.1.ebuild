@@ -16,7 +16,10 @@ SRC_URI="${SRC_URI}/${TWISTED_RELEASE}/${TWISTED_P}.tar.bz2"
 KEYWORDS="amd64 x86"
 IUSE="crypt serial test"
 
-RDEPEND=">=dev-python/zope-interface-4.0.2[${PYTHON_USEDEP}]
+RDEPEND="
+	!dev-python/twisted-core
+
+	>=dev-python/zope-interface-4.0.2[${PYTHON_USEDEP}]
 	crypt? ( >=dev-python/pyopenssl-0.10[${PYTHON_USEDEP}]
 		dev-python/service_identity[${PYTHON_USEDEP}] )
 	serial? ( dev-python/pyserial[${PYTHON_USEDEP}] )"

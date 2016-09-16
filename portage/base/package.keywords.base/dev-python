@@ -4,6 +4,7 @@ app-crypt/letsencrypt
 dev-python/parsedatetime
 dev-python/zope-component
 dev-python/zope-interface
+dev-python/cached-property
 dev-python/configargparse
 dev-python/zope-event
 app-crypt/acme
