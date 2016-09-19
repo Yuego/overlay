@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
-EAPI=5
+EAPI=6
 
 LICENSE="BSD"
 
@@ -15,6 +15,7 @@ IUSE=""
 
 RDEPEND="
 	dev-python/django
+	dev-python/scrapy
 "
 
 # Servers
@@ -55,6 +56,7 @@ RDEPEND="${RDEPEND}
 	dev-python/pytils
 	>=dev-python/python-dateutil-2.1
 	dev-python/user_agent
+	dev-python/dawg
 "
 DEPEND="${RDEPEND}"
 
