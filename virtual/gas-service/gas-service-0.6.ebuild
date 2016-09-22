@@ -16,6 +16,7 @@ IUSE=""
 RDEPEND="
 	dev-python/django
 	dev-python/scrapy
+	
 "
 
 # Servers
@@ -58,6 +59,7 @@ RDEPEND="${RDEPEND}
 	dev-python/user_agent
 	dev-python/dawg
 	dev-python/vincode
+	dev-python/scrapy-djangoitem
 "
 DEPEND="${RDEPEND}"
 
