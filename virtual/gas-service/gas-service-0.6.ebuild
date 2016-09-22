@@ -57,6 +57,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/python-dateutil-2.1
 	dev-python/user_agent
 	dev-python/dawg
+	dev-python/vincode
 "
 DEPEND="${RDEPEND}"
 
