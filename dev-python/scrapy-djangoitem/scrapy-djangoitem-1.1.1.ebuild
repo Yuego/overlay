@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/scrapy-1.1.0[${PYTHON_USEDEP}]
-	dev-python/django[${PYTHON_USEDEP}]
+	dev-python/django
 	dev-python/six[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools"
