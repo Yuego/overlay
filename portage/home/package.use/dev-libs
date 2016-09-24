@@ -10,7 +10,7 @@ dev-libs/libxml2 icu
 dev-libs/redland berkdb ssl xml mysql -odbc -postgres sqlite
 dev-libs/libpcre pcre16 static-libs
 dev-libs/glib static-libs
+dev-libs/liborcus -python_single_target_python3_3 python_single_target_python3_4 -python_single_target_python3_5
+dev-libs/libixion -python_single_target_python3_3 python_single_target_python3_4 -python_single_target_python3_5
 
-# For Steam
-#dev-libs/libpthread-stubs abi_x86_32
 dev-libs/boost python
