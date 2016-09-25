@@ -60,6 +60,7 @@ RDEPEND="${RDEPEND}
 	dev-python/dawg
 	dev-python/vincode
 	dev-python/scrapy-djangoitem
+	dev-python/scrapy-deltafetch
 "
 DEPEND="${RDEPEND}"
 
