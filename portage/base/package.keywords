@@ -117,3 +117,4 @@ net-misc/geoipupdate
 
 sys-libs/timezone-data
 www-servers/uwsgi
+www-servers/nginx amd6 x86
