@@ -4,5 +4,8 @@ media-sound/pulseaudio equalizer realtime libsamplerate
 media-sound/amarok embedded lastfm
 media-sound/deadbeef  -adplug -ao ape -converter -cover -cover-imlib2 curl dumb -gme gtk2 gtk3 -hotkeys -lastfm -m3u -midi -mms -mono2stereo -notify -nullout -oss -psf -pulseaudio -rpath -shellexec -shn -sid -sndfile -src -static -supereq threads -tta -vtx wavpack -zip
 media-sound/moc aac alsa ffmpeg flac mad musepack speex vorbis curl -debug -jack -libsamplerate -modplug -oss -sid -sndfile -timidity -wavpack
-
+media-sound/audacious -gtk -gtk3
+media-plugins/audacious-plugins -gtk -gtk3 pulseaudio
 media-sound/mpd aac alsa bzip2 cue curl ffmpeg fifo flac id3tag ipv6 mad musepack network ogg openal pulseaudio -tcpd unicode vorbis -ao -audiofile -cdio -debug -fluidsynth -gme inotify -jack -lame lastfmradio libsamplerate -mikmod -mms -modplug -mpg123 -oss -pipe -recorder -sid -sndfile -soundcloud -soup -sqlite -systemd -twolame wavpack -wildmidi -zeroconf zip
+
+

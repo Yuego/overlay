@@ -4,7 +4,9 @@ dev-python/PyQt4 declarative script
 dev-python/imaging X -scanner
 
 dev-python/django postgres -sqlite mysql
+dev-python/django-fias developer
 dev-python/pyodbc mssql
+
 dev-python/pymorphy cdb sqlite
 
 dev-python/pyside script

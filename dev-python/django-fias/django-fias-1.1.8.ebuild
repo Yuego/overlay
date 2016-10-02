@@ -15,11 +15,14 @@ SRC_URI="https://github.com/Yuego/django-fias/archive/${PV}.tar.gz -> ${P}.tar.g
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="sphinx"
+IUSE="postgres sphinx -developer"
 
 RDEPEND="
-	>=dev-python/django-1.7
+	>=dev-python/django-1.8
 	>=dev-python/django-select2-5.3.0
+	postgres? (
+		dev-python/psycopg:2
+	)
 	sphinx? (
 		>=app-misc/sphinx-2.1
 	)
@@ -29,6 +32,17 @@ RDEPEND="
 	dev-python/six
 	|| ( app-arch/unrar-gpl app-arch/unrar )
 	>=dev-python/dbfread-2.0.5
+	dev-python/progress
+
+	developer? (
+		dev-python/unrar
+		dev-python/tox
+		dev-python/pytest
+		>=dev-python/pytest-django-2.9.0
+		dev-python/pytest-xdist
+		dev-python/pytest-cov
+		dev-python/mock
+	)
 "
 DEPEND="dev-python/setuptools"
 
