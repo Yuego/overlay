@@ -64,7 +64,8 @@ src_install() {
 
 	doins krpanotools
 	newins "krpano Tools" krpano-gui
-	doins .nwpak 
+	doins .nwpak
+
 	#Icons
 	insinto "${targetdir}/images/"
 	newins .converticon convert.png
@@ -76,7 +77,7 @@ src_install() {
 	insinto "${targetdir}/viewer/"
 	doins viewer/*.js
 	doins viewer/*.swf
-	
+
 	#Plugins
 	insinto "${targetdir}/viewer/plugins"
 	doins viewer/plugins/*.js

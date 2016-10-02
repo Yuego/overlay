@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer>
-		<email>nikoli@lavabit.com</email>
-		<name>Nikoli</name>
+	<maintainer type="person">
+		<email>root@proscript.ru</email>
+		<name>Artem Vlasov</name>
 	</maintainer>
 	<use>
 		<flag name="links">Include links to the online collections</flag>

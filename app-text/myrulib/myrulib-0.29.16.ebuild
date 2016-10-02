@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 WX_GTK_VER="2.8"
 
 inherit eutils wxwidgets
@@ -13,20 +13,20 @@ SRC_URI="http://lintest.ru/pub/${P}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="+icu +links reader syslog"
 
 RDEPEND="
 	x11-libs/wxGTK:${WX_GTK_VER}[X]
 	dev-libs/libxml2
 	dev-db/sqlite:3[fts3(+),icu?]
-	dev-db/wxsqlite3:${WX_GTK_VER}
+	dev-db/wxsqlite3
 	app-arch/bzip2
 	icu? ( dev-libs/icu:= )
 	reader? (
 		media-libs/freetype:2
 		media-libs/libpng:=
-		virtual/jpeg
+		virtual/jpeg:*
 		sys-libs/zlib
 	)
 "

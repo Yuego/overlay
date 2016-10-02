@@ -1,2 +1,8 @@
 #!/bin/sh
-grep -rl -P '# Copyright 1999-[0-9]+ Gentoo Foundation' | xargs  sed -ri 's/# Copyright 1999-[0-9]+ Gentoo Foundation/# Copyright 1999-2016 Gentoo Foundation/g'
+grep -rl -P '^#.+1999-' | xargs sed -r -i 's/^#.+1999.*$/# Copyright 1999-2016 Gentoo Foundation/g'
+grep -rl -P '^#.+License.+$' | xargs sed -r -i 's/^#.+GNU.+License.+$/# Distributed under the terms of the GNU General Public License v2/'
+
+
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
