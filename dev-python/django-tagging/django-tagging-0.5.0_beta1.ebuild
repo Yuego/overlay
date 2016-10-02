@@ -21,4 +21,3 @@ RDEPEND="dev-python/django
 "
 
 DEPEND="${RDEPEND}"
-

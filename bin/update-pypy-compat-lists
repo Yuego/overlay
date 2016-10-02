@@ -1,0 +1,2 @@
+#!/bin/sh
+grep -rl -P 'pypy[\{\}0-9_,]+' | xargs  sed -ri 's/(pypy[\{\}0-9_,]* *)+/pypy pypy3 /g'

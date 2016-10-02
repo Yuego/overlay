@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -iname \*.ebuild | xargs sed -e :a -e '/^\n*$/{$d;N;ba' -e '}' -i

@@ -1,4 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: media-gfx/xnviewmp/xnviewmp-0.51.ebuild,v 1.1 2012/07/20 01:10:00 itspec.ru Exp $
 

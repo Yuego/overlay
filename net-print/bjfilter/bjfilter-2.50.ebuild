@@ -1,4 +1,4 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 # This ebuild come from http://bugs.gentoo.org/show_bug.cgi?id=128560 - The site http://gentoo.zugaina.org/ only host a copy.

@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/django-select2/django-select2-4.0.0.ebuild,v 1.2 2013/04/02 16:28:26 prometheanfire Exp $
 
@@ -21,4 +21,3 @@ RDEPEND="
 	dev-python/django
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
-

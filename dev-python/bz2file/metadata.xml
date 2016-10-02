@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>root@proscript.ru</email>
+    <name>Yuego</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">bz2file</remote-id>
+    <remote-id type="github">nvawda/bz2file</remote-id>
+  </upstream>
+</pkgmetadata>

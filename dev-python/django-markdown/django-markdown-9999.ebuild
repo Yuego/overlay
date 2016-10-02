@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
@@ -20,4 +20,3 @@ RDEPEND="dev-python/django"
 DEPEND="${RDEPEND}"
 
 DOCS="docs/* README.rst"
-

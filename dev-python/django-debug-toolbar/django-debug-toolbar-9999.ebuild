@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 
@@ -37,4 +37,3 @@ src_prepare() {
     sed -i "s#exclude=('tests'#exclude=('tests','tests.*'#g" setup.py
     distutils-r1_src_prepare
 }
-

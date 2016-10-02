@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -21,4 +21,3 @@ RDEPEND="
 	>=dev-python/django-1.6
 "
 DEPEND="dev-python/setuptools"
-

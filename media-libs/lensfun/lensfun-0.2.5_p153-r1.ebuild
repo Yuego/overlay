@@ -1,4 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/lensfun/lensfun-0.2.5_p153-r1.ebuild,v 1.2 2012/05/29 16:39:52 aballier Exp $
 
