@@ -13,15 +13,15 @@ SRC_URI="https://github.com/Yuego/krpanotools/archive/${PV}.tar.gz -> krpanotool
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="kde"
+IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}
-	media-gfx/krpanotools-binaries[viewer]
+	>=media-gfx/krpano-bin-1.17
 	media-gfx/enblend
 	media-libs/exiftool
 	media-gfx/imagemagick[openmp,raw,tiff]
-	kde? ( kde-apps/konsole )
+	kde-apps/konsole
 "
 
 src_install() {
@@ -35,7 +35,7 @@ src_install() {
 	doins "${S}"/menu/*
 
 	#TEMPLATES
-	insinto "/opt/${PN}/"
+	insinto "/opt/krpano/"
 	doins -r ${S}/templates/
 
 	#CONFIGS
@@ -45,6 +45,6 @@ src_install() {
 	doins -r ${S}/images/
 	
 	insopts -m0655
-	SCRIPTS
+	#SCRIPTS
 	doins -r ${S}/scripts/
 }
