@@ -53,32 +53,32 @@ src_install() {
 	targetdir="/opt/krpano"
 
 	#BIN
-	dosym ${targetdir}/bin/krpanotools /opt/bin/krpano
-	dosym ${targetdir}/bin/krpano-gui /opt/bin/krpano-gui
+	dosym "${targetdir}/bin/krpanotools" /opt/bin/krpano
+	dosym "${targetdir}/bin/krpano-gui" /opt/bin/krpano-gui
 
-	dosym libudev.so /usr/lib${ARCH}/libudev.so.0
+	dosym libudev.so "/usr/lib${ARCH}/libudev.so.0"
 	dolib lib*
 
-	insinto ${targetdir}/bin/
+	insinto "${targetdir}/bin/"
 	insopts -m0655
 
 	doins krpanotools
 	newins "krpano Tools" krpano-gui
 	doins .nwpak 
 	#Icons
-	insinto ${targetdir}/images/
+	insinto "${targetdir}/images/"
 	newins .converticon convert.png
 	newins .encrypticon encrypt.png
 	newins .krpanotoolsicon krpano.png
 	newins .makepanoicon makepano.png
 
 	#Viewer
-	insinto ${targetdir}/viewer/
+	insinto "${targetdir}/viewer/"
 	doins viewer/*.js
 	doins viewer/*.swf
 	
 	#Plugins
-	insinto ${targetdir}/viewer/plugins
+	insinto "${targetdir}/viewer/plugins"
     doins viewer/plugins/*.js
     doins viewer/plugins/*.swf
 
