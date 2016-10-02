@@ -6,7 +6,7 @@ EAPI=5
 
 DESCRIPTION="Console client for Yandex.Disk"
 HOMEPAGE="https://disk.yandex.ru/"
-SRC_URI="x86?    ( http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/${PN}_${PV}_i386.deb )
+SRC_URI="x86?	( http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/${PN}_${PV}_i386.deb )
 amd64?  ( http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/${PN}_${PV}_amd64.deb )"
 
 LICENSE="YDSLA"
@@ -18,14 +18,14 @@ IUSE=""
 
 src_unpack() {
 	mkdir "${S}"
-    cd "${S}"
-    if use amd64 ; then
-    	unpack ${PN}_${PV}_amd64.deb
-    else
-    	unpack ${PN}_${PV}_i386.deb
-    fi
+	cd "${S}"
+	if use amd64 ; then
+		unpack ${PN}_${PV}_amd64.deb
+	else
+		unpack ${PN}_${PV}_i386.deb
+	fi
 
-    unpack ./data.tar.gz
+	unpack ./data.tar.gz
 }
 
 src_install() {
@@ -33,6 +33,6 @@ src_install() {
 }
 
 pkg_postinst() {
-    elog "Now you can configure Yandex.Disk client with command:"
-    elog "yandex-disk setup"
+	elog "Now you can configure Yandex.Disk client with command:"
+	elog "yandex-disk setup"
 }

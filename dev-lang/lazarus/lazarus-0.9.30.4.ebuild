@@ -49,11 +49,11 @@ src_install() {
 	# Using rsync to avoid unnecessary copies and cleaning...
 	# Note: *.o and *.ppu are needed
 	rsync -a \
-		--exclude="CVS"     --exclude=".cvsignore" \
+		--exclude="CVS"	 --exclude=".cvsignore" \
 		--exclude="*.ppw"   --exclude="*.ppl" \
-		--exclude="*.ow"    --exclude="*.a"\
+		--exclude="*.ow"	--exclude="*.a"\
 		--exclude="*.rst"   --exclude=".#*" \
-		--exclude="*.~*"    --exclude="*.bak" \
+		--exclude="*.~*"	--exclude="*.bak" \
 		--exclude="*.orig"  --exclude="*.rej" \
 		--exclude=".xvpics" --exclude="*.compiled" \
 		--exclude="killme*" --exclude=".gdb_hist*" \

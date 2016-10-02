@@ -18,9 +18,9 @@ IUSE=""
 
 COMMON_DEP=""
 DEPEND=">=virtual/jdk-1.3
-        ${COMMON_DEP}"
+		${COMMON_DEP}"
 RDEPEND=">=virtual/jre-1.3
-        ${COMMON_DEP}"
+		${COMMON_DEP}"
 
 EANT_BUILD_TARGET="compile runtimejar"
 EANT_DOC_TARGET="javadoc"

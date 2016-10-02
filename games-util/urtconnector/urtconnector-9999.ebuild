@@ -17,7 +17,7 @@ IUSE=""
 
 RDEPEND="dev-qt/qtgui:4
 		media-libs/phonon
-        games-util/qstat
+		games-util/qstat
 		dev-libs/boost"
 DEPEND="${RDEPEND}"
 

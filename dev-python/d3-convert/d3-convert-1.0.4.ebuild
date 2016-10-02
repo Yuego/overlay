@@ -31,8 +31,8 @@ RDEPEND="
 	
 	test? (
 		dev-python/tox
-    	dev-python/coverage
-	    dev-python/nose
+		dev-python/coverage
+		dev-python/nose
 	)
 "
 

@@ -25,16 +25,16 @@ DEPEND="${RDEPEND}
 "
 
 src_prepare(){
-    #use qt4 && use gtk2 && die "Select only one flag: 'qt4' or 'gtk2'"
-    #! use qt4 && ! use gtk2 && die "Select flag: 'qt4' or 'gtk2'"
+	#use qt4 && use gtk2 && die "Select only one flag: 'qt4' or 'gtk2'"
+	#! use qt4 && ! use gtk2 && die "Select flag: 'qt4' or 'gtk2'"
 
-    #use qt4 && export lcl="qt" || export lcl="gtk2"
-    use amd64 && export CPU_TARGET="x86_64" || export CPU_TARGET="i386"
+	#use qt4 && export lcl="qt" || export lcl="gtk2"
+	use amd64 && export CPU_TARGET="x86_64" || export CPU_TARGET="i386"
 
-    export lazpath="/usr/share/lazarus"
+	export lazpath="/usr/share/lazarus"
 
-    # With QT4 not works... use gtk2
-    export lcl="gtk2"
+	# With QT4 not works... use gtk2
+	export lcl="gtk2"
 
 	sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' ./build.sh
 	sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' components/build.sh
@@ -47,7 +47,7 @@ src_compile(){
 
 src_install(){
 	diropts -m0755
-    dodir /usr/share
+	dodir /usr/share
 
 	install/linux/install.sh --portable-prefix=build
 

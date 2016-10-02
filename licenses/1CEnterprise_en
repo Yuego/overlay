@@ -17,110 +17,110 @@
 
 DESCRIPTION OF RIGHTS AND RESTRICTIONS
 
-    1. The Licensee may install and use SOFTWARE PRODUCT, in accordance with accompanying documentation, on a single computer
-       at one time. The usage of SOFTWARE PRODUCT on several computers is permitted only at presence at the Licensee of the
-       "1C:Enterprise 8" Client License on a corresponding quantity of workstations and only according to rules of licensing of
-       a user’s workstation (see below). The usage of SOFTWARE PRODUCT, in a "client-server" case is permitted only at presence
-       at the Licensee of the "1C:Enterprise 8" Server License and only according to rules of licensing of the "1C:Enterprise
-       8" server (see below). The usage of the applied solutions (configurations), which are not included into the delivery set
-       of SOFTWARE PRODUCT, is permitted only at presence at the Licensee of corresponding License agreements for these
-       solutions.
-    2. The usage of software products or computer equipment, allowing to reduce artificially the quantity of users which have a
-       direct access to the "1C:Enterprise 8" system or use it (that sometimes call software or hardware tools of
-       "multiplexing"), does not reduce a quantity of required "1C:Enterprise 8" licenses – the required quantity of Client
-       licenses should correspond to a number of separate inputs of multiplexing software or hardware tools with which a direct
-       interaction is carried out.
-    3. The transfer of rights under the present License Agreement to third persons is possible only under the condition of
-       transfer to them a full delivery set of SOFTWARE PRODUCT (including the present License agreement), the owner of which
-       was the Licensee. On the condition that the initial Licensee must eliminate from his computer available copies of
-       SOFTWARE PRODUCT and inform the Rightholder about a rights transfer.
-    4. The Licensee is obliged to not allow exclusive rights violations of the Rightholder on the SOFTWARE PRODUCT, especially
-       to not commit and to not enable a fulfillment of following operations by the third persons, without a special written
-       permission from the Rightholder:
-         a. to distribute the SOFTWARE PRODUCT or its components;
-         b. to introduce any changes to a code of SOFTWARE PRODUCT, to a content of databases and other data sets, where system
-            stores information, except for those changes, which are introduced by authorized means included in the SOFTWARE
-            PRODUCT and described in the accompanying documentation;
-         c. to obtain an access to information database of the SOFTWARE PRODUCT and construction of systems based on the
-            SOFTWARE PRODUCT with the help of means and technological solutions, not foreseen in the accompanying
-            documentation;
-         d. to commit actions, the result of which is a circumvention or a decrease of an efficiency of technological measures
-            used by the Rightholder for the copyrights protection including use of software and hardware tools of
-            "multiplexing", tools which are changing a working algorithm of software or hardware measures of the SOFTWARE
-            PRODUCT protection, and also to use the SOFTWARE PRODUCT with eliminated or changed technological measures of
-            protection without an authorization from the Rightholder;
-         e. to restore a source code, to decompile and/or disassemble a software part of the system, except for those cases,
-            and only in that degree, in what such activity is specially permitted the current legislation.
-    5. This License Agreement is valid throughout an entire operation period of SOFTWARE PRODUCT by the Licensee and/or having
-       copies of SOFTWARE PRODUCT by the Licensee.
+	1. The Licensee may install and use SOFTWARE PRODUCT, in accordance with accompanying documentation, on a single computer
+	   at one time. The usage of SOFTWARE PRODUCT on several computers is permitted only at presence at the Licensee of the
+	   "1C:Enterprise 8" Client License on a corresponding quantity of workstations and only according to rules of licensing of
+	   a user’s workstation (see below). The usage of SOFTWARE PRODUCT, in a "client-server" case is permitted only at presence
+	   at the Licensee of the "1C:Enterprise 8" Server License and only according to rules of licensing of the "1C:Enterprise
+	   8" server (see below). The usage of the applied solutions (configurations), which are not included into the delivery set
+	   of SOFTWARE PRODUCT, is permitted only at presence at the Licensee of corresponding License agreements for these
+	   solutions.
+	2. The usage of software products or computer equipment, allowing to reduce artificially the quantity of users which have a
+	   direct access to the "1C:Enterprise 8" system or use it (that sometimes call software or hardware tools of
+	   "multiplexing"), does not reduce a quantity of required "1C:Enterprise 8" licenses – the required quantity of Client
+	   licenses should correspond to a number of separate inputs of multiplexing software or hardware tools with which a direct
+	   interaction is carried out.
+	3. The transfer of rights under the present License Agreement to third persons is possible only under the condition of
+	   transfer to them a full delivery set of SOFTWARE PRODUCT (including the present License agreement), the owner of which
+	   was the Licensee. On the condition that the initial Licensee must eliminate from his computer available copies of
+	   SOFTWARE PRODUCT and inform the Rightholder about a rights transfer.
+	4. The Licensee is obliged to not allow exclusive rights violations of the Rightholder on the SOFTWARE PRODUCT, especially
+	   to not commit and to not enable a fulfillment of following operations by the third persons, without a special written
+	   permission from the Rightholder:
+		 a. to distribute the SOFTWARE PRODUCT or its components;
+		 b. to introduce any changes to a code of SOFTWARE PRODUCT, to a content of databases and other data sets, where system
+			stores information, except for those changes, which are introduced by authorized means included in the SOFTWARE
+			PRODUCT and described in the accompanying documentation;
+		 c. to obtain an access to information database of the SOFTWARE PRODUCT and construction of systems based on the
+			SOFTWARE PRODUCT with the help of means and technological solutions, not foreseen in the accompanying
+			documentation;
+		 d. to commit actions, the result of which is a circumvention or a decrease of an efficiency of technological measures
+			used by the Rightholder for the copyrights protection including use of software and hardware tools of
+			"multiplexing", tools which are changing a working algorithm of software or hardware measures of the SOFTWARE
+			PRODUCT protection, and also to use the SOFTWARE PRODUCT with eliminated or changed technological measures of
+			protection without an authorization from the Rightholder;
+		 e. to restore a source code, to decompile and/or disassemble a software part of the system, except for those cases,
+			and only in that degree, in what such activity is specially permitted the current legislation.
+	5. This License Agreement is valid throughout an entire operation period of SOFTWARE PRODUCT by the Licensee and/or having
+	   copies of SOFTWARE PRODUCT by the Licensee.
 
 Workstation licensing
 
-    1. An access to SOFTWARE PRODUCTS is carried out at one time from that quantity of workstations which is designated in the
-       Client License of "1C:Enterprise 8" and legally obtained by the Licensee. Thus it is considered that an access to
-       SOFTWARE PRODUCTS gained from the given computer and that they are used in those cases when the record of SOFTWARE
-       PRODUCTS or their parts is fulfilled in the computer memory, and also in any other cases when there is a direct or
-       indirect connection between the computer, a workstation, the pocket computer (mobile appliance) or other digital
-       electronic device and SOFTWARE PRODUCTS.
-    2. The Client license of "1C:Enterprise 8" is valid on following conditions:
-         a. the Licensee has one or more legally obtained SOFTWARE PRODUCTS;
-         b. SOFTWARE PRODUCTS’ installation was made on Licensee’ computers from above-mentioned distribution kits;
-         c. all workstations, from which, in accordance with this Client license, an access is organized to SOFTWARE PRODUCTS
-            and information databases of applied solutions, included into SOFTWARE PRODUCTS, are representing:
-         i. computers connected to the same local network, where hardware protection keys of "1C:Enterprise 8" are installed;
-        ii. remote computers, which are not included in the local network, if information databases of applied solutions,
-            included into SOFTWARE PRODUCTS, are not created on these remote computers, and it is using a remote access to
-            information databases of applied solutions installed on computers within the local network.
+	1. An access to SOFTWARE PRODUCTS is carried out at one time from that quantity of workstations which is designated in the
+	   Client License of "1C:Enterprise 8" and legally obtained by the Licensee. Thus it is considered that an access to
+	   SOFTWARE PRODUCTS gained from the given computer and that they are used in those cases when the record of SOFTWARE
+	   PRODUCTS or their parts is fulfilled in the computer memory, and also in any other cases when there is a direct or
+	   indirect connection between the computer, a workstation, the pocket computer (mobile appliance) or other digital
+	   electronic device and SOFTWARE PRODUCTS.
+	2. The Client license of "1C:Enterprise 8" is valid on following conditions:
+		 a. the Licensee has one or more legally obtained SOFTWARE PRODUCTS;
+		 b. SOFTWARE PRODUCTS’ installation was made on Licensee’ computers from above-mentioned distribution kits;
+		 c. all workstations, from which, in accordance with this Client license, an access is organized to SOFTWARE PRODUCTS
+			and information databases of applied solutions, included into SOFTWARE PRODUCTS, are representing:
+		 i. computers connected to the same local network, where hardware protection keys of "1C:Enterprise 8" are installed;
+		ii. remote computers, which are not included in the local network, if information databases of applied solutions,
+			included into SOFTWARE PRODUCTS, are not created on these remote computers, and it is using a remote access to
+			information databases of applied solutions installed on computers within the local network.
 
-    3. The required quantity of Client licenses for sessions with information databases of "1C:Enterprise 8" (at running
-       several multiple user sessions on a single workstation to work with information databases):
-         a. if the hardware protection key of "1C:Enterprise 8" is set up on the given workstation or the given workstation is
-            connected to the local network in which hardware protection keys of "1C:Enterprise 8" were set up, on all sessions
-            with information databases of "1C:Enterprise 8", were run on the given workstation – it is enough to have one
-            Client license;
-         b. if the given workstation is represented as a web client of "1C:Enterprise 8" or a thin client or a thick client
-            which do not have a protection key of "1C:Enterprise 8" and do not connected to local network in which hardware
-            protection keys of "1C:Enterprise 8" was placed, then the separate Client license is required on each session with
-            an information database of "1C:Enterprise 8".
+	3. The required quantity of Client licenses for sessions with information databases of "1C:Enterprise 8" (at running
+	   several multiple user sessions on a single workstation to work with information databases):
+		 a. if the hardware protection key of "1C:Enterprise 8" is set up on the given workstation or the given workstation is
+			connected to the local network in which hardware protection keys of "1C:Enterprise 8" were set up, on all sessions
+			with information databases of "1C:Enterprise 8", were run on the given workstation – it is enough to have one
+			Client license;
+		 b. if the given workstation is represented as a web client of "1C:Enterprise 8" or a thin client or a thick client
+			which do not have a protection key of "1C:Enterprise 8" and do not connected to local network in which hardware
+			protection keys of "1C:Enterprise 8" was placed, then the separate Client license is required on each session with
+			an information database of "1C:Enterprise 8".
 
   "1C:Enterprise 8" server licensing
 
-    1. The "1C:Enterprise 8" Server represents the special server application through which an access is provided to
-       information database with the use of "client-server" technology. The "1C:Enterprise 8" Server forms an intermediate
-       software layer between client applications of "1C:Enterprise 8" system of programs and a server of databases.
-    2. The Licensee has the right to install and use the "1C:Enterprise 8" Server on one computer-server.
-    3. If it is used a cluster of servers on several computers, then the license for each computer must be obtained where the
-       "1C:Enterprise 8" Server will operate.
-    4. The usage of "1C:Enterprise 8" Server will be legal when it is simultaneously complying with the following conditions:
-         a. the Licensee has one or several legally obtained SOFTWARE PRODUCTS;
-         b. "1C:Enterprise 8" Server installation is made on one computer-server;
-         c. on the corresponding quantity of workstations from which it is planned to organize an access to Server services of
-            "1C:Enterprise 8" within the given local network, the Licensee has available Client Licenses of "1C:Enterprise 8"
-            and they are legally used.
+	1. The "1C:Enterprise 8" Server represents the special server application through which an access is provided to
+	   information database with the use of "client-server" technology. The "1C:Enterprise 8" Server forms an intermediate
+	   software layer between client applications of "1C:Enterprise 8" system of programs and a server of databases.
+	2. The Licensee has the right to install and use the "1C:Enterprise 8" Server on one computer-server.
+	3. If it is used a cluster of servers on several computers, then the license for each computer must be obtained where the
+	   "1C:Enterprise 8" Server will operate.
+	4. The usage of "1C:Enterprise 8" Server will be legal when it is simultaneously complying with the following conditions:
+		 a. the Licensee has one or several legally obtained SOFTWARE PRODUCTS;
+		 b. "1C:Enterprise 8" Server installation is made on one computer-server;
+		 c. on the corresponding quantity of workstations from which it is planned to organize an access to Server services of
+			"1C:Enterprise 8" within the given local network, the Licensee has available Client Licenses of "1C:Enterprise 8"
+			and they are legally used.
 
   Base version licensing
 
    The base version of "1C:Enterprise 8" (referred to hereinafter as the "BASE VERSION") - is a delivery set of "1C:Enterprise
    8", which among others includes the "1C:Enterprise 8" platform and a special delivery of applied solution (configurations).
-    1. The Licensee has the right to install and use the BASE VERSION, in accordance with an accompanying documentation on a
-       single workstation. The usage of client licenses and a license of the "1C:Enterprise 8" server with the BASE VERSION is
-       not allowed. If it is required to use the BASE VERSION on several workstations, then a separate copy of the BASE VERSION
-       should be obtained for each workstation.
-    2. To run and work with the BASE VERSION, the Licensee, depending on the particular product, may require an "electronic
-       license" to use the BASE VERSION, which is ensuring its binding to one Licensee’s computer. The hardware protection keys
-       are not utilized in the BASE VERSION.
+	1. The Licensee has the right to install and use the BASE VERSION, in accordance with an accompanying documentation on a
+	   single workstation. The usage of client licenses and a license of the "1C:Enterprise 8" server with the BASE VERSION is
+	   not allowed. If it is required to use the BASE VERSION on several workstations, then a separate copy of the BASE VERSION
+	   should be obtained for each workstation.
+	2. To run and work with the BASE VERSION, the Licensee, depending on the particular product, may require an "electronic
+	   license" to use the BASE VERSION, which is ensuring its binding to one Licensee’s computer. The hardware protection keys
+	   are not utilized in the BASE VERSION.
 
   Training version licensing
 
    The training version of "1C:Enterprise 8" (referred to hereinafter as the "TRAINING VERSION") – is a delivery set of
    "1C:Enterprise 8", which among others includes the special (training) version of "1C:Enterprise 8" platform and one or
    several training applied solutions (configurations).
-    1. The Licensee has the right to install and use the TRAINING VERSION on a single workstation. The usage of client licenses
-       and a license of the "1C:Enterprise 8" server with the TRAINING VERSION is not allowed. If it is required to use the
-       TRAINING VERSION on several workstations, then a separate copy of the TRAINING VERSION should be obtained for each
-       workstation.
-    2. The hardware protection keys or "electronic licenses" are not applied in the TRAINING VERSION.
-    3. The TRAINING VERSION can not be used for an automation of running businesses, organizations and institutions, as well as
-       personal tasks. The TRAINING VERSION can be used to develop feasible applied solutions in accordance with documentation
-       included within the delivery set of this software product. Nevertheless, the business usage of developed applied
-       solutions can only be carried out on commercial versions of "1C:Enterprise 8".
+	1. The Licensee has the right to install and use the TRAINING VERSION on a single workstation. The usage of client licenses
+	   and a license of the "1C:Enterprise 8" server with the TRAINING VERSION is not allowed. If it is required to use the
+	   TRAINING VERSION on several workstations, then a separate copy of the TRAINING VERSION should be obtained for each
+	   workstation.
+	2. The hardware protection keys or "electronic licenses" are not applied in the TRAINING VERSION.
+	3. The TRAINING VERSION can not be used for an automation of running businesses, organizations and institutions, as well as
+	   personal tasks. The TRAINING VERSION can be used to develop feasible applied solutions in accordance with documentation
+	   included within the delivery set of this software product. Nevertheless, the business usage of developed applied
+	   solutions can only be carried out on commercial versions of "1C:Enterprise 8".

@@ -23,7 +23,7 @@ RDEPEND="
 RDEPEND="${RDEPEND}
 	dev-db/postgresql[server]
 	www-servers/nginx
-    www-servers/uwsgi[python]
+	www-servers/uwsgi[python]
 
 	net-libs/nodejs
 	dev-db/postgis

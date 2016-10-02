@@ -18,9 +18,9 @@ IUSE=""
 COMMON_DEP=">=dev-java/jargs-1.0
 	>=dev-java/rhino-1.6.7"
 DEPEND=">=virtual/jdk-1.4
-        ${COMMON_DEP}"
+		${COMMON_DEP}"
 RDEPEND=">=virtual/jre-1.4
-        ${COMMON_DEP}"
+		${COMMON_DEP}"
 
 EANT_BUILD_TARGET="clean build.jar"
 

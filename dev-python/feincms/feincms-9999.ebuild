@@ -17,10 +17,10 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.7
-    >=dev-python/django-mptt-0.7.1
-    >=dev-python/pillow-2.0.0
-    >=dev-python/feedparser-5.0.0
-    >=dev-python/pytz-2014.10
+	>=dev-python/django-mptt-0.7.1
+	>=dev-python/pillow-2.0.0
+	>=dev-python/feedparser-5.0.0
+	>=dev-python/pytz-2014.10
 "
 DEPEND="dev-python/setuptools"
 

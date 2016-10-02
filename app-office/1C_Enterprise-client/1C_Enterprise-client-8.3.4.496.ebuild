@@ -13,9 +13,9 @@ MY_PV="$(replace_version_separator 3 '-' )"
 MY_PN="1C_Enterprise83-client"
 
 SRC_URI="x86? ( ${MY_PN}-${MY_PV}.i386.rpm
-	    nls? ( ${MY_PN}-nls-${MY_PV}.i386.rpm ) )
+		nls? ( ${MY_PN}-nls-${MY_PV}.i386.rpm ) )
 	amd64? ( ${MY_PN}-${MY_PV}.x86_64.rpm
-	    nls? ( ${MY_PN}-nls-${MY_PV}.x86_64.rpm ) )"
+		nls? ( ${MY_PN}-nls-${MY_PV}.x86_64.rpm ) )"
 
 SLOT=$(get_version_component_range 1-2)
 LICENSE="1CEnterprise_en"

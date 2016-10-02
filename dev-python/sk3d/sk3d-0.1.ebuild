@@ -20,7 +20,7 @@ RDEPEND="${RDEPEND}
 	dev-db/postgresql-server
 	dev-db/postgis
 	www-servers/nginx
-    www-servers/uwsgi[python]	
+	www-servers/uwsgi[python]	
 "
 
 # Libs
@@ -34,7 +34,7 @@ RDEPEND="${RDEPEND}
 # Utils
 RDEPEND="${RDEPEND}
 	dev-java/yuicompressor
-    imagemagick? ( media-gfx/imagemagick )
+	imagemagick? ( media-gfx/imagemagick )
 
 "
 

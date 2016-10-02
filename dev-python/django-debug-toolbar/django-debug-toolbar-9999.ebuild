@@ -17,8 +17,8 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-    >=dev-python/django-1.7
-    dev-python/python-sqlparse
+	>=dev-python/django-1.7
+	dev-python/python-sqlparse
 "
 DEPEND="${RDEPEND}"
 
@@ -34,6 +34,6 @@ pkg_postinst() {
 }
 
 src_prepare() {
-    sed -i "s#exclude=('tests'#exclude=('tests','tests.*'#g" setup.py
-    distutils-r1_src_prepare
+	sed -i "s#exclude=('tests'#exclude=('tests','tests.*'#g" setup.py
+	distutils-r1_src_prepare
 }

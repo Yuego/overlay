@@ -21,6 +21,6 @@ DEPEND="dev-python/setuptools"
 S="${WORKDIR}/django-mptt-${PV}"
 
 src_prepare(){
-    sed -i "s#packages=find_packages()#packages=find_packages(exclude=('tests.*', 'tests'))#g" setup.py
+	sed -i "s#packages=find_packages()#packages=find_packages(exclude=('tests.*', 'tests'))#g" setup.py
 	distutils-r1_src_prepare
 }

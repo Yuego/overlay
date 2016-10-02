@@ -19,29 +19,29 @@ IUSE="qt4 -gtk2"
 REQUIRED_USE=" ^^ ( qt4 gtk2 )"
 
 RDEPEND=">=dev-lang/lazarus-1
-         sys-apps/dbus
-         dev-libs/glib
-         sys-libs/ncurses
-         x11-libs/libX11
+		 sys-apps/dbus
+		 dev-libs/glib
+		 sys-libs/ncurses
+		 x11-libs/libX11
 "
 
 DEPEND="${RDEPEND}
 	gtk2? ( x11-libs/gtk+:2 )
-        qt4? ( >=dev-qt/qtpascal-2.5 )
+		qt4? ( >=dev-qt/qtpascal-2.5 )
 "
 
 src_prepare(){
-    use qt4 && export lcl="qt" || export lcl="gtk2"
-    use amd64 && export CPU_TARGET="x86_64" || export CPU_TARGET="i386"
+	use qt4 && export lcl="qt" || export lcl="gtk2"
+	use amd64 && export CPU_TARGET="x86_64" || export CPU_TARGET="i386"
 
-    export lazpath="/usr/share/lazarus"
+	export lazpath="/usr/share/lazarus"
 
-    if use qt4 ; then
+	if use qt4 ; then
 	cp /usr/lib/qt4/libQt4Pas.so plugins/wlx/WlxMplayer/src/
 	cp /usr/lib/qt4/libQt4Pas.so src/
-    fi
+	fi
 
-    find ./ -type f -name "build.sh" -exec sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' {} \;
+	find ./ -type f -name "build.sh" -exec sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' {} \;
 }
 
 src_compile(){

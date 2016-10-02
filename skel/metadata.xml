@@ -2,11 +2,11 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="person">
-    <email>root@proscript.ru</email>
-    <name>Artem Vlasov</name>
+	<email>root@proscript.ru</email>
+	<name>Artem Vlasov</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi"></remote-id>
-    <remote-id type="github"></remote-id>
+	<remote-id type="pypi"></remote-id>
+	<remote-id type="github"></remote-id>
   </upstream>
 </pkgmetadata>

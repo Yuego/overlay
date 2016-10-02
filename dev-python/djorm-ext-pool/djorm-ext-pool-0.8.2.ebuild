@@ -21,7 +21,7 @@ RDEPEND="
 	>=dev-python/django-1.3
 	>=dev-python/sqlalchemy-0.7.5
 	mysql? ( dev-python/mysql-python )
-    postgres? ( dev-python/psycopg:2 )
-    sqlite? ( dev-db/sqlite )
+	postgres? ( dev-python/psycopg:2 )
+	sqlite? ( dev-db/sqlite )
 "
 DEPEND="dev-python/setuptools"

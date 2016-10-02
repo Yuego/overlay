@@ -3,10 +3,10 @@
 <pkgmetadata>
   <herd>openstack</herd>
   <maintainer>
-    <email>prometheanfire@gentoo.org</email>
+	<email>prometheanfire@gentoo.org</email>
   </maintainer>
   <longdescription lang="en">
-    Python bindings to the OpenStack Object Storage API
+	Python bindings to the OpenStack Object Storage API
   </longdescription>
 </pkgmetadata>
 

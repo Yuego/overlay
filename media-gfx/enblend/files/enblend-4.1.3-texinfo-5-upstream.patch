@@ -6,7 +6,7 @@
 Get the Texinfo documentation to translate again with makeinfo-5.2.
 
 This patch takes thus care of issue #1181678
-    https://bugs.launchpad.net/enblend/+bug/1181678
+	https://bugs.launchpad.net/enblend/+bug/1181678
 
 We do not strive for a nicely formatted documentation anymore in the
 Stable Branch, because the Development Branch already has a flawless
@@ -16,9 +16,9 @@ diff -r c1bcd2df4e37 -r 8387f0170f7b doc/Makefile.am
 --- a/doc/Makefile.am	Fri Aug 07 16:43:18 2015 +0200
 +++ b/doc/Makefile.am	Fri Aug 07 16:43:24 2015 +0200
 @@ -46,7 +46,7 @@
-                    -I $(top_builddir) -I $(srcdir) \
-                    --css-include=@srcdir@/default.css \
-                    $(MAKEINFOHTMLFLAGS)
+					-I $(top_builddir) -I $(srcdir) \
+					--css-include=@srcdir@/default.css \
+					$(MAKEINFOHTMLFLAGS)
 -export TEXINPUTS=$(top_builddir):$(srcdir)
 +export TEXINPUTS = .:$(top_builddir):$(srcdir):
  
@@ -147,7 +147,7 @@ diff -r c1bcd2df4e37 -r 8387f0170f7b doc/auxmac.texi
 -@end ifinfo
 -@html
 -<mathinline xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
--    <mi>&omega;</mi>
+-	<mi>&omega;</mi>
 -</mathinline>
 -@end html
 -@tex
@@ -165,7 +165,7 @@ diff -r c1bcd2df4e37 -r 8387f0170f7b doc/auxmac.texi
 -@end ifinfo
 -@html
 -<mathinline xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
--    <mi>&sigma;</mi>
+-	<mi>&sigma;</mi>
 -</mathinline>
 -@end html
 -@tex
@@ -183,7 +183,7 @@ diff -r c1bcd2df4e37 -r 8387f0170f7b doc/auxmac.texi
 -@end ifinfo
 -@html
 -<mathinline xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
--    <mi>&xi;</mi>
+-	<mi>&xi;</mi>
 -</mathinline>
 -@end html
 -@tex
@@ -210,12 +210,12 @@ diff -r c1bcd2df4e37 -r 8387f0170f7b doc/auxmac.texi
 -@end ifinfo
 -@html
 -<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
--    <mn>\significant\</mn>
--    <mo>&times;</mo>
--    <msup>
--        <mn>10</mn>
--        <mn>\exponent\</mn>
--    </msup>
+-	<mn>\significant\</mn>
+-	<mo>&times;</mo>
+-	<msup>
+-		<mn>10</mn>
+-		<mn>\exponent\</mn>
+-	</msup>
 -</math>
 -@end html
 -@tex
@@ -478,27 +478,27 @@ diff -r c1bcd2df4e37 -r 8387f0170f7b doc/enfuse.texi
  @math{w(P(1, x, y)) * P(1, x, y) +
  ... +
  w(P(n, x, y)) * P(n, x, y)
----> Q(x, y),}@w{                                                  }@equationW{}
+---> Q(x, y),}@w{												  }@equationW{}
 +--> Q(x, y),}
  @end display
  @end ifinfo
  @html
 @@ -2520,9 +2506,6 @@
-                 <mi>y</mi>
-             </mfenced>
-         </mrow>
--        <mtext>,</mtext>
--        <mspace width="4em"/>
--        <mtext>@equationW{}</mtext>
-     </mrow>
+				 <mi>y</mi>
+			 </mfenced>
+		 </mrow>
+-		<mtext>,</mtext>
+-		<mspace width="4em"/>
+-		<mtext>@equationW{}</mtext>
+	 </mrow>
  </math>
  @end html
 @@ -2530,7 +2513,7 @@
  $$
-     w(P(1, x, y)) P(1, x, y) + \ldots + w(P(n, x, y)) P(n, x, y)
-     \rightarrow
--    Q(x, y),\hskip4em\hbox{@equationW{}}
-+    Q(x, y)
+	 w(P(1, x, y)) P(1, x, y) + \ldots + w(P(n, x, y)) P(n, x, y)
+	 \rightarrow
+-	Q(x, y),\hskip4em\hbox{@equationW{}}
++	Q(x, y)
  $$
  @end tex
  @docbook

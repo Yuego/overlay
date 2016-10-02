@@ -23,6 +23,6 @@ DEPEND="dev-python/setuptools"
 
 src_prepare(){
 	sed -i "s/\"github.tests\",//g" setup.py
-    sed -i "s/test_suite*$//g" setup.py
-    distutils-r1_src_prepare
+	sed -i "s/test_suite*$//g" setup.py
+	distutils-r1_src_prepare
 }

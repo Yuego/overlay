@@ -18,7 +18,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.4.2
-    <dev-python/django-1.7
+	<dev-python/django-1.7
 	>=dev-python/django-debug-toolbar-1.0
 "
 DEPEND="${RDEPEND}"

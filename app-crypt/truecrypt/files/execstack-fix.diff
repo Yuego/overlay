@@ -16,7 +16,7 @@
 --- Crypto/AesSmall_x86.asm.old	2011-06-01 17:12:53.084000002 -0400
 +++ Crypto/AesSmall_x86.asm	2011-06-01 17:12:53.086000002 -0400
 @@ -1442,3 +1442,12 @@
-     db  v8(0xe1),v8(0x69),v8(0x14),v8(0x63),v8(0x55),v8(0x21),v8(0x0c),v8(0x7d)
+	 db  v8(0xe1),v8(0x69),v8(0x14),v8(0x63),v8(0x55),v8(0x21),v8(0x0c),v8(0x7d)
  
  %endif
 +	%ifidn __OUTPUT_FORMAT__,elf
@@ -46,7 +46,7 @@
 --- Crypto/Aes_x86.asm.old	2011-06-01 17:12:53.096000002 -0400
 +++ Crypto/Aes_x86.asm	2011-06-01 17:12:53.097000002 -0400
 @@ -644,3 +644,12 @@
-     do_exit
+	 do_exit
  
  %endif
 +	%ifidn __OUTPUT_FORMAT__,elf

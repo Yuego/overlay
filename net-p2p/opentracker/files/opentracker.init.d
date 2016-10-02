@@ -11,20 +11,20 @@ depend() {
 }
 
 start() {
-    ebegin "Starting Opentracker daemon"
-    start-stop-daemon \
+	ebegin "Starting Opentracker daemon"
+	start-stop-daemon \
 	--background \
 	--start --make-pidfile --pidfile "$PIDFILE" \
 	--exec "$BINFILE" -- \
 	"$EXEC_PARAMS"
-    eend $?
+	eend $?
 }
 
 stop() {
-    ebegin "Stopping Opentracker daemon"
-    start-stop-daemon \
+	ebegin "Stopping Opentracker daemon"
+	start-stop-daemon \
 	--stop --pidfile "$PIDFILE" \
 	--exec "$BINFILE"
-    eend $?
+	eend $?
 }
 

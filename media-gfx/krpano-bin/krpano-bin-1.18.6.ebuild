@@ -79,8 +79,8 @@ src_install() {
 	
 	#Plugins
 	insinto "${targetdir}/viewer/plugins"
-    doins viewer/plugins/*.js
-    doins viewer/plugins/*.swf
+	doins viewer/plugins/*.js
+	doins viewer/plugins/*.swf
 
 	#Docs
 	dodoc license.txt

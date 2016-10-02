@@ -20,13 +20,13 @@ KEYWORDS="~amd64 ~x86"
 IUSE="debug"
 
 DEPEND="
-        $(add_kdebase_dep libtaskmanager)
+		$(add_kdebase_dep libtaskmanager)
 "
 RDEPEND="${DEPEND}
-        $(add_kdebase_dep plasma-workspace)
+		$(add_kdebase_dep plasma-workspace)
 "
 
 src_prepare() {
-        mv ${WORKDIR}/${PN} ${WORKDIR}/${P}
-        kde4-base_src_prepare
+		mv ${WORKDIR}/${PN} ${WORKDIR}/${P}
+		kde4-base_src_prepare
 }

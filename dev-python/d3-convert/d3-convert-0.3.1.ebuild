@@ -32,8 +32,8 @@ RDEPEND="
 	
 	test? (
 		dev-python/tox
-    	dev-python/coverage
-	    dev-python/nose
+		dev-python/coverage
+		dev-python/nose
 	)
 "
 
@@ -49,7 +49,7 @@ src_install(){
 	dobin d3-blender
 
 	doconfd data/conf.d/d3-convert
-    doinitd data/init.d/d3-convert
+	doinitd data/init.d/d3-convert
 
 	#MENU
 	insopts -m0644
