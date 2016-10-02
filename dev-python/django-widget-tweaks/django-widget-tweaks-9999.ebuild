@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7} pypy2_0 )
+PYTHON_COMPAT=( python{2_6,2_7} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 

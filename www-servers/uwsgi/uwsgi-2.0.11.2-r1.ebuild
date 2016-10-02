@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-PYTHON_COMPAT=( python2_7 python3_{3,4,5} pypy )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5} pypy pypy3 )
 
 RUBY_OPTIONAL="yes"
 USE_RUBY="ruby19 ruby20 ruby21"
@@ -42,7 +42,7 @@ UWSGI_PLUGINS_OPT=( alarm_{curl,xmpp} clock_{monotonic,realtime} curl_cron
 	systemd_logger transformation_toupper tuntap webdav xattr xslt zabbix )
 
 LANG_SUPPORT_SIMPLE=( cgi mono perl ) # plugins which can be built in the main build process
-LANG_SUPPORT_EXTENDED=( lua php pypy python python_asyncio python_gevent ruby )
+LANG_SUPPORT_EXTENDED=( lua php pypy pypy3 python python_asyncio python_gevent ruby )
 
 # plugins to be ignored (for now):
 # cheaper_backlog2: example plugin
@@ -68,7 +68,7 @@ REQUIRED_USE="|| ( ${LANG_SUPPORT_SIMPLE[@]} ${LANG_SUPPORT_EXTENDED[@]} )
 	uwsgi_plugins_emperor_zeromq? ( zeromq )
 	uwsgi_plugins_forkptyrouter? ( uwsgi_plugins_corerouter )
 	uwsgi_plugins_router_xmldir? ( xml )
-	pypy? ( python_targets_python2_7 )
+	pypy pypy3 ? ( python_targets_python2_7 )
 	python? ( ${PYTHON_REQUIRED_USE} )
 	python_asyncio? ( python_targets_python3_4 python_gevent )
 	python_gevent? ( python )
@@ -115,7 +115,7 @@ CDEPEND="sys-libs/zlib
 		php_targets_php5-4? ( dev-lang/php:5.4[embed] )
 		php_targets_php5-5? ( dev-lang/php:5.5[embed] )
 	)
-	pypy? ( virtual/pypy )
+	pypy pypy3 ? ( virtual/pypy pypy3 )
 	python? ( ${PYTHON_DEPS} )
 	python_gevent? ( >=dev-python/gevent-1.0.1[$(python_gen_usedep 'python2*')] )
 	ruby? ( $(ruby_implementations_depend) )"
@@ -234,8 +234,8 @@ python_compile_plugins() {
 	EPYV=${EPYTHON/.}
 	PYV=${EPYV/python}
 
-	if [[ ${EPYTHON} == pypy* ]] ; then
-		echo "skipping because pypy is not meant to build plugins on its own"
+	if [[ ${EPYTHON} == pypy pypy3 * ]] ; then
+		echo "skipping because pypy pypy3 is not meant to build plugins on its own"
 		return
 	fi
 
@@ -253,12 +253,12 @@ python_compile_plugins() {
 		fi
 	fi
 
-	if use pypy ; then
+	if use pypy pypy3 ; then
 		if [[ "${PYV}" == "27" ]] ; then
 			# TODO: do some proper patching ? The wiki didn't help... I gave up for now.
-			# QA: RWX --- --- usr/lib64/uwsgi/pypy_plugin.so
+			# QA: RWX --- --- usr/lib64/uwsgi/pypy pypy3 plugin.so
 			append-ldflags -Wl,-z,noexecstack
-			${PYTHON} uwsgiconfig.py --plugin plugins/pypy gentoo pypy || die "building plugin for pypy-support in ${EPYTHON} failed"
+			${PYTHON} uwsgiconfig.py --plugin plugins/pypy pypy3 gentoo pypy pypy3 || die "building plugin for pypy pypy3 -support in ${EPYTHON} failed"
 		fi
 	fi
 }
@@ -365,8 +365,8 @@ pkg_postinst() {
 		EPYV=${EPYTHON/.}
 		PYV=${EPYV/python}
 
-		if [[ ${EPYTHON} == pypy* ]] ; then
-			elog "  '--plugins pypy' for pypy"
+		if [[ ${EPYTHON} == pypy pypy3 * ]] ; then
+			elog "  '--plugins pypy pypy3 ' for pypy pypy3 "
 			return
 		fi
 
