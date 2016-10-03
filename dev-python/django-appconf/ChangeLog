@@ -1,5 +1,5 @@
 # ChangeLog for dev-python/django-appconf
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/django-appconf/ChangeLog,v 1.8 2013/06/30 21:54:24 tampakrap Exp $
 
   30 Jun 2013; Theo Chatzimichos <tampakrap@gentoo.org>

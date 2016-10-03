@@ -16,20 +16,20 @@ index 368e4e8..85a276d 100644
 --- a/docs/conf.py
 +++ b/docs/conf.py
 @@ -16,7 +16,6 @@ extensions = [
-	 "sphinx.ext.coverage",
-	 "sphinx.ext.doctest",
-	 "sphinx.ext.extlinks",
--	"sphinx.ext.intersphinx",
-	 "sphinx.ext.viewcode",
-	 ]
+     "sphinx.ext.coverage",
+     "sphinx.ext.doctest",
+     "sphinx.ext.extlinks",
+-    "sphinx.ext.intersphinx",
+     "sphinx.ext.viewcode",
+     ]
  
 @@ -91,10 +90,6 @@ extlinks = {
-		 'tornado-%s.tar.g' % version),
-	 }
+         'tornado-%s.tar.g' % version),
+     }
  
 -intersphinx_mapping = {
--	'python': ('https://docs.python.org/3.4/', None),
--	}
+-    'python': ('https://docs.python.org/3.4/', None),
+-    }
 -
  on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
  
