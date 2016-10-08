@@ -4,6 +4,10 @@ dev-python/pyopenssl
 dev-python/idna
 dev-python/cffi
 dev-python/cryptography
+dev-python/pycurl
+dev-python/backports-ssl-match-hostname
+www-servers/tornado
+dev-python/entrypoints
 dev-python/strict-rfc3339
 dev-python/vcversioner
 dev-python/webcolors
