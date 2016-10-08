@@ -1,4 +1,9 @@
 dev-python/prompt_toolkit
+dev-python/pyasn1
+dev-python/pyopenssl
+dev-python/idna
+dev-python/cffi
+dev-python/cryptography
 dev-python/strict-rfc3339
 dev-python/vcversioner
 dev-python/webcolors
