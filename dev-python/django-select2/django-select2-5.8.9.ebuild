@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/dev-python/django-select2/django-select2-4.0.0.ebuild,v 1.2 2013/04/02 16:28:26 prometheanfire Exp $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy )
 
 inherit distutils-r1
 
@@ -17,8 +17,8 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 
 RDEPEND="
-	dev-python/django
-	>=dev-python/django-appconf-0.6.0
+	dev-python/django[${PYTHON_USEDEP}]
+	>=dev-python/django-appconf-0.6.0[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
