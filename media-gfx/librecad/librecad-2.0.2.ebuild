@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI=6
 
-inherit qt4-r2 eutils flag-o-matic
+inherit qmake-utils eutils flag-o-matic
 
 DESCRIPTION="Generic 2D CAD program"
 HOMEPAGE="http://www.librecad.org/"

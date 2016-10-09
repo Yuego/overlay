@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prepare setup unpack
+DEPEND=~app-office/1C_Enterprise-common-8.3.4.496:8.3 postgres? ( dev-db/postgresql-server[1c] ) fontconfig? ( gnome-extra/libgsf app-text/ttf2pt1 media-gfx/imagemagick[corefonts] dev-db/unixODBC ) >=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=Server component of 1C ERP system
+EAPI=6
+HOMEPAGE=http://v8.1c.ru/
+IUSE=postgres +fontconfig +nls pax_kernel
+KEYWORDS=amd64 x86
+LICENSE=1CEnterprise_en
+RDEPEND=~app-office/1C_Enterprise-common-8.3.4.496:8.3 postgres? ( dev-db/postgresql-server[1c] ) fontconfig? ( gnome-extra/libgsf app-text/ttf2pt1 media-gfx/imagemagick[corefonts] dev-db/unixODBC )
+RESTRICT=fetch strip
+SLOT=8.3
+SRC_URI=x86? ( 1C_Enterprise83-server-8.3.4-496.i386.rpm nls? ( 1C_Enterprise83-server-nls-8.3.4-496.i386.rpm ) ) amd64? ( 1C_Enterprise83-server-8.3.4-496.x86_64.rpm nls? ( 1C_Enterprise83-server-nls-8.3.4-496.x86_64.rpm ) )
+_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	pax-utils	4c2654a34ebe732e85fda354f6ee642f	rpm	3e120fdd74b358f9fb42b825a6558f61	toolchain-funcs	6198c04daba0e1307bd844df7d37f423	user	80aaa71614ced86f02ee1a513821dc87	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=759266870ad4c91fa2e516a8fb575e11

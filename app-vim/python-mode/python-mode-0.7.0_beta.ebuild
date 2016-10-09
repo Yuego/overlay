@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/app-vim/python-mode/python-mode-0.6.18-r3.ebuild,v 1.3 2013/11/24 13:48:53 ago Exp $
 
-EAPI=5
+EAPI=6
 
 VIM_PLUGIN_MESSAGES="filetype"
 VIM_PLUGIN_HELPFILES="PythonModeCommands"

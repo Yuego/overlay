@@ -1,13 +1,12 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-python/setuptools python_targets_python2_7? ( dev-lang/python:2.7 ) python_targets_python3_3? ( dev-lang/python:3.3 ) python_targets_pypy pypy3 ? ( virtual/pypy pypy3 :1.9 ) python_targets_pypy pypy3 ? ( virtual/pypy pypy3 :2.0 ) dev-python/python-exec[python_targets_python2_7(-)?,python_targets_python3_3(-)?,python_targets_pypy pypy3 (-)?,python_targets_pypy pypy3 (-)?,-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy pypy3 (-),-python_single_target_pypy pypy3 (-)] dev-vcs/git
+DEPEND=dev-python/setuptools python_targets_pypy? ( virtual/pypy:0= ) python_targets_pypy3? ( virtual/pypy3:0= ) python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) python_targets_python3_3? ( >=dev-lang/python-3.3.2-r2:3.3 ) >=dev-lang/python-exec-2:=[python_targets_pypy(-)?,python_targets_pypy3(-)?,python_targets_python2_7(-)?,python_targets_python3_3(-)?,-python_single_target_pypy(-),-python_single_target_pypy3(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-)] >=dev-vcs/git-1.8.2.1
 DESCRIPTION=Django extension for postgresql bytea field and other usefull toos for dealing with binary data.
-EAPI=5
+EAPI=6
 HOMEPAGE=https://github.com/niwibe/djorm-ext-pgbytea
-IUSE=python_targets_python2_7 python_targets_python3_3 python_targets_pypy pypy3 python_targets_pypy pypy3 
-KEYWORDS=amd64 x86
+IUSE=python_targets_pypy python_targets_pypy3 python_targets_python2_7 python_targets_python3_3
 LICENSE=MIT
-RDEPEND=>=dev-python/django-1.3[postgres] python_targets_python2_7? ( dev-lang/python:2.7 ) python_targets_python3_3? ( dev-lang/python:3.3 ) python_targets_pypy pypy3 ? ( virtual/pypy pypy3 :1.9 ) python_targets_pypy pypy3 ? ( virtual/pypy pypy3 :2.0 ) dev-python/python-exec[python_targets_python2_7(-)?,python_targets_python3_3(-)?,python_targets_pypy pypy3 (-)?,python_targets_pypy pypy3 (-)?,-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy pypy3 (-),-python_single_target_pypy pypy3 (-)]
-REQUIRED_USE=|| ( python_targets_python2_7 python_targets_python3_3 python_targets_pypy pypy3 python_targets_pypy pypy3 )
+RDEPEND=>=dev-python/django-1.3[postgres] python_targets_pypy? ( virtual/pypy:0= ) python_targets_pypy3? ( virtual/pypy3:0= ) python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) python_targets_python3_3? ( >=dev-lang/python-3.3.2-r2:3.3 ) >=dev-lang/python-exec-2:=[python_targets_pypy(-)?,python_targets_pypy3(-)?,python_targets_python2_7(-)?,python_targets_python3_3(-)?,-python_single_target_pypy(-),-python_single_target_pypy3(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-)]
+REQUIRED_USE=|| ( python_targets_pypy python_targets_pypy3 python_targets_python2_7 python_targets_python3_3 )
 SLOT=0
-_eclasses_=distutils-r1	c1ae0d90d918406fff8ee3676a013046	eutils	63afaaed8aa819fdcb814c7cd39495a2	git-2	e92e09651292b1bef5656592364550f7	multibuild	c2f33b0eedd7bcfd5bc226baa8da7837	multilib	892e597faee02a5b94eb02ab512e7622	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	python-r1	6decffb382a258bbaa159c52ecd6e030	python-utils-r1	e3288ba49a9a4406c283001e4d284aad	toolchain-funcs	7ffd28a8c7eea27218865352bfd3ab2f	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ad3ce6c2568b8ab5d34d6814c6ddceb1
+_eclasses_=distutils-r1	674dae153419b2200ae54e879cc65b57	eutils	b83a2420b796f7c6eff682679d08fe25	git-r3	00f60a84fc7b499c99edfe99caea9f95	multibuild	742139c87a9fa3766f0c2b155e5522bf	multilib	165fc17c38d1b11dac2008280dab6e80	multiprocessing	e32940a7b2a9992ad217eccddb84d548	python-r1	0f6937650a475d673baa5d0c8c0b37b3	python-utils-r1	1797277ea0e7cee5c7de7ce74cf8acd8	toolchain-funcs	6198c04daba0e1307bd844df7d37f423	xdg-utils	e2b2bd56125ce8cf59ce30c642b59d48
+_md5_=55cb285a90e6e412d17f0b0cecee374f
