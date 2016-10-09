@@ -1,8 +1,8 @@
 # Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=5
+EAPI=6
 
 inherit eutils subversion
 
@@ -15,30 +15,39 @@ SLOT="0"
 
 KEYWORDS=""
 
-IUSE="-qt4 gtk2"
+IUSE="qt4 -gtk"
 
-RDEPEND=">=dev-lang/lazarus-1
+REQUIRED_USE=" ^^ ( qt4 gtk )"
+
+RDEPEND="
+	sys-apps/dbus
+	dev-libs/glib:2
+	sys-libs/ncurses:0
+	x11-libs/libX11
+	gtk? ( x11-libs/gtk+:2 )
+	qt4? ( >=dev-qt/qtpascal-2.5 )
 "
 
 DEPEND="${RDEPEND}
-	x11-libs/gtk+:2
+	>=dev-lang/lazarus-1.2.2
 "
 
 src_prepare(){
-	#use qt4 && use gtk2 && die "Select only one flag: 'qt4' or 'gtk2'"
-	#! use qt4 && ! use gtk2 && die "Select flag: 'qt4' or 'gtk2'"
+	eapply_user
 
-	#use qt4 && export lcl="qt" || export lcl="gtk2"
+	use qt4 && export lcl="qt" || export lcl="gtk2"
 	use amd64 && export CPU_TARGET="x86_64" || export CPU_TARGET="i386"
 
 	export lazpath="/usr/share/lazarus"
 
-	# With QT4 not works... use gtk2
-	export lcl="gtk2"
+	if use qt4 ; then
+	cp /usr/lib/qt4/libQt4Pas.so plugins/wlx/WlxMplayer/src/
+	cp /usr/lib/qt4/libQt4Pas.so src/
+	fi
 
-	sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' ./build.sh
-	sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' components/build.sh
-	sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' plugins/build.sh
+	find ./ -type f -name "build.sh" -exec sed -i "s#\$lazbuild #\$lazbuild --lazarusdir=${lazpath} #g" {} \;
+	# no save configs in Program Dir
+	find ./ -type f -name "doublecmd.xml" -exec sed -e '/<UseConfigInProgramDir>/s/True/False/' -i {} \;
 }
 
 src_compile(){
@@ -51,12 +60,12 @@ src_install(){
 
 	install/linux/install.sh --portable-prefix=build
 
-	doicon -s 48 "${S}/build/doublecmd/doublecmd.png"
-	rm "${S}/build/doublecmd/doublecmd.png"
+	doicon -s 48 "${ABBREV}.png"
+	rm "${ABBREV}.png"
 
 	rsync -a "${S}/build/" "${D}/usr/share/" || die "Unable to copy files"
 
-	dosym ../share/doublecmd/doublecmd /usr/bin/doublecmd
+	dosym ../share/${ABBREV}/${ABBREV} /usr/bin/${ABBREV}
 
-	make_desktop_entry doublecmd "Double Commander" "doublecmd" "Utility;" || die "Failed making desktop entry!"
+	make_desktop_entry ${ABBREV} "Double Commander" "${ABBREV}" "Utility;" || die "Failed making desktop entry!"
 }
