@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>root@proscript.ru</email>
+		<name>Artem Vlasov</name>
+  	</maintainer>
+	<upstream>
+		<remote-id type="pypi">zeep</remote-id>
+		<remote-id type="github">https://github.com/mvantellingen/python-zeep</remote-id>
+	</upstream>
+	<use>
+		
+	</use>
+</pkgmetadata>

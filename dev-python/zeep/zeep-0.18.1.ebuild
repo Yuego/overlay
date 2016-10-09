@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} )
 
 inherit distutils-r1
 
@@ -18,16 +18,16 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/appdirs-1.4.0
-	>=dev-python/cached-property-1.0.0
-	>=dev-python/defusedxml-0.4.1
-	>=dev-python/isodate-0.5.4
+	>=dev-python/appdirs-1.4.0[${PYTHON_USEDEP}]
+	>=dev-python/cached-property-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/defusedxml-0.4.1[${PYTHON_USEDEP}]
+	>=dev-python/isodate-0.5.4[${PYTHON_USEDEP}]
 
-	>=dev-python/lxml-3.0.0
-	>=dev-python/requests-2.7.0
-	>=dev-python/six-1.9.0
-	dev-python/pytz
+	>=dev-python/lxml-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.7.0[${PYTHON_USEDEP}]
+	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]
+	dev-python/pytz[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 S="${WORKDIR}/python-${P}"
