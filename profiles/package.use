@@ -1,6 +1,0 @@
-
-dev-python/django postgres sqlite mysql
-dev-python/pyodbc mssql
-dev-python/pymorphy cdb sqlite
-
-

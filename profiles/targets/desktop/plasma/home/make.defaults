@@ -1,0 +1,5 @@
+
+LINGUAS="en ru"
+VIDEO_CARDS="-amdgpu -dummy -fbdev -intel -nouveau nvidia -radeon -radeonsi -vesa"
+
+USE="${USE} -bluetooth -ldap"

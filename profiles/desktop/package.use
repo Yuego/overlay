@@ -1,0 +1,15 @@
+
+# APP-OFFICE
+
+app-office/libreoffice gtk3 java -postgres
+
+# DEV-DB
+
+
+# MEDIA-LIBS
+
+media-libs/libraw demosaic
+
+# MEDIA-GFX
+
+media-gfx/ufraw gimp gtk

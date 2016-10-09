@@ -1,0 +1,31 @@
+
+#APP-EDITORS
+
+app-editors/nano justify
+app-editors/vim lua luajit python vim-pager -python_targets_python3_3 -python_targets_python3_5
+app-editors/gvim lua luajit python
+
+# APP-PORTAGE
+
+app-portage/layman bazaar mercurial subversion
+
+# MEDIA-GFX
+
+media-gfx/splashutils fbcondecor
+
+# MEDIA-LIBS
+
+media-libs/gegl lensfun openexr raw umfpack
+media-libs/libsdl fbcon
+
+# MEDIA-VIDEO
+
+media-video/mplayer fbcon
+
+# SYS-DEVEL
+
+sys-devel/gcc gcj
+sys-devel/llvm clang
+
+# VIRTUAL
+
