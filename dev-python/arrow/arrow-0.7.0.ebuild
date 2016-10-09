@@ -18,6 +18,6 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	dev-python/python-dateutil	
+	dev-python/python-dateutil
 "
 DEPEND="dev-python/setuptools"

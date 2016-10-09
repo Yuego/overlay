@@ -16,7 +16,6 @@ IUSE=""
 RDEPEND="
 	dev-python/django
 	dev-python/scrapy
-	
 "
 
 # Servers
@@ -27,7 +26,6 @@ RDEPEND="${RDEPEND}
 
 	net-libs/nodejs
 	dev-db/postgis
-	
 "
 
 # Libs
@@ -52,7 +50,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-grappelli-autocomplete-fk-edit-link
 	dev-python/django-constance
 	>=dev-python/django-reversion-2.0.0
-	
+
 	dev-python/pyyaml
 	dev-python/pytils
 	>=dev-python/python-dateutil-2.1

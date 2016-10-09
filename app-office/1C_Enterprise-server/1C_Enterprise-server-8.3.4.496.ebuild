@@ -44,7 +44,6 @@ QA_TEXTRELS_amd64="opt/1C/v${SLOT}/x86_64/libociicus.so
 		opt/1C/v${SLOT}/x86_64/libnnz10.so
 		opt/1C/v${SLOT}/x86_64/libclntsh.so.10.1"
 
-
 QA_EXECSTACK_x86="opt/1C/v${SLOT}/i386/libociicus.so
 		opt/1C/v${SLOT}/i386/libnnz10.so
 		opt/1C/v${SLOT}/i386/libclntsh.so.10.1"

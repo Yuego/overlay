@@ -24,7 +24,6 @@ KEYWORDS="amd64 x86"
 RDEPEND="dev-python/django[${PYTHON_USEDEP}]"
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
-
 src_prepare(){
 	sed -i "s#find_packages()#find_packages(exclude=('tests','tests.*'))#g" setup.py
 	distutils-r1_src_prepare

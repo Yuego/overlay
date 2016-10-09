@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND=">=dev-python/django-1.4
 	>=dev-python/django-appconf-1.0
-	
+
 	>=dev-python/rcssmin-1.0.6
 	>=dev-python/rjsmin-1.0.12
 	"

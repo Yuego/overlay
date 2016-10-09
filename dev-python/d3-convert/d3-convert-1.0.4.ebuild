@@ -28,7 +28,7 @@ RDEPEND="
 	>=media-libs/exiftool-10
 	media-gfx/ufraw
 	>=media-gfx/enblend-4.1
-	
+
 	test? (
 		dev-python/tox
 		dev-python/coverage
@@ -49,7 +49,6 @@ src_install(){
 
 	doconfd data/conf.d/d3-convert
 	doinitd data/init.d/d3-convert
-
 
 	#MENU
 	insopts -m0644

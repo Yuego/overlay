@@ -21,7 +21,7 @@ DEPEND=" dev-qt/qtcore
 "
 
 src_unpack(){
-	unpack "${A}"
+	unpack ${A}
 	cd "${WORKDIR}"
 	mv "${FULL_VERSION}" "${PF}"
 }

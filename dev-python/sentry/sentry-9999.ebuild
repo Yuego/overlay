@@ -76,7 +76,7 @@ RDEPEND="
 	<dev-python/python-memcached-2.0.0
 
 	>=dev-python/raven-3.3.8
-	
+
 	>=dev-db/redis-2.7.0
 	<dev-db/redis-2.9.0
 
@@ -91,7 +91,7 @@ RDEPEND="
 	>=dev-python/urllib3-1.7.1
 	<dev-python/urllib3-1.8.0
 
-	postgres? ( 
+	postgres? (
 		>=dev-python/psycopg-2.5.0
 		<dev-python/psycopg-2.6.0
 	)

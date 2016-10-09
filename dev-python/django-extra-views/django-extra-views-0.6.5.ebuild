@@ -21,7 +21,7 @@ RDEPEND="
 	>=dev-python/django-1.3
 	>=dev-python/six-1.5.2
 
-	test? (	
+	test? (
 		>=dev-python/coverage-3.7.1
 		>=dev-python/django-nose-1.2
 	)

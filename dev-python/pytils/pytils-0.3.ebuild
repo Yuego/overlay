@@ -24,5 +24,5 @@ DEPEND="dev-python/setuptools"
 src_install () {
 	distutils-r1_src_install
 	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	dodoc LICENSE README.md
+	dodoc README.md
 }

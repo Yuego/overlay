@@ -13,7 +13,6 @@ HOMEPAGE="https://bitbucket.org/faide/py3o.template"
 SRC_URI="https://bitbucket.org/faide/py3o.template/get/${PV}.tar.gz -> ${P}.tar.gz"
 PY3O_COMMIT="0bb53b752ea0"
 
-
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="x86 amd64"

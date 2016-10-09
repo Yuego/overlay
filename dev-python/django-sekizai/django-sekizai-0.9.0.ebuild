@@ -12,7 +12,6 @@ HOMEPAGE="https://github.com/ojii/django-sekizai"
 
 SRC_URI="https://github.com/ojii/django-sekizai/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"

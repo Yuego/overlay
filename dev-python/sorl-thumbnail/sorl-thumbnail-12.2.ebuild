@@ -28,5 +28,5 @@ S=$WORKDIR/$PN-$PV
 src_install () {
 	distutils-r1_src_install
 	rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	dodoc LICENSE README.rst
+	dodoc README.rst
 }

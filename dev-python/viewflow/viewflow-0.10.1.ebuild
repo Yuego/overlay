@@ -22,7 +22,7 @@ RDEPEND="
 	virtual/python-singledispatch
 	>=dev-python/django-fsm-2.0
 	>=dev-python/django-filter-0.10.0
-	
+
 	test? (
 		dev-python/mock
 		dev-python/webtest

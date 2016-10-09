@@ -18,6 +18,6 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.7	
+	>=dev-python/django-1.7
 "
 DEPEND="dev-python/setuptools"

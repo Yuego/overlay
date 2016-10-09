@@ -28,19 +28,19 @@ src_install() {
 	#MENU
 	insopts -m0644
 	# KDE 4
-»···insinto "/usr/share/applications/${PN}/"
-»···doins "${S}"/menu/*
-»···# KDE 5
-»···insinto "/usr/share/kservices5/${PN}/"
-»···doins "${S}"/menu/*
+	insinto "/usr/share/applications/${PN}/"
+	doins "${S}"/menu/*
+	# KDE 5
+	insinto "/usr/share/kservices5/${PN}/"
+	doins "${S}"/menu/*
 
 	#TEMPLATES
 	insinto "/opt/${PN}/"
-	doins -r ${S}/templates/
+	doins -r "${S}/templates/"
 
 	#CONFIGS
-	doins -r ${S}/config/
+	doins -r "${S}/config/"
 
 	#IMAGES
-	doins -r ${S}/images/
+	doins -r "${S}/images/"
 }

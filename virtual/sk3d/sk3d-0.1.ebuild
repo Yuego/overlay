@@ -20,14 +20,14 @@ RDEPEND="${RDEPEND}
 	dev-db/postgresql-server
 	dev-db/postgis
 	www-servers/nginx
-	www-servers/uwsgi[python]	
+	www-servers/uwsgi[python]
 "
 
 # Libs
 RDEPEND="${RDEPEND}
 	dev-python/sorl-thumbnail[redis]
 	dev-python/south
-	
+
 	dev-python/django-pymorphy2
 "
 

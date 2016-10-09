@@ -12,7 +12,6 @@ HOMEPAGE="https://pypi.python.org/pypi/py3o.types https://bitbucket.org/faide/py
 
 EHG_REPO_URI="https://bitbucket.org/faide/py3o.types"
 
-
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS=""

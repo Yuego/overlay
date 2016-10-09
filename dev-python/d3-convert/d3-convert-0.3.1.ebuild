@@ -29,7 +29,7 @@ RDEPEND="
 	media-libs/exiftool
 	media-gfx/ufraw
 	media-gfx/enblend
-	
+
 	test? (
 		dev-python/tox
 		dev-python/coverage

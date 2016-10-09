@@ -7,7 +7,6 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
-
 DESCRIPTION="Scrapy, a fast high-level web crawling & scraping framework for Python."
 HOMEPAGE="http://scrapy.org https://github.com/scrapy/scrapy"
 

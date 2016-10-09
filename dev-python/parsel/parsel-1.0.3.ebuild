@@ -27,8 +27,7 @@ DEPEND="dev-python/setuptools"
 
 src_prepare(){
 	distutils-r1_src_prepare
-	
+
 	sed -i 's/setup_requires/#setup_requires/g' setup.py
 	sed -i 's/test_suite/#test_suite/g' setup.py
-	
 }

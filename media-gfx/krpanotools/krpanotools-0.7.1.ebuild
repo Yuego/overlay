@@ -36,15 +36,15 @@ src_install() {
 
 	#TEMPLATES
 	insinto "/opt/krpano/"
-	doins -r ${S}/templates/
+	doins -r "${S}/templates/"
 
 	#CONFIGS
-	doins -r ${S}/config/
+	doins -r "${S}/config/"
 
 	#IMAGES
-	doins -r ${S}/images/
-	
+	doins -r "${S}/images/"
+
 	insopts -m0655
 	#SCRIPTS
-	doins -r ${S}/scripts/
+	doins -r "${S}/scripts/"
 }

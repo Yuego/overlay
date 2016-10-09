@@ -23,6 +23,6 @@ RDEPEND="
 DEPEND="dev-python/setuptools"
 
 src_compile() {
-	cd $S/python
+	cd "$S/python"
 	distutils-r1_src_compile
 }

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} pypy pypy3 )
+PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4,3_5} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -23,5 +23,5 @@ DEPEND="dev-python/setuptools"
 src_install () {
 	distutils-r1_src_install
 	#rm -fr "${D}"usr/lib*/python*/site-packages/tests
-	dodoc LICENSE README.md
+	dodoc README.md
 }

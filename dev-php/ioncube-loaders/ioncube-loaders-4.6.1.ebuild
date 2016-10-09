@@ -46,7 +46,7 @@ src_unpack() {
 	unpack ${A}
 
 	IONCUBE_SO_FILE="${PHP_EXT_NAME}_lin_${PHP_VER}.so"
-	cd ${S}
+	cd "${S}"
 	mkdir modules
 	mv ${IONCUBE_SO_FILE} "modules/${PHP_EXT_NAME}.so"
 

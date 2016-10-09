@@ -23,5 +23,9 @@ DEPEND="${RDEPEND}"
 src_unpack() {
 	subversion_src_unpack
 	cd ./django-pyodbc-${PV}
-	epatch ${FILESDIR}/asp.patch
+}
+
+src_prepare() {
+	disutils-r1_src_prepare
+	epatch "${FILESDIR}/asp.patch"
 }
