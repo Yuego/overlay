@@ -18,4 +18,4 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND=""
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
