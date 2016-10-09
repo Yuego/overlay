@@ -18,6 +18,6 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	dev-python/pyparsing
+	dev-python/pyparsing[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
