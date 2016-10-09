@@ -4,7 +4,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python{3_3,3_4,3_5} )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy )
 
 inherit distutils-r1
 
@@ -18,7 +18,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.1.1
-	dev-python/six[${PYTHON_USEDEP}]"
-DEPEND="${RDEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]"
+	>=dev-python/django-1.1.1[${PYTHON_USEDEP}]
+	dev-python/six[${PYTHON_USEDEP}]
+"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
