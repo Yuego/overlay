@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy pypy3 )
 
 inherit distutils-r1
 
-DESCRIPTION="Pure-python reader for DAWGs created by dawgdic C++ library or DAWG Python extension. "
+DESCRIPTION="Pure-python reader for DAWGs"
 HOMEPAGE="https://github.com/kmike/DAWG-Python"
 
 SRC_URI="https://github.com/kmike/DAWG-Python/archive/${PV}.tar.gz -> ${P}.tar.gz"
