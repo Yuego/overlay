@@ -10,6 +10,6 @@
 		<remote-id type="github"></remote-id>
 	</upstream>
 	<use>
-		
+		<flag name="serial">Enable Python Serial Port extension support</flag>
 	</use>
 </pkgmetadata>

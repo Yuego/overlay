@@ -37,7 +37,7 @@ RDEPEND="~app-office/1C_Enterprise-common-${PV}:${SLOT}
 	>=sys-libs/e2fsprogs-libs-1.41
 	>=x11-libs/cairo-1.0
 	sys-libs/glibc:2.2
-	>=sys-devel/gcc-3.4
+	>=sys-devel/gcc-3.4:*
 	x11-libs/gtk+:2
 	x11-libs/gdk-pixbuf:2
 	dev-libs/glib:2

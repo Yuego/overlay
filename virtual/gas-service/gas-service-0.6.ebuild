@@ -4,11 +4,11 @@
 
 EAPI=6
 
-LICENSE="BSD"
+LICENSE=""
 
 SRC_URI=""
 DESCRIPTION="Gas Service Meta"
-HOMEPAGE="http://gas-service.ru"
+HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE=""
@@ -20,8 +20,8 @@ RDEPEND="
 
 # Servers
 RDEPEND="${RDEPEND}
-	dev-db/postgresql[server]
-	www-servers/nginx
+	dev-db/postgresql:*[server]
+	www-servers/nginx:0
 	www-servers/uwsgi[python]
 
 	net-libs/nodejs
@@ -60,4 +60,4 @@ RDEPEND="${RDEPEND}
 	dev-python/scrapy-djangoitem
 	dev-python/scrapy-deltafetch
 "
-DEPEND="${RDEPEND}"
+DEPEND=""

@@ -11,7 +11,6 @@ MY_PV="${PV/_beta/b}" # Handle beta for SRC_URI
 MY_PV="${MY_PV/_alpha/a}"
 MY_PV="${MY_PV/_rc/rc}" # Handle rc for SRC_URI
 
-
 DESCRIPTION="A fresh approach to autocomplete implementations, specially for Django."
 HOMEPAGE="https://github.com/yourlabs/django-autocomplete-light"
 

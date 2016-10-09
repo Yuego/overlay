@@ -13,16 +13,16 @@ EGIT_REPO_URI="https://github.com/Yuego/krpanotools.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE="kde"
+IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}
-	media-gfx/krpanotools-binaries[viewer]
-	media-gfx/imagemagick[jpeg,png,tiff]
-	kde? ( kde-apps/konsole )
+	>=media-gfx/krpano-bin-1.17
+	media-gfx/enblend
+	media-libs/exiftool
+	media-gfx/imagemagick[openmp,raw,tiff]
+	kde-apps/konsole
 "
-
-S="${WORKDIR}"
 
 src_install() {
 	#MENU
@@ -35,7 +35,7 @@ src_install() {
 	doins "${S}"/menu/*
 
 	#TEMPLATES
-	insinto "/opt/${PN}/"
+	insinto "/opt/krpano/"
 	doins -r "${S}/templates/"
 
 	#CONFIGS
@@ -43,4 +43,8 @@ src_install() {
 
 	#IMAGES
 	doins -r "${S}/images/"
+
+	insopts -m0655
+	#SCRIPTS
+	doins -r "${S}/scripts/"
 }

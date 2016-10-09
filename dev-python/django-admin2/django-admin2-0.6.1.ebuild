@@ -28,7 +28,7 @@ RDEPEND="
 	>=dev-python/django-crispy-forms-1.3.2
 	>=dev-python/pytz-2014.7
 	test? (
-		dev-python/pytest	
+		dev-python/pytest
 	)
 "
 DEPEND="dev-python/setuptools"

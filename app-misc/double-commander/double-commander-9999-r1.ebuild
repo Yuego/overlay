@@ -20,8 +20,8 @@ REQUIRED_USE=" ^^ ( qt4 gtk2 )"
 
 RDEPEND=">=dev-lang/lazarus-1
 		 sys-apps/dbus
-		 dev-libs/glib
-		 sys-libs/ncurses
+		 dev-libs/glib:2
+		 sys-libs/ncurses:0
 		 x11-libs/libX11
 "
 

@@ -38,7 +38,7 @@ src_prepare() {
 }
 
 src_compile(){
-	cd pymorphy2-dicts	
+	cd pymorphy2-dicts
 	distutils-r1_src_compile
 }
 

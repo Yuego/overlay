@@ -20,11 +20,12 @@ IUSE="qt4 -gtk2"
 
 REQUIRED_USE=" ^^ ( qt4 gtk2 )"
 
-RDEPEND=">=dev-lang/lazarus-1
-		 sys-apps/dbus
-		 dev-libs/glib
-		 sys-libs/ncurses
-		 x11-libs/libX11
+RDEPEND="
+	>=dev-lang/lazarus-1
+	 sys-apps/dbus
+	 dev-libs/glib:2
+	 sys-libs/ncurses:0
+	 x11-libs/libX11
 "
 
 DEPEND="${RDEPEND}

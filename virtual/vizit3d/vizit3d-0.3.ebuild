@@ -105,4 +105,4 @@ RDEPEND="${RDEPEND}
 		dev-python/mock
 	)
 "
-DEPEND="${RDEPEND}"
+DEPEND=""
