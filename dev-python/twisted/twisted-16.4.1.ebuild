@@ -25,11 +25,6 @@ RDEPEND="
 	serial? ( dev-python/pyserial[${PYTHON_USEDEP}] )"
 DEPEND="test? ( ${RDEPEND} )"
 
-#PATCHES=(
-#	# Respect TWISTED_DISABLE_WRITING_OF_PLUGIN_CACHE variable.
-#	"${FILESDIR}/${PN}-9.0.0-respect_TWISTED_DISABLE_WRITING_OF_PLUGIN_CACHE.patch"
-#)
-
 python_prepare_all() {
 	if [[ "${EUID}" -eq 0 ]]; then
 		# Disable tests failing with root permissions.
@@ -70,11 +65,6 @@ python_test() {
 	# An empty file doesn't work because the tests check for doc strings in all packages.
 	echo "'''plugins stub'''" > twisted/plugins/__init__.py || die
 
-	# https://twistedmatrix.com/trac/ticket/6920 6921
-	# Just re-exposing them to list a full list of deficits
-#	sed -e 's:test_basicOperation:_&:' -i twisted/scripts/test/test_tap2deb.py || die
-#	sed -e 's:test_inspectCertificate:_&:' -i twisted/test/test_sslverify.py || die
-
 	# Requires twisted-web, twisted-lore and twisted-names, creating a circ. dep and fail even if installed.
 	# test_loreDeprecation and test_exist failures appeared in version 14.0.0.
 	# Possibly due to over taxing of the distutils_install_for_testing function
@@ -107,11 +97,6 @@ python_install() {
 	distutils-r1_python_install
 
 	cd "${D%/}$(python_get_sitedir)" || die
-
-	# create 'Twisted' egg wrt bug #299736
-	#local egg=( Twisted_Core*.egg-info )
-	#[[ -f ${egg[0]} ]] || die "Twisted_Core*.egg-info not found"
-	#ln -s "${egg[0]}" "${egg[0]/_Core/}" || die
 
 	# own the dropin.cache so we don't leave orphans
 	touch twisted/plugins/dropin.cache || die
