@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI=6
 
 PHP_EXT_NAME="ioncube_loader"
 PHP_EXT_ZENDEXT="yes"
@@ -11,7 +11,7 @@ DOCS="README.txt LICENSE.txt"
 
 USE_PHP="php5-3 php5-4 php5-5"
 
-inherit php-ext-source-r2
+inherit php-ext-source-r3
 
 KEYWORDS="amd64 x86"
 
