@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>root@proscript.ru</email>
+		<name>Artem Vlasov</name>
+  	</maintainer>
+	<upstream>
+		<remote-id type="pypi"></remote-id>
+		<remote-id type="github">jazzband/django-constance</remote-id>
+	</upstream>
+	<use>
+		<flag name="database">Enable database backend support</flag>
+		<flag name="redis">Enable redis database support</flag>	
+	</use>
+</pkgmetadata>
