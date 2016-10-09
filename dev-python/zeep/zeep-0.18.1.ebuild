@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy )
 
 inherit distutils-r1
 
@@ -23,7 +23,7 @@ RDEPEND="
 	>=dev-python/defusedxml-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/isodate-0.5.4[${PYTHON_USEDEP}]
 
-	>=dev-python/lxml-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/lxml-3.0.0[$(python_gen_usedep 'python*')]
 	>=dev-python/requests-2.7.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
