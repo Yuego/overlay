@@ -4,7 +4,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} )
+PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy )
 
 inherit distutils-r1
 
@@ -15,17 +15,16 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="doc test"
+IUSE="doc"
 
 RDEPEND="
-	>=dev-python/django-1.7
-	dev-python/six"
+	>=dev-python/django-1.7[${PYTHON_USEDEP}]
+	dev-python/six[${PYTHON_USEDEP}]
+"
 DEPEND="${RDEPEND}
-	dev-python/setuptools
-	doc? ( dev-python/sphinx )
-	test? ( dev-python/django-discover-runner
-		dev-python/flake8
-		dev-python/coverage )"
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	doc? ( dev-python/sphinx[${PYTHON_USEDEP}] )
+"
 
 python_compile_all() {
 	use doc && emake -C docs html
