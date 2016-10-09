@@ -54,9 +54,5 @@ src_prepare(){
 }
 
 src_install(){
-	if ! use bindist; then
-		default_src_install
-	else
-		dolib libQt4Pas*
-	fi
+	dolib libQt4Pas*
 }
