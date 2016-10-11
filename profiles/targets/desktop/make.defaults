@@ -2,8 +2,6 @@
 INPUT_DEVICES="evdev -keyboard -mouse"
 CAMERAS="ptp2 canon"
 
-RUBY_TARGETS="ruby20 -ruby21 -ruby22 ruby23"
-
 # SYSTEM
 USE="${USE} smp"
 

@@ -7,24 +7,17 @@ app-editors/gvim lua luajit python
 
 # APP-PORTAGE
 
-app-portage/layman bazaar mercurial subversion
-
-# MEDIA-GFX
-
-media-gfx/splashutils fbcondecor
+app-portage/layman bazaar mercurial
 
 # MEDIA-LIBS
 
 media-libs/gegl lensfun openexr raw umfpack
-media-libs/libsdl fbcon
 
 # MEDIA-VIDEO
 
-media-video/mplayer fbcon
 
 # SYS-DEVEL
 
-sys-devel/gcc gcj
 sys-devel/llvm clang
 
 # VIRTUAL

@@ -2,4 +2,5 @@
 LINGUAS="en ru"
 VIDEO_CARDS="-amdgpu -dummy -fbdev -intel -nouveau nvidia -radeon -radeonsi -vesa"
 
+USE="${USE} -gnome -gtk -gtk3 -handbook -kde -qt4 qt5"
 USE="${USE} -bluetooth -ldap"

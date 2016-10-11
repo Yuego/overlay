@@ -1,7 +1,6 @@
 ACCEPT_LICENSE="*"
 
-ALSA_CARDS="hda-intel"
-ABI_X86="32 64"
+#ABI_X86="32 64"
 
 QEMU_SOFTMMU_TARGETS="i386 x86_64"
 QEMU_USER_TARGETS="i386 x86_64"
@@ -9,8 +8,4 @@ QEMU_USER_TARGETS="i386 x86_64"
 # The number of packets for simultaneous assembly.
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --ask-enter-invalid --keep-going"
 
-PYTHON_TARGETS="python2_7 python3_4 python3_5"
-PYTHON_SINGLE_TARGET="-python2_7 -python3_3  python3_4 -python3_5"
-USE_PYTHON="2.7 3.4 3.5"
-
-USE="${USE} ffmpeg icu jemalloc lzo opencl speex theora threads xvmc vim-syntax"
+USE="${USE} ffmpeg lzo speex theora threads xvmc"

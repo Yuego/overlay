@@ -1,4 +1,2 @@
 
-USE="${USE} -gnome -gtk -gtk3 -handbook -kde -qt4 qt5"
-
 
