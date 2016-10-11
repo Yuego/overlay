@@ -17,7 +17,7 @@ media-libs/gegl lensfun openexr raw umfpack
 
 # SCI-LIBS
 
-sci-libs/hdf5 -fortran
+sci-libs/hdf5 -cxx -fortran
 
 # SYS-DEVEL
 
