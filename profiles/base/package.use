@@ -15,6 +15,9 @@ media-libs/gegl lensfun openexr raw umfpack
 
 # MEDIA-VIDEO
 
+# SCI-LIBS
+
+sci-libs/hdf5 -fortran
 
 # SYS-DEVEL
 
