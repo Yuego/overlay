@@ -1,5 +1,4 @@
 
-INPUT_DEVICES="evdev -keyboard -mouse"
 CAMERAS="ptp2 canon"
 
 # SYSTEM
