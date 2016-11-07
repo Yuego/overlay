@@ -13,3 +13,4 @@ media-libs/gexiv2 introspection
 # SCI-LIBS
 #
 sci-libs/gdal geos hdf5
+sci-libs/hdf5 szip
