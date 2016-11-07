@@ -4,6 +4,3 @@
 
 sys-libs/zlib minizip
 
-# WWW-SERVERS
-
-www-servers/uwsgi python
