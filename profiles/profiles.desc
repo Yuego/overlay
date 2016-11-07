@@ -15,6 +15,7 @@ amd64           desktop/plasma/calculate/workstation            stable
 # SERVERS
 
 amd64           server/calculate/dc                             stable
+amd64		server/calculate/gs				stable
 amd64           server/gentoo/hardened/web                      stable
 
 
