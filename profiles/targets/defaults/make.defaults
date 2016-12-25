@@ -2,10 +2,10 @@ ACCEPT_LICENSE="*"
 
 #ABI_X86="32 64"
 
-QEMU_SOFTMMU_TARGETS="i386 x86_64"
-QEMU_USER_TARGETS="i386 x86_64"
+#QEMU_SOFTMMU_TARGETS="i386 x86_64"
+#QEMU_USER_TARGETS="i386 x86_64"
 
 # The number of packets for simultaneous assembly.
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --ask-enter-invalid --keep-going"
 
-USE="${USE} ffmpeg lzo speex theora threads xvmc"
+#USE="${USE} ffmpeg lzo speex theora threads xvmc"

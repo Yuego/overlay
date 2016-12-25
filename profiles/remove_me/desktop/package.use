@@ -1,0 +1,13 @@
+
+# APP-OFFICE
+
+app-office/libreoffice -postgres 
+
+# DEV-DB
+
+
+# MEDIA-LIBS
+
+# MEDIA-GFX
+
+media-gfx/ufraw gimp gtk

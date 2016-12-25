@@ -25,3 +25,23 @@ sys-devel/llvm clang
 
 # VIRTUAL
 
+
+# APP-ARCH
+
+app-arch/bzip2 static-libs
+
+# MEDIA-LIBS
+
+media-libs/freetype static-libs
+media-libs/libjpeg-turbo static-libs
+media-libs/libpng static-libs
+
+
+# SYS-LIBS
+
+sys-libs/gpm static-libs
+sys-libs/zlib static-libs
+
+# VIRTUAL
+
+virtual/jpeg static-libs

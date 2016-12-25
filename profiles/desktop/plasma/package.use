@@ -8,10 +8,4 @@ kde-apps/kio-extras mtp openexr samba slp
 kde-plasma/kde-gtk-config gtk3
 kde-plasma/systemsettings gtk
 
-# MEDIA-PLUGINS
-
-media-plugins/audacious-plugins cue -oss pulseaudio wavpack
-
-
-# MEDIA-SOUND
 

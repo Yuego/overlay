@@ -8,6 +8,8 @@
 
 # DESKTOPS
 
+amd64           desktop/plasma/home                      stable
+
 amd64           desktop/plasma/gentoo/home                      stable
 amd64           desktop/plasma/calculate/develop                stable
 amd64           desktop/plasma/calculate/workstation            stable

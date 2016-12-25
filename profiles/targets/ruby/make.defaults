@@ -1,0 +1,2 @@
+
+RUBY_TARGETS="ruby20 -ruby21 -ruby22 ruby23"
