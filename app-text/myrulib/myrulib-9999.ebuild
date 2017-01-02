@@ -42,6 +42,7 @@ src_prepare() {
 		3rdparty/sqlite3 \
 		3rdparty/wxsqlite3 \
 	|| die
+	eapply_user
 }
 
 src_configure() {

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-WX_GTK_VER="2.8"
+WX_GTK_VER="3.0"
 
 inherit eutils wxwidgets
 
@@ -43,8 +43,9 @@ src_prepare() {
 		3rdparty/wxsqlite3 \
 	|| die
 
-	sed -i -e 's/-lwxsqlite3-2.8/-lwxcode_gtk2u_wxsqlite3-2.8/' \
+	sed -i -e 's/-lwxsqlite3-2.8/-lwxcode_gtk2_wxsqlite3-3.0/' \
 		configure.in configure || die
+	eapply_user
 }
 
 src_configure() {
