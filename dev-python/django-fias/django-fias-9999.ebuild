@@ -26,6 +26,7 @@ RDEPEND="
 	)
 	sphinx? (
 		>=app-misc/sphinx-2.1
+		dev-python/mysqlclient
 	)
 	|| (
 		dev-python/zeep[${PYTHON_USEDEP}]
