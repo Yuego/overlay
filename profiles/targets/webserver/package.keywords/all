@@ -1,0 +1,13 @@
+app-eselect/eselect-python
+
+dev-db/postgis
+
+dev-lang/python-exec
+
+dev-python/django
+dev-python/ipython
+
+sys-libs/timezone-data
+
+www-servers/nginx
+www-servers/uwsgi
