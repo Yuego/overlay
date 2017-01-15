@@ -36,6 +36,9 @@ media-libs/freetype static-libs
 media-libs/libjpeg-turbo static-libs
 media-libs/libpng static-libs
 
+# MEDIA-PLUGINS
+
+media-plugins/gst-plugins-meta -ffmpeg
 
 # SYS-LIBS
 
