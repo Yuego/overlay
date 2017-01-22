@@ -30,18 +30,15 @@ RDEPEND="${RDEPEND}
 
 # Libs
 RDEPEND="${RDEPEND}
-	dev-python/django-mptt
 
 	dev-python/py3o-template
 	dev-python/py3o-types
 
 	dev-python/django-downloadview
-	dev-python/django-v3dlibs
 
 	dev-python/django-cacheops
 	dev-python/django-redis
 
-	dev-python/django-hstore
 	dev-python/phonenumbers
 
 	dev-python/django-rest-framework

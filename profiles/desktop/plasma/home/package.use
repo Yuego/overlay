@@ -12,6 +12,7 @@ app-portage/layman bazaar mercurial
 # MEDIA-LIBS
 
 media-libs/gegl lensfun openexr raw umfpack
+media-libs/libmypaint gegl
 
 # MEDIA-VIDEO
 
