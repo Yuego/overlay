@@ -31,7 +31,7 @@ RDEPEND="${RDEPEND}
 # Libs
 RDEPEND="${RDEPEND}
 
-	dev-python/py3o-template
+	>=dev-python/py3o-template-0.9.12.1
 	dev-python/py3o-types
 
 	dev-python/django-downloadview
