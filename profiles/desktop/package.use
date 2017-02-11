@@ -21,6 +21,8 @@ media-plugins/audacious-plugins cue -oss pulseaudio wavpack
 
 media-sound/pulseaudio gnome
 
+# NET-FS
 
+net-fs/samba client
 
 
