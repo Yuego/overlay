@@ -55,5 +55,6 @@ RDEPEND="${RDEPEND}
 	dev-python/vincode
 	dev-python/scrapy-djangoitem
 	dev-python/scrapy-deltafetch
+	dev-python/django-versatileimagefield
 "
 DEPEND=""
