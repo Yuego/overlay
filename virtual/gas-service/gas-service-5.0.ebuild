@@ -26,6 +26,7 @@ RDEPEND="${RDEPEND}
 
 	net-libs/nodejs
 	dev-db/postgis
+	>=dev-python/celery-4.0.0[redis]
 "
 
 # Libs
