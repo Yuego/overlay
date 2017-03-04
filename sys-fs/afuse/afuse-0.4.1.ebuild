@@ -14,9 +14,12 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
 
-IUSE=""
+IUSE="+ssh"
 
-RDEPEND="sys-fs/fuse"
+RDEPEND="
+	sys-fs/fuse
+	ssh? ( net-fs/sshfs )
+"
 DEPEND="
 	${RDEPEND}
 	virtual/pkgconfig
