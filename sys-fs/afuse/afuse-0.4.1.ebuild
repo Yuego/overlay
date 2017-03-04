@@ -26,3 +26,9 @@ src_prepare() {
 	eapply_user
 	eautoreconf
 }
+
+src_install(){
+	default
+
+	dosbin "${FILESDIR}/mount.afuse"
+}

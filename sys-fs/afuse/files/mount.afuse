@@ -1,0 +1,3 @@
+#!/bin/sh
+# Mount under user and group which are owners of mount point
+su -l $( stat --format=%U "$2" ) -c "afuse -o mount_template='sshfs -o reconnect -o auto_cache -o kernel_cache %r:/ %m' -o unmount_template='fusermount -u -z %m' -o auto_unmount '$2'"
