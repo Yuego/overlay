@@ -11,3 +11,7 @@ sys-libs/timezone-data
 
 www-servers/nginx
 www-servers/uwsgi
+
+dev-python/billiard
+dev-python/kombu
+dev-python/py-amqp
