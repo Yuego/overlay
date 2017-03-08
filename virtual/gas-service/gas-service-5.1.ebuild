@@ -28,6 +28,11 @@ RDEPEND="${RDEPEND}
 	dev-db/postgis
 "
 
+# Apps
+RDEPEND="${RDEPEND}
+	>=dev-python/django-helpdesk-0.1.18-r2
+"
+
 # Libs
 RDEPEND="${RDEPEND}
 	dev-python/psycopg
