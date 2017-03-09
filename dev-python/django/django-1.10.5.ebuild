@@ -26,7 +26,7 @@ LICENSE+=" Apache-2.0"
 # admin icons, jquery, xregexp.js
 LICENSE+=" MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE="doc sqlite test"
 
 RDEPEND=""
