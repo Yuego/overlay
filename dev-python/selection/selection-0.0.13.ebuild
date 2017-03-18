@@ -11,7 +11,7 @@ DESCRIPTION="API to extract data from HTML and XML documents"
 HOMEPAGE="https://github.com/lorien/selection"
 
 EGIT_REPO_URI="git://github.com/lorien/selection.git"
-EGIT_COMMIT="cc39b227847540a57df31b5d4db85b4c7a728c59"
+EGIT_COMMIT="1a1fe0468dddf0241a9ff409054ce6140d511612"
 
 LICENSE="MIT"
 SLOT="0"
