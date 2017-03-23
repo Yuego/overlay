@@ -64,5 +64,6 @@ RDEPEND="${RDEPEND}
 	dev-python/django-versatileimagefield
 	dev-python/img2pdf
 	dev-python/openpyxl
+	dev-python/secretary
 "
 DEPEND=""
