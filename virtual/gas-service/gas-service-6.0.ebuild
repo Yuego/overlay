@@ -63,5 +63,6 @@ RDEPEND="${RDEPEND}
 	dev-python/scrapy-deltafetch
 	dev-python/django-versatileimagefield
 	dev-python/img2pdf
+	dev-python/openpyxl
 "
 DEPEND=""
