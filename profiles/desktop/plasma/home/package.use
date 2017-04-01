@@ -9,6 +9,10 @@ app-editors/gvim lua luajit python
 
 app-portage/layman bazaar mercurial
 
+# DEV-VCS
+
+dev-vcs/subversion -kwallet
+
 # MEDIA-LIBS
 
 media-libs/gegl lensfun openexr raw umfpack
