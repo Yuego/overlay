@@ -65,5 +65,6 @@ RDEPEND="${RDEPEND}
 	dev-python/img2pdf
 	dev-python/openpyxl
 	dev-python/secretary
+	dev-python/django-object-actions
 "
 DEPEND=""
