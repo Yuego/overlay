@@ -21,15 +21,12 @@ IUSE="${IUSE} kernel_linux"
 
 #rtaudio will use OSS on non linux OSes
 COMMON_DEPEND="
-	ffmpeg? (
-		libav? ( media-video/libav:0=[vdpau?] )
-		!libav? ( media-video/ffmpeg:0=[vdpau?] )
-	)
+	ffmpeg? ( virtual/ffmpeg )
 	xml? ( >=dev-libs/libxml2-2.5 )
 	sdl? ( >=media-libs/libsdl-1.2.10[X,opengl,video]
 		 >=media-libs/sdl-image-1.2.4 )
 	libsamplerate? ( >=media-libs/libsamplerate-0.1.2 )
-	jack? ( >=media-sound/jack-audio-connection-kit-0.121.3
+	jack? ( virtual/jack
 		media-libs/ladspa-sdk
 		>=dev-libs/libxml2-2.5 )
 	fftw? ( sci-libs/fftw:3.0= )
