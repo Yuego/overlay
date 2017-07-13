@@ -1,3 +1,6 @@
+#APP-ARCH
+
+app-arch/p7zip kde rar
 
 #APP-EDITORS
 
@@ -16,6 +19,7 @@ dev-vcs/subversion -kwallet
 # MEDIA-LIBS
 
 media-libs/gegl lensfun openexr raw umfpack
+media-libs/libcanberra gtk
 media-libs/libmypaint gegl
 
 # MEDIA-VIDEO
