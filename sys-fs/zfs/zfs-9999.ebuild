@@ -8,7 +8,7 @@ if [ ${PV} == "9999" ] ; then
 	inherit git-r3 linux-mod
 	AUTOTOOLS_AUTORECONF="1"
 	EGIT_REPO_URI="https://github.com/dweeezil/zfs.git"
-        EGIT_BRANCH="ntrim2"
+        EGIT_BRANCH="ntrim2-next"
 else
 	SRC_URI="https://github.com/zfsonlinux/${PN}/releases/download/${P}/${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~ppc ~ppc64"

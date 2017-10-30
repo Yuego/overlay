@@ -6,7 +6,7 @@ EAPI="5"
 if [ ${PV} == "9999" ]; then
 	AUTOTOOLS_AUTORECONF="1"
 	EGIT_REPO_URI="https://github.com/dweeezil/zfs.git"
-        EGIT_BRANCH="ntrim2"
+        EGIT_BRANCH="ntrim2-next"
 	inherit git-r3
 else
 	SRC_URI="https://github.com/zfsonlinux/zfs/releases/download/zfs-${PV}/zfs-${PV}.tar.gz"

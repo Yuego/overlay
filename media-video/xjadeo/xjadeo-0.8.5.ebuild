@@ -17,8 +17,8 @@ IUSE="alsa imlib midi osc osd qt4 portmidi sdl tiff tools xv"
 REQUIRED_USE="alsa? ( midi )
 	portmidi? ( midi )"
 
-RDEPEND=">=media-sound/jack-audio-connection-kit-0.100
-	>=media-video/ffmpeg-0.4.9
+RDEPEND="virtual/jack
+	virtual/ffmpeg
 	midi? (
 		alsa? ( >=media-libs/alsa-lib-1.0.10 )
 		portmidi? ( media-libs/portmidi )
