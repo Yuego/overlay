@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+StartupNotify=false
+
+MimeType=application/pdf;
+Actions=toJPEG;
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=PDF-Tools
+
+[Desktop Action toJPEG]
+Exec=konsole -e pdfimages -p -j %f %f
+Name[ru]=Извлечь изображения из PDF
+Name=Extract images from PDF

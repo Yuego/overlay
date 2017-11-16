@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+StartupNotify=false
+
+MimeType=image/jpeg;image/png;
+Actions=toPDF;
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=PDF-Tools
+
+[Desktop Action toPDF]
+Exec=konsole -e convert %F images.pdf
+Name[ru]=Упаковать изображения в PDF
+Name=Pack images into PDF
