@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/scrapy-1.1.0[${PYTHON_USEDEP}]
-	dev-python/django
+	dev-python/django[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

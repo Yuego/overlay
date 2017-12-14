@@ -10,5 +10,5 @@ RDEPEND=>=sys-fs/lvm2-2.02.45 sys-fs/fuse x11-libs/wxGTK:2.8[X?] app-admin/sudo
 RESTRICT=bindist
 SLOT=0
 SRC_URI=https://googledrive.com/host/0B8mcZauYdlmqTGF5N2FIdlNlVFk/truecrypt-7.1a.tar.gz http://git.gnupg.org/cgi-bin/gitweb.cgi?p=scute.git;a=blob_plain;f=src/pkcs11.h;hb=38bdba0bb1ab93950489c645938c93ed577f9139 -> truecrypt-7.1a-pkcs11.h
-_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	flag-o-matic	8632fcd33a047954f007dee9a137bdcc	linux-info	fd1e29abbb02cbc49f1a14299846e9c4	multilib	165fc17c38d1b11dac2008280dab6e80	pax-utils	4c2654a34ebe732e85fda354f6ee642f	toolchain-funcs	6198c04daba0e1307bd844df7d37f423	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	wxwidgets	9b34ce3ca77f4e418e8fd9951c4c1cb1
+_eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	flag-o-matic	a6089a2a4027ae3da4a460dc87b21050	linux-info	ca370deef9d44125d829f2eb6ebc83e0	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	pax-utils	4f95120230a315c8caaabeb2307b7eee	toolchain-funcs	185a06792159ca143528e7010368e8af	versionator	c80ccf29e90adea7c5cae94b42eb76d0	wxwidgets	04e063b0eff26daaea83d859dd9d6e05
 _md5_=2f0f811ce3e654e6cfde53a01c6f4ba6

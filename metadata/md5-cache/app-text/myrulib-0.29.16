@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure prepare
-DEPEND=x11-libs/wxGTK:2.8[X] dev-libs/libxml2 dev-db/sqlite:3[fts3(+),icu?] dev-db/wxsqlite3 app-arch/bzip2 icu? ( dev-libs/icu:= ) reader? ( media-libs/freetype:2 media-libs/libpng:= virtual/jpeg:* sys-libs/zlib ) virtual/pkgconfig
+DEPEND=x11-libs/wxGTK:3.0[X] dev-libs/libxml2 dev-db/sqlite:3[fts3(+),icu?] dev-db/wxsqlite3 app-arch/bzip2 icu? ( dev-libs/icu:= ) reader? ( media-libs/freetype:2 media-libs/libpng:= virtual/jpeg:* sys-libs/zlib ) virtual/pkgconfig
 DESCRIPTION=E-book collection manager
 EAPI=6
 HOMEPAGE=http://www.lintest.ru/wiki/MyRuLib
 IUSE=+icu +links reader syslog
 KEYWORDS=amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=x11-libs/wxGTK:2.8[X] dev-libs/libxml2 dev-db/sqlite:3[fts3(+),icu?] dev-db/wxsqlite3 app-arch/bzip2 icu? ( dev-libs/icu:= ) reader? ( media-libs/freetype:2 media-libs/libpng:= virtual/jpeg:* sys-libs/zlib )
+RDEPEND=x11-libs/wxGTK:3.0[X] dev-libs/libxml2 dev-db/sqlite:3[fts3(+),icu?] dev-db/wxsqlite3 app-arch/bzip2 icu? ( dev-libs/icu:= ) reader? ( media-libs/freetype:2 media-libs/libpng:= virtual/jpeg:* sys-libs/zlib )
 SLOT=0
 SRC_URI=http://lintest.ru/pub/myrulib-0.29.16.tar.bz2
-_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	flag-o-matic	8632fcd33a047954f007dee9a137bdcc	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423	wxwidgets	9b34ce3ca77f4e418e8fd9951c4c1cb1
-_md5_=e238154213e8cad763f1da40e12a32c2
+_eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	flag-o-matic	a6089a2a4027ae3da4a460dc87b21050	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af	wxwidgets	04e063b0eff26daaea83d859dd9d6e05
+_md5_=852787da562caabbff6093f8f636c673

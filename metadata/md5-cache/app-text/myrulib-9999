@@ -7,5 +7,5 @@ IUSE=+icu +links reader syslog
 LICENSE=GPL-3
 RDEPEND=x11-libs/wxGTK:2.8[X] dev-libs/libxml2 dev-db/sqlite:3[fts3(+),icu?] dev-db/wxsqlite3 app-arch/bzip2 icu? ( dev-libs/icu:= ) reader? ( media-libs/freetype:2 media-libs/libpng:= virtual/jpeg:* sys-libs/zlib )
 SLOT=0
-_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	flag-o-matic	8632fcd33a047954f007dee9a137bdcc	git-r3	00f60a84fc7b499c99edfe99caea9f95	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423	wxwidgets	9b34ce3ca77f4e418e8fd9951c4c1cb1
-_md5_=36c06c8c6741a0b27feb2da5e62960ff
+_eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	flag-o-matic	a6089a2a4027ae3da4a460dc87b21050	git-r3	fec09a83ae965b041b47f5ff7c8ba29a	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af	wxwidgets	04e063b0eff26daaea83d859dd9d6e05
+_md5_=0a971531cb620f89414ceccaac1d8369

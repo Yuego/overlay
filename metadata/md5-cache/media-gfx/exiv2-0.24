@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=virtual/libiconv nls? ( virtual/libintl ) xmp? ( dev-libs/expat ) zlib? ( sys-libs/zlib ) contrib? ( >=dev-libs/boost-1.44 ) doc? ( app-doc/doxygen dev-libs/libxslt virtual/pkgconfig media-gfx/graphviz ) nls? ( sys-devel/gettext )
+DEPEND=virtual/libiconv nls? ( virtual/libintl ) xmp? ( dev-libs/expat ) zlib? ( sys-libs/zlib ) contrib? ( >=dev-libs/boost-1.44 ) doc? ( app-doc/doxygen dev-libs/libxslt virtual/pkgconfig media-gfx/graphviz ) nls? ( sys-devel/gettext ) >=app-portage/elt-patches-20170422
 DESCRIPTION=EXIF and IPTC metadata C++ library and command line utility
 EAPI=5
 HOMEPAGE=http://www.exiv2.org/
-IUSE=contrib doc examples nls xmp zlib static-libs linguas_de linguas_es linguas_fi linguas_fr linguas_pl linguas_ru linguas_sk python_targets_python2_7 python_targets_python3_3 python_single_target_python2_7 python_single_target_python3_3 abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_ppc_32 abi_ppc_64 abi_s390_32 abi_s390_64
+IUSE=contrib doc examples nls xmp zlib static-libs linguas_de linguas_es linguas_fi linguas_fr linguas_pl linguas_ru linguas_sk python_targets_python2_7 abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_ppc_32 abi_ppc_64 abi_s390_32 abi_s390_64
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=virtual/libiconv nls? ( virtual/libintl ) xmp? ( dev-libs/expat ) zlib? ( sys-libs/zlib )
 SLOT=0/12
 SRC_URI=http://www.exiv2.org/exiv2-0.24.tar.gz
-_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	autotools-multilib	77afca16a6cb82823eed6366a10e7f75	autotools-utils	419811142edf3516b0d0cf1a254d93cb	eutils	b83a2420b796f7c6eff682679d08fe25	libtool	4890219c51da247200223277f993e054	multibuild	742139c87a9fa3766f0c2b155e5522bf	multilib	165fc17c38d1b11dac2008280dab6e80	multilib-build	8fe2e81aeb36cdf8a6cc5f50443879cc	multilib-minimal	0224dee31c0f98405d572e14ad6dee65	python-single-r1	2ebea8fbab356d63110245129a67a6dd	python-utils-r1	1797277ea0e7cee5c7de7ce74cf8acd8	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
+_eclasses_=autotools	dc412f38566b91012efd58b9c203e6c3	autotools-multilib	f4848d9634439c7203cb7dd3b9650fff	autotools-utils	5a4611dfba155b1659528663fad4cd5e	desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multibuild	72647e255187a1fadc81097b3657e5c3	multilib	97f470f374f2e94ccab04a2fb21d811e	multilib-build	eed53a6313267c9fbcd35fc384bd0087	multilib-minimal	9139c3a57e077cb8e0d0f73ceb080b89	python-single-r1	317a2557b4d7319a7418225f65accf77	python-utils-r1	c9de01becf9df3f8c10aeec3dc693f5d	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=64f692d19849a745ea85b70b69c51452

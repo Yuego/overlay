@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=media-libs/libsndfile
+DESCRIPTION=C++ library for real-time resampling of audio signals
+EAPI=6
+HOMEPAGE=http://kokkinizita.linuxaudio.org/linuxaudio/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-3
+RDEPEND=media-libs/libsndfile
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://kokkinizita.linuxaudio.org/linuxaudio/downloads/zita-resampler-1.6.0.tar.bz2
+_eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
+_md5_=164d14279523a98d7fc8308802f1b84f
