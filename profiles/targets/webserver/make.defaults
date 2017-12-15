@@ -4,4 +4,4 @@ USE="${USE} curl python"
 
 NGINX_MODULES_HTTP="access auth_basic autoindex browser charset empty_gif fastcgi geo geoip gzip gzip_static limit_conn limit_req lua map memcached proxy push referer rewrite scgi spdy split_clients ssi upstream_ip_hash upload_progress userid uwsgi" 
 
-
+POSTGRES_TARGETS="postgres9_5 postgres9_6"
