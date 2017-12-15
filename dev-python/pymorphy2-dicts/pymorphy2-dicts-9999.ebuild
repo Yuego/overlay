@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy pypy3 )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="OpenCorpora.org dictionaries pre-compiled for pymorphy2"
-HOMEPAGE="https://github.com/kmike/pymorphy2-dicts/ http://pypi.python.org/pypi/pymorphy2-dicts"
+HOMEPAGE="https://github.com/kmike/pymorphy2-dicts/ https://pypi.python.org/pypi/pymorphy2-dicts"
 
 EGIT_REPO_URI="https://github.com/kmike/pymorphy2-dicts.git"
 

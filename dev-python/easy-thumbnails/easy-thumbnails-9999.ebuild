@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.3"
-DEPEND="dev-python/setuptools"
+RDEPEND=">=dev-python/django-1.8[${PYTHON_USEDEP}]"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 S=${WORKDIR}/easy-thumbnails

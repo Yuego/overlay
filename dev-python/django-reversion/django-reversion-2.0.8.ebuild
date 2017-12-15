@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{3,4,5} pypy pypy3 )
 inherit distutils-r1
 
 DESCRIPTION="An extension to the Django web framework that provides comprehensive version control facilities."
-HOMEPAGE="http://github.com/etianen/django-reversion"
+HOMEPAGE="https://github.com/etianen/django-reversion"
 SRC_URI="https://github.com/etianen/django-reversion/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"

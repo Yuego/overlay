@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_6,2_7,3_3,3_4} )
 inherit distutils-r1
 
 DESCRIPTION="Lightweight SOAP client"
-HOMEPAGE="https://fedorahosted.org/suds/ http://pypi.python.org/pypi/suds"
+HOMEPAGE="https://fedorahosted.org/suds/ https://pypi.python.org/pypi/suds"
 SRC_URI="https://bitbucket.org/jurko/suds/downloads/${P}.tar.bz2"
 
 LICENSE="LGPL-3"

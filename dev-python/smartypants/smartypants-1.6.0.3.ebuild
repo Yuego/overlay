@@ -10,9 +10,9 @@ inherit eutils distutils-r1
 DESCRIPTION="SmartyPants is a free web publishing plug-in for Movable Type,
 Blosxom, and BBEdit that easily translates plain ASCII punctuation characters
 into 'smart' typographic punctuation HTML entities."
-HOMEPAGE="http://web.chad.org/projects/smartypants.py/"
+HOMEPAGE="https://web.chad.org/projects/smartypants.py/"
 
-SRC_URI="http://pypi.python.org/packages/source/s/smartypants/${P}.tar.gz"
+SRC_URI="https://pypi.python.org/packages/source/s/smartypants/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
 inherit distutils-r1
 
 DESCRIPTION="Tweak the form field rendering in templates, not in python-level form definitions. CSS classes and HTML attributes can be altered."
-HOMEPAGE="http://pypi.python.org/pypi/django-widget-tweaks"
+HOMEPAGE="https://pypi.python.org/pypi/django-widget-tweaks"
 
 SRC_URI="https://github.com/kmike/django-widget-tweaks/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

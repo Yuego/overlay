@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,12 +18,12 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/w3lib-1.8.0
-	dev-python/lxml
-	>=dev-python/six-1.5.2
-	>=dev-python/cssselect-0.9
+	>=dev-python/w3lib-1.8.0[${PYTHON_USEDEP}]
+	dev-python/lxml[${PYTHON_USEDEP}]
+	>=dev-python/six-1.5.2[${PYTHON_USEDEP}]
+	>=dev-python/cssselect-0.9[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 src_prepare(){
 	distutils-r1_src_prepare

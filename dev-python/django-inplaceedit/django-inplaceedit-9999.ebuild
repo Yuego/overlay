@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_6,2_7} pypy pypy3 )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Django application that allows you to inline edition of some data from the database"
-HOMEPAGE="http://pypi.python.org/pypi/django-inplaceedit"
+HOMEPAGE="https://pypi.python.org/pypi/django-inplaceedit"
 
 EGIT_REPO_URI="https://github.com/Yuego/django-inplaceedit.git"
 

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
 inherit distutils-r1
 
 DESCRIPTION="Django friendly finite state machine support"
-HOMEPAGE="http://github.com/kmmbvnr/django-fsm"
+HOMEPAGE="https://github.com/kmmbvnr/django-fsm"
 
 SRC_URI="https://github.com/kmmbvnr/django-fsm/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

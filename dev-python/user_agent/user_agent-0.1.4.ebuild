@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 DESCRIPTION="Generator of User-Agent header"
 HOMEPAGE="https://github.com/lorien/user_agent"
 
-EGIT_REPO_URI="git://github.com/lorien/user_agent.git"
+EGIT_REPO_URI="https://github.com/lorien/user_agent.git"
 EGIT_COMMIT="3160ffdac4b6e970bc9b8b0be319e04963824a9c"
 
 LICENSE="MIT"

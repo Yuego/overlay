@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python2_7 python3_{3,4,5} pypy )
 inherit distutils-r1
 
 DESCRIPTION="A transparent sorted ManyToMany field for django."
-HOMEPAGE="https://github.com/gregmuellegger/django-sortedm2m http://pypi.python.org/pypi/django-sortedm2m"
+HOMEPAGE="https://github.com/gregmuellegger/django-sortedm2m https://pypi.python.org/pypi/django-sortedm2m"
 
 SRC_URI="https://github.com/gregmuellegger/django-sortedm2m/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
