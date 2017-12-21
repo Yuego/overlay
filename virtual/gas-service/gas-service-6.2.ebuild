@@ -66,5 +66,6 @@ RDEPEND="${RDEPEND}
 	dev-python/openpyxl
 	dev-python/secretary
 	dev-python/django-object-actions
+	dev-python/django-import-export
 "
 DEPEND=""
