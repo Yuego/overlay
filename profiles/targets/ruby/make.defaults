@@ -1,2 +1,2 @@
 
-RUBY_TARGETS="-ruby20 ruby21 -ruby22 -ruby23 ruby24"
+RUBY_TARGETS="-ruby20 -ruby21 ruby22 -ruby23 -ruby24"
