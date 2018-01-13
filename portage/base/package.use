@@ -22,7 +22,6 @@ kde-apps/kio-extras mtp openexr samba slp
 
 kde-base/kdepim-runtime google
 
-media-gfx/imagemagick corefonts
 
 media-libs/gexiv2 introspection
 media-libs/libmypaint gegl
