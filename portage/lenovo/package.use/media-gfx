@@ -7,4 +7,3 @@ media-gfx/hugin lapack python sift
 media-gfx/darktable opencl
 media-gfx/gimp lcms
 
-media-gfx/imagemagick -autotrace -corefonts fftw -fontconfig -fpx -graphviz hdri -jbig lcms lqr lzma openmp opencl -pango -perl -postscript -q32 -q64 -q8 -static-libs -test -webp -xml

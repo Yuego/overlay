@@ -1,4 +1,3 @@
 
 media-gfx/splashutils fbcondecor
-media-gfx/imagemagick bzip2 cxx -djvu jpeg jpeg2k -openexr openmp png raw svg tiff truetype -wmf zlib -autotrace -corefonts fftw -fontconfig -fpx -graphviz hdri -jbig -lcms -lqr -lzma -opencl -pango -perl -postscript -q32 -q64 -q8 webp -xml
 
