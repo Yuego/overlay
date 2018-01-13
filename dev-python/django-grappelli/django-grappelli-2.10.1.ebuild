@@ -12,11 +12,11 @@ DESCRIPTION="A jazzy skin for the Django admin interface"
 HOMEPAGE="http://www.grappelliproject.com/"
 LICENSE="BSD-4"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.9
-	<dev-python/django-1.12
+	>=dev-python/django-1.9[${PYTHON_USEDEP}]
+	<dev-python/django-2[${PYTHON_USEDEP}]
 "
 DEPEND="${RDEPEND}"

@@ -5,8 +5,8 @@ ALSA_CARDS="hda-intel"
 
 RUBY_TARGETS="ruby20 -ruby21 -ruby22 ruby23"
 
-PYTHON_TARGETS="python2_7 python3_4 python3_5"
-PYTHON_SINGLE_TARGET="-python2_7 -python3_3  python3_4 -python3_5"
-USE_PYTHON="2.7 3.4 3.5"
+PYTHON_TARGETS="python2_7 python3_5"
+PYTHON_SINGLE_TARGET="-python2_7 -python3_3  -python3_4 -python3_5"
+USE_PYTHON="2.7 3.5"
 
 USE="${USE} -doc icu jemalloc multilib opencl vim-syntax"
