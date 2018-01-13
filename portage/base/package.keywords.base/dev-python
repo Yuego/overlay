@@ -16,7 +16,6 @@ dev-python/chardet
 dev-python/d2to1
 dev-python/six
 dev-python/pbr
-dev-python/pillow
 dev-python/amqplib
 dev-python/anyjson
 dev-python/billiard
