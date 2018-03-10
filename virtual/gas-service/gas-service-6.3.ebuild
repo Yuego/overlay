@@ -14,7 +14,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
-	dev-python/django
+	>=dev-python/django-1.11
 	dev-python/scrapy
 "
 
@@ -49,7 +49,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-rest-framework
 
-	dev-python/django-grappelli
+	>=dev-python/django-grappelli-2.11.1
 	dev-python/django-constance
 	>=dev-python/django-reversion-2.0.0
 
