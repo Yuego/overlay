@@ -28,7 +28,7 @@ RDEPEND="
 		dev-python/mysqlclient
 	)
 	|| (
-		dev-python/zeep[${PYTHON_USEDEP}]
+		>=dev-python/zeep-0.17.0[${PYTHON_USEDEP}]
 		dev-python/suds[$(python_gen_usedep 'python2*' pypy)]
 		>=dev-python/suds-jurko-0.6[$(python_gen_usedep 'python3*' pypy)]
 	)
