@@ -85,7 +85,6 @@ src_install() {
 
 	#Docs
 	dodoc license.txt
-	dodoc releasenotes.txt
 }
 
 pkg_postinst(){

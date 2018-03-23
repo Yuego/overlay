@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 DESCRIPTION="Python script to convert the Ukrainian morphological dictionary from the LanguageTool project to the OpenCorpora format."
 HOMEPAGE="https://github.com/dchaplinsky/LT2OpenCorpora"
 
-EGIT_REPO_URI="git://github.com/dchaplinsky/LT2OpenCorpora.git"
+EGIT_REPO_URI="https://github.com/dchaplinsky/LT2OpenCorpora.git"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,10 +18,10 @@ KEYWORDS=""
 IUSE="plot"
 
 RDEPEND="
-	dev-python/blinker
-	dev-python/unicodecsv
-	>=dev-python/bz2file-0.98
-	dev-python/requests
+	dev-python/blinker[${PYTHON_USEDEP}]
+	dev-python/unicodecsv[${PYTHON_USEDEP}]
+	>=dev-python/bz2file-0.98[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
 	plot? ( >=media-gfx/pydot-1.0.2 )
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

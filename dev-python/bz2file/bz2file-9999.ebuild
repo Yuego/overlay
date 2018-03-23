@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 DESCRIPTION="Python library for reading and writing bzip2-compressed files."
 HOMEPAGE="https://github.com/nvawda/bz2file"
 
-EGIT_REPO_URI="git://github.com/nvawda/bz2file.git"
+EGIT_REPO_URI="https://github.com/nvawda/bz2file.git"
 
 LICENSE="Apache-2.0"
 SLOT="0"

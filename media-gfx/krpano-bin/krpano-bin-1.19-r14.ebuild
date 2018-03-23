@@ -17,10 +17,6 @@ else
 	PR_PATH="-${MY_PR}"
 fi
 
-echo $PVR
-echo $MY_PR
-echo $PR_PATH
-
 SRC_URI="
 	http://krpano.com/download/download.php?file=krpano${PV//./}${MY_PR}linux32 -> krpano-bin32-${PVR}.tar.gz
 	http://krpano.com/download/download.php?file=krpano${PV//./}${MY_PR}linux64 -> krpano-bin64-${PVR}.tar.gz
@@ -89,7 +85,6 @@ src_install() {
 
 	#Docs
 	dodoc license.txt
-	dodoc releasenotes.txt
 }
 
 pkg_postinst(){
