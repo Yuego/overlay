@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -18,10 +18,10 @@ KEYWORDS="amd64 x86"
 IUSE="mysql +postgres sqlite"
 
 RDEPEND="
-	>=dev-python/django-1.3
-	>=dev-python/sqlalchemy-0.7.5
-	mysql? ( dev-python/mysql-python )
-	postgres? ( dev-python/psycopg:2 )
-	sqlite? ( dev-db/sqlite )
+	>=dev-python/django-1.3[${PYTHON_USEDEP}]
+	>=dev-python/sqlalchemy-0.7.5[${PYTHON_USEDEP}]
+	mysql? ( dev-python/mysql-python[${PYTHON_USEDEP}] )
+	postgres? ( dev-python/psycopg:2[${PYTHON_USEDEP}] )
+	sqlite? ( dev-db/sqlite[${PYTHON_USEDEP}] )
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

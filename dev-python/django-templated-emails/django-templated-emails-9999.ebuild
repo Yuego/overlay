@@ -20,7 +20,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.3
-	dev-python/cssutils
-	dev-python/pynliner"
-DEPEND="dev-python/setuptools"
+RDEPEND=">=dev-python/django-1.3[${PYTHON_USEDEP}]
+	dev-python/cssutils[${PYTHON_USEDEP}]
+	dev-python/pynliner[${PYTHON_USEDEP}]"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

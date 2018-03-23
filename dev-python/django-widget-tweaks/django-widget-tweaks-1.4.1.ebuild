@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -17,6 +17,6 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="-tests"
 
-RDEPEND=">=dev-python/django-1.4.2
-	tests? ( dev-python/tox )"
-DEPEND="dev-python/setuptools"
+RDEPEND=">=dev-python/django-1.4.2[${PYTHON_USEDEP}]
+	tests? ( dev-python/tox[${PYTHON_USEDEP}] )"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

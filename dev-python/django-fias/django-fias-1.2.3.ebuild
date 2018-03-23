@@ -21,11 +21,11 @@ RDEPEND="
 	>=dev-python/django-1.8[${PYTHON_USEDEP}]
 	>=dev-python/django-select2-5.3.0[${PYTHON_USEDEP}]
 	postgres? (
-		dev-python/psycopg:2
+		dev-python/psycopg:2[${PYTHON_USEDEP}]
 	)
 	sphinx? (
 		>=app-misc/sphinx-2.1
-		dev-python/mysqlclient
+		dev-python/mysqlclient[${PYTHON_USEDEP}]
 	)
 	|| (
 		>=dev-python/zeep-0.17.0[${PYTHON_USEDEP}]

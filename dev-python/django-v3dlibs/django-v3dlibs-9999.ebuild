@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -19,9 +19,9 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.3
-	dev-python/pillow
-	dev-python/six
-	dev-python/django-hosts
+	>=dev-python/django-1.9[${PYTHON_USEDEP}]
+	dev-python/pillow[${PYTHON_USEDEP}]
+	dev-python/six[${PYTHON_USEDEP}]
+	dev-python/django-hosts[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

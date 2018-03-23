@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,7 +18,7 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/jinja-2.7
-	dev-python/arrow
+	>=dev-python/jinja-2.7[${PYTHON_USEDEP}]
+	dev-python/arrow[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

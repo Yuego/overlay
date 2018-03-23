@@ -20,10 +20,10 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="notification"
 
-RDEPEND=">=dev-python/django-1.4
-	dev-python/cssutils
-	dev-python/pynliner
-	notification? ( dev-python/django-notification )"
-DEPEND="dev-python/setuptools"
+RDEPEND=">=dev-python/django-1.4[${PYTHON_USEDEP}]
+	dev-python/cssutils[${PYTHON_USEDEP}]
+	dev-python/pynliner[${PYTHON_USEDEP}]
+	notification? ( dev-python/django-notification[${PYTHON_USEDEP}] )"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 S="${WORKDIR}/templated-emails-${PV}"

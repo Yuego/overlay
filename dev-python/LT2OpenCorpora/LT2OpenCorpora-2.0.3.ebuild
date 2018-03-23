@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -19,10 +19,10 @@ KEYWORDS="amd64 x86"
 IUSE="plot"
 
 RDEPEND="
-	dev-python/blinker
-	dev-python/unicodecsv
-	>=dev-python/bz2file-0.98
-	dev-python/requests
+	dev-python/blinker[${PYTHON_USEDEP}]
+	dev-python/unicodecsv[${PYTHON_USEDEP}]
+	>=dev-python/bz2file-0.98[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
 	plot? ( >=media-gfx/pydot-1.0.2 )
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

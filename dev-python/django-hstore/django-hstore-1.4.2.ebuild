@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -18,8 +18,8 @@ KEYWORDS="amd64 x86"
 IUSE="test"
 
 RDEPEND="
-	>=dev-python/django-1.7
-	>=dev-python/psycopg-2.5.2
-	test? ( =dev-python/django-discover-runner-1.0 )
+	>=dev-python/django-1.7[${PYTHON_USEDEP}]
+	>=dev-python/psycopg-2.5.2[${PYTHON_USEDEP}]
+	test? ( =dev-python/django-discover-runner-1.0[${PYTHON_USEDEP}] )
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

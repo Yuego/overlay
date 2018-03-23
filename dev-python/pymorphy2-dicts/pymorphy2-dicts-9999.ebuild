@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,13 +18,13 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	dev-python/pymorphy2
-	dev-python/tqdm
-	dev-python/wheel
-	>=dev-python/cookiecutter-1.3
-	>=dev-python/LT2OpenCorpora-2.0.3
+	dev-python/pymorphy2[${PYTHON_USEDEP}]
+	dev-python/tqdm[${PYTHON_USEDEP}]
+	dev-python/wheel[${PYTHON_USEDEP}]
+	>=dev-python/cookiecutter-1.3[${PYTHON_USEDEP}]
+	>=dev-python/LT2OpenCorpora-2.0.3[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	${RDEPEND}
 "
 

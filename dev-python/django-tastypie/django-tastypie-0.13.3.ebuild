@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Creating delicious APIs for Django apps since 2010."
 HOMEPAGE="http://tastypieapi.org/"
 
-SRC_URI="https://github.com/django-tastypie/django-tastypie/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/django-tastypie/django-tastypie/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

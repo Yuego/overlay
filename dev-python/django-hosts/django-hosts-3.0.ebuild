@@ -18,13 +18,13 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.8
-	<dev-python/django-2.1
+	>=dev-python/django-1.8[${PYTHON_USEDEP}]
+	<dev-python/django-2.1[${PYTHON_USEDEP}]
 "
 
 DEPEND="
-	dev-python/setuptools
-	dev-python/setuptools_scm
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 "
 
 src_prepare(){

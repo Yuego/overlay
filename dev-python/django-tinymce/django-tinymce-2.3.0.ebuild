@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="dev-python/django"
+RDEPEND="<dev-python/django-1.11[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}"
 
 DOCS="docs/* README.rst LICENSE.txt CHANGELOG.rst"

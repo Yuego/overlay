@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,12 +18,12 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/future-0.15.2
-	>=dev-python/binaryornot-0.2.0
-	>=dev-python/jinja-2.7
-	>=dev-python/click-5.0
-	>=dev-python/whichcraft-0.4.0
-	>=dev-python/poyo-0.1.0
-	>=dev-python/jinja2-time-0.1.0
+	>=dev-python/future-0.15.2[${PYTHON_USEDEP}]
+	>=dev-python/binaryornot-0.2.0[${PYTHON_USEDEP}]
+	>=dev-python/jinja-2.7[${PYTHON_USEDEP}]
+	>=dev-python/click-5.0[${PYTHON_USEDEP}]
+	>=dev-python/whichcraft-0.4.0[${PYTHON_USEDEP}]
+	>=dev-python/poyo-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/jinja2-time-0.1.0[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

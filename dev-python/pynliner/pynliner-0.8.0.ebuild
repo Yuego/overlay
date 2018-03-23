@@ -17,5 +17,5 @@ SLOT="0"
 KEYWORDS="amd64 ~ia64 ~ppc ~ppc64 x86"
 IUSE=""
 
-RDEPEND="dev-python/cssutils"
-DEPEND="dev-python/setuptools"
+RDEPEND="dev-python/cssutils[${PYTHON_USEDEP}]"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

@@ -32,8 +32,6 @@ RDEPEND="${RDEPEND}
 	dev-python/pytils
 	dev-python/pytz
 	dev-python/sorl-thumbnail[redis]
-	!=dev-python/south-0.8.3
-	|| ( dev-python/south >=dev-python/django-1.7 )
 	dev-python/yandex-maps
 	dev-python/django-pymorphy2
 
@@ -49,13 +47,11 @@ RDEPEND="${RDEPEND}
 
 	dev-python/transliterate
 
-	dev-python/django-disqus
 	dev-python/django-floppyforms
 "
 
 # Utils
 RDEPEND="${RDEPEND}
-	dev-java/yuicompressor
 
 	imagemagick? ( media-gfx/imagemagick )
 
@@ -74,7 +70,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-compressor
 	dev-python/django-model-utils
 	dev-python/django-redis
-	dev-python/django-salmonella
+	dev-python/django-dynamic-raw-id
 	dev-python/django-templated-emails
 	dev-python/django-tinymce
 	dev-python/django-modeltranslation
