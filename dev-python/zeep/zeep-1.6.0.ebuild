@@ -27,8 +27,8 @@ RDEPEND="${DEPEND}
 	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
 	async? (
-		>=dev-python/aiohttp-1.0[${PYTHON_USEDEP}]
-		>=dev-python/aioresponses-0.1.3[${PYTHON_USEDEP}]
+		>=dev-python/aiohttp-1.0[$(python_gen_usedep 'python3*')]
+		>=dev-python/aioresponses-0.1.3[$(python_gen_usedep 'python3*')]
 	)
 	xmlsec? (
 		>=dev-python/xmlsec-0.6.1[${PYTHON_USEDEP}]

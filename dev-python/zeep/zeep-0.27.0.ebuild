@@ -15,7 +15,7 @@ SRC_URI="https://github.com/mvantellingen/python-zeep/archive/${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="+async xmlsec"
+IUSE="async xmlsec"
 
 RDEPEND="
 	>=dev-python/appdirs-1.4.0[${PYTHON_USEDEP}]
@@ -30,7 +30,7 @@ RDEPEND="
 	dev-python/pytz[${PYTHON_USEDEP}]
 
 	async? (
-		>=dev-python/aiohttp-1.0[${PYTHON_USEDEP}]
+		>=dev-python/aiohttp-1.0[$(python_gen_usedep 'python3*')]
 	)
 
 	xmlsec? (
