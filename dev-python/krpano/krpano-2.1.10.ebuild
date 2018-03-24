@@ -22,6 +22,7 @@ RDEPEND="
 	>=dev-python/django-1.9[${PYTHON_USEDEP}]
 	dev-python/django-v3dlibs[${PYTHON_USEDEP}]
 	dev-python/djorm-ext-pgarray[${PYTHON_USEDEP}]
+	media-gfx/krpano-bin
 	dev-python/six[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

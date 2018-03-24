@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,7 +18,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	dev-python/pymorphy2[${PYTHON_USEDEP}]
+	>=dev-python/pymorphy2-0.8-r1[${PYTHON_USEDEP}]
 	dev-python/tqdm[${PYTHON_USEDEP}]
 	dev-python/wheel[${PYTHON_USEDEP}]
 	>=dev-python/cookiecutter-1.3[${PYTHON_USEDEP}]
@@ -29,20 +29,23 @@ DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
+	eapply_user
+
 	ewarn '***'
 	ewarn 'conversion of the dictionary can take a long time!'
 	ewarn '***'
 
-	mkdir 'pymorphy2-dicts/pymorphy2_dicts/data'
-	./update.py ru
+	./update.py ru download
+	./update.py ru compile
+	./update.py ru package
 }
 
 src_compile(){
-	cd pymorphy2-dicts
+	cd pymorphy2-dicts-ru 
 	distutils-r1_src_compile
 }
 
 src_install(){
-	cd pymorphy2-dicts
+	cd pymorphy2-dicts-ru
 	distutils-r1_src_install
 }

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,8 +18,14 @@ KEYWORDS=""
 IUSE="django test"
 
 RDEPEND="
-	dev-python/dawg
-	django? ( >=dev-python/django-1.7 )
-	test? ( dev-python/tox )
+        >=dev-python/dawg-0.7.7[${PYTHON_USEDEP}]
+        django? (
+                >=dev-python/django-1.9[${PYTHON_USEDEP}]
+                dev-python/django-pymorphy2[${PYTHON_USEDEP}]
+        )
+        >=dev-python/nltk-3[${PYTHON_USEDEP}]
+        >=dev-python/opencorpora-0.4.4[${PYTHON_USEDEP}]
+        >=dev-python/docopt-0.6[${PYTHON_USEDEP}]
+        test? ( dev-python/tox[${PYTHON_USEDEP}] )
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

@@ -21,6 +21,7 @@ IUSE=""
 RDEPEND="
 	>=dev-python/django-1.9[${PYTHON_USEDEP}]
 	dev-python/krpano[${PYTHON_USEDEP}]
+	media-gfx/krpano-bin
 	dev-python/six[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

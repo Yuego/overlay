@@ -5,12 +5,13 @@
 EAPI=6
 PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy pypy3 )
 
-inherit distutils-r1
+inherit distutils-r1 git-r3
 
 DESCRIPTION="POS tagger / inflection engine for Russian language."
 HOMEPAGE="http://pymorphy2.readthedocs.org/ https://github.com/kmike/pymorphy2"
 
-SRC_URI="https://github.com/kmike/pymorphy2/archive/${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/kmike/pymorphy2.git"
+EGIT_COMMIT="ca1c13f6998ae2d835bdd5033c17197dcba84cf4"
 
 LICENSE="MIT"
 SLOT="0"
