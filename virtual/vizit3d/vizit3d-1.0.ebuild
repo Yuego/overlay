@@ -74,7 +74,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-templated-emails
 	dev-python/django-tinymce
 	dev-python/django-modeltranslation
-	dev-python/django-hstore
+	dev-python/django-registration
 
 	dev-python/django-widget-tweaks
 	dev-python/django-tastypie
@@ -86,6 +86,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-tagging
 
 	dev-python/tourmaker
+	dev-python/celery
 "
 
 #DEBUG
