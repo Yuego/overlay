@@ -44,8 +44,8 @@ src_install() {
 	exeinto /opt/bin
 
 	if use amd64 ; then
-		doexe linux_x64/cmdline/arcconf
+		doexe linux_x64/arcconf
 	else
-		doexe linux_x86/cmdline/arcconf
+		doexe linux_x86/arcconf
 	fi
 }
