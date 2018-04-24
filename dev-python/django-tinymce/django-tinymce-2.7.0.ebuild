@@ -16,7 +16,9 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.11[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
+"
 DEPEND="${RDEPEND}"
 
 DOCS="docs/* README.rst LICENSE.txt CHANGELOG.rst"
