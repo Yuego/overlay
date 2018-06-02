@@ -25,7 +25,7 @@ IUSE="custom-cflags debug +rootfs"
 RESTRICT="debug? ( strip ) test"
 
 DEPEND="
-	=sys-kernel/spl-${PV}*
+	>=sys-kernel/spl-0.7.9
 	dev-lang/perl
 	virtual/awk
 "
