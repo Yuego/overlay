@@ -26,6 +26,8 @@ RDEPEND="${RDEPEND}
 
 	net-libs/nodejs
 	dev-db/postgis
+
+	dev-python/celery
 "
 
 # Apps
@@ -41,6 +43,8 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-cacheops
 	dev-python/django-redis
+
+	dev-python/django-celery-beat
 
 	dev-python/phonenumbers
 
