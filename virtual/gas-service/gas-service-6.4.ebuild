@@ -45,6 +45,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-redis
 
 	dev-python/django-celery-beat
+	dev-python/celery-once
 
 	dev-python/phonenumbers
 
