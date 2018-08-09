@@ -28,6 +28,7 @@ RDEPEND="${RDEPEND}
 	dev-db/postgis
 
 	dev-python/celery
+	dev-python/flower
 "
 
 # Apps
