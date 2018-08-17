@@ -24,7 +24,7 @@ RDEPEND="
 	>=dev-python/python-dateutil-2.1[${PYTHON_USEDEP}]
 	<dev-python/python-dateutil-3.0
 	dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/premailer[${PYTHON_USEDEP}]
+	>=dev-python/premailer-2.8.3[${PYTHON_USEDEP}]
     django? (
         >=dev-python/django-1.8[${PYTHON_USEDEP}]
     )
