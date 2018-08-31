@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -18,7 +18,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.7[${PYTHON_USEDEP}]
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 "

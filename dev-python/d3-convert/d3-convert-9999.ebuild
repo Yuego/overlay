@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit eutils distutils-r1 git-r3
 
@@ -19,26 +19,26 @@ KEYWORDS=""
 IUSE="-test"
 
 RDEPEND="
-	>=dev-python/docopt-0.6.2
-	>=dev-python/scandir-0.9
-	>=dev-python/pyexiftool-0.2.0
-	dev-python/lxml
-	dev-python/py3-daemon
-	>=dev-python/psutil-4
+	>=dev-python/docopt-0.6.2[${PYTHON_USEDEP}]
+	>=dev-python/scandir-0.9[${PYTHON_USEDEP}]
+	>=dev-python/pyexiftool-0.2.0[${PYTHON_USEDEP}]
+	dev-python/lxml[${PYTHON_USEDEP}]
+	dev-python/py3-daemon[${PYTHON_USEDEP}]
+	>=dev-python/psutil-4[${PYTHON_USEDEP}]
 
 	>=media-libs/exiftool-10
 	media-gfx/ufraw
 	>=media-gfx/enblend-4.1
 
 	test? (
-		dev-python/tox
-		dev-python/coverage
-		dev-python/nose
+		dev-python/tox[${PYTHON_USEDEP}]
+		dev-python/coverage[${PYTHON_USEDEP}]
+		dev-python/nose[${PYTHON_USEDEP}]
 	)
 "
 
 DEPEND="
-	dev-python/setuptools
+	dev-python/setuptools[${PYTHON_USEDEP}]
 "
 
 src_install(){

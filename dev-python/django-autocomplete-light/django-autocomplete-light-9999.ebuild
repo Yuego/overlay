@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -17,8 +17,10 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
+S="${WORKDIR}/${PN}-${MY_PV}/"
+
 RDEPEND="
-	>=dev-python/django-1.7
-	>=dev-python/six-1.4
+	>=dev-python/django-1.9[${PYTHON_USEDEP}]
+	>=dev-python/six-1.4[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

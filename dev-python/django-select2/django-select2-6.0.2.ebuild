@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/dev-python/django-select2/django-select2-4.0.0.ebuild,v 1.2 2013/04/02 16:28:26 prometheanfire Exp $
 
 EAPI=6
-PYTHON_COMPAT=( python3_{5,6} pypy3 )
+PYTHON_COMPAT=( python3_{5,6,7} pypy3 )
 
 inherit distutils-r1
 

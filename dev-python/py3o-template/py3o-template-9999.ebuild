@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit eutils distutils-r1 mercurial
 
@@ -18,9 +18,9 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/genshi-0.7
-	dev-python/six
-	dev-python/lxml
-	dev-python/pyjon-utils
+	>=dev-python/genshi-0.7[${PYTHON_USEDEP}]
+	dev-python/six[${PYTHON_USEDEP}]
+	dev-python/lxml[${PYTHON_USEDEP}]
+	dev-python/pyjon-utils[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

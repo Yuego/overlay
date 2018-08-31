@@ -3,24 +3,28 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7,3_3} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
-EGIT_REPO_URI="https://github.com/sorl/sorl-thumbnail.git"
 DESCRIPTION=""
-HOMEPAGE="https://github.com/sorl/sorl-thumbnail http://thumbnail.sorl.net/index.html"
+HOMEPAGE="http://thumbnail.sorl.net/index.html"
+
+EGIT_REPO_URI="https://github.com/sorl/sorl-thumbnail.git"
+
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS=""
 IUSE="-memcached +redis +imagemagick"
 
-RDEPEND=">=dev-python/django-1.0"
-DEPEND="dev-python/setuptools
-	memcached? ( dev-python/python-memcached )
-	redis? ( dev-python/redis-py
+RDEPEND=">=dev-python/django-1.8[${PYTHON_USEDEP}]"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
+	memcached? ( dev-python/python-memcached[${PYTHON_USEDEP}] )
+	redis? ( dev-python/redis-py[${PYTHON_USEDEP}]
 			 dev-db/redis )
 	imagemagick? ( media-gfx/imagemagick )"
+
+S=$WORKDIR/$PN-$PV
 
 src_install () {
 	distutils-r1_src_install

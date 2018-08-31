@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy )
 
 inherit distutils-r1 git-r3
 
@@ -14,22 +14,23 @@ EGIT_REPO_URI="git://github.com/divio/django-filer.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.5
-	<dev-python/django-1.11
+	>=dev-python/django-1.8[${PYTHON_USEDEP}]
+	<dev-python/django-2
 
-	>=dev-python/easy-thumbnails-1.0
-	<dev-python/easy-thumbnails-2.4
+	>=dev-python/easy-thumbnails-2.0[${PYTHON_USEDEP}]
+	<dev-python/easy-thumbnails-3.0
 
-	>=dev-python/django-mptt-0.6
-	<dev-python/django-mptt-0.9
+	>=dev-python/django-mptt-0.6[${PYTHON_USEDEP}]
+	<dev-python/django-mptt-0.10
 
-	>=dev-python/django_polymorphic-0.7
+	>=dev-python/django_polymorphic-0.7[${PYTHON_USEDEP}]
+	<dev-python/django_polymorphic-2.1[${PYTHON_USEDEP}]
 
-	>=dev-python/unidecode-0.04
+	>=dev-python/unidecode-0.04[${PYTHON_USEDEP}]
 	<dev-python/unidecode-0.05
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

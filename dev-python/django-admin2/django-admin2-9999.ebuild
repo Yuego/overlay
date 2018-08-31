@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,12 +18,12 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.5
-	>=dev-python/django-braces-1.0.0
-	>=dev-python/django-extra-views-0.6.2
-	>=dev-python/django-rest-framework-2.3.3
-	>=dev-python/django-floppyforms-1.1
-	>=dev-python/django-filter-0.6
-	>=dev-python/django-crispy-forms-1.3.2
+	>=dev-python/django-1.5[${PYTHON_USEDEP}]
+	>=dev-python/django-braces-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/django-extra-views-0.6.2[${PYTHON_USEDEP}]
+	>=dev-python/django-rest-framework-2.3.3[${PYTHON_USEDEP}]
+	>=dev-python/django-floppyforms-1.1[${PYTHON_USEDEP}]
+	>=dev-python/django-filter-0.6[${PYTHON_USEDEP}]
+	>=dev-python/django-crispy-forms-1.3.2[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{3_3,3_4,3_5} )
+PYTHON_COMPAT=( python3_{3,4,5,6,7} )
 
 inherit distutils-r1 git-r3
 
@@ -18,9 +18,9 @@ KEYWORDS=""
 IUSE="-test"
 
 RDEPEND="
-	>=dev-python/lockfile-0.9.1
+	>=dev-python/lockfile-0.9.1[${PYTHON_USEDEP}]
 	test? (
-		>=dev-python/minimock-1.2.2
+		>=dev-python/minimock-1.2.2[${PYTHON_USEDEP}]
 	)
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

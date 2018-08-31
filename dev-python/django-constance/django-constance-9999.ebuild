@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,7 +18,7 @@ KEYWORDS=""
 IUSE="+database redis"
 
 RDEPEND="
-	>=dev-python/django-1.7[${PYTHON_USEDEP}]
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
 	redis? ( dev-db/redis )
 	database? ( dev-python/django-picklefield[${PYTHON_USEDEP}] )
 "

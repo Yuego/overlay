@@ -1,0 +1,24 @@
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+EAPI=6
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
+
+inherit distutils-r1
+
+DESCRIPTION="django-webtest provides integration of Ian Bicking's WebTest (http://pythonpaste.org/webtest/) with django's testing framework. https://pypi.python.org/pypi/django-webtest/"
+HOMEPAGE="https://github.com/django-webtest/django-webtest"
+
+SRC_URI="https://github.com/django-webtest/django-webtest/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="amd64 x86"
+IUSE=""
+
+RDEPEND="
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
+	>=dev-python/webtest-1.3.3[${PYTHON_USEDEP}]
+"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit eutils distutils-r1 git-r3
 
@@ -17,8 +17,10 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
+S="$WORKDIR/faker-$PV"
 RDEPEND="
-	>=dev-python/python-dateutil-2.4
-	dev-python/six
+	>=dev-python/python-dateutil-2.4[${PYTHON_USEDEP}]
+	>=dev-python/six-1.10[${PYTHON_USEDEP}]
+	>=dev-python/unidecode-1.2[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

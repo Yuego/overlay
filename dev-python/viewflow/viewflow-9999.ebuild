@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} pypy pypy3 )
+PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,15 +18,13 @@ KEYWORDS=""
 IUSE="test"
 
 RDEPEND="
-	>=dev-python/django-1.6
-	virtual/python-singledispatch
-	>=dev-python/django-fsm-2.0
-	>=dev-python/django-filter-0.10.0
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
+	>=dev-python/django-filter-1.0[${PYTHON_USEDEP}]
 
 	test? (
-		dev-python/mock
-		dev-python/webtest
-		dev-python/django-webtest
+		dev-python/mock[${PYTHON_USEDEP}]
+		dev-python/webtest[${PYTHON_USEDEP}]
+		dev-python/django-webtest[${PYTHON_USEDEP}]
 	)
 "
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
