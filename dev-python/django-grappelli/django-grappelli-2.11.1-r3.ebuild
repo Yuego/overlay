@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: Exp $
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
+PYTHON_COMPAT=( python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -16,7 +16,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.9[${PYTHON_USEDEP}]
-	<dev-python/django-2[${PYTHON_USEDEP}]
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
+	<dev-python/django-2.1[${PYTHON_USEDEP}]
 "
 DEPEND="${RDEPEND}"
