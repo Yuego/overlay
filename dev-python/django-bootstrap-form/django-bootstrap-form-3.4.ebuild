@@ -7,17 +7,16 @@ PYTHON_COMPAT=( python2_7 python3_{3,4,5,6} pypy pypy3 )
 
 inherit distutils-r1
 
-DESCRIPTION="Awesome web-browseable Web APIs."
-HOMEPAGE="https://github.com/tomchristie/django-rest-framework"
+DESCRIPTION="Twitter Bootstrap for Django Form"
+HOMEPAGE="https://github.com/tzangms/django-bootstrap-form"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
-SRC_URI="https://github.com/tomchristie/django-rest-framework/archive/${PV}.tar.gz -> ${P}.tar.gz"
-
-LICENSE="BSD"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.8[${PYTHON_USEDEP}]
+	>=dev-python/django-1.5[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
