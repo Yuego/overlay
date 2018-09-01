@@ -18,6 +18,7 @@ IUSE="scrapy"
 
 RDEPEND="
 	>=dev-python/django-1.11[${PYTHON_USEDEP}]
+	<dev-python/django-2.1
 "
 
 # Servers
