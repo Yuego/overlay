@@ -78,7 +78,7 @@ RDEPEND="${RDEPEND}
 	dev-python/openpyxl[${PYTHON_USEDEP}]
 	dev-python/secretary[${PYTHON_USEDEP}]
 	dev-python/django-object-actions[${PYTHON_USEDEP}]
-	dev-python/django-import-export[${PYTHON_USEDEP}]
+	>=dev-python/django-import-export-1.0.1-r3[${PYTHON_USEDEP}]
 	>=dev-python/num2t4ru-2.0.1[${PYTHON_USEDEP}]
 "
 DEPEND=""

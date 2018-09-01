@@ -19,7 +19,6 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.8[${PYTHON_USEDEP}]
-	<dev-python/django-2.1
 	dev-db/redis
 	>=dev-python/redis-py-2.9.1[${PYTHON_USEDEP}]
 	>=dev-python/funcy-1.8[${PYTHON_USEDEP}]
