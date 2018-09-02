@@ -21,6 +21,8 @@ IUSE="examples"
 
 # Tarball missing required folder to build docs in html.
 
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
 python_test() {
 	# Known single fail under python3 suspected to be caused in python3 itself
 	# https://github.com/eea/odfpy/issues/21
