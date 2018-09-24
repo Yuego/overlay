@@ -68,6 +68,8 @@ RDEPEND="${RDEPEND}
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	>=dev-python/django-reversion-2.0.0[${PYTHON_USEDEP}]
 
+	>=dev-python/django-mptt-0.9.0[${PYTHON_USEDEP}]
+
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/pytils[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.1[${PYTHON_USEDEP}]

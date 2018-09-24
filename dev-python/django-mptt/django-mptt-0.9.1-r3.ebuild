@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy pypy3 )
+PYTHON_COMPAT=( python3_{3,4,5,6,7} pypy pypy3 )
 
 inherit distutils-r1
 
@@ -15,7 +15,10 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.11[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
+	dev-python/django-js-asset[${PYTHON_USEDEP}]
+"
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 S="${WORKDIR}/django-mptt-${PV}"
