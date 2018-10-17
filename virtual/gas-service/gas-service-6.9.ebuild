@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=6
-PYTHON_COMPAT=( python3_{4,5,6} pypy pypy3 )
+PYTHON_COMPAT=( python3_{4,5,6} pypy )
 
 inherit distutils-r1
 
@@ -36,6 +36,7 @@ RDEPEND="${RDEPEND}
 
 # Apps
 RDEPEND="${RDEPEND}
+	dev-python/rarfile[${PYTHON_USEDEP}]
 "
 
 # Scrapy
@@ -44,7 +45,7 @@ RDEPEND="${RDEPEND}
 	scrapy? (
 		dev-python/scrapy[${PYTHON_USEDEP}]
 		dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
-    	dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
+		dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
 	)
 "
 
@@ -69,6 +70,8 @@ RDEPEND="${RDEPEND}
 	>=dev-python/django-reversion-2.0.0[${PYTHON_USEDEP}]
 
 	>=dev-python/django-mptt-0.9.0[${PYTHON_USEDEP}]
+
+	dev-python/easy-thumbnails[${PYTHON_USEDEP}]
 
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/pytils[${PYTHON_USEDEP}]
