@@ -8,7 +8,7 @@ if [ ${PV} == "9999" ] ; then
 	inherit git-r3 linux-mod
 	AUTOTOOLS_AUTORECONF="1"
 	EGIT_REPO_URI="https://github.com/dweeezil/zfs.git"
-        EGIT_BRANCH="ntrim2-next"
+        EGIT_BRANCH="ntrim3"
 else
 	SRC_URI="https://github.com/zfsonlinux/${PN}/releases/download/${P}/${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~ppc ~ppc64"
@@ -106,7 +106,7 @@ src_configure() {
 		--with-linux="${KV_DIR}"
 		--with-linux-obj="${KV_OUT_DIR}"
 		--with-udevdir="$(get_udevdir)"
-		--with-blkid
+#		--with-blkid
 		$(use_enable debug)
 	)
 	autotools-utils_src_configure
