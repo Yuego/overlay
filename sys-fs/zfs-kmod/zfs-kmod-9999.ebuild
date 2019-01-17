@@ -6,7 +6,7 @@ EAPI="5"
 if [ ${PV} == "9999" ]; then
 	AUTOTOOLS_AUTORECONF="1"
 	EGIT_REPO_URI="https://github.com/dweeezil/zfs.git"
-        EGIT_BRANCH="ntrim2-next"
+        EGIT_BRANCH="ntrim3"
 	inherit git-r3
 else
 	SRC_URI="https://github.com/zfsonlinux/zfs/releases/download/zfs-${PV}/zfs-${PV}.tar.gz"
@@ -25,7 +25,6 @@ IUSE="custom-cflags debug +rootfs"
 RESTRICT="debug? ( strip ) test"
 
 DEPEND="
-	>=sys-kernel/spl-0.7.9
 	dev-lang/perl
 	virtual/awk
 "
@@ -37,7 +36,7 @@ RDEPEND="${DEPEND}
 AT_M4DIR="config"
 AUTOTOOLS_IN_SOURCE_BUILD="1"
 
-DOCS=( AUTHORS COPYRIGHT DISCLAIMER README.markdown )
+DOCS=( AUTHORS COPYRIGHT README.md )
 
 pkg_setup() {
 	linux-info_pkg_setup
@@ -82,7 +81,7 @@ src_prepare() {
 }
 
 src_configure() {
-	local SPL_PATH="$(basename $(echo "${EROOT}usr/src/spl-"*))"
+#	local SPL_PATH="$(basename $(echo "${EROOT}usr/src/spl-"*))"
 	use custom-cflags || strip-flags
 	filter-ldflags -Wl,*
 
@@ -93,8 +92,8 @@ src_configure() {
 		--with-config=kernel
 		--with-linux="${KV_DIR}"
 		--with-linux-obj="${KV_OUT_DIR}"
-		--with-spl="${EROOT}usr/src/${SPL_PATH}"
-		--with-spl-obj="${EROOT}usr/src/${SPL_PATH}/${KV_FULL}"
+#		--with-spl="${EROOT}usr/src/${SPL_PATH}"
+#		--with-spl-obj="${EROOT}usr/src/${SPL_PATH}/${KV_FULL}"
 		$(use_enable debug)
 	)
 
