@@ -41,6 +41,7 @@ RDEPEND="
 	>=dev-python/incremental-16.10.1[${PYTHON_USEDEP}]
 	>=dev-python/constantly-15.1.0[${PYTHON_USEDEP}]
 	>=dev-python/automat-0.3.0[${PYTHON_USEDEP}]
+	>=dev-python/hyperlink-17.1.1[${PYTHON_USEDEP}]
 "
 DEPEND="test? ( ${RDEPEND} )"
 
