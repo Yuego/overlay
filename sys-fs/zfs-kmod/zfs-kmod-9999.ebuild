@@ -24,9 +24,11 @@ SLOT="0"
 IUSE="custom-cflags debug +rootfs"
 RESTRICT="debug? ( strip ) test"
 
+# SPL is integrated into ZFS codebase
 DEPEND="
 	dev-lang/perl
 	virtual/awk
+	!sys-kernel/spl
 "
 
 RDEPEND="${DEPEND}
@@ -64,7 +66,7 @@ pkg_setup() {
 	kernel_is ge 2 6 32 || die "Linux 2.6.32 or newer required"
 
 	[ ${PV} != "9999" ] && \
-		{ kernel_is le 4 3 || die "Linux 4.3 is the latest supported version."; }
+		{ kernel_is le 4 20 || die "Linux 4.3 is the latest supported version."; }
 
 	check_extra_config
 }
