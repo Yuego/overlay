@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 if [ ${PV} == "9999" ] ; then
 	inherit git-r3 linux-mod
 	AUTOTOOLS_AUTORECONF="1"
-	EGIT_REPO_URI="https://github.com/dweeezil/zfs.git"
-        EGIT_BRANCH="ntrim3"
+	EGIT_REPO_URI="https://github.com/behlendorf/zfs.git"
+        EGIT_BRANCH="ntrim4"
 else
 	SRC_URI="https://github.com/zfsonlinux/${PN}/releases/download/${P}/${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~ppc ~ppc64"
