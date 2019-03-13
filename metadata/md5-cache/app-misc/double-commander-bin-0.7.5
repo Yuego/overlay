@@ -1,0 +1,14 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=Cross Platform file manager.
+EAPI=6
+HOMEPAGE=http://doublecmd.sourceforge.net/
+IUSE=qt4 gtk
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-apps/dbus dev-libs/glib:2 sys-libs/ncurses:0 x11-libs/libX11 gtk? ( x11-libs/gtk+:2 ) qt4? ( dev-qt/qtgui:4 dev-qt/qtwebkit:4 )
+REQUIRED_USE=^^ ( qt4 gtk )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=x86? ( gtk? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.gtk2.i386.tar.xz ) qt4? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.qt.i386.tar.xz ) ) amd64? ( gtk? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.gtk2.x86_64.tar.xz ) qt4? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.qt.x86_64.tar.xz ) )
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
+_md5_=565466eca18bffff26ca2309d9ebf5de

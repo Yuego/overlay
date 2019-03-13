@@ -1,0 +1,9 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Console client for Yandex.Disk
+EAPI=5
+HOMEPAGE=https://disk.yandex.ru/
+KEYWORDS=-* x86 amd64
+LICENSE=YDSLA
+SLOT=0
+SRC_URI=x86? ( http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.5.976_i386.deb ) amd64? ( http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.5.976_amd64.deb )
+_md5_=83b6118af94e1a23402a53548df86b6b
