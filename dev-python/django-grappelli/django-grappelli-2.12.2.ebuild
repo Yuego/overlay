@@ -4,10 +4,9 @@
 EAPI=6
 PYTHON_COMPAT=( python3_{3,4,5,6,7} pypy pypy3 )
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
-EGIT_REPO_URI="https://github.com/sehmaschine/django-grappelli.git"
-EGIT_COMMIT="59646db60e3d49b65ccc244dd247a4cc6ef777d0"
+SRC_URI="https://github.com/sehmaschine/django-grappelli/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 DESCRIPTION="A jazzy skin for the Django admin interface"
 HOMEPAGE="http://www.grappelliproject.com/"
