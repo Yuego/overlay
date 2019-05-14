@@ -63,7 +63,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/phonenumbers[${PYTHON_USEDEP}]
 
-	dev-python/django-rest-framework[${PYTHON_USEDEP}]
+	dev-python/django-rest-framework[${PYTHON_USEDEP},filter]
 
 	>=dev-python/django-grappelli-2.11.1[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
