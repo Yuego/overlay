@@ -41,12 +41,9 @@ RDEPEND="${RDEPEND}
 
 # Scrapy
 RDEPEND="${RDEPEND}
-
-	scrapy? (
-		dev-python/scrapy[${PYTHON_USEDEP}]
-		dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
-		dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
-	)
+	dev-python/scrapy[${PYTHON_USEDEP}]
+	dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
+	dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
 "
 
 # Libs
