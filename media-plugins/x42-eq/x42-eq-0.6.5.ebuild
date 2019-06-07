@@ -32,13 +32,13 @@ S="${WORKDIR}/fil4.lv2-${PV}"
 
 src_compile() {
 	#robtk toolkit is required for build	
-	emake RW="${WORKDIR}/robtk-${ROBTK_PV}/" BUILDOPENGL=$(usex opengl) BUILDJACKAPP=$(usex jack) PREFIX=${EPREFIX}/usr submodules
-	emake RW="${WORKDIR}/robtk-${ROBTK_PV}/" BUILDOPENGL=$(usex opengl) BUILDJACKAPP=$(usex jack) PREFIX=${EPREFIX}/usr
+	emake RW="${WORKDIR}/robtk-${ROBTK_PV}/" BUILDOPENGL=$(usex opengl) BUILDJACKAPP=$(usex jack) PREFIX=${EPREFIX}/usr LV2DIR=${EPREFIX}/usr/lib64/lv2 submodules
+	emake RW="${WORKDIR}/robtk-${ROBTK_PV}/" BUILDOPENGL=$(usex opengl) BUILDJACKAPP=$(usex jack) PREFIX=${EPREFIX}/usr LV2DIR=${EPREFIX}/usr/lib64/lv2
 }
 
 src_install() {
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
-		emake DESTDIR=${D} RW="${WORKDIR}/robtk-${ROBTK_PV}/" BUILDOPENGL=$(usex opengl) BUILDJACKAPP=$(usex jack) PREFIX=${EPREFIX}/usr install
+		emake DESTDIR=${D} RW="${WORKDIR}/robtk-${ROBTK_PV}/" BUILDOPENGL=$(usex opengl) BUILDJACKAPP=$(usex jack) PREFIX=${EPREFIX}/usr LV2DIR=${EPREFIX}/usr/lib64/lv2 install
 	fi
 	einstalldocs
 }
