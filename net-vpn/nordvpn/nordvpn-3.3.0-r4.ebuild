@@ -25,8 +25,7 @@ DEPEND="dev-libs/libxslt
 
 
 S=${WORKDIR}
-QA_PREBUILT="/var/lib/nordvpn/openvpn 
-	/usr/sbin/nordvpnd 
+QA_PREBUILT="/usr/sbin/nordvpnd 
 	/usr/bin/nordvpn"
 
 src_unpack () {
@@ -36,6 +35,10 @@ src_unpack () {
 
 src_install () {
 
+	# get rid of packaged openvpn binary
+	rm var/lib/${PN}/openvpn
+
+	
 	doinitd etc/init.d/${PN}
 	dobin usr/bin/${PN}
 	dosbin usr/sbin/${PN}d
@@ -47,6 +50,7 @@ src_install () {
 	doins -r usr/share/zsh
 	insinto var/lib
 	doins -r var/lib/${PN}
+	dosym /usr/sbin/openvpn var/lib/${PN}/openvpn  
 	
 }
 
