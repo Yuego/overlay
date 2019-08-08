@@ -26,7 +26,7 @@ DEPEND="dev-libs/libxslt
 
 S=${WORKDIR}
 QA_PREBUILT="/var/lib/nordvpn/openvpn 
-	/usr/sbin/nordvpn 
+	/usr/sbin/nordvpnd 
 	/usr/bin/nordvpn"
 
 src_unpack () {
@@ -38,7 +38,7 @@ src_install () {
 
 	doinitd etc/init.d/${PN}
 	dobin usr/bin/${PN}
-	dosbin usr/bin/${PN}
+	dosbin usr/sbin/${PN}d
 	systemd_dounit  usr/lib/systemd/system/nordvpnd.service
 	systemd_dounit  usr/lib/systemd/system/nordvpnd.socket
 	doman usr/share/man/man1/nordvpn.1.gz
