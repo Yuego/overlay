@@ -5,23 +5,25 @@ EAPI=7
 DESCRIPTION="zrepl is a one-stop ZFS backup & replication solution"
 HOMEPAGE="https://zrepl.github.io/"
 SLOT="0"
-KEYWORDS="~amd64"
-SRC_URI="https://github.com/zrepl/zrepl/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
+# go's dep tool requires network access
 RESTRICT="network-sandbox"
-IUSE="doc"
+IUSE="doc systemd"
 DISTUTILS_OPTIONAL=1
 PYTHON_COMPAT=( python3_{6,7} )
-inherit distutils-r1
+inherit distutils-r1 systemd bash-completion-r1
 
 if [ $PV == "9999" ] ; then
 	EGIT_REPO_URI="https://github.com/zrepl/zrepl.git"
 	#EGIT_CHECKOUT_DIR=""	
 	inherit git-r3
+else
+	KEYWORDS="~amd64"
+	SRC_URI="https://github.com/zrepl/zrepl/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 fi
 
 DEPEND=">=dev-lang/go-1.9
-	dev-go/dep
+	>=dev-go/dep-0.5.0
 	doc? ( >=dev-python/alabaster-0.7.11[${PYTHON_USEDEP}]
 	>=dev-python/Babel-2.6.0[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2018.10.15[${PYTHON_USEDEP}]
@@ -59,10 +61,14 @@ src_compile () {
 	go build -o "$GOPATH/bin/enumer"        ./vendor/github.com/alvaroloes/enumer || die "Cannot build enumer"
 	go build -o "$GOPATH/bin/goimports"     ./vendor/golang.org/x/tools/cmd/goimports || die "Cannot build goimports"
 	go build -o "$GOPATH/bin/golangci-lint" ./vendor/github.com/golangci/golangci-lint/cmd/golangci-lint || die "Cannot build golangci-lint"
-	PATH="$GOPATH/bin:$PATH" make build ZREPL_VERSION="$PV" || die "Cannot build zrepl binary"
+	PATH="$GOPATH/bin:$PATH" make release  ZREPL_VERSION="$PV" || die "Cannot build zrepl release"
 	use doc && PATH="$GOPATH/bin:$PATH" make docs ZREPL_VERSION="$PV" || die "Cannot build zrepl docs"
 }
 
 src_install () {
-	dobin "$S/artifacts/zrepl"
+	newbin "$S/artifacts/release/zrepl-linux-amd64" "zrepl"
+	dodoc -r "$S/config/samples/"
+	use doc && dodoc -r "$S/artifacts/docs/"
+	use systemd && systemd_newunit "$S/dist/systemd/zrepl.service" zrepl.service
+	newbashcomp "$S/artifacts/bash_completion" zrepl
 }
