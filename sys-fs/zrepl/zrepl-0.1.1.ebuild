@@ -10,6 +10,9 @@ SRC_URI="https://github.com/zrepl/zrepl/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 RESTRICT="network-sandbox"
 IUSE="doc"
+DISTUTILS_OPTIONAL=1
+PYTHON_COMPAT=( python3_{6,7} )
+inherit distutils-r1
 
 if [ $PV == "9999" ] ; then
 	EGIT_REPO_URI="https://github.com/zrepl/zrepl.git"
@@ -19,25 +22,25 @@ fi
 
 DEPEND=">=dev-lang/go-1.9
 	dev-go/dep
-	doc? ( >=dev-python/alabaster-0.7.11
-	>=dev-python/Babel-2.6.0
-	>=dev-python/certifi-2018.10.15
-	>=dev-python/chardet-3.0.4
-	>=dev-python/docutils-0.14
-	>=dev-python/idna-2.7
-	>=dev-python/imagesize-1.0.0
-	>=dev-python/jinja-2.10
-	>=dev-python/markupsafe-1.0
-	>=dev-python/packaging-18.0
-	>=dev-python/pygments-2.2.0
-	>=dev-python/pyparsing-2.3.0
-	>=dev-python/pytz-2018.7
-	>=dev-python/requests-2.20.1
-	>=dev-python/six-1.11.0
-	>=dev-python/snowballstemmer-1.2.1
-	>=dev-python/sphinx-1.8.2
-	>=dev-python/sphinxcontrib-websupport-1.1.0
-	>=dev-python/urllib3-1.24.1 )"
+	doc? ( >=dev-python/alabaster-0.7.11[${PYTHON_USEDEP}]
+	>=dev-python/Babel-2.6.0[${PYTHON_USEDEP}]
+	>=dev-python/certifi-2018.10.15[${PYTHON_USEDEP}]
+	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
+	>=dev-python/docutils-0.14[${PYTHON_USEDEP}]
+	>=dev-python/idna-2.7[${PYTHON_USEDEP}]
+	>=dev-python/imagesize-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/jinja-2.10[${PYTHON_USEDEP}]
+	>=dev-python/markupsafe-1.0[${PYTHON_USEDEP}]
+	>=dev-python/packaging-18.0[${PYTHON_USEDEP}]
+	>=dev-python/pygments-2.2.0[${PYTHON_USEDEP}]
+	>=dev-python/pyparsing-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2018.7[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.20.1[${PYTHON_USEDEP}]
+	>=dev-python/six-1.11.0[${PYTHON_USEDEP}]
+	>=dev-python/snowballstemmer-1.2.1[${PYTHON_USEDEP}]
+	>=dev-python/sphinx-1.8.2[${PYTHON_USEDEP}]
+	>=dev-python/sphinxcontrib-websupport-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/urllib3-1.24.1[${PYTHON_USEDEP}] )"
 
 src_prepare () {
 	eapply_user
