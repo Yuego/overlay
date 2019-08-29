@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>anton.gubarkov@gmail.com</email>
+		<name>Georgy Yakovlev</name>
+	</maintainer>
+	<longdescription lang="en">
+		zrepl is a one-stop ZFS backup and replication solution.
+	</longdescription>
+	<use>
+		<flag name="doc">Build documentation along with the binary</flag>
+	</use>
+
+	<upstream>
+		<remote-id type="github">zrepl/zrepl</remote-id>
+	</upstream>
+</pkgmetadata>
