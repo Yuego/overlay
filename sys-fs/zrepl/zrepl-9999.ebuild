@@ -5,14 +5,14 @@ EAPI=7
 DESCRIPTION="zrepl is a one-stop ZFS backup & replication solution"
 HOMEPAGE="https://zrepl.github.io/"
 SLOT="0"
-KEYWORDS="~amd64"
 LICENSE="MIT"
-if [ $PV == "9999" ] ; then
+if [[ $PV == "9999" ]] ; then
+	inherit git-r3
 	EGIT_REPO_URI="https://github.com/zrepl/zrepl.git"
 	#EGIT_CHECKOUT_DIR=""	
-	inherit git-r3
 else
 	SOURCE_URI="https://github.com/zrepl/zrepl/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
 fi
 
 DEPEND=">=dev-python/alabaster-0.7.11
