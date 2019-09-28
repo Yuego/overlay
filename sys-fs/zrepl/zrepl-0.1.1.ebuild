@@ -180,9 +180,9 @@ src_compile () {
 }
 
 src_install () {
-	newbin "$S/artifacts/release/zrepl-linux-amd64" "zrepl"
-	dodoc -r "$S/config/samples/"
-	use doc && dodoc -r "$S/artifacts/docs/"
-	use systemd && systemd_newunit "$S/dist/systemd/zrepl.service" zrepl.service
-	newbashcomp "$S/artifacts/bash_completion" zrepl
+	newbin "$S/src/$EGO_PN/artifacts/release/zrepl-linux-amd64" "zrepl"
+	dodoc -r "$S/src/$EGO_PN/config/samples/"
+	use doc && dodoc -r "$S/src/$EGO_PN/artifacts/docs/"
+	use systemd && systemd_newunit "$S/src/$EGO_PN/dist/systemd/zrepl.service" zrepl.service
+	newbashcomp "$S/src/$EGO_PN/artifacts/bash_completion" zrepl
 }
