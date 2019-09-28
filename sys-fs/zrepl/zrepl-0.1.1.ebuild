@@ -134,6 +134,7 @@ fi
 # 	>=dev-go/dep-0.5.0
 DEPEND=">=dev-lang/go-1.9
 	<dev-lang/go-1.13
+	dev-libs/protobuf
 	doc? ( >=dev-python/alabaster-0.7.11[${PYTHON_USEDEP}]
 	>=dev-python/Babel-2.6.0[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2018.10.15[${PYTHON_USEDEP}]
