@@ -182,6 +182,8 @@ src_compile () {
 src_install () {
 	newbin "$S/src/$EGO_PN/artifacts/release/zrepl-linux-amd64" "zrepl"
 	dodoc -r "$S/src/$EGO_PN/config/samples/"
+	keepdir "/var/run/zrepl"
+	fperms 750 "/var/run/zrepl"
 	use doc && dodoc -r "$S/src/$EGO_PN/artifacts/docs/"
 	use systemd && systemd_newunit "$S/src/$EGO_PN/dist/systemd/zrepl.service" zrepl.service
 	newbashcomp "$S/src/$EGO_PN/artifacts/bash_completion" zrepl
