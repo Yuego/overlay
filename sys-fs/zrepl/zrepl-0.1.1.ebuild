@@ -185,6 +185,6 @@ src_install () {
 	keepdir "/var/run/zrepl"
 	fperms 750 "/var/run/zrepl"
 	use doc && dodoc -r "$S/src/$EGO_PN/artifacts/docs/"
-	use systemd && systemd_newunit "$S/src/$EGO_PN/dist/systemd/zrepl.service" zrepl.service
+	use systemd && sed -i "s+usr/local+usr+g" "$S/src/$EGO_PN/dist/systemd/zrepl.service" && systemd_newunit "$S/src/$EGO_PN/dist/systemd/zrepl.service" zrepl.service || ewarn "Error installing systemd service zrepl"
 	newbashcomp "$S/src/$EGO_PN/artifacts/bash_completion" zrepl
 }
