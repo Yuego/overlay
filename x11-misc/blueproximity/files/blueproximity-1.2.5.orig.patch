@@ -45,3 +45,15 @@ diff -u addons/blueproximity addons/blueproximity.new
 -python /usr/share/blueproximity/proximity.py
 +python2 /usr/share/blueproximity/proximity.py
 
+diff -u blueproximity.desktop blueproximity.desktop.new
+--- blueproximity-1.2.5.orig.pristine//addons/blueproximity.desktop	2008-02-28 18:59:01.000000000 +0300
++++ blueproximity-1.2.5.orig.new//addons/blueproximity.desktop	2019-10-17 15:40:05.344951937 +0300
+@@ -8,5 +8,5 @@
+ Icon[de_DE]=/usr/share/pixmaps/blueproximity.xpm
+ Name=BlueProximity
+ Icon=/usr/share/pixmaps/blueproximity.xpm
+-Categories=Application;Utility;
++Categories=Utility;
+ StartupNotify=false
+
+
