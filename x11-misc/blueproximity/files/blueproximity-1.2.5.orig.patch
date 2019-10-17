@@ -34,3 +34,14 @@ diff -aur blueproximity-1.2.5.orig.pristine//start_proximity.sh blueproximity-1.
  cd $P
 -python proximity.py
 +python2 proximity.py
+
+diff -u addons/blueproximity addons/blueproximity.new 
+--- blueproximity-1.2.5.orig.pristine//addons/blueproximity	2008-02-28 18:59:01.000000000 +0300
++++ blueproximity-1.2.5.orig.new//addons/blueproximity	2019-10-17 15:31:14.336687353 +0300
+@@ -1,4 +1,4 @@
+ #!/bin/bash
+ # BlueProximity startup script
+ # (c) 2007-08-17 Lars Friedrichs
+-python /usr/share/blueproximity/proximity.py
++python2 /usr/share/blueproximity/proximity.py
+
