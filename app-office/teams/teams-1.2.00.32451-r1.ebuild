@@ -39,10 +39,17 @@ src_install () {
 	dobin usr/bin/${PN}
 	doicon usr/share/pixmaps/${PN}.png
 	insinto usr/share
+	fperms +x usr/share/teams/teams
 	doins -r usr/share/${PN}
 	domenu usr/share/applications/${PN}.desktop
 	
 	
 }
 
+pkg_postinst() {
+	xdg_desktop_database_update
+}
 
+pkg_postrm() {
+	xdg_desktop_database_update
+}
