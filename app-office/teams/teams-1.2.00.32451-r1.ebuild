@@ -39,8 +39,8 @@ src_install () {
 	dobin usr/bin/${PN}
 	doicon usr/share/pixmaps/${PN}.png
 	insinto usr/share
-	fperms +x usr/share/teams/teams
 	doins -r usr/share/${PN}
+	fperms +x /usr/share/teams/teams
 	domenu usr/share/applications/${PN}.desktop
 	
 	
