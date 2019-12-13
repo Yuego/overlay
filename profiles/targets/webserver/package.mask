@@ -2,4 +2,4 @@
 =dev-python/suds-0.4-r1
 
 # Не поддерживается upload_progress
->www-servers/nginx-1.10.1
+#>www-servers/nginx-1.10.1
