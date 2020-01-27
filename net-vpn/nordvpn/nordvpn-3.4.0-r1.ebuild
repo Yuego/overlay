@@ -20,7 +20,7 @@ IUSE="wireguard"
 DEPEND="dev-libs/libxslt 
 	net-firewall/iptables
 	net-vpn/openvpn  
-	wireguard? ( net-vpn/wireguard )"
+	wireguard? ( virtual/wireguard )"
 
 
 
