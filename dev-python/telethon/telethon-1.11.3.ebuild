@@ -19,7 +19,7 @@ IUSE="cryptg"
 
 RDEPEND="
 	dev-python/pyaes[${PYTHON_USEDEP}]
-	dev-python/rsa[${PYTHON_USEDEP}]
+	>=dev-python/rsa-3.4.0[${PYTHON_USEDEP}]
 	cryptg? (
 		dev-python/cryptg[${PYTHON_USEDEP}]
 	)
