@@ -2,15 +2,16 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
+EAPI=7
 PYTHON_COMPAT=( python3_{4,5,6,7} pypy pypy3 )
 
-inherit distutils-r1
+inherit distutils-r1 git-r3
 
 DESCRIPTION="A drop-in replacement for django's ImageField"
 HOMEPAGE="http://django-versatileimagefield.readthedocs.io/ https://github.com/respondcreate/django-versatileimagefield"
 
-SRC_URI="https://github.com/respondcreate/django-versatileimagefield/archive/${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/Yuego/django-versatileimagefield.git"
+EGIT_COMMIT="6f041975173ad06e52335ebe165a5436c5dd0df8"
 
 LICENSE="MIT"
 SLOT="0"
@@ -22,8 +23,6 @@ RDEPEND="
 	<dev-python/django-3.1
 	>=dev-python/pillow-2.4.0[${PYTHON_USEDEP}]
 	<=dev-python/pillow-5.0.0[${PYTHON_USEDEP}]
-	>=dev-python/python-magic-0.4.15[${PYTHON_USEDEP}]
-	<dev-python/python-magic-1.0.0
 	rest? (
 		>=dev-python/django-rest-framework-3.0.0[${PYTHON_USEDEP}]
 	)

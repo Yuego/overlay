@@ -19,6 +19,7 @@ KEYWORDS="amd64"
 IUSE="ip"
 
 RDEPEND="
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
 	ip? (
 		dev-python/django-ipware[${PYTHON_USEDEP}]
 	)
