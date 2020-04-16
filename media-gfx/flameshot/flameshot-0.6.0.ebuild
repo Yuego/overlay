@@ -8,7 +8,7 @@ inherit qmake-utils toolchain-funcs xdg-utils
 DESCRIPTION="Powerful yet simple to use screenshot software for GNU/Linux"
 HOMEPAGE="https://flameshot.js.org"
 SRC_URI="https://github.com/lupoDharkael/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~x86"
 
 LICENSE="FreeArt GPL-3+ Apache-2.0"
 SLOT="0"
