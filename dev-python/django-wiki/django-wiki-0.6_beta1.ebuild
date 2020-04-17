@@ -44,7 +44,7 @@ RDEPEND="
 	<dev-python/sorl-thumbnail-13
 
 	>=dev-python/markdown-3.1[${PYTHON_USEDEP}]
-	<dev-python/markdown-3.2.0
+	<dev-python/markdown-3.3.0
 "
 
 DEPEND="

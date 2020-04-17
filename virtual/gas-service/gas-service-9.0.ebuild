@@ -58,9 +58,9 @@ RDEPEND="${RDEPEND}
 	>=dev-python/django-redis-4.11.0[${PYTHON_USEDEP}]
 
 	>=dev-python/django-celery-beat-2.0.0[${PYTHON_USEDEP}]
-	dev-python/celery-once[${PYTHON_USEDEP}]
+	>=dev-python/celery-once-3.0.0[${PYTHON_USEDEP}]
 
-	dev-python/phonenumbers[${PYTHON_USEDEP}]
+	>=dev-python/phonenumbers-8.12.1[${PYTHON_USEDEP}]
 
 	>=dev-python/django-rest-framework-3.11.0[${PYTHON_USEDEP},filter]
 
