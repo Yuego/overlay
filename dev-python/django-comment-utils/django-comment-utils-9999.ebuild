@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7} pypy pypy3 )
+PYTHON_COMPAT=( python{2_6,2_7} pypy )
 
 ESVN_REPO_URI="http://django-comment-utils.googlecode.com/svn/trunk/"
 

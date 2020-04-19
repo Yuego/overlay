@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7} pypy pypy3 )
+PYTHON_COMPAT=( python{2_6,2_7} pypy )
 
 inherit distutils-r1 mercurial
 

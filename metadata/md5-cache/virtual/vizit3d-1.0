@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Vizit3d meta
-EAPI=6
-IUSE=debug imagemagick
-KEYWORDS=x86 amd64
-RDEPEND=dev-python/django dev-db/postgresql:*[server] dev-db/postgis www-servers/nginx:0 www-servers/uwsgi[python] net-libs/nodejs[npm] dev-python/feedparser dev-python/kombu dev-python/lxml dev-python/pytils dev-python/pytz dev-python/sorl-thumbnail[redis] dev-python/yandex-maps dev-python/django-pymorphy2 dev-python/python-swiftclient dev-python/scandir dev-libs/geoip dev-python/django-fias dev-python/djorm-ext-pool dev-python/phonenumbers dev-python/transliterate dev-python/django-floppyforms imagemagick? ( media-gfx/imagemagick ) media-gfx/krpanotools virtual/ffmpeg[encode,mp3,theora] dev-python/django-autocomplete-light dev-python/django-admin-tools dev-python/django-bitfield dev-python/django-hosts dev-python/django-cacheops dev-python/django-compressor dev-python/django-model-utils dev-python/django-redis dev-python/django-dynamic-raw-id dev-python/django-templated-emails dev-python/django-tinymce dev-python/django-modeltranslation dev-python/django-registration dev-python/django-widget-tweaks dev-python/django-tastypie dev-python/twitter dev-python/django-extensions dev-python/django-tagging dev-python/tourmaker dev-python/celery dev-python/django-debug-toolbar debug? ( dev-python/pep8 dev-python/pyflakes dev-python/django-any dev-python/coverage dev-python/webtest dev-python/mock )
-SLOT=0
-_md5_=4c693e095b86440a4fb9b75dc2b4de0e

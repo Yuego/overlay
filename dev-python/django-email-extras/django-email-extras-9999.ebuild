@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=6
-PYTHON_COMPAT=( python{2_6,2_7} pypy pypy3 )
+PYTHON_COMPAT=( python{2_6,2_7} pypy )
 
 EGIT_REPO_URI="https://github.com/stephenmcd/django-email-extras.git"
 
