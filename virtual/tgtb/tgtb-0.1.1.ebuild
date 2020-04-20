@@ -25,6 +25,7 @@ RDEPEND="
 	>=dev-python/telethon-1.11.3[${PYTHON_USEDEP}]
 	>=dev-python/transitions-0.8.1[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
+	dev-python/pyyaml[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
