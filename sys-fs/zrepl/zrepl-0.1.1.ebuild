@@ -154,7 +154,8 @@ DEPEND=">=dev-lang/go-1.9
 	>=dev-python/snowballstemmer-1.2.1[${PYTHON_USEDEP}]
 	>=dev-python/sphinx-1.8.2[${PYTHON_USEDEP}]
 	>=dev-python/sphinxcontrib-websupport-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.24.1[${PYTHON_USEDEP}] )"
+	>=dev-python/urllib3-1.24.1[${PYTHON_USEDEP}]
+	>=dev-python/sphinx_rtd_theme-0.2.4[${PYTHON_USEDEP}] )"
 
 src_prepare () {
 #	eapply_user
