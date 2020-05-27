@@ -19,8 +19,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/weblib-0.1.28[${PYTHON_USEDEP}]
-	
-	<dev-python/pycurl-7.43.0.2[${PYTHON_USEDEP}]
+	<dev-python/pycurl-7.43.0.5[${PYTHON_USEDEP}]
 
 	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/defusedxml[${PYTHON_USEDEP}]

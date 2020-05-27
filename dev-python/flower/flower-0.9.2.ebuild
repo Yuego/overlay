@@ -1,8 +1,8 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
+EAPI=7
+PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1 systemd user
 

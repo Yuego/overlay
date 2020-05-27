@@ -26,6 +26,7 @@ RDEPEND="
 	>=dev-python/transitions-0.8.1[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
+	dev-python/peewee[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
