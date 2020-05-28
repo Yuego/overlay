@@ -719,8 +719,10 @@ src_compile () {
 	go build -o "$GOPATH/bin/goimports"     golang.org/x/tools/cmd/goimports || die "Cannot build goimports"
 	go build -o "$GOPATH/bin/golangci-lint" github.com/golangci/golangci-lint/cmd/golangci-lint || die "Cannot build golangci-lint"
 	popd
-	BINS_ALL_TARGETS = "zrepl-bin platformtest-bin vet lint"
-	emake -j1 ${BINS_ALL_TARGETS} ZREPL_VERSION=${PV} GOOS=linux GOARCH=amd64 || die "Cannot build zrepl binary"
+	#BINS_ALL_TARGETS="zrepl-bin platformtest-bin vet lint"
+	BINS_ALL_TARGETS="zrepl-bin"
+	export PATH=${PATH}:${GOPATH}/bin
+	emake ZREPL_VERSION=${PV} GOOS=linux GOARCH=amd64 ${BINS_ALL_TARGETS}|| die "Cannot build zrepl binaries"
 	#use doc && PATH="$GOPATH/bin:$PATH" emake docs ZREPL_VERSION="$PV" || die "Cannot build zrepl docs"
 }
 
