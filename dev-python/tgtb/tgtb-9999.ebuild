@@ -28,6 +28,7 @@ RDEPEND="
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/peewee[${PYTHON_USEDEP}]
+	dev-python/redis-py[${PYTHON_USEDEP}]
 
 	windscribe? ( net-vpn/windscribe-cli ) 
 	nordvpn? ( net-vpn/nordvpn )
