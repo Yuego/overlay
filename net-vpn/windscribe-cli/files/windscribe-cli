@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+
+pidfile="/etc/windscribe/windscribe.pid"
+command="/usr/bin/windscribe"
+retry="SIGTERM/5/SIGTERM/5/SIGKILL/5"
+# start_stop_daemon_args="-b -m --pidfile ${pidfile}"
+command_background=true
+
+depend() {
+    use logger net
+    # provide dns
+}
+
+start() {
+ $command start
+}
+
+stop() {
+ $command stop
+}
