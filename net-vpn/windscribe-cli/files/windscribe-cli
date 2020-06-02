@@ -8,13 +8,19 @@ command_background=true
 
 depend() {
     use logger net
-    # provide dns
+    provide vpn
 }
 
 start() {
- $command start
+    ebegin "Starting Windscribe service"
+    $command start
+    eend "$?"
+    return 0
 }
 
 stop() {
- $command stop
+    ebegin "Stopping Windscribe service"
+    $command stop
+    eend "$?"
+    return 0
 }

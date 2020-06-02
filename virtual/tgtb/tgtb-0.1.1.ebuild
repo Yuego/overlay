@@ -14,7 +14,7 @@ DESCRIPTION="TGTB Meta"
 HOMEPAGE=""
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="+windscribe nordvpn"
 
 RDEPEND="
 	>=dev-python/pillow-3.4.2[${PYTHON_USEDEP}]
@@ -27,6 +27,9 @@ RDEPEND="
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/peewee[${PYTHON_USEDEP}]
+
+	windscribe? ( net-vpn/windscribe-cli ) 
+	nordvpn? ( net-vpn/nordvpn )
 "
 
 DEPEND=""
