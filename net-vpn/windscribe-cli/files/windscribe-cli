@@ -14,12 +14,14 @@ depend() {
 start() {
     ebegin "Starting Windscribe service"
     $command start
+    $command connect
     eend "$?"
     return 0
 }
 
 stop() {
     ebegin "Stopping Windscribe service"
+    $command disconnect
     $command stop
     eend "$?"
     return 0
