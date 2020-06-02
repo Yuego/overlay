@@ -1,0 +1,6 @@
+
+CONFIG_MAIN=""
+CONFIG_COMMON=""
+
+TGTB_OPTS="--config-main=\"${CONFIG_MAIN}\" --config-common=\"${CONFIG_COMMON}\""
+

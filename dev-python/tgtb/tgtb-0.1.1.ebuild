@@ -45,5 +45,6 @@ src_compile(){
 }
 
 src_install(){
-	echo ''
+	doinitd "${FILESDIR}/${PN}-reposter"
+	doconfd "${FILESDIR}/${PN}-reposter.example"
 }

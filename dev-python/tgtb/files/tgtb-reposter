@@ -1,0 +1,17 @@
+#!/sbin/openrc-run
+
+#
+# $License: Public Domain	Exp $
+#
+
+command="/usr/bin/tgtb-reposter"
+
+command_args="${TGTB_OPTS}"
+pidfile="/run/${command##*/}.pid"
+command_background=true
+description="TGTB Channels Reposter"
+
+depend() {
+    need vpn
+}
+
