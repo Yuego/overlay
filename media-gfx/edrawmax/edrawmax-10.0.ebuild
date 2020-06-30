@@ -28,8 +28,8 @@ src_unpack () {
 
 
 src_install () {
-    doins -r /opt
-    doins -r /usr
+    doins -r opt
+    doins -r usr
     default	
 }
 
