@@ -19,7 +19,7 @@ SRC_URI="https://github.com/django-wiki/django-wiki/archive/beta/${MY_PV}.tar.gz
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="test"
 
 S="${WORKDIR}/${PN}-beta-${MY_PV}/"
 
@@ -49,5 +49,7 @@ RDEPEND="
 
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
+	test? (
+		dev-python/pytest-runner[${PYTHON_USEDEP}]
+	)
 "
