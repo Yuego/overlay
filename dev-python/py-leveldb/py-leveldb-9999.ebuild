@@ -3,21 +3,22 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8} pypy )
+PYTHON_COMPAT=( python3_{5,6,7} pypy )
 
 inherit distutils-r1 git-r3
 
-DESCRIPTION=""
-HOMEPAGE=""
+DESCRIPTION="LevelDB Python interface using ctypes"
+HOMEPAGE="https://github.com/arnimarj/py-leveldb"
 
-EGIT_REPO_URI=""
+EGIT_REPO_URI="https://github.com/arnimarj/py-leveldb.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
+	dev-libs/leveldb
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

@@ -18,6 +18,7 @@ KEYWORDS="amd64"
 IUSE="+windscribe nordvpn"
 
 RDEPEND="
+	dev-python/py-leveldb[${PYTHON_USEDEP}]
 	dev-python/pathlib2[${PYTHON_USEDEP}]
 
 	dev-python/peewee[${PYTHON_USEDEP}]
