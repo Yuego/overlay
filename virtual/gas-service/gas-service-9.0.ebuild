@@ -97,7 +97,6 @@ RDEPEND="${RDEPEND}
 
 # API
 RDEPEND="${RDEPEND}
-	dev-python/InstagramAPI[${PYTHON_USEDEP}]
 	>=dev-python/bitrix24-0.3.3[${PYTHON_USEDEP}]
 "
 
