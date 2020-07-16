@@ -20,6 +20,8 @@ RDEPEND=">=dev-python/celery-3.1.0[${PYTHON_USEDEP}]
 	>=www-servers/tornado-4.2.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2015.7[${PYTHON_USEDEP}]
 	>=dev-python/Babel-2.2.0[${PYTHON_USEDEP}]
+	>=dev-python/humanize-2.4.0[${PYTHON_USEDEP}]
+	>=dev-python/prometheus_client-0.8.0[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]"
 
 pkg_setup() {
