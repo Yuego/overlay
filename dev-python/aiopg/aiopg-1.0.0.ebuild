@@ -3,11 +3,11 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{5,6,7,8} pypy )
+PYTHON_COMPAT=( python3_{6,7,8} pypy )
 
 inherit distutils-r1
 
-DESCRIPTION="Library for accessing a PostgreSQL database from the asyncio"
+DESCRIPTION="Library for accessing a PostgreSQL database from the asyncio framework"
 HOMEPAGE="https://github.com/aio-libs/aiopg"
 
 SRC_URI="https://github.com/aio-libs/aiopg/archive/v${PV}.tar.gz -> ${P}.tar.gz"

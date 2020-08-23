@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{5,6,7,8} pypy )
+PYTHON_COMPAT=( python3_{6,7,8} pypy )
 
 inherit distutils-r1
 
@@ -97,7 +97,6 @@ RDEPEND="${RDEPEND}
 
 # API
 RDEPEND="${RDEPEND}
-	dev-python/InstagramAPI[${PYTHON_USEDEP}]
 	>=dev-python/bitrix24-0.3.3[${PYTHON_USEDEP}]
 "
 

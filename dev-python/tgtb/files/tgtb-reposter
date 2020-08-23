@@ -1,17 +1,16 @@
 #!/sbin/openrc-run
 
 #
-# $License: Public Domain	Exp $
+# $License: Public Domain       Exp $
 #
 
 command="/usr/bin/tgtb-reposter"
 
 command_args="${TGTB_OPTS}"
-pidfile="/run/${command##*/}.pid"
+pidfile="/run/${command##*/}.${TGTB_NAME}.pid"
 command_background=true
 description="TGTB Channels Reposter"
 
 depend() {
     need vpn redis
 }
-
