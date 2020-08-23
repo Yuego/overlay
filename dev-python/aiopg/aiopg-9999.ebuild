@@ -7,17 +7,22 @@ PYTHON_COMPAT=( python3_{5,6,7,8} pypy )
 
 inherit distutils-r1 git-r3
 
-DESCRIPTION=""
-HOMEPAGE=""
+DESCRIPTION="Library for accessing a PostgreSQL database from the asyncio"
+HOMEPAGE="https://github.com/aio-libs/aiopg"
 
-EGIT_REPO_URI=""
+EGIT_REPO_URI="https://github.com/aio-libs/aiopg.git"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="+sa"
 
 RDEPEND="
+	sa? (
+		>=dev-python/sqlalchemy-1.1[${PYTHON_USEDEP}]
+	)
+
+	>=dev-python/psycopg-2.7.0[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
