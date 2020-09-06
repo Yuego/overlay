@@ -19,6 +19,7 @@ IUSE="+windscribe nordvpn"
 RDEPEND="
 	>=dev-python/fake-useragent-0.1.11[${PYTHON_USEDEP}]
 	dev-python/py-leveldb[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiopg[${PYTHON_USEDEP}]
 	>=dev-python/pillow-3.4.2[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.1[${PYTHON_USEDEP}]
