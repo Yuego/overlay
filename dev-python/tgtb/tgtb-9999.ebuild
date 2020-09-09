@@ -19,6 +19,7 @@ IUSE="windscribe nordvpn"
 
 RDEPEND="
 	dev-python/py-leveldb[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiopg[${PYTHON_USEDEP}]
 	dev-python/pathlib2[${PYTHON_USEDEP}]
 
