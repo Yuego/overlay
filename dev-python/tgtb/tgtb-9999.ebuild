@@ -40,6 +40,8 @@ RDEPEND="
 	>=dev-python/transitions-0.8.1[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 
+	>=dev-python/transitions-0.8.4[${PYTHON_USEDEP}]
+
 	windscribe? ( net-vpn/windscribe-cli ) 
 	nordvpn? ( net-vpn/nordvpn )
 "
