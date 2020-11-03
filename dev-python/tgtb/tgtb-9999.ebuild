@@ -21,6 +21,7 @@ RDEPEND="
 	dev-python/py-leveldb[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiopg[${PYTHON_USEDEP}]
+	<dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
 	dev-python/pathlib2[${PYTHON_USEDEP}]
 
 	dev-python/peewee[${PYTHON_USEDEP}]

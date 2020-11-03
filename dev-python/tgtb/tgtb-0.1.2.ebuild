@@ -13,7 +13,7 @@ SRC_URI=""
 DESCRIPTION="TGTB Meta"
 HOMEPAGE=""
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="+windscribe nordvpn"
 
 RDEPEND="
