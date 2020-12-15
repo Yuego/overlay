@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy )
+EAPI=7
+PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
 
 inherit distutils-r1
 
@@ -18,12 +18,11 @@ KEYWORDS="amd64 x86"
 IUSE="timezone markdown guardian filter core"
 
 RDEPEND="
-	>=dev-python/django-1.9[${PYTHON_USEDEP}]
+	>=dev-python/django-2.2[${PYTHON_USEDEP}]
 
-	timezone? ( dev-python/pytz[${PYTHON_USEDEP}] )
-	markdown? ( dev-python/markdown[${PYTHON_USEDEP}] )
-	guardian? ( dev-python/django-guardian[${PYTHON_USEDEP}] )
-	filter? ( dev-python/django-filter[${PYTHON_USEDEP}] )
+	markdown? ( >=dev-python/markdown-3.1.1[${PYTHON_USEDEP}] )
+	guardian? ( >=dev-python/django-guardian-2.1.0[${PYTHON_USEDEP}] )
+	filter? ( >=dev-python/django-filter-2.2.0[${PYTHON_USEDEP}] )
 	core? (
 		=dev-python/coreapi-2.3.1[${PYTHON_USEDEP}]
 		=dev-python/coreschema-0.0.4[${PYTHON_USEDEP}]

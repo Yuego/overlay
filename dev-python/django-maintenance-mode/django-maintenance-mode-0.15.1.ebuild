@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{5,6,7} pypy )
+PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
 
 inherit distutils-r1
 
@@ -19,6 +19,7 @@ KEYWORDS="amd64"
 IUSE="ip"
 
 RDEPEND="
+	>=dev-python/django-1.11[${PYTHON_USEDEP}]
 	ip? (
 		dev-python/django-ipware[${PYTHON_USEDEP}]
 	)
