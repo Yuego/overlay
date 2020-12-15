@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit distutils-r1
 
@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/weblib-0.1.28[${PYTHON_USEDEP}]
-	<dev-python/pycurl-7.43.0.5[${PYTHON_USEDEP}]
+	dev-python/pycurl[${PYTHON_USEDEP}]
 
 	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/defusedxml[${PYTHON_USEDEP}]

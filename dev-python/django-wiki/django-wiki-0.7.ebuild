@@ -26,7 +26,6 @@ RDEPEND="
 	<dev-python/django-3.2
 
 	>=dev-python/bleach-3.1[${PYTHON_USEDEP}]
-	<dev-python/bleach-3.2
 
 	dev-python/pillow[${PYTHON_USEDEP}]
 
