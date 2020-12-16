@@ -94,8 +94,8 @@ python_test() {
 
 python_install_all() {
 	# Main celeryd init.d and conf.d
-	newinitd "${FILESDIR}/celery.initd-r2" celery
-	newconfd "${FILESDIR}/celery.confd-r2" celery
+	newinitd "${FILESDIR}/celery.initd-v5" celery
+	newconfd "${FILESDIR}/celery.confd-v5" celery
 
 	if use examples; then
 		docompress -x "/usr/share/doc/${PF}/examples"

@@ -32,7 +32,7 @@ RDEPEND="${RDEPEND}
 
 	>=dev-python/celery-4.0.0[${PYTHON_USEDEP}]
 	<dev-python/celery-5
-	dev-python/flower[${PYTHON_USEDEP}]
+	>=dev-python/flower-0.9.5[${PYTHON_USEDEP}]
 "
 
 # Apps
