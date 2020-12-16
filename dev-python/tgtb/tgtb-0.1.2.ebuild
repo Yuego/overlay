@@ -26,6 +26,7 @@ RDEPEND="
 	dev-python/pytz[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
 	dev-python/selenium[${PYTHON_USEDEP}]
+	dev-python/redis-py[${PYTHON_USEDEP}]
 	>=dev-python/telethon-1.11.3[${PYTHON_USEDEP}]
 	>=dev-python/transitions-0.8.1[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
