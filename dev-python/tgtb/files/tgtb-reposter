@@ -17,5 +17,5 @@ command_background=true
 description="TGTB Channels Reposter"
 
 depend() {
-    need vpn redis
+    need redis
 }
