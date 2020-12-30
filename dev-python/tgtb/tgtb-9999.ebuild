@@ -46,6 +46,8 @@ RDEPEND="
 
 	windscribe? ( net-vpn/windscribe-cli ) 
 	nordvpn? ( net-vpn/nordvpn )
+
+	dev-python/property-mapper[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
