@@ -1,7 +1,7 @@
 
 TGTB_NAME="tgtb_reposter"
 
-CONFIG_MAIN="/etc/tgtb/${TGTB_NAME}/${TGTB_NAME}.yaml"
+CONFIG_MAIN="/etc/tgtb/${TGTB_NAME}/config.yaml"
 CONFIG_COMMON="/etc/tgtb/${TGTB_NAME}/common.yaml"
 
 TGTB_OPTS="--config=\"${CONFIG_MAIN}\" --config-common=\"${CONFIG_COMMON}\""

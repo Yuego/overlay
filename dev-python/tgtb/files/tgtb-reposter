@@ -6,6 +6,11 @@
 
 command="/usr/bin/tgtb-reposter"
 
+CONFIG_MAIN="/etc/tgtb/${TGTB_NAME}/config.yaml"
+CONFIG_COMMON="/etc/tgtb/${TGTB_NAME}/common.yaml"
+
+TGTB_OPTS="--config=\"${CONFIG_MAIN}\" --config-common=\"${CONFIG_COMMON}\""
+
 command_args="${TGTB_OPTS}"
 pidfile="/run/${command##*/}.${TGTB_NAME}.pid"
 command_background=true
