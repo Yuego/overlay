@@ -28,7 +28,12 @@ RDEPEND="
 	>=dev-python/queuelib-1.4.2[${PYTHON_USEDEP}]
 	>=dev-python/service_identity-16.0.0[${PYTHON_USEDEP}]
 
+	>=dev-python/w3lib-1.17.0[${PYTHON_USEDEP}]
+	>=dev-python/zope-interface-4.1.3[${PYTHON_USEDEP}]
+	>=dev-python/protego-0.1.15[${PYTHON_USEDEP}]
+	>=dev-python/itemadapter-0.1.0[${PYTHON_USEDEP}]
+
 	>=dev-python/lxml-4.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pydispatcher-2.1.0[${PYTHON_USEDEP}]
+	>=dev-python/pydispatcher-2.0.5-r3[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
