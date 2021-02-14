@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
-PYTHON_COMPAT=( python{2_7,3_3} pypy )
+EAPI=7
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit distutils-r1 git-r3
 
