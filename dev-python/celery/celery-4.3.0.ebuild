@@ -29,6 +29,7 @@ RDEPEND="
 	dev-python/pytz[${PYTHON_USEDEP}]
 	dev-python/greenlet[${PYTHON_USEDEP}]
 	>=dev-python/vine-1.3.0[${PYTHON_USEDEP}]
+	<dev-python/vine-5
 "
 
 DEPEND="
