@@ -17,6 +17,7 @@ RESTRICT="fetch binchecks bindist strip"
 DEPEND=""
 RDEPEND="${DEPEND}
 	pulseaudio? ( media-sound/pulseaudio )
+	x11-libs/libxkbcommon
 	app-crypt/mit-krb5
 	dev-libs/atk
 	dev-libs/glib
