@@ -10,7 +10,7 @@ SRC_DL_URL="https://www.zoiper.com/en/voip-softphone/download/zoiper5/for/linux"
 
 LICENSE="EULA"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="pulseaudio"
 RESTRICT="fetch binchecks bindist strip"
 
