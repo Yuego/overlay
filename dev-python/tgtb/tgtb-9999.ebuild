@@ -19,6 +19,7 @@ IUSE="windscribe nordvpn"
 
 RDEPEND="
 	dev-python/py-leveldb[${PYTHON_USEDEP}]
+	dev-python/pyzbar[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiopg[${PYTHON_USEDEP}]
 	<dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
