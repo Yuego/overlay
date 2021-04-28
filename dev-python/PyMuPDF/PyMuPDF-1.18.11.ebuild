@@ -18,7 +18,7 @@ KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
-	~app-text/mupdf-1.18
+	>=app-text/mupdf-1.18
 	media-libs/harfbuzz
 	media-libs/jbig2dec
 	virtual/jpeg
