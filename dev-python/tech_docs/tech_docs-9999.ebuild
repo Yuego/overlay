@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 DESCRIPTION="Tech Docs"
 HOMEPAGE="https://github.com/Yuego/tech_docs"
 
-EGIT_REPO_URI="git@github.com-yuego:Yuego/tech_docs.git"
+EGIT_REPO_URI="git@github.com-tech_docs:Yuego/tech_docs.git"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,6 +25,7 @@ RDEPEND="
 	dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
 	dev-python/dawg[${PYTHON_USEDEP}]
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
+	dev-python/PyMuPDF[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
