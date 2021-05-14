@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 DESCRIPTION="Tech Docs"
 HOMEPAGE="https://github.com/Yuego/tech_docs"
 
-EGIT_REPO_URI="git@github.com-yuego:Yuego/tech_docs.git"
+EGIT_REPO_URI="git@github.com-tech_docs:Yuego/tech_docs.git"
 
 LICENSE="MIT"
 SLOT="0"
