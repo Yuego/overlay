@@ -25,12 +25,13 @@ RDEPEND="
 	>=dev-python/django-2.1[${PYTHON_USEDEP}]
 	<dev-python/django-3.2
 
-	>=dev-python/bleach-3.1[${PYTHON_USEDEP}]
+	>=dev-python/bleach-3.3.0[${PYTHON_USEDEP}]
+	<dev-python/bleach-3.4
 
 	dev-python/pillow[${PYTHON_USEDEP}]
 
-	>=dev-python/django-nyt-1.1.5[${PYTHON_USEDEP}]
-	<dev-python/django-nyt-1.2
+	>=dev-python/django-nyt-1.2[${PYTHON_USEDEP}]
+	<dev-python/django-nyt-1.3
 
 	>=dev-python/django-mptt-0.11[${PYTHON_USEDEP}]
 	<dev-python/django-mptt-0.12
