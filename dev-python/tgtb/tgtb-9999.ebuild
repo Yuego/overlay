@@ -25,7 +25,6 @@ RDEPEND="
 	<dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
 	dev-python/pathlib2[${PYTHON_USEDEP}]
 
-	dev-python/peewee[${PYTHON_USEDEP}]
 	>=dev-python/pillow-3.4.2[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.1[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
