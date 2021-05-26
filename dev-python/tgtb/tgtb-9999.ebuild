@@ -18,7 +18,7 @@ KEYWORDS="amd64"
 IUSE="windscribe nordvpn"
 
 RDEPEND="
-	dev-python/py-leveldb[${PYTHON_USEDEP}]
+	>=dev-python/plyvel-1.3.0[${PYTHON_USEDEP}]
 	dev-python/pyzbar[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiopg[${PYTHON_USEDEP}]
