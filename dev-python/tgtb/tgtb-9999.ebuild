@@ -22,7 +22,7 @@ RDEPEND="
 	dev-python/pyzbar[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiopg[${PYTHON_USEDEP}]
-	<dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
+	>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
 	dev-python/pathlib2[${PYTHON_USEDEP}]
 
 	>=dev-python/pillow-3.4.2[${PYTHON_USEDEP}]
@@ -37,8 +37,7 @@ RDEPEND="
 
 	dev-python/selenium[${PYTHON_USEDEP}]
 
-	>=dev-python/telethon-1.11.3[${PYTHON_USEDEP}]
-	>=dev-python/transitions-0.8.1[${PYTHON_USEDEP}]
+	>=dev-python/telethon-1.21[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 
 	>=dev-python/transitions-0.8.4[${PYTHON_USEDEP}]
