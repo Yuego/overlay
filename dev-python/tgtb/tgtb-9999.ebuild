@@ -36,6 +36,7 @@ RDEPEND="
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
 
 	dev-python/selenium[${PYTHON_USEDEP}]
+	dev-python/fake-useragent[${PYTHON_USEDEP}]
 
 	>=dev-python/telethon-1.21[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
