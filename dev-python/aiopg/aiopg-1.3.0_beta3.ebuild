@@ -10,7 +10,8 @@ inherit distutils-r1
 DESCRIPTION="Library for accessing a PostgreSQL database from the asyncio framework"
 HOMEPAGE="https://github.com/aio-libs/aiopg"
 
-SRC_URI="https://github.com/aio-libs/aiopg/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+MY_PV="${PV//_beta/b}"
+SRC_URI="https://github.com/aio-libs/aiopg/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -29,3 +30,5 @@ RDEPEND="
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+S="${WORKDIR}/${PN}-${MY_PV}"
