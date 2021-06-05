@@ -18,7 +18,7 @@ KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/async-timeout-3.0.1[${PYTHON_USEDEP}]
+	>=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
