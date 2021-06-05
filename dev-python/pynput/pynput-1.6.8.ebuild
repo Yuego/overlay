@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{5,6,7} pypy )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit distutils-r1
 
@@ -18,7 +18,6 @@ KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
-	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/python-xlib[${PYTHON_USEDEP}]
 "
 

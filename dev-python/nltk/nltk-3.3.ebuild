@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/nltk/nltk-3.0.0.ebuild,v 1.1 2014/12/22 10:17:58 hwoarang Exp $
 
-EAPI=6
+EAPI=7
 
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 PYTHON_REQ_USE="tk?,xml(+)"
 
 inherit distutils-r1
