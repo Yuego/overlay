@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy )
+EAPI=7
+PYTHON_COMPAT=( python3_{6..9} pypy3)
 
 inherit distutils-r1 git-r3
 
@@ -18,11 +18,10 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-1.7[${PYTHON_USEDEP}]
-	dev-db/redis
-	>=dev-python/redis-py-2.9.1[${PYTHON_USEDEP}]
-	>=dev-python/funcy-1.2[${PYTHON_USEDEP}]
+	>=dev-python/django-2.1[${PYTHON_USEDEP}]
+	>=dev-python/redis-py-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/funcy-1.8[${PYTHON_USEDEP}]
 	<dev-python/funcy-2.0
-	>=dev-python/six-1.4.0[${PYTHON_USEDEP}]
+
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

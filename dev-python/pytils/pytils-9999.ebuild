@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{3,4,5,6,7} pypy )
+EAPI=7
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND=">=dev-python/django-1.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/django-2.1[${PYTHON_USEDEP}]"
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 src_install () {

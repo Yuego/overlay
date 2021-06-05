@@ -6,7 +6,7 @@ EAPI=7
 # Classifier: Programming Language :: Python :: 2 :: Only
 # py3 fails one test, pypy anpother.
 # Notes on page of home repo reports support of python3.
-PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit distutils-r1
 
