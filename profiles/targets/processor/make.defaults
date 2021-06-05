@@ -1,5 +1,0 @@
-
-FEATURES="${FEATURES} ccache -distcc"
-DISTCC_DIR="/var/calculate/tmp/distcc"
-CCACHE_DIR="/var/calculate/tmp/ccache"
-CCACHE_SIZE="5G"

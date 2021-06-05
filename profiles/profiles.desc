@@ -6,18 +6,5 @@
 #layout:
 #arch           profile_directory                               status
 
-# DESKTOPS
-
-amd64           desktop/plasma/home                      	stable
-amd64		desktop/plasma/workstation			stable
-amd64		desktop/plasma/develop				stable
-
-
-# SERVERS
-
-amd64           server/calculate/dc                             stable
-amd64		server/calculate/gs				stable
-amd64           server/gentoo/hardened/web                      stable
-
 
 # vim: set ts=8:

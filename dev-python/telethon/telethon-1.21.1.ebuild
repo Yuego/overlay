@@ -18,6 +18,7 @@ KEYWORDS="amd64"
 IUSE="cryptg"
 
 RDEPEND="
+	dev-python/python-socks[${PYTHON_USEDEP}]
 	dev-python/pyaes[${PYTHON_USEDEP}]
 	>=dev-python/rsa-3.4.0[${PYTHON_USEDEP}]
 	cryptg? (
