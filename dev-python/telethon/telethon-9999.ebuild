@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{5,6,7} pypy )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -18,6 +18,7 @@ KEYWORDS=""
 IUSE="cryptg"
 
 RDEPEND="
+	dev-python/python-socks[${PYTHON_USEDEP}]
 	dev-python/pyaes[${PYTHON_USEDEP}]
 	>=dev-python/rsa-3.4.0[${PYTHON_USEDEP}]
 	cryptg? (
