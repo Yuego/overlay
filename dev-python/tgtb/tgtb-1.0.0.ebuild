@@ -22,7 +22,7 @@ RDEPEND="
 	dev-python/python-socks[${PYTHON_USEDEP}]
 	dev-python/pyzbar[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/aiopg-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/aiopg-1.3[${PYTHON_USEDEP}]
 	>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
 	dev-python/pathlib2[${PYTHON_USEDEP}]
 
