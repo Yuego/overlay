@@ -3,18 +3,18 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8} pypy )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="Library to populate items using XPath and CSS with a convenient API"
 HOMEPAGE="https://github.com/scrapy/itemloaders"
 
-EGIT_REPO_URI="https://github.com/scrapy/itemloaders.git"
+SRC_URI="https://github.com/scrapy/itemloaders/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
