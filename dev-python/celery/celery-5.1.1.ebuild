@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
+PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
 inherit bash-completion-r1 distutils-r1 eutils
 
@@ -28,11 +28,10 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 
 RDEPEND="
 	<dev-python/kombu-6.0[${PYTHON_USEDEP}]
-	>=dev-python/kombu-5.0.0[${PYTHON_USEDEP}]
-	>=dev-python/billiard-3.6.3[${PYTHON_USEDEP}]
+	>=dev-python/kombu-5.1.0[${PYTHON_USEDEP}]
+	>=dev-python/billiard-3.6.4.0[${PYTHON_USEDEP}]
 	<dev-python/billiard-4.0.0[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
-	dev-python/greenlet[${PYTHON_USEDEP}]
 	>=dev-python/vine-5.0.0[${PYTHON_USEDEP}]
 	<dev-python/vine-6.0[${PYTHON_USEDEP}]
 
