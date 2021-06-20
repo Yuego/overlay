@@ -18,6 +18,7 @@ KEYWORDS="amd64"
 IUSE="windscribe nordvpn"
 
 RDEPEND="
+	dev-python/python-daemon[${PYTHON_USEDEP}]
 	>=dev-python/plyvel-1.3.0[${PYTHON_USEDEP}]
 	dev-python/python-socks[${PYTHON_USEDEP}]
 	dev-python/pyzbar[${PYTHON_USEDEP}]
