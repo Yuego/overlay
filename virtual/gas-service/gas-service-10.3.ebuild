@@ -91,6 +91,9 @@ RDEPEND="${RDEPEND}
 
 	>=dev-python/django-bitfield-2.0.1[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
+	dev-python/django-debug-toolbar[${PYTHON_USEDEP}]
+
+	<dev-python/jinja-3
 "
 
 # Frontend
