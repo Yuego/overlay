@@ -35,5 +35,7 @@ RDEPEND="
 
 	>=dev-python/lxml-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pydispatcher-2.0.5-r3[${PYTHON_USEDEP}]
+	>=dev-python/hyper-h2-3.0[${PYTHON_USEDEP}]
+	<dev-python/hyper-h2-4.0
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
