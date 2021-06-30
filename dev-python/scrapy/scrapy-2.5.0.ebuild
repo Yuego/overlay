@@ -37,5 +37,7 @@ RDEPEND="
 	>=dev-python/pydispatcher-2.0.5-r3[${PYTHON_USEDEP}]
 	>=dev-python/hyper-h2-3.0[${PYTHON_USEDEP}]
 	<dev-python/hyper-h2-4.0
+	>=dev-python/priority-1.1.0[${PYTHON_USEDEP}]
+	<dev-python/priority-2.0
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
