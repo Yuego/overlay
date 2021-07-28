@@ -26,6 +26,9 @@ RDEPEND="
 	dev-python/dawg[${PYTHON_USEDEP}]
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
 	dev-python/PyMuPDF[${PYTHON_USEDEP}]
+
+	dev-python/django-crispy-forms[${PYTHON_USEDEP}]
+	>=dev-python/crispy-bootstrap5-0.4[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
