@@ -32,7 +32,7 @@ RDEPEND="${RDEPEND}
 	<dev-python/psycopg-2.9[${PYTHON_USEDEP}]
 
 	>=dev-python/celery-4.0.0[${PYTHON_USEDEP}]
-	<dev-python/celery-5
+	<dev-python/celery-5[${PYTHON_USEDEP}]
 	>=dev-python/flower-0.9.5[${PYTHON_USEDEP}]
 "
 
