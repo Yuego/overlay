@@ -53,7 +53,7 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-python/PyMuPDF[${PYTHON_USEDEP}]
 	sys-apps/file[python]
-	dev-python/psycopg[${PYTHON_USEDEP}]
+	<dev-python/psycopg-2.9[${PYTHON_USEDEP}]
 
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
 
