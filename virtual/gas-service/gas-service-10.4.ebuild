@@ -29,6 +29,7 @@ RDEPEND="${RDEPEND}
 
 	net-libs/nodejs
 	dev-db/postgis
+	<dev-python/psycopg-2.9[${PYTHON_USEDEP}]
 
 	>=dev-python/celery-4.0.0[${PYTHON_USEDEP}]
 	<dev-python/celery-5
