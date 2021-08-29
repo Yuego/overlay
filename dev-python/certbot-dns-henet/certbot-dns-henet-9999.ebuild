@@ -14,7 +14,7 @@ EGIT_REPO_URI="https://github.com/Yuego/certbot-dns-henet.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
