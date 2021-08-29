@@ -27,6 +27,8 @@ RDEPEND="
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
 	dev-python/PyMuPDF[${PYTHON_USEDEP}]
 
+	dev-python/python-dateutil[${PYTHON_USEDEP}]
+
 	dev-python/django-crispy-forms[${PYTHON_USEDEP}]
 	>=dev-python/crispy-bootstrap5-0.4[${PYTHON_USEDEP}]
 "
