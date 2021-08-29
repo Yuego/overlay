@@ -36,6 +36,7 @@ RDEPEND="${RDEPEND}
 
 # Libs
 RDEPEND="${RDEPEND}
+	<dev-python/psycopg-2.9[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 "
 
