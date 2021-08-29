@@ -36,6 +36,7 @@ RDEPEND="${RDEPEND}
 
 # Libs
 RDEPEND="${RDEPEND}
+	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 "
 
 # Frontend
