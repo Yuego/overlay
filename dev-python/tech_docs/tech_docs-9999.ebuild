@@ -26,6 +26,7 @@ RDEPEND="
 	dev-python/dawg[${PYTHON_USEDEP}]
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
 	dev-python/PyMuPDF[${PYTHON_USEDEP}]
+	dev-python/textract[${PYTHON_USEDEP}]
 
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 
