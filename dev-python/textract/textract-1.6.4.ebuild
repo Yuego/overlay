@@ -23,7 +23,7 @@ RDEPEND="
 	>=dev-python/chardet-3.0[${PYTHON_USEDEP}]
 	<dev-python/chardet-4[${PYTHON_USEDEP}]
 	app-text/antiword
-	>=app-text/docx2txt-0.8
+	>=dev-python/docx2txt-0.8
 
 	app-text/pdfminer[${PYTHON_USEDEP}]
 	tesseract? (
