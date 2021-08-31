@@ -32,6 +32,8 @@ RDEPEND="
 	)
 
 	>=dev-python/xlrd-1.2.0
+
+	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
