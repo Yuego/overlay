@@ -11,7 +11,7 @@ DESCRIPTION="A drop-in replacement for django's ImageField"
 HOMEPAGE="http://django-versatileimagefield.readthedocs.io/ https://github.com/respondcreate/django-versatileimagefield"
 
 EGIT_REPO_URI="https://github.com/Yuego/django-versatileimagefield.git"
-EGIT_COMMIT="6771544dd293ce6ed9411331f06ad7dcf6ac9212"
+EGIT_COMMIT="beb1dd66ec486de1b8a9774e4e3856e70ebfc9f4"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,7 +20,7 @@ IUSE="rest"
 
 RDEPEND="
 	>=dev-python/django-2.2[${PYTHON_USEDEP}]
-	<dev-python/django-3.1[${PYTHON_USEDEP}]
+	<dev-python/django-3.3[${PYTHON_USEDEP}]
 	>=dev-python/pillow-2.4.0[${PYTHON_USEDEP}]
 	rest? (
 		>=dev-python/django-rest-framework-3.0.0[${PYTHON_USEDEP}]

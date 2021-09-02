@@ -50,7 +50,6 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-3.0.6-bashcomp.patch
-	"${FILESDIR}"/django-gettext-0.21.patch
 )
 
 distutils_enable_sphinx docs --no-autodoc

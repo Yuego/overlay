@@ -23,7 +23,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/django-1.11[${PYTHON_USEDEP}]
-	<dev-python/django-3.2
+	<dev-python/django-3.3
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

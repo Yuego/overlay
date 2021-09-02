@@ -20,7 +20,7 @@ IUSE="rest"
 
 RDEPEND="
 	>=dev-python/django-2.2[${PYTHON_USEDEP}]
-	<dev-python/django-3.1
+	<dev-python/django-3.1[${PYTHON_USEDEP}]
 	>=dev-python/pillow-2.4.0[${PYTHON_USEDEP}]
 	rest? (
 		>=dev-python/django-rest-framework-3.0.0[${PYTHON_USEDEP}]
