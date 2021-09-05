@@ -18,7 +18,7 @@ IUSE="scrapy"
 
 RDEPEND="
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
-	<dev-python/django-3.1
+	<dev-python/django-3.3[${PYTHON_USEDEP}]
 "
 
 # Servers
@@ -37,6 +37,7 @@ RDEPEND="${RDEPEND}
 # Libs
 RDEPEND="${RDEPEND}
 	<dev-python/psycopg-2.9[${PYTHON_USEDEP}]
+	dev-python/django-cacheops[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 	dev-python/django-redis[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
