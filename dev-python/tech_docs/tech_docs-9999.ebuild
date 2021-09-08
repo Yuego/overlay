@@ -15,14 +15,17 @@ EGIT_REPO_URI="git@github.com-tech_docs:Yuego/tech_docs.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="+scrapy"
 
 RDEPEND="
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
 	dev-python/vincode[${PYTHON_USEDEP}]
-	dev-python/scrapy[${PYTHON_USEDEP}]
-	dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
-	dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
+	scrapy? (
+		dev-python/scrapy[${PYTHON_USEDEP}]
+		dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
+		dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
+		dev-python/user_agent[${PYTHON_USEDEP}]
+	)
 	dev-python/dawg[${PYTHON_USEDEP}]
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
 	dev-python/PyMuPDF[${PYTHON_USEDEP}]
