@@ -15,7 +15,7 @@ if [[ ${PV} == 9999 ]]; then
 	KEYWORDS=""
 else
 	SRC_URI="https://github.com/chfast/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~x86 ~amd64"
+	KEYWORDS="~x86 amd64"
 fi
 
 LICENSE="Apache-2.0"

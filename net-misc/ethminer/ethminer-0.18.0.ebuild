@@ -32,7 +32,7 @@ else
 		https://github.com/CLIUtils/CLI11/archive/v${CLI11_VER}.tar.gz -> CLI11-${CLI11_VER}.tar.gz
 	"
 
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="amd64 ~x86"
 	S="${WORKDIR}/${MY_P}"
 fi
 
