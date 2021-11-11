@@ -18,7 +18,9 @@ KEYWORDS="amd64 ~x86"
 
 RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
 	>=dev-python/six-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/tzlocal-1.2[${PYTHON_USEDEP}]"
+	>=dev-python/tzlocal-1.2[${PYTHON_USEDEP}]
+	<dev-python/tzlocal-3.0[${PYTHON_USEDEP}]"
+
 BDEPEND="
 	test? (
 		www-servers/tornado[${PYTHON_USEDEP}]
