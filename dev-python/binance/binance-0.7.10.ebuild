@@ -23,6 +23,9 @@ RDEPEND="
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/ujson[${PYTHON_USEDEP}]
 	=dev-python/websockets-9.1[${PYTHON_USEDEP}]
+
+	dev-python/twisted[${PYTHON_USEDEP}]
+	dev-python/autobahn[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
