@@ -5,7 +5,7 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{6..9} pypy3 )
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="Unofficial Python wrapper for the Binance exchange REST API v3"
 HOMEPAGE="https://github.com/sammchardy/python-binance"
@@ -26,3 +26,5 @@ RDEPEND="
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+S="${WORKDIR}/python-${P}"
