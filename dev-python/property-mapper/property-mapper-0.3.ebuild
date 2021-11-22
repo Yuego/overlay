@@ -5,16 +5,16 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="Python dict to object property mapper module"
-HOMEPAGE="https://github.com/Yuego/property-mapper"
+HOMEPAGE="https://github.com/Yuego/python-property-mapper"
 
-EGIT_REPO_URI="https://github.com/Yuego/property-mapper.git"
+SRC_URI="https://github.com/Yuego/property-mapper/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
