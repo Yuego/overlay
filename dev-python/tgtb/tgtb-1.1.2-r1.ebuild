@@ -18,6 +18,8 @@ KEYWORDS="amd64"
 IUSE="windscribe nordvpn"
 
 RDEPEND="
+	acct-user/tgtb
+
 	dev-python/django[${PYTHON_USEDEP}]
 
 	dev-python/python-daemon[${PYTHON_USEDEP}]
