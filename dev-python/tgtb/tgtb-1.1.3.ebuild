@@ -20,6 +20,7 @@ IUSE="windscribe nordvpn"
 RDEPEND="
 
 	dev-python/django[${PYTHON_USEDEP}]
+	dev-python/django-rest-framework[${PYTHON_USEDEP}]
 
 	dev-python/python-daemon[${PYTHON_USEDEP}]
 	>=dev-python/plyvel-1.3.0[${PYTHON_USEDEP}]
