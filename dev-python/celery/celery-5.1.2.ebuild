@@ -1,11 +1,11 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6..9} pypy3 )
+PYTHON_COMPAT=( python3_{6..10} pypy3 )
 
-inherit bash-completion-r1 distutils-r1 eutils
+inherit bash-completion-r1 distutils-r1
 
 DESCRIPTION="Asynchronous task queue/job queue based on distributed message passing"
 HOMEPAGE="http://celeryproject.org/ https://pypi.org/project/celery/"
@@ -63,7 +63,7 @@ DEPEND="
 	)
 	doc? (
 		dev-python/docutils[${PYTHON_USEDEP}]
-		>=dev-python/sphinx_celery-2.0[$(python_gen_usedep 'python3*')]
+		>=dev-python/sphinx_celery-2.0[${PYTHON_USEDEP}]
 		dev-python/jinja[${PYTHON_USEDEP}]
 		dev-python/sqlalchemy[${PYTHON_USEDEP}]
 	)"

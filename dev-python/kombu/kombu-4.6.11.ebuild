@@ -1,8 +1,8 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-PYTHON_COMPAT=( python3_{7..9} )
+EAPI=8
+PYTHON_COMPAT=( python3_{7..10} pypy3 )
 DISTUTILS_USE_SETUPTOOLS=bdepend
 
 inherit distutils-r1
@@ -22,7 +22,7 @@ RDEPEND="
 	>=dev-python/importlib_metadata-0.18[${PYTHON_USEDEP}]
 	>=dev-python/py-amqp-2.6.1-r3[${PYTHON_USEDEP}]
 	<dev-python/py-amqp-2.7[${PYTHON_USEDEP}]
-	>=dev-python/pyro-4.76:4[${PYTHON_USEDEP}]
+	>=dev-python/pyro4-4.76:4[${PYTHON_USEDEP}]
 	sqs? ( >=dev-python/boto3-1.4.4[${PYTHON_USEDEP}] )
 	msgpack? ( >=dev-python/msgpack-0.3.0[${PYTHON_USEDEP}] )
 	mongodb? ( >=dev-python/pymongo-3.3.0[${PYTHON_USEDEP}] )
