@@ -22,7 +22,7 @@ RDEPEND="
 	>=dev-python/importlib_metadata-0.18[${PYTHON_USEDEP}]
 	>=dev-python/py-amqp-2.6.1-r3[${PYTHON_USEDEP}]
 	<dev-python/py-amqp-2.7[${PYTHON_USEDEP}]
-	>=dev-python/pyro4-4.76:4[${PYTHON_USEDEP}]
+	>=dev-python/Pyro4-4.76[${PYTHON_USEDEP}]
 	sqs? ( >=dev-python/boto3-1.4.4[${PYTHON_USEDEP}] )
 	msgpack? ( >=dev-python/msgpack-0.3.0[${PYTHON_USEDEP}] )
 	mongodb? ( >=dev-python/pymongo-3.3.0[${PYTHON_USEDEP}] )

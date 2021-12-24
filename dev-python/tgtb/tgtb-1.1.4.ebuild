@@ -38,6 +38,8 @@ RDEPEND="
 
 	dev-db/redis
 	dev-python/redis-py[${PYTHON_USEDEP}]
+	dev-python/hiredis[${PYTHON_USEDEP}]
+	dev-python/aioredis[${PYTHON_USEDEP}]
 
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
 
