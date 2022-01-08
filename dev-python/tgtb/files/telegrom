@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+
+#
+# $License: Public Domain       Exp $
+#
+
+command="/usr/bin/telegrom"
+
+CONFIG="/etc/telegrom/telegrom.yaml"
+
+TGTB_OPTS="--config=\"${CONFIG}\""
+
+command_args="${TGTB_OPTS}"
+pidfile="/run/${command##*/}.${TGTB_NAME}.pid"
+command_background=true
+description="Telegrom"
+
+depend() {
+    need redis
+}
