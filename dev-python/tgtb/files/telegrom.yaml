@@ -1,0 +1,23 @@
+main:
+  debug: false 
+  namespace: tgr
+  workdir: /etc/telegrom
+  log_dir: /var/log/telegrom
+  tmp_dir: /tmp
+  plugins:
+    - tgtb_next.plugins
+
+postgres:
+  host: localhost
+  port: 5432
+  user: telegrom
+  password: telegrom_secret
+  database: telegrom
+  engine_params:
+    echo: false
+
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+  socket_timeout: 2

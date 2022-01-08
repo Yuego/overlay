@@ -66,4 +66,7 @@ src_install(){
 	doinitd "${FILESDIR}/telegrom"
 	doinitd "${FILESDIR}/${PN}-reposter"
 	doconfd "${FILESDIR}/${PN}-reposter.example"
+
+	insinto "/etc/telegrom/"
+	doins "${FILESDIR}/telegrom.yaml"
 }
