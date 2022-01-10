@@ -10,6 +10,7 @@ inherit distutils-r1 git-r3
 LICENSE="MIT"
 
 EGIT_REPO_URI="git@github.com-tgtb:Yuego/tgtb.git"
+EGIT_BRANCH="next"
 
 DESCRIPTION="TGTB Meta"
 HOMEPAGE=""
