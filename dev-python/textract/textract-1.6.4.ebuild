@@ -19,7 +19,7 @@ IUSE="+tesseract"
 
 RDEPEND="
 	>=dev-python/argcomplete-1.10[${PYTHON_USEDEP}]
-	>=dev-python/beautifulsoup-4.8[${PYTHON_USEDEP}]
+	>=dev-python/beautifulsoup4-4.8[${PYTHON_USEDEP}]
 	>=dev-python/chardet-3.0[${PYTHON_USEDEP}]
 	<dev-python/chardet-4[${PYTHON_USEDEP}]
 	app-text/antiword
