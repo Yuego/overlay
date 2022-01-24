@@ -32,3 +32,8 @@ RDEPEND="
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 S="${WORKDIR}/${PN}-${MY_PV}"
+
+src_prepare(){
+	sed -i 's/"psycopg2-binary>=2.8.4",//g' setup.py
+	distutils-r1_src_prepare
+}

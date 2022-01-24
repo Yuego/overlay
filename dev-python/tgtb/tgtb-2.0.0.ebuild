@@ -28,7 +28,7 @@ RDEPEND="
 	dev-python/python-socks[${PYTHON_USEDEP}]
 	dev-python/pyzbar[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/aiopg-1.3[${PYTHON_USEDEP}]
+	>=dev-python/aiopg-1.3.3[${PYTHON_USEDEP}]
 	>=dev-python/asyncpg-0.25[${PYTHON_USEDEP}]
 	>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
 
