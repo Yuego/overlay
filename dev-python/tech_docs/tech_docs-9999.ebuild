@@ -35,6 +35,8 @@ RDEPEND="
 
 	dev-python/django-crispy-forms[${PYTHON_USEDEP}]
 	>=dev-python/crispy-bootstrap5-0.4[${PYTHON_USEDEP}]
+
+	dev-python/pinax-referrals[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
