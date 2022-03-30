@@ -11,10 +11,11 @@ DESCRIPTION="Tech Docs"
 HOMEPAGE="https://github.com/Yuego/tech_docs"
 
 EGIT_REPO_URI="git@github.com-tech_docs:Yuego/tech_docs.git"
+EGIT_COMMIT="0.1"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE="+scrapy"
 
 RDEPEND="

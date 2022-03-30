@@ -31,7 +31,7 @@ RDEPEND="${RDEPEND}
 
 # Apps
 RDEPEND="${RDEPEND}
-	dev-python/tech_docs[${PYTHON_USEDEP}]
+	=dev-python/tech_docs-0.1[${PYTHON_USEDEP}]
 "
 
 # Libs
