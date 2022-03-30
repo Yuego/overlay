@@ -14,7 +14,7 @@ EGIT_REPO_URI="git@github.com-tech_docs:Yuego/tech_docs.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE="+scrapy"
 
 RDEPEND="
