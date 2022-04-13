@@ -40,6 +40,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-cacheops[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 	dev-python/django-redis[${PYTHON_USEDEP}]
+	dev-python/hiredis[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 "
 
