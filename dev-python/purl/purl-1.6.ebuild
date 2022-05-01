@@ -5,19 +5,20 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{6..10} pypy3 )
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
-DESCRIPTION=""
-HOMEPAGE=""
+DESCRIPTION="A simple Python URL class"
+HOMEPAGE="https://github.com/codeinthehole/purl"
 
-EGIT_REPO_URI=""
+SRC_URI="https://github.com/codeinthehole/purl/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
+	dev-python/six[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
