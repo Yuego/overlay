@@ -39,6 +39,8 @@ RDEPEND="
 	dev-python/pinax-referrals[${PYTHON_USEDEP}]
 
 	dev-python/sorl-watermark[${PYTHON_USEDEP}]
+
+	>=dev-python/anticaptcha-1.7-r2[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
