@@ -41,6 +41,7 @@ RDEPEND="
 	dev-python/sorl-watermark[${PYTHON_USEDEP}]
 
 	>=dev-python/anticaptcha-1.7-r2[${PYTHON_USEDEP}]
+	>=dev-python/django-easy-faq-1.3-r1[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

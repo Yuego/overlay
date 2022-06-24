@@ -11,7 +11,7 @@ DESCRIPTION="Django app to allow for a simple yet feature rich faq app"
 HOMEPAGE="https://github.com/dragoncommits/django-easy-faq"
 
 EGIT_REPO_URI="https://github.com/Yuego/django-easy-faq.git"
-EGIT_COMMIT="dffb64b43001cea291b17325cd4a49a66c028e70"
+EGIT_COMMIT="480034c9012fcfa400a40dff126f676767cd2672"
 
 LICENSE="MIT"
 SLOT="0"
