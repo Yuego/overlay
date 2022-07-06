@@ -50,6 +50,7 @@ RDEPEND="${RDEPEND}
 
 # API
 RDEPEND="${RDEPEND}
+	app-crypt/certbot[${PYTHON_USEDEP}]
 "
 
 # ProxyList
