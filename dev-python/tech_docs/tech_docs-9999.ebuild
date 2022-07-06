@@ -18,6 +18,8 @@ KEYWORDS="amd64"
 IUSE="+scrapy"
 
 RDEPEND="
+	sys-apps/file[python]
+
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
 	dev-python/vincode[${PYTHON_USEDEP}]
 	scrapy? (
