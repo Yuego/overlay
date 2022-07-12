@@ -20,7 +20,12 @@ KEYWORDS="amd64"
 
 RESTRICT="mirror strip"
 
-RDEPEND=""
+RDEPEND="
+	app-crypt/rtpkcs11ecp
+	sys-apps/pcsc-tools
+	app-crypt/ccid
+	dev-libs/opensc
+"
 
 S="${WORKDIR}"
 
