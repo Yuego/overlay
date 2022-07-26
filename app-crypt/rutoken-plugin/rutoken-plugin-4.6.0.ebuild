@@ -25,6 +25,7 @@ RDEPEND="
 	sys-apps/pcsc-tools
 	app-crypt/ccid
 	dev-libs/opensc
+	dev-libs/gost-engine
 "
 
 S="${WORKDIR}"
