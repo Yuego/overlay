@@ -36,9 +36,8 @@ RDEPEND="
 	dev-python/tldextract[${PYTHON_USEDEP}]
 
 	>=dev-python/lxml-4.3.0[${PYTHON_USEDEP}]
-	
-	!dev-python/pydispatcher
-	>=dev-python/pypydispatcher-2.1.0[${PYTHON_USEDEP}]
+
+	>=dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}]
 
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
