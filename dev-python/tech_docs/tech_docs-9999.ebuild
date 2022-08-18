@@ -21,6 +21,7 @@ RDEPEND="
 	sys-apps/file[python]
 
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
+	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/vincode[${PYTHON_USEDEP}]
 	scrapy? (
 		dev-python/scrapy[${PYTHON_USEDEP}]

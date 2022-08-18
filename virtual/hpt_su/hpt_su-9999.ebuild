@@ -32,6 +32,8 @@ RDEPEND="${RDEPEND}
 # Apps
 RDEPEND="${RDEPEND}
 	dev-python/tech_docs[${PYTHON_USEDEP}]
+
+	dev-python/django-constance[${PYTHON_USEDEP}]
 "
 
 # Libs
