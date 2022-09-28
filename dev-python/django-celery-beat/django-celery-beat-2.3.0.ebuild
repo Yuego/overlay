@@ -18,7 +18,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/django-2.2[${PYTHON_USEDEP}]
+	>=dev-python/django-3.2[${PYTHON_USEDEP}]
 	>=dev-python/celery-4.0[${PYTHON_USEDEP}]
 	>=dev-python/django-timezone-field-4.0[${PYTHON_USEDEP}]
 	<dev-python/django-timezone-field-5.0
