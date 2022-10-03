@@ -24,7 +24,7 @@ RDEPEND="
 # Servers
 RDEPEND="${RDEPEND}
 	dev-db/postgresql:*[server]
-	www-servers/nginx:0
+	www-servers/nginx
 	www-servers/uwsgi[python]
 
 "
