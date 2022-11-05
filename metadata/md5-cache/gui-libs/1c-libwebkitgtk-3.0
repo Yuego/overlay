@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=libwebkitgtk
+EAPI=7
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND==gui-libs/1c-libicu-57 =gui-libs/1c-libjavascriptcoregtk-3.0 =gui-libs/1c-libwebp6-0.5.2 x11-libs/gtk+:3[wayland]
+RESTRICT=strip
+SLOT=8.3
+SRC_URI=http://ftp.ru.debian.org/debian/pool/main/w/webkitgtk/libwebkitgtk-3.0-0_2.4.11-3_amd64.deb
+_md5_=45118a33df3ac74f724c05c7e28ba95b

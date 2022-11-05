@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig doc? ( app-doc/doxygen ) >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=net-libs/bctoolbox[test?] =net-libs/ortp-4.4.0 alsa? ( media-libs/alsa-lib ) bv16? ( media-libs/bv16-floatingpoint ) ffmpeg? ( virtual/ffmpeg ) g726? ( media-libs/spandsp ) g729? ( media-libs/bcg729 ) gsm? ( media-sound/gsm ) jpeg? ( media-libs/libjpeg-turbo ) matroska? ( media-libs/bcmatroska2 ) opengl? ( media-libs/glew:0 x11-libs/libX11 virtual/opengl ) opus? ( media-libs/opus ) pcap? ( net-libs/libpcap ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio ) qrcode? ( media-libs/zxing-cpp ) speex? ( media-libs/speex media-libs/speexdsp ) srtp? ( net-libs/libsrtp:2 ) theora? ( media-libs/libtheora ) v4l? ( media-libs/libv4l ) vpx? ( media-libs/libvpx:= ) zrtp? ( net-libs/bzrtp[sqlite] )
+DESCRIPTION=Mediastreaming library for telephony application
+EAPI=7
+HOMEPAGE=https://gitlab.linphone.org/BC/public/mediastreamer2
+INHERIT=cmake
+IUSE=alsa bv16 debug doc ffmpeg g726 g729 gsm jpeg matroska opengl opus pcap portaudio +pulseaudio qrcode speex srtp static-libs resample test theora tools +v4l vpx zrtp
+KEYWORDS=amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=net-libs/bctoolbox[test?] =net-libs/ortp-4.4.0 alsa? ( media-libs/alsa-lib ) bv16? ( media-libs/bv16-floatingpoint ) ffmpeg? ( virtual/ffmpeg ) g726? ( media-libs/spandsp ) g729? ( media-libs/bcg729 ) gsm? ( media-sound/gsm ) jpeg? ( media-libs/libjpeg-turbo ) matroska? ( media-libs/bcmatroska2 ) opengl? ( media-libs/glew:0 x11-libs/libX11 virtual/opengl ) opus? ( media-libs/opus ) pcap? ( net-libs/libpcap ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio ) qrcode? ( media-libs/zxing-cpp ) speex? ( media-libs/speex media-libs/speexdsp ) srtp? ( net-libs/libsrtp:2 ) theora? ( media-libs/libtheora ) v4l? ( media-libs/libv4l ) vpx? ( media-libs/libvpx:= ) zrtp? ( net-libs/bzrtp[sqlite] )
+REQUIRED_USE=zrtp? ( srtp ) resample? ( speex ) || ( alsa portaudio pulseaudio ) || ( ffmpeg opengl v4l )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/BelledonneCommunications/mediastreamer2/archive/4.4.0.tar.gz -> mediastreamer2-4.4.0.tar.gz
+_eclasses_=cmake	44afbf15c35884f7c840470f1cf05d0d	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	8f942ebdcf04334697649d4a0bf65a32	flag-o-matic	29a755b1291d64133634d80b0328f153	multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	wrapper	4a1902f969e5718126434fc35f3a0d9c	xdg-utils	ac0e315a3688929e34ac75b139e7349a
+_md5_=7830cca9fc5b3de552d2de002fcdf451

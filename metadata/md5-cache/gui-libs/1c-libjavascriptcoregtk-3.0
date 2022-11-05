@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=libjavascriptcoregtk
+EAPI=7
+KEYWORDS=amd64
+LICENSE=MIT
+RESTRICT=strip
+SLOT=8.3
+SRC_URI=http://ftp.ru.debian.org/debian/pool/main/w/webkitgtk/libjavascriptcoregtk-3.0-0_2.4.11-3_amd64.deb
+_md5_=9a8c3176014948f7a06fde6b7a8b8591

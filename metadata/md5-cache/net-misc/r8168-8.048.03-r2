@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup
+DEPEND=kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) ) sys-apps/sed kernel_linux? ( virtual/linux-sources virtual/libelf )
+DESCRIPTION=r8168 driver for Realtek 8111/8168 PCI-E NICs
+EAPI=7
+HOMEPAGE=https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software
+INHERIT=linux-info linux-mod
+IUSE=dist-kernel
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) )
+SLOT=0
+SRC_URI=https://dev.gentoo.org/~pacho/r8168/r8168-8.048.03.tar.bz2
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	8f942ebdcf04334697649d4a0bf65a32	linux-info	bbfa385d6907d7948d49a5e107bd654d	linux-mod	3167123d17b3550117c7e554fd22ca02	multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	wrapper	4a1902f969e5718126434fc35f3a0d9c
+_md5_=ec81bf2b0daa236c70ddd62c9a8dbb5c

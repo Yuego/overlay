@@ -1,0 +1,16 @@
+BDEPEND=>=dev-util/build2-0.11.0
+DEFINED_PHASES=compile configure install test
+DEPEND=dev-cpp/libcutl:=
+DESCRIPTION=Command Line Interface compiler for C++
+EAPI=7
+HOMEPAGE=https://www.codesynthesis.com/projects/cli
+INHERIT=toolchain-funcs multiprocessing
+IUSE=static-libs
+KEYWORDS=amd64 ~x86
+LICENSE=MIT
+RDEPEND=dev-cpp/libcutl:=
+RESTRICT=primaryuri
+SLOT=0
+SRC_URI=https://git.codesynthesis.com/cgit/cli/cli/snapshot/1.2.0-b.6.tar.gz -> cli-1.2.0_beta6.tar.gz
+_eclasses_=multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144
+_md5_=8f339367ec92d446201ec569d97ad9d6

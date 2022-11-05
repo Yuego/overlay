@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install prepare setup unpack
+DEPEND=dev-libs/openssl
+DESCRIPTION=Simple MT-Proto proxy
+EAPI=7
+HOMEPAGE=https://github.com/TelegramMessenger/MTProxy
+INHERIT=git-r3 user
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=dev-libs/openssl
+SLOT=0
+_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53	user	ee8b59cbe68b390f981e3ee247ed908f	user-info	69a1ed744ec33cf2c910ff2bd6084d11
+_md5_=6af370ef4f91d3062c57831c9e99e64a
