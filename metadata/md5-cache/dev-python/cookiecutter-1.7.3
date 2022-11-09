@@ -1,0 +1,16 @@
+BDEPEND=python_targets_pypy3? ( >=dev-python/pypy3-7.3.9_p1:0= ) python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) >=dev-python/setuptools-65.3.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-python/setuptools[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] >=dev-python/setuptools_scm-3.5.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+DESCRIPTION=A command-line utility that creates projects from cookiecutters (project templates), e.g. creating a Python package project from a Python package project template.
+EAPI=7
+HOMEPAGE=https://github.com/audreyr/cookiecutter https://cookiecutter.readthedocs.io
+INHERIT=distutils-r1
+IUSE=python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+KEYWORDS=amd64 x86
+LICENSE=MIT
+RDEPEND=>=dev-python/binaryornot-0.4.4[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] >=dev-python/jinja-2.7[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] <dev-python/jinja-4 >=dev-python/jinja2-time-0.2.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] >=dev-python/click-7.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] <dev-python/click-9 >=dev-python/pyyaml-5.3.1[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] >=dev-python/python-slugify-4.0.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] >=dev-python/requests-2.23.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] python_targets_pypy3? ( >=dev-python/pypy3-7.3.9_p1:0= ) python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 )
+REQUIRED_USE=|| ( python_targets_pypy3 python_targets_python3_8 python_targets_python3_9 )
+SLOT=0
+SRC_URI=https://github.com/audreyr/cookiecutter/archive/1.7.3.tar.gz -> cookiecutter-1.7.3.tar.gz
+_eclasses_=distutils-r1	8c1ceb6b71a65547b0ea7bc901d906cb	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multibuild	d26d81f242cb193d899a72bca423d0bd	multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-r1	2d51fd03931e743811ce30d198e4dcfd	python-utils-r1	b9fc5e97e886514e5132f50465185401	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144
+_md5_=ce7bef2c5f88253f1a8baa7bb799816f

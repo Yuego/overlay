@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=libicu
+EAPI=7
+KEYWORDS=amd64
+LICENSE=MIT
+RESTRICT=strip
+SLOT=8.3
+SRC_URI=http://ftp.ru.debian.org/debian/pool/main/i/icu/libicu57_57.1-6+deb9u4_amd64.deb
+_md5_=a9091cf864c6a068e983870621ccd6c4

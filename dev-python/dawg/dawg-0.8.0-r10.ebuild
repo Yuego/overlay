@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{6..10} pypy3 )
+PYTHON_COMPAT=( python3_{8..11} pypy3 )
 
 inherit distutils-r1 git-r3
 
@@ -20,7 +20,12 @@ KEYWORDS="amd64 ~x86"
 IUSE="test"
 
 RDEPEND=""
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+DEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
+"
+BDEPEND="
+	dev-python/cython[${PYTHON_USEDEP}]
+"
 
 S="${WORKDIR}/dawg-${PV}"
 

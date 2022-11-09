@@ -1,0 +1,17 @@
+BDEPEND=python_single_target_python3_8? ( test? ( dev-python/mock[${PYTHON_MULTI_USEDEP}] dev-python/requests-mock[${PYTHON_MULTI_USEDEP}] dev-python/pytest[${PYTHON_MULTI_USEDEP}] >=dev-python/freezegun-1.0.0[${PYTHON_MULTI_USEDEP}] ) ) python_single_target_python3_8? ( >=dev-lang/python-3.8.13:3.8[xml(+),threads(+)] ) python_single_target_python3_8? ( >=dev-python/setuptools-65.3.0[python_targets_python3_8(-)] )
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=python_single_target_python3_8? ( >dev-python/requests-2.21.0[${PYTHON_MULTI_USEDEP}] dev-python/isodate[${PYTHON_MULTI_USEDEP}] dev-python/websocket-client[${PYTHON_MULTI_USEDEP}] dev-python/pycountry[${PYTHON_MULTI_USEDEP}] >=dev-python/pycryptodome-3.4.3[${PYTHON_MULTI_USEDEP}] )
+DESCRIPTION=CLI for extracting streams from websites to a video player of your choice
+EAPI=7
+HOMEPAGE=https://streamlink.github.io/
+INHERIT=distutils-r1
+IUSE=test +python_single_target_python3_8
+KEYWORDS=amd64 ~x86
+LICENSE=BSD-2 Apache-2.0
+RDEPEND=python_single_target_python3_8? ( >dev-python/requests-2.21.0[${PYTHON_MULTI_USEDEP}] dev-python/isodate[${PYTHON_MULTI_USEDEP}] dev-python/websocket-client[${PYTHON_MULTI_USEDEP}] dev-python/pycountry[${PYTHON_MULTI_USEDEP}] >=dev-python/pycryptodome-3.4.3[${PYTHON_MULTI_USEDEP}] ) media-video/rtmpdump media-video/ffmpeg python_single_target_python3_8? ( >=dev-lang/python-3.8.13:3.8[xml(+),threads(+)] ) python_single_target_python3_8? ( >=dev-python/setuptools-65.3.0[python_targets_python3_8(-)] )
+REQUIRED_USE=^^ ( python_single_target_python3_8 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/streamlink/streamlink/releases/download/2.0.0/streamlink-2.0.0.tar.gz https://dev.gentoo.org/~leio/distfiles/streamlink.1-2.0.0.man.xz
+_eclasses_=distutils-r1	8c1ceb6b71a65547b0ea7bc901d906cb	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multibuild	d26d81f242cb193d899a72bca423d0bd	multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-single-r1	a5747fe6dc0651d95cb78eddd5e160a8	python-utils-r1	b9fc5e97e886514e5132f50465185401	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144
+_md5_=994f85a700c021a4bf9124b273a5960e

@@ -1,0 +1,16 @@
+BDEPEND=python_targets_pypy3? ( >=dev-python/pypy3-7.3.9_p1:0=[tk?,xml(+)] ) python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8[tk?,xml(+)] ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9[tk?,xml(+)] ) >=dev-python/setuptools-65.3.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=numpy? ( dev-python/numpy[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] ) dev-python/pyyaml[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] app-arch/unzip
+DESCRIPTION=Natural Language Toolkit
+EAPI=7
+HOMEPAGE=http://nltk.org/ https://github.com/nltk/nltk
+INHERIT=distutils-r1
+IUSE=numpy tk python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+KEYWORDS=amd64 x86
+LICENSE=Apache-2.0
+RDEPEND=numpy? ( dev-python/numpy[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] ) dev-python/pyyaml[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?] python_targets_pypy3? ( >=dev-python/pypy3-7.3.9_p1:0=[tk?,xml(+)] ) python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8[tk?,xml(+)] ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9[tk?,xml(+)] )
+REQUIRED_USE=|| ( python_targets_pypy3 python_targets_python3_8 python_targets_python3_9 )
+SLOT=0
+SRC_URI=mirror://pypi/n/nltk/nltk-3.3.tar.gz https://github.com/nltk/nltk/archive/3.3.tar.gz -> nltk-3.3.tar.gz
+_eclasses_=distutils-r1	8c1ceb6b71a65547b0ea7bc901d906cb	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multibuild	d26d81f242cb193d899a72bca423d0bd	multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-r1	2d51fd03931e743811ce30d198e4dcfd	python-utils-r1	b9fc5e97e886514e5132f50465185401	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144
+_md5_=0adb71e16673eda5566ee0392fde28e5
