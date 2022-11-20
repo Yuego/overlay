@@ -10,5 +10,5 @@ LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=dev-libs/openssl
 SLOT=0
-_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53	user	ee8b59cbe68b390f981e3ee247ed908f	user-info	69a1ed744ec33cf2c910ff2bd6084d11
+_eclasses_=git-r3	2347f8fe2d392b2a091191f94be37e6f	user	ee8b59cbe68b390f981e3ee247ed908f	user-info	69a1ed744ec33cf2c910ff2bd6084d11
 _md5_=f40b7bdd1db93129c66a744493fed2fc
