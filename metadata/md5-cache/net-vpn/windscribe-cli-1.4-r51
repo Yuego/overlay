@@ -10,5 +10,5 @@ RDEPEND=>=net-vpn/openvpn-2.4.7 >=dev-libs/pkcs11-helper-1.25.1 net-misc/stunnel
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=amd64? ( https://repo.windscribe.com/ubuntu/pool/main/w/windscribe-cli/windscribe-cli_1.4-51_amd64.deb )
-_eclasses_=multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	unpacker	bc57272a0491765c71d973c8cfd35063
+_eclasses_=multilib	5ca4e49abed8e3a2f7b56920eadee157	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	unpacker	f03f9c0c03643e8057ad762b297ce01e
 _md5_=c5747a3ab040e121b162e9e68b8d14e3
