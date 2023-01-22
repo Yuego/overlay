@@ -11,7 +11,7 @@ DESCRIPTION="Extract text from any document. No muss. No fuss."
 HOMEPAGE="https://github.com/deanmalmgren/textract"
 
 EGIT_REPO_URI="https://github.com/Yuego/textract.git"
-EGIT_COMMIT="13ca315d74ff7adfa834c46e7e4641bf1ec31a40"
+EGIT_COMMIT="cc459ed1fd88bbd92c52fa448263fc3b40341447"
 
 LICENSE="MIT"
 SLOT="0"
