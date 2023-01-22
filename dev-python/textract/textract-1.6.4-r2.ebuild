@@ -23,6 +23,7 @@ RDEPEND="
 	>=dev-python/beautifulsoup4-4.8[${PYTHON_USEDEP}]
 	>=dev-python/chardet-3.0[${PYTHON_USEDEP}]
 	app-text/antiword
+	app-text/catdoc
 	>=dev-python/docx2txt-0.8
 
 	app-text/pdfminer[${PYTHON_USEDEP}]
