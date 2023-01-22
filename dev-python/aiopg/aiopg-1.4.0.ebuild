@@ -1,0 +1,41 @@
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+EAPI=8
+PYTHON_COMPAT=( python3_{8..11} pypy3 )
+
+inherit distutils-r1
+
+DESCRIPTION="Library for accessing a PostgreSQL database from the asyncio framework"
+HOMEPAGE="https://github.com/aio-libs/aiopg"
+
+MY_PV="${PV//_beta/b}"
+SRC_URI="https://github.com/aio-libs/aiopg/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="amd64"
+IUSE="+sa"
+
+RDEPEND="
+	sa? (
+		>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
+		<dev-python/sqlalchemy-1.5[${PYTHON_USEDEP}]
+	)
+
+	>=dev-python/psycopg-2.9.5[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]
+	<dev-python/async-timeout-5.0[${PYTHON_USEDEP}]
+
+	>=dev-python/six-1.16.0[${PYTHON_USEDEP}]
+"
+
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+S="${WORKDIR}/${PN}-${MY_PV}"
+
+src_prepare(){
+	sed -i 's/"psycopg2-binary>=2.8.4",//g' setup.py
+	distutils-r1_src_prepare
+}
