@@ -45,6 +45,8 @@ RDEPEND="${RDEPEND}
 	dev-python/django-redis[${PYTHON_USEDEP}]
 	dev-python/hiredis[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
+	
+	dev-python/vk_api[${PYTHON_USEDEP}]
 "
 
 # Frontend
