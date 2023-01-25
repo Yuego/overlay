@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=7
-PYTHON_COMPAT=( python3_{6..9} pypy3 )
+EAPI=8
+PYTHON_COMPAT=( python3_{7..10} pypy3 )
 
 inherit distutils-r1
 
@@ -18,7 +18,9 @@ KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
-	>=app-text/mupdf-1.18
+	>=app-text/mupdf-1.21
+	<app-text/mupdf-1.22
+
 	media-libs/harfbuzz
 	media-libs/jbig2dec
 	virtual/jpeg
@@ -32,5 +34,6 @@ src_prepare() {
 	sed -i -e '/"mupdf-third",/d' setup.py || die "sed failed"
 	sed -i -e 's/"mupdf-third"//g' setup.py || die "sed failed"
 	sed -i -e '/data_files.*$/d' setup.py || die "sed failed"
+	export PYMUPDF_SETUP_MUPDF_BUILD=""
 	default
 }

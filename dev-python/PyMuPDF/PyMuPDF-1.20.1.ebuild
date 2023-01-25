@@ -19,6 +19,8 @@ IUSE=""
 
 RDEPEND="
 	>=app-text/mupdf-1.20.0
+	<app-text/mupdf-1.21
+
 	media-libs/harfbuzz
 	media-libs/jbig2dec
 	virtual/jpeg
