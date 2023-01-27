@@ -49,6 +49,7 @@ RDEPEND="${RDEPEND}
 	dev-python/vk_api[${PYTHON_USEDEP}]
 
 	dev-python/django-money[${PYTHON_USEDEP}]
+	dev-python/django-treebeard[${PYTHON_USEDEP}]
 "
 
 # Frontend
