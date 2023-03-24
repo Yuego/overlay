@@ -28,7 +28,7 @@ RDEPEND="
 
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=dev-python/setuptools_scm-3.4[${PYTHON_USEDEP}]
+	>=dev-python/setuptools-scm-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pkgconfig-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/lxml-3.8[${PYTHON_USEDEP}]
 "

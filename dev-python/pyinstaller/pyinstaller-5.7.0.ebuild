@@ -19,7 +19,7 @@ KEYWORDS="amd64"
 RDEPEND=""
 DEPEND="
 	>=dev-python/setuptools-42.0.0[${PYTHON_USEDEP}]
-	dev-python/setuptools_scm[${PYTHON_USEDEP}]
+	dev-python/setuptools-scm[${PYTHON_USEDEP}]
 	dev-python/wheel[${PYTHON_USEDEP}]
 "
 BDEPEND="
