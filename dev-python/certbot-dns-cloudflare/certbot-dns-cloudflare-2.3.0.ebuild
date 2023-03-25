@@ -38,5 +38,6 @@ S="${WORKDIR}/certbot-${PV}/${PN}"
 # See certbot/setup.py for acme >= dep
 RDEPEND="
 	=app-crypt/certbot-${PV}[${PYTHON_USEDEP}]
+	dev-python/cloudflare[${PYTHON_USEDEP}]
 "
 
