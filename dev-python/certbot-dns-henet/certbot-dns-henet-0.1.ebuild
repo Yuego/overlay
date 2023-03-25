@@ -11,6 +11,7 @@ DESCRIPTION="he.net DNS Authenticator plugin for Certbot"
 HOMEPAGE="https://github.com/Yuego/certbot-dns-henet"
 
 EGIT_REPO_URI="https://github.com/Yuego/certbot-dns-henet.git"
+EGIT_COMMIT="e2cd0977f2aeb926a7833bf82b5ec7fac8bc08c6"
 
 LICENSE="MIT"
 SLOT="0"
