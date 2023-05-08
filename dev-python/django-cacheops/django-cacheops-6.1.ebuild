@@ -20,7 +20,7 @@ IUSE=""
 RDEPEND="
 	>=dev-python/django-2.1[${PYTHON_USEDEP}]
 	dev-db/redis
-	>=dev-python/redis-py-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/redis-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/funcy-1.8[${PYTHON_USEDEP}]
 	<dev-python/funcy-2.0[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]

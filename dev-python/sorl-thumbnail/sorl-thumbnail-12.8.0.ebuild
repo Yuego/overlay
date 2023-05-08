@@ -21,10 +21,10 @@ RDEPEND="
 "
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/setuptools_scm[${PYTHON_USEDEP}]
+	dev-python/setuptools-scm[${PYTHON_USEDEP}]
 	memcached? ( dev-python/python-memcached[${PYTHON_USEDEP}] )
 	redis? (
-		dev-python/redis-py[${PYTHON_USEDEP}]
+		dev-python/redis[${PYTHON_USEDEP}]
 		dev-db/redis
 	)
 	imagemagick? ( media-gfx/imagemagick )"

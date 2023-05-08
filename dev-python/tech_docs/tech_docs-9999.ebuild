@@ -32,7 +32,7 @@ RDEPEND="
 	dev-python/dawg[${PYTHON_USEDEP}]
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
 	dev-python/PyMuPDF[${PYTHON_USEDEP}]
-	=dev-python/textract-1.6.4-r2[${PYTHON_USEDEP}]
+	>=dev-python/textract-1.6.4-r4[${PYTHON_USEDEP}]
 
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 
