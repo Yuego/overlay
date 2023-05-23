@@ -39,8 +39,6 @@ RDEPEND="
 	dev-python/django-crispy-forms[${PYTHON_USEDEP}]
 	>=dev-python/crispy-bootstrap5-0.4[${PYTHON_USEDEP}]
 
-	dev-python/pinax-referrals[${PYTHON_USEDEP}]
-
 	dev-python/sorl-watermark[${PYTHON_USEDEP}]
 
 	>=dev-python/anticaptcha-1.7-r2[${PYTHON_USEDEP}]
