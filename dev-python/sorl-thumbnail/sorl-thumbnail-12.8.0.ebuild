@@ -10,7 +10,7 @@ inherit distutils-r1
 MY_PV="${PV/_beta/.}b"
 SRC_URI="https://github.com/sorl/sorl-thumbnail/archive/${PV}.tar.gz -> ${P}.tar.gz"
 DESCRIPTION=""
-HOMEPAGE="http://thumbnail.sorl.net/index.html"
+HOMEPAGE="https://github.com/jazzband/sorl-thumbnail"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 ia64 ppc ppc64 x86"

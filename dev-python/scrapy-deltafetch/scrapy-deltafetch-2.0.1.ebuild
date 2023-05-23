@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..10} pypy3 )
+PYTHON_COMPAT=( python3_{8..11} pypy3 )
 
 inherit distutils-r1
 
@@ -19,6 +19,5 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/scrapy-1.2.0[${PYTHON_USEDEP}]
-	dev-python/bsddb3[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
