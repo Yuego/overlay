@@ -18,14 +18,13 @@ IUSE="scrapy"
 
 RDEPEND="
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
-	<dev-python/django-3.3[${PYTHON_USEDEP}]
 "
 
 # Servers
 RDEPEND="${RDEPEND}
 	dev-db/postgresql:*[server]
 	www-servers/nginx
-	www-servers/uwsgi[python]
+	www-servers/uwsgi[python,${PYTHON_USEDEP}]
 
 "
 
