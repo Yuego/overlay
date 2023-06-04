@@ -34,6 +34,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/django-templated-email[${PYTHON_USEDEP}]
+	dev-python/django-grappelli[${PYTHON_USEDEP}]
 "
 
 # Libs
