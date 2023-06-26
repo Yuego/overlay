@@ -26,7 +26,7 @@ RDEPEND="
 
 	ssl? ( >=dev-python/pyopenssl-21.0.0[${PYTHON_USEDEP}] )
 	>=dev-python/queuelib-1.4.2[${PYTHON_USEDEP}]
-	>=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
+	>=dev-python/service-identity-18.1.0[${PYTHON_USEDEP}]
 
 	>=dev-python/w3lib-1.17.0[${PYTHON_USEDEP}]
 	>=dev-python/zope-interface-5.1.0[${PYTHON_USEDEP}]
