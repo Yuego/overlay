@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{6..10} )
+PYTHON_COMPAT=( python3_{10..11} )
 
 inherit distutils-r1 git-r3
 
@@ -38,9 +38,8 @@ RDEPEND="
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 
 	dev-db/redis
-	dev-python/redis-py[${PYTHON_USEDEP}]
+	>=dev-python/redis-4.2.1[${PYTHON_USEDEP}]
 	dev-python/hiredis[${PYTHON_USEDEP}]
-	dev-python/aioredis[${PYTHON_USEDEP}]
 
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
 
