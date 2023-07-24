@@ -21,7 +21,6 @@ IUSE="+sa"
 RDEPEND="
 	sa? (
 		>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
-		<dev-python/sqlalchemy-1.5[${PYTHON_USEDEP}]
 	)
 
 	>=dev-python/psycopg-2.9.5[${PYTHON_USEDEP}]
