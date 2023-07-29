@@ -28,6 +28,8 @@ RDEPEND="
 	dev-python/pyzbar[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/asyncpg-0.28[${PYTHON_USEDEP}]
+
+	dev-python/greenlet[${PYTHON_USEDEP}]
 	>=dev-python/sqlalchemy-2.0[${PYTHON_USEDEP}]
 
 	>=dev-python/pillow-3.4.2[${PYTHON_USEDEP}]
