@@ -19,6 +19,7 @@ IUSE="boto ibl +ssl"
 
 RDEPEND="
 	>=dev-python/twisted-18.9.0[${PYTHON_USEDEP}]
+	<dev-python/twisted-23.8.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-3.4.6[${PYTHON_USEDEP}]
 	>=dev-python/cssselect-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/itemloaders-1.0.1[${PYTHON_USEDEP}]
