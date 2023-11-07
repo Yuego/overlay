@@ -46,6 +46,7 @@ RDEPEND="
 	>=dev-python/martor-1.6.13[${PYTHON_USEDEP}]
 
 	dev-python/openpyxl[${PYTHON_USEDEP}]
+	dev-python/js2py[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
