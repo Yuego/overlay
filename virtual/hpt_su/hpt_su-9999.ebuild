@@ -56,6 +56,8 @@ RDEPEND="${RDEPEND}
 	>=dev-python/django-better-admin-arrayfield-1.4.1[${PYTHON_USEDEP}]
 
 	dev-python/utm-tracker[${PYTHON_USEDEP}]
+
+	dev-python/shortuuid[${PYTHON_USEDEP}]
 "
 
 # Frontend
