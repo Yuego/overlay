@@ -48,7 +48,7 @@ RDEPEND="
 	dev-python/fake-useragent[${PYTHON_USEDEP}]
 
 	>=dev-python/telethon-1.21[${PYTHON_USEDEP}]
-	>=dev-python/py-tgcalls-0.9.7[${PYTHON_USEDEP}]
+	>=dev-python/py-tgcalls-2.0.1[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 
 	>=dev-python/transitions-0.8.4[${PYTHON_USEDEP}]
