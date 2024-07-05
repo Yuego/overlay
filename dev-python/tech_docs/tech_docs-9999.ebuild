@@ -47,6 +47,8 @@ RDEPEND="
 
 	dev-python/openpyxl[${PYTHON_USEDEP}]
 	dev-python/js2py[${PYTHON_USEDEP}]
+
+	dev-python/tqdm[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
