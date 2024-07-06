@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
+EAPI=8
 
-inherit eutils
+# inherit eutils
 
 DESCRIPTION="PDF Tools"
 HOMEPAGE="https://github.com/Yuego/pdf-tools"
