@@ -1,0 +1,11 @@
+--- a/pyproject.toml	2024-07-06 18:32:59.742341440 +0400
++++ b/pyproject.toml	2024-07-06 18:33:09.612088571 +0400
+@@ -11,8 +11,6 @@
+     "Environment :: Web Environment",
+     "Framework :: Django",
+     "Framework :: Django :: 4.2",
+-    "Framework :: Django :: 5.0",
+-    "Framework :: Django :: 5.1",
+     "License :: OSI Approved :: MIT License",
+     "Operating System :: OS Independent",
+     "Programming Language :: JavaScript",
