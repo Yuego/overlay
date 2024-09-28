@@ -47,6 +47,8 @@ RDEPEND="
 	dev-python/js2py[${PYTHON_USEDEP}]
 
 	dev-python/tqdm[${PYTHON_USEDEP}]
+
+	dev-python/django-rest-framework[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
