@@ -14,7 +14,7 @@ DESCRIPTION="Gas Service Meta"
 HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="scrapy"
+IUSE=""
 
 RDEPEND="
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
