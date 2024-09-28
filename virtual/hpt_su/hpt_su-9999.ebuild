@@ -14,64 +14,11 @@ DESCRIPTION="Gas Service Meta"
 HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE="scrapy"
+IUSE=""
 
 RDEPEND="
-	>=dev-python/django-3.0[${PYTHON_USEDEP}]
-"
-
-# Servers
-RDEPEND="${RDEPEND}
-	dev-db/postgresql:*[server]
-	www-servers/nginx
-	www-servers/uwsgi[python,${PYTHON_USEDEP}]
-
-"
-
-# Apps
-RDEPEND="${RDEPEND}
+	virtual/hpt_su_dev
 	dev-python/tech_docs[${PYTHON_USEDEP}]
-
-	dev-python/django-constance[${PYTHON_USEDEP}]
-	dev-python/django-templated-email[${PYTHON_USEDEP}]
-	dev-python/django-grappelli[${PYTHON_USEDEP}]
-"
-
-# Libs
-RDEPEND="${RDEPEND}
-	dev-python/psycopg:2[${PYTHON_USEDEP}]
-	dev-python/django-cacheops[${PYTHON_USEDEP}]
-	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
-	dev-python/django-redis[${PYTHON_USEDEP}]
-	dev-python/hiredis[${PYTHON_USEDEP}]
-	dev-python/pyyaml[${PYTHON_USEDEP}]
-	
-	dev-python/vk_api[${PYTHON_USEDEP}]
-
-	dev-python/django-appconf[${PYTHON_USEDEP}]
-	dev-python/django-money[${PYTHON_USEDEP}]
-	dev-python/django-treebeard[${PYTHON_USEDEP}]
-
-	>=dev-python/django-phonenumber-field-7.0.0[${PYTHON_USEDEP}]
-	>=dev-python/django-better-admin-arrayfield-1.4.1[${PYTHON_USEDEP}]
-
-	dev-python/utm-tracker[${PYTHON_USEDEP}]
-
-	dev-python/shortuuid[${PYTHON_USEDEP}]
-"
-
-# Frontend
-RDEPEND="${RDEPEND}
-"
-
-# API
-RDEPEND="${RDEPEND}
-	app-crypt/certbot[${PYTHON_USEDEP}]
-"
-
-# ProxyList
-RDEPEND="${RDEPEND}
-
 "
 
 DEPEND=""
