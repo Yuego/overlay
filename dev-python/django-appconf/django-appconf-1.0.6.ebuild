@@ -6,11 +6,13 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{8..13} )
 
-inherit distutils-r1
+inherit distutils-r1 git-r3
 
 DESCRIPTION="A helper class for handling configuration defaults of packaged apps gracefully"
 HOMEPAGE="https://github.com/django-compressor/django-appconf https://django-appconf.readthedocs.io/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+
+EGIT_REPO_URI="https://github.com/django-compressor/django-appconf.git"
+EGIT_COMMIT="bcb3ba49264de753c3f0a2bb466299db254c1d97"
 
 LICENSE="BSD"
 SLOT="0"

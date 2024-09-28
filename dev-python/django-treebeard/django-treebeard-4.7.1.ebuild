@@ -7,12 +7,12 @@ PYTHON_COMPAT=( python3_{9..13} pypy3 )
 
 inherit distutils-r1
 
-DESCRIPTION="Better widget for Django ArrayField in admin"
-HOMEPAGE="https://github.com/gradam/django-better-admin-arrayfield"
+DESCRIPTION="Efficient tree implementations for Django"
+HOMEPAGE="https://github.com/tabo/django-treebeard"
 
-SRC_URI="https://github.com/gradam/django-better-admin-arrayfield/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/tabo/django-treebeard/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
@@ -20,5 +20,4 @@ IUSE=""
 RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
 "
-
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

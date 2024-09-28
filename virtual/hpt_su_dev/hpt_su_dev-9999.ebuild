@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{8..13} pypy3 )
 
 inherit distutils-r1
 
@@ -30,20 +30,20 @@ RDEPEND="${RDEPEND}
 
 # Apps
 RDEPEND="${RDEPEND}
+	dev-python/tech_docs_dev[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/django-templated-email[${PYTHON_USEDEP}]
-	dev-python/django-grappelli[${PYTHON_USEDEP}]
 "
 
 # Libs
 RDEPEND="${RDEPEND}
-	dev-python/psycopg:2[${PYTHON_USEDEP}]
+	dev-python/psycopg:0[${PYTHON_USEDEP}]
 	dev-python/django-cacheops[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 	dev-python/django-redis[${PYTHON_USEDEP}]
 	dev-python/hiredis[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
-	
+
 	dev-python/vk_api[${PYTHON_USEDEP}]
 
 	dev-python/django-appconf[${PYTHON_USEDEP}]
