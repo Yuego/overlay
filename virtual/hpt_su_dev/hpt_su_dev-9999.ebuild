@@ -50,7 +50,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-money[${PYTHON_USEDEP}]
 	dev-python/django-treebeard[${PYTHON_USEDEP}]
 
-	>=dev-python/django-phonenumber-field-7.0.0[${PYTHON_USEDEP}]
+	>=dev-python/django-phonenumber-field-8.0.0[${PYTHON_USEDEP}]
 	>=dev-python/django-better-admin-arrayfield-1.4.1[${PYTHON_USEDEP}]
 
 	dev-python/utm-tracker[${PYTHON_USEDEP}]
