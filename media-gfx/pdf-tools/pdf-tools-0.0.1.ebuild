@@ -26,11 +26,8 @@ S="$WORKDIR"
 src_install() {
 	#MENU
 	insopts -m0644
-	# KDE 4
-	insinto "/usr/share/applications/${PN}/"
-	doins "${FILESDIR}"/menu/*
-	# KDE 5
-	insinto "/usr/share/kservices5/${PN}/"
+	# KDE 6
+	insinto "/usr/share/kio/servicemenus/"
 	doins "${FILESDIR}"/menu/*
 
 }
