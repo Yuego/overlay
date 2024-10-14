@@ -22,3 +22,12 @@ RDEPEND="
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+
+src_install() {
+	default
+
+	insopts -m0644
+	exeinto "/usr/bin/"
+	doexe "$S"/files/bin/*
+}
