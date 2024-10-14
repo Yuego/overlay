@@ -25,7 +25,7 @@ DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
 
 src_install() {
-	default
+	distutils-r1_src_install
 
 	insopts -m0644
 	exeinto "/usr/bin/"
