@@ -49,6 +49,7 @@ RDEPEND="
 	dev-python/tqdm[${PYTHON_USEDEP}]
 
 	dev-python/django-rest-framework[${PYTHON_USEDEP}]
+	dev-python/python-slugify[${PYTHON_USEDEP}]
 "
 
 DEPEND=""

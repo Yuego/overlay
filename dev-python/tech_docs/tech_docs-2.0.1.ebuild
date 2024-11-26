@@ -18,7 +18,7 @@ KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
-	dev-python/tech_docs_dev[${PYTHON_USEDEP}]
+	=dev-python/tech_docs_dev-${PV}[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
