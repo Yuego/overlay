@@ -50,6 +50,7 @@ RDEPEND="
 
 	dev-python/django-rest-framework[${PYTHON_USEDEP}]
 	dev-python/python-slugify[${PYTHON_USEDEP}]
+	dev-python/django-cookie-consent[${PYTHON_USEDEP}]
 "
 
 DEPEND=""

@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{9..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -16,10 +17,11 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
-	dev-python/typing-extensions[${PYTHON_USEDEP}]
-	>=dev-python/Babel-2.8.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.7.4.3[${PYTHON_USEDEP}]
+	>=dev-python/babel-2.8.0[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

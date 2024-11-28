@@ -20,7 +20,7 @@ IUSE=""
 
 RDEPEND="
 	>=dev-python/celery-4.0[${PYTHON_USEDEP}]
-	>=dev-python/redis-py-2.10.2[${PYTHON_USEDEP}]
+	>=dev-python/redis-2.10.2[${PYTHON_USEDEP}]
 "
 
 DEPEND="
