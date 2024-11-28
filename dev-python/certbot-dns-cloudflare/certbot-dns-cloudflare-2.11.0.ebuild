@@ -19,7 +19,7 @@ else
 		https://github.com/certbot/certbot/archive/v${PV}.tar.gz
 			-> ${P}.gh.tar.gz
 	"
-	KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv x86"
+	KEYWORDS="amd64 ~arm ~arm64 ~ppc64 ~riscv x86"
 fi
 
 DESCRIPTION="Let’s Encrypt client to automate deployment of X.509 certificates"
@@ -32,6 +32,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 IUSE="selinux"
+RESTRICT="test"
 
 S="${WORKDIR}/certbot-${PV}/${PN}"
 
