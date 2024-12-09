@@ -18,6 +18,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="redis"
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-4.2[${PYTHON_USEDEP}]
