@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{9..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -16,6 +17,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
