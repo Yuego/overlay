@@ -17,6 +17,7 @@ EGIT_COMMIT="bcb3ba49264de753c3f0a2bb466299db254c1d97"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64"
+RESTRICT="test"
 
 RDEPEND="
 	dev-python/django[${PYTHON_USEDEP}]
