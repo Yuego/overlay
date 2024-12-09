@@ -1,0 +1,22 @@
+From 3aae31df42ab8f791e0205ce467183f92a31dfeb Mon Sep 17 00:00:00 2001
+From: David Burke <david@burkesoftware.com>
+Date: Thu, 23 Mar 2023 15:47:53 -0400
+Subject: [PATCH] Add psycopg3 support
+
+Fixes #130
+---
+ bitfield/types.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/bitfield/types.py b/bitfield/types.py
+index d7f6d8fe..84ac6044 100644
+--- a/bitfield/types.py
++++ b/bitfield/types.py
+@@ -260,5 +260,6 @@ def get_label(self, flag):
+     from django.db.backends.postgresql.base import Database
+     Database.extensions.register_adapter(Bit, lambda x: Database.extensions.AsIs(int(x)))
+     Database.extensions.register_adapter(BitHandler, lambda x: Database.extensions.AsIs(int(x)))
+-except ImproperlyConfigured:
++# Ignore in psycopg3 where there is no Database.extensions nor any need to adapt types
++except (ImproperlyConfigured, AttributeError):
+     pass
