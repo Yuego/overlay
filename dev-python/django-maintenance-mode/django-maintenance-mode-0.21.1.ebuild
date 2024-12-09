@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -17,10 +18,11 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE="ip"
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-2.2[${PYTHON_USEDEP}]
-	>=dev-python/python-fsutil-0.10.0[${PYTHON_USEDEP}]
+	>=dev-python/python-fsutil-0.14.1[${PYTHON_USEDEP}]
 	ip? (
 		dev-python/django-ipware[${PYTHON_USEDEP}]
 	)
