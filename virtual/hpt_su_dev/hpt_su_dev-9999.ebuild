@@ -10,7 +10,7 @@ inherit distutils-r1
 LICENSE=""
 
 SRC_URI=""
-DESCRIPTION="Gas Service Meta"
+DESCRIPTION="HPT Meta"
 HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
