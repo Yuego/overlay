@@ -3,7 +3,8 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{8..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -16,9 +17,14 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/django-2.2[${PYTHON_USEDEP}]
+	>=dev-python/django-4.2[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+PATCHES=( 
+	"${FILESDIR}"/pyproject.patch
+)

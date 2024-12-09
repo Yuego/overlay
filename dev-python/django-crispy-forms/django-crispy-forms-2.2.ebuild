@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..12} pypy3 )
+PYTHON_COMPAT=( python3_{8..13} pypy3 )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -17,6 +17,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
