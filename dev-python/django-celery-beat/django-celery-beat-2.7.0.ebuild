@@ -3,7 +3,8 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..10} pypy3 )
+PYTHON_COMPAT=( python3_{9..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -16,16 +17,18 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
-	>=dev-python/celery-5.2.3[${PYTHON_USEDEP}]
+	>=dev-python/celery-5.3.0[${PYTHON_USEDEP}]
 	<dev-python/celery-6.0[${PYTHON_USEDEP}]
 
 	>=dev-python/django-timezone-field-5.0[${PYTHON_USEDEP}]
-	dev-python/pytzdata[${PYTHON_USEDEP}]
+	dev-python/tzdata[${PYTHON_USEDEP}]
 
 	>=dev-python/python-crontab-2.3.4[${PYTHON_USEDEP}]
+	>=dev-python/cron-descriptor-1.2.32[${PYTHON_USEDEP}]
 "
 
 DEPEND="
