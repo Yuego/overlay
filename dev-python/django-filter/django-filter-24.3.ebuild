@@ -20,6 +20,9 @@ IUSE=""
 RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/django-3.2[${PYTHON_USEDEP}]
+	>=dev-python/django-4.2[${PYTHON_USEDEP}]
 "
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+DEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/flit-core-3.2[${PYTHON_USEDEP}]
+"
