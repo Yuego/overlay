@@ -2,23 +2,26 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
+EAPI=8
+PYTHON_COMPAT=( python3_{9..13} pypy3 )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
 DESCRIPTION="A Django app for adding object tools for models in the admin"
 HOMEPAGE="https://github.com/crccheck/django-object-actions"
 
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/crccheck/django-object-actions/releases/download/v4.3.0/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
+RESTRICT="test"
+
 
 RDEPEND="
-	dev-python/django[${PYTHON_USEDEP}]
+	>=dev-python/django-4.0[${PYTHON_USEDEP}]
 "
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
