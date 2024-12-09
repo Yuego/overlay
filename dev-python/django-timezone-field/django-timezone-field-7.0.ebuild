@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..10} pypy3 )
+PYTHON_COMPAT=( python3_{9..13} pypy3 )
 DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
@@ -17,13 +17,14 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/django-2.2[${PYTHON_USEDEP}]
+	>=dev-python/django-4.2[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
 "
 
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=dev-python/poetry-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/poetry-core-1.0.0[${PYTHON_USEDEP}]
 "
