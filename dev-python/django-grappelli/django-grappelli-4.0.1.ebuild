@@ -15,8 +15,9 @@ LICENSE="BSD-4"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/django-3.2[${PYTHON_USEDEP}]
+	>=dev-python/django-4.2[${PYTHON_USEDEP}]
 "
 DEPEND="${RDEPEND}"
