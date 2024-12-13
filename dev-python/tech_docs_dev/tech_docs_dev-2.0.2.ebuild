@@ -18,7 +18,7 @@ IUSE="+scrapy"
 RDEPEND="
 	sys-apps/file[python]
 
-	>=dev-python/django-3.0[${PYTHON_USEDEP}]
+	>=dev-python/django-4.2[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/vincode[${PYTHON_USEDEP}]
 	scrapy? (
