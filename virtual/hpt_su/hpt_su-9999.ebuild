@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..13} pypy3 )
 
 inherit distutils-r1
 
-LICENSE=""
+LICENSE="MIT"
 
 SRC_URI=""
 DESCRIPTION="Gas Service Meta"
@@ -17,7 +17,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
-	virtual/hpt_su_dev[${PYTHON_USEDEP}]
+	dev-python/hpt_su_dev[${PYTHON_USEDEP}]
 	dev-python/tech_docs[${PYTHON_USEDEP}]
 "
 
