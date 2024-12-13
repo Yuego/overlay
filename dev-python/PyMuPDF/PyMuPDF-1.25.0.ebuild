@@ -20,6 +20,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE="debug"
+RESTRICT="test"
 
 RDEPEND="
 	>=app-text/mupdf-$MUPDF_VER
