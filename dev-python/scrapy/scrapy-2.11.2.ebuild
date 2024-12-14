@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{9..13} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -16,6 +17,7 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE="boto ibl +ssl"
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/twisted-18.9.0[${PYTHON_USEDEP}]
