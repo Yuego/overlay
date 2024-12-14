@@ -90,7 +90,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/django-versatileimagefield-2[${PYTHON_USEDEP}]
 	dev-python/img2pdf[${PYTHON_USEDEP}]
 	dev-python/openpyxl[${PYTHON_USEDEP}]
-	dev-python/secretary[${PYTHON_USEDEP}]
+	>=dev-python/secretary-0.2.19-r1[${PYTHON_USEDEP}]
 	dev-python/django_object_actions[${PYTHON_USEDEP}]
 	>=dev-python/num2t4ru-2.0.1[${PYTHON_USEDEP}]
 
