@@ -19,8 +19,6 @@ RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
 	>=dev-python/django-select2-8.0.0[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
-	dev-python/zeep[${PYTHON_USEDEP}]
-	>=dev-python/dbfread-2.0.7[${PYTHON_USEDEP}]
 	dev-python/tqdm[${PYTHON_USEDEP}]
 	mysql? ( dev-python/pymysql[${PYTHON_USEDEP}] )
 "
