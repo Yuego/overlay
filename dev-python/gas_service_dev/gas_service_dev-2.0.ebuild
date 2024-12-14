@@ -54,7 +54,7 @@ RDEPEND="${RDEPEND}
 		dev-python/scrapy[${PYTHON_USEDEP}]
 		dev-python/scrapy-deltafetch[${PYTHON_USEDEP}]
 		dev-python/scrapy-djangoitem[${PYTHON_USEDEP}]
-		dev-python/user_agent[${PYTHON_USEDEP}]
+		>=dev-python/user_agent-0.1.10-r1[${PYTHON_USEDEP}]
 	)
 "
 
@@ -94,7 +94,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django_object_actions[${PYTHON_USEDEP}]
 	>=dev-python/num2t4ru-2.0.1[${PYTHON_USEDEP}]
 
-	>=dev-python/django-bitfield-2.2.0[${PYTHON_USEDEP}]
+	>=dev-python/django-bitfield-2.2.0-r1[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 	dev-python/django-debug-toolbar[${PYTHON_USEDEP}]
 
