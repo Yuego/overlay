@@ -10,7 +10,7 @@ inherit distutils-r1
 LICENSE=""
 
 SRC_URI=""
-DESCRIPTION="Gas Service Dev Meta"
+DESCRIPTION="Registrator Dev Meta"
 HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
