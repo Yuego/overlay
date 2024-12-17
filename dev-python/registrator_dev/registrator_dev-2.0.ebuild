@@ -35,6 +35,7 @@ RDEPEND="${RDEPEND}
 # Apps
 RDEPEND="${RDEPEND}
 	dev-python/rarfile[${PYTHON_USEDEP}]
+	app-admin/apache-tools
 "
 
 # Celery
