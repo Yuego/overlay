@@ -1,0 +1,7 @@
+--- a/versatileimagefield/utils.py	2024-12-16 13:09:38.670800183 +0400
++++ b/versatileimagefield/utils.py	2024-12-16 13:09:54.667090009 +0400
+@@ -4,3 +4,3 @@ import os
+ 
+-import magic
++from versatileimagefield import magic
+ from django.core.exceptions import ImproperlyConfigured

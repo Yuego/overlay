@@ -28,7 +28,14 @@ RDEPEND="
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
+PATCHES=(
+	"$FILESDIR/magic.patch"
+)
+
 src_prepare(){
 	sed -i "s/find_packages()/find_packages(exclude=('tests', 'tests.*'))/g" setup.py
+
+	cp -r "$FILESDIR/magic" "${S}/versatileimagefield/"
+
 	distutils-r1_src_prepare
 }
