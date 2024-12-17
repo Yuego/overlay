@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_11 pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 PYPI_PN=${PN/-/_}
 
@@ -13,12 +14,13 @@ DESCRIPTION="A simple and elegant client that"
 HOMEPAGE="https://github.com/pytgcalls/pytgcalls"
 
 EGIT_REPO_URI="https://github.com/pytgcalls/pytgcalls.git"
-EGIT_COMMIT="fc839b96f8766e335d9e6473cd25ea41226b83b4"
+EGIT_COMMIT="71027a9ec72b526b102fd75e9e90ded37dff9150"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
 	!dev-python/pytgcalls[${PYTHON_USEDEP}]
