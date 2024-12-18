@@ -35,7 +35,7 @@ RDEPEND="
 
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/clang-python[${PYTHON_USEDEP}]
+	dev-python/clang[${PYTHON_USEDEP}]
 "
 DISTUTILS_EXT=1
 
