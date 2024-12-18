@@ -18,6 +18,7 @@ EGIT_COMMIT="bae282ec79157ca1e0018ea0753edefe14c9d50c"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 x86"
+USE="debug"
 DISTUTILS_EXT=1
 
 BDEPEND="dev-python/cython[${PYTHON_USEDEP}]"
