@@ -24,7 +24,7 @@ export CELERY_LOADER
 
 : ${CELERYD_MULTI:="celery multi"}
 : ${CELERYCTL:="celery"}
-: ${CELERYBEAT:="celery beat"}
+: ${CELERYBEAT:="celery -A ${CELERY_APPNAME} beat"}
 
 CELERYBEAT_OPTS="${CELERYBEAT_OPTS} -f ${CELERYBEAT_LOG_FILE} -l ${CELERYBEAT_LOG_LEVEL}"
 
@@ -136,6 +136,7 @@ start_beat() {
 	yesno "${CELERYBEAT_ENABLED}" || return 0
 
 	ebegin "Starting celerybeat"
+
 	${CELERYBEAT} ${CELERYBEAT_OPTS} ${DAEMON_OPTS} --detach \
 		--pidfile="${CELERYBEAT_PID_FILE}"
 	eend ${?}
