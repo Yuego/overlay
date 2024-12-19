@@ -17,7 +17,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
-	=dev-python/registrator-${PV}[${PYTHON_USEDEP}]
+	=dev-python/registrator_dev-${PV}[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
