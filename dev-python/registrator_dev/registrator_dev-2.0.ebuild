@@ -100,6 +100,7 @@ RDEPEND="${RDEPEND}
 	dev-python/django-debug-toolbar[${PYTHON_USEDEP}]
 
 	dev-python/jinja2[${PYTHON_USEDEP}]
+	dev-python/python-slugify[${PYTHON_USEDEP}]
 "
 
 # Frontend
