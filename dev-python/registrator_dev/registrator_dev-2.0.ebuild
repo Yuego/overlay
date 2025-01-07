@@ -101,6 +101,7 @@ RDEPEND="${RDEPEND}
 
 	dev-python/jinja2[${PYTHON_USEDEP}]
 	dev-python/python-slugify[${PYTHON_USEDEP}]
+	dev-python/tqdm[${PYTHON_USEDEP}]
 "
 
 # Frontend
