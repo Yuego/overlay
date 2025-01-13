@@ -29,6 +29,7 @@ RDEPEND="
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/asyncpg-0.28[${PYTHON_USEDEP}]
 	dev-python/apscheduler[${PYTHON_USEDEP}]
+	<dev-python/apscheduler-3.11.0[${PYTHON_USEDEP}]
 
 	dev-python/greenlet[${PYTHON_USEDEP}]
 	>=dev-python/sqlalchemy-2.0[${PYTHON_USEDEP}]
