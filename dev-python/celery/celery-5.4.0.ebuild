@@ -62,8 +62,8 @@ pkg_pretend() {
 
 python_install_all() {
 	# Main celeryd init.d and conf.d
-	newinitd "${FILESDIR}/celery.initd-r2" celery
-	newconfd "${FILESDIR}/celery.confd-r2" celery
+	newinitd "${FILESDIR}/celery.initd" celery
+	newconfd "${FILESDIR}/celery.confd" celery
 
 	if use examples; then
 		docinto examples

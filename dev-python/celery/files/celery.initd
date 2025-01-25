@@ -1,67 +1,45 @@
 #!/sbin/openrc-run
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the BSD license
-# $Id$
 
 extra_started_commands="reload"
 
 depend() {
-        need net
-	use rabbitmq logger dns
+	need net
+	use rabbitmq redis logger dns
 }
 
-CELERYD_ENABLED=${CELERYD_ENABLED:-"no"}
-CELERYD_PID_FILE=${CELERYD_PID_FILE:-"/var/run/celery/celeryd@%n.pid"}
-CELERYD_LOG_FILE=${CELERYD_LOG_FILE:-"/var/log/celery/celeryd@%n.log"}
-CELERYD_LOG_LEVEL=${CELERYD_LOG_LEVEL:-"INFO"}
-CELERYD_NODES=${CELERYD_NODES:-"celery"}
+: ${CELERYD_ENABLED:="no"}
+: ${CELERYD_PID_FILE:="/run/celery/celeryd@%n.pid"}
+: ${CELERYD_LOG_FILE:="/var/log/celery/celeryd@%n.log"}
+: ${CELERYD_LOG_LEVEL:="INFO"}
+: ${CELERYD_NODES:="celery"}
 
-CELERYBEAT_ENABLED=${CELERYBEAT_ENABLED:-"no"}
-CELERYBEAT_PID_FILE=${CELERYBEAT_PID_FILE:-"/var/run/celery/celerybeat.pid"}
-CELERYBEAT_LOG_FILE=${CELERYBEAT_LOG_FILE:-"/var/log/celery/celerybeat.log"}
-CELERYBEAT_LOG_LEVEL=${CELERYBEAT_LOG_LEVEL:-"INFO"}
-
-CELERYEV_ENABLED=${CELERYEV_ENABLED:-"no"}
-CELERYEV_PID_FILE=${CELERYEV_PID_FILE:-"/var/run/celery/celeryev.pid"}
-CELERYEV_LOG_FILE=${CELERYEV_LOG_FILE:-"/var/log/celery/celeryev.log"}
-CELERYEV_LOG_LEVEL=${CELERYEV_LOG_LEVEL:-"INFO"}
+: ${CELERYBEAT_ENABLED:="no"}
+: ${CELERYBEAT_PID_FILE:="/run/celery/celerybeat.pid"}
+: ${CELERYBEAT_LOG_FILE:="/var/log/celery/celerybeat.log"}
+: ${CELERYBEAT_LOG_LEVEL:="INFO"}
 
 export CELERY_LOADER
 
-if yesno "$CELERY_DJANGO"; then
-	CELERYD=${CELERYD:-"celeryd_detach"}
-	CELERYCTL=${CELERYCTL:-"python manage.py celery"}
-	CELERYD_MULTI=${CELERYD_MULTI:-"python manage.py celeryd_multi"}
-	CELERYBEAT=${CELERYBEAT:-"python manage.py celerybeat"}
-	CELERYEV=${CELERYEV:-"python manage.py celeryev"}
-	CELERYEV_CAM=${CELERYEV_CAM:-"djcelery.snapshot.Camera"}
-else
-	CELERYD=${CELERYD:-"-m celery.bin.celeryd_detach"}
-	CELERYD_MULTI=${CELERYD_MULTI:-"celeryd-multi"}
-	CELERYCTL=${CELERYCTL:-"celeryctl"}
-	CELERYBEAT=${CELERYBEAT:-"celerybeat"}
-	CELERYEV=${CELERYEV:-"celeryev"}
-fi
+: ${CELERYD_MULTI:="celery multi"}
+: ${CELERYCTL:="celery"}
+: ${CELERYBEAT:="celery -A ${CELERY_APPNAME} beat"}
 
-CELERYD_OPTS="$CELERYD_OPTS"
-CELERYBEAT_OPTS="$CELERYBEAT_OPTS -f $CELERYBEAT_LOG_FILE -l $CELERYBEAT_LOG_LEVEL"
-CELERYEV_OPTS="$CELERYEV_OPTS -f $CELERYEV_LOG_FILE -l $CELERYEV_LOG_LEVEL -c $CELERYEV_CAM"
+CELERYBEAT_OPTS="${CELERYBEAT_OPTS} -f ${CELERYBEAT_LOG_FILE} -l ${CELERYBEAT_LOG_LEVEL}"
 
 create_dirs() {
-	local logfile="$1"
-	local pidfile="$2"
-	local logdir=$(dirname $logfile)
-	local piddir=$(dirname $pidfile)
+	logfile="${1}"
+	pidfile="${2}"
+	logdir=$(dirname ${logfile})
+	piddir=$(dirname ${pidfile})
 
-	checkpath -d -q -m 0750 -o ${CELERY_USER:-"root"}:${CELERY_GROUP:-"root"} $logdir $piddir
+
+	checkpath -d -v -m 0750 -o ${CELERY_USER:-"root"}:${CELERY_GROUP:-"root"} ${logdir} ${piddir}
 }
 
-if [ -n "$CELERY_USER" ]; then
-	DAEMON_OPTS="$DAEMON_OPTS --uid=$CELERY_USER"
-fi
-if [ -n "$CELERY_GROUP" ]; then
-	DAEMON_OPTS="$DAEMON_OPTS --gid=$CELERY_GROUP"
-fi
+[ -n "${CELERY_USER}" ] && DAEMON_OPTS="${DAEMON_OPTS} --uid=${CELERY_USER}"
+[ -n "${CELERY_GROUP}" ] && DAEMON_OPTS="${DAEMON_OPTS} --gid=${CELERY_GROUP}"
 
 checkconfig() {
 	if [ ! -c /dev/null ]; then
@@ -69,51 +47,40 @@ checkconfig() {
 		return 1
 	fi
 
-	if [ -z "$CELERY_PROJDIR" ]; then
+	if [ -z "${CELERY_PROJDIR}" ]; then
 		eerror "Missing CELERY_PROJDIR variable"
 		return 1
 	fi
 
-	if yesno "$CELERYD_ENABLED"; then
-		create_dirs "$CELERYD_LOG_FILE" "$CELERYD_PID_FILE"
-	fi
+	checkpath -d -v -m 0755 /run/celery /var/log/celery
 
-	if yesno "$CELERYBEAT_ENABLED"; then
-		create_dirs "$CELERYBEAT_LOG_FILE" "$CELERYBEAT_PID_FILE"
-	fi
+	yesno "${CELERYD_ENABLED}" && \
+		create_dirs "${CELERYD_LOG_FILE}" "${CELERYD_PID_FILE}"
 
-	if yesno "$CELERYEV_ENABLED"; then
-		create_dirs "$CELERYEV_LOG_FILE" "$CELERYEV_PID_FILE"
-
-		if [ -z "$CELERYEV_CAM" ]; then
-			eerror "Missing CELERYEV_CAM variable"
-			return 1
-		fi
-	fi
+	yesno "${CELERYBEAT_ENABLED}" && \
+		create_dirs "${CELERYBEAT_LOG_FILE}" "${CELERYBEAT_PID_FILE}"
 
 	return 0
 }
 
 celery_chdir() {
-	if [ -n "$CELERY_PROJDIR" ]; then
-		cd "$CELERY_PROJDIR"
-	fi
+	[ -n "${CELERY_PROJDIR}" ] && cd "${CELERY_PROJDIR}"
 }
 
 wait_pid () {
-	local pidfile=$1
-	local timeout=${STOPTIMEOUT:-"10"}
-	local PID=$(cat "${pidfile}" 2>/dev/null)
+	pidfile=${1}
+	timeout=${STOPTIMEOUT:-"10"}
+	PID=$(cat "${pidfile}" 2>/dev/null)
 
-	while [[ -n "$PID" && "${timeout}" -ge 1 ]] ; do
-		kill -0 $PID 2>/dev/null || break
-		kill -TERM "$PID"
-		timeout=$(($timeout - 1))
+	while [ -n "${PID}" ] && [ "${timeout}" -ge 1 ]; do
+		kill -0 ${PID} 2>/dev/null || break
+		kill -TERM "${PID}"
+		timeout=$((${timeout} - 1))
 		sleep 0.5
 	done
 
-	[[ "${timeout}" -lt 1 ]] && return 1
-	[ -f $pidfile ] && rm -f $pidfile
+	[ "${timeout}" -lt 1 ] && return 1
+	[ -f ${pidfile} ] && rm -f ${pidfile}
 	return 0
 }
 
@@ -121,68 +88,50 @@ wait_pid () {
 start_workers() {
 	yesno "${CELERYD_ENABLED}" || return 0
 
-	$CELERYD_MULTI start $CELERYD_NODES $DAEMON_OPTS        \
-                --pidfile="$CELERYD_PID_FILE"      \
-                --logfile="$CELERYD_LOG_FILE"      \
-                --loglevel="$CELERYD_LOG_LEVEL"    \
-                --cmd="$CELERYD"                   \
-                $CELERYD_OPTS
+	start-stop-daemon --start --user=${CELERY_USER} --group=${CELERY_GROUP} \
+                          --exec $CELERYCTL -- -A ${CELERY_APPNAME} multi start ${CELERYD_NODES} \
+                                --pidfile="${CELERYD_PID_FILE}" \
+                                --logfile="${CELERYD_LOG_FILE}" \
+                                --loglevel="${CELERYD_LOG_LEVEL}" \
+                                ${CELERYD_OPTS}
+
+	#${CELERYD_MULTI} start ${CELERYD_NODES} ${DAEMON_OPTS} \
+	#			--pidfile="${CELERYD_PID_FILE}" \
+	#			--logfile="${CELERYD_LOG_FILE}" \
+	#			--loglevel="${CELERYD_LOG_LEVEL}" \
+	#			${CELERYD_OPTS}
 }
 
 stop_workers() {
 	yesno "${CELERYD_ENABLED}" || return 0
 
-	local timeout=${STOPTIMEOUT:-"10"}
+	timeout=${STOPTIMEOUT:-"10"}
 
-	$CELERYD_MULTI stop $CELERYD_NODES --pidfile="$CELERYD_PID_FILE" || return 1
+	${CELERYD_MULTI} stop ${CELERYD_NODES} --pidfile="${CELERYD_PID_FILE}" || return 1
 
 	# Wait for each node
-	for node in $CELERYD_NODES; do
-	    local pidfile=${CELERYD_PID_FILE/\%n/$node}
-	    local PID=$(cat "${pidfile}" 2>/dev/null)
-	    while [[ -n "$PID" && "${timeout}" -ge 1 ]] ; do
-		kill -0 $PID 2>/dev/null || break
-		timeout=$(($timeout - 1))
+	for node in ${CELERYD_NODES}; do
+		pidfile=$(echo "${CELERYD_PID_FILE}" | sed "s/%n/${node}/g")
+		PID=$(cat "${pidfile}" 2>/dev/null)
+		while [ -n "${PID}" ] && [ "${timeout}" -ge 1 ]; do
+		kill -0 ${PID} 2>/dev/null || break
+		timeout=$((${timeout} - 1))
 		sleep 0.5
-	    done
+		done
 	done
 
-	[[ "${timeout}" -lt 1 ]] && return 1
+	[ "${timeout}" -lt 1 ] && return 1
 	return 0
 }
 
 restart_workers() {
 	yesno "${CELERYD_ENABLED}" || return 0
 
-	$CELERYD_MULTI restart $CELERYD_NODES $DAEMON_OPTS      \
-                --pidfile="$CELERYD_PID_FILE"    \
-                --logfile="$CELERYD_LOG_FILE"    \
-                --loglevel="$CELERYD_LOG_LEVEL"  \
-                --cmd="$CELERYD"                 \
-                $CELERYD_OPTS
-}
-
-# celeryev
-start_ev() {
-	yesno "${CELERYEV_ENABLED}" || return 0
-
-	ebegin "Starting celeryev"
-	$CELERYEV $CELERYEV_OPTS $DAEMON_OPTS --detach \
-		--pidfile="$CELERYEV_PID_FILE"
-	eend $?
-}
-
-
-stop_ev() {
-	yesno "${CELERYEV_ENABLED}" || return 0
-
-	ebegin "Stopping celeryev"
-	if [ -f "$CELERYEV_PID_FILE" ]; then
-		wait_pid "$CELERYEV_PID_FILE"
-	else
-		ewarn "not running"
-	fi
-	eend $?
+	${CELERYD_MULTI} restart ${CELERYD_NODES} ${DAEMON_OPTS} \
+		--pidfile="${CELERYD_PID_FILE}" \
+		--logfile="${CELERYD_LOG_FILE}" \
+		--loglevel="${CELERYD_LOG_LEVEL}" \
+		${CELERYD_OPTS}
 }
 
 # celerybeat
@@ -190,9 +139,10 @@ start_beat() {
 	yesno "${CELERYBEAT_ENABLED}" || return 0
 
 	ebegin "Starting celerybeat"
-	$CELERYBEAT $CELERYBEAT_OPTS $DAEMON_OPTS --detach \
-                --pidfile="$CELERYBEAT_PID_FILE"
-	eend $?
+
+	${CELERYBEAT} ${CELERYBEAT_OPTS} ${DAEMON_OPTS} --detach \
+		--pidfile="${CELERYBEAT_PID_FILE}"
+	eend ${?}
 }
 
 
@@ -200,17 +150,17 @@ stop_beat() {
 	yesno "${CELERYBEAT_ENABLED}" || return 0
 
 	ebegin "Stopping celerybeat"
-	if [ -f "$CELERYBEAT_PID_FILE" ]; then
-		wait_pid "$CELERYBEAT_PID_FILE"
+	if [ -f "${CELERYBEAT_PID_FILE}" ]; then
+		wait_pid "${CELERYBEAT_PID_FILE}"
 	else
 		ewarn "not running"
 	fi
-	eend $?
+	eend ${?}
 }
 
 
 start() {
-	local cr=0
+	cr=0
 
 	checkconfig || return 1
 
@@ -219,15 +169,14 @@ start() {
 
 	celery_chdir && \
 		start_workers && \
-		start_beat && \
-		start_ev || cr=1
+		start_beat || cr=1
 
 	eoutdent
-	eend $cr
+	eend ${cr}
 }
 
 stop() {
-	local cr=0
+	cr=0
 
 	checkconfig || return 1
 
@@ -237,14 +186,13 @@ stop() {
 	celery_chdir
 	stop_workers || cr=1
 	stop_beat || cr=1
-	stop_ev || cr=1
 
 	eoutdent
-	eend $cr
+	eend ${cr}
 }
 
 reload() {
-	local cr=0
+	cr=0
 
 	checkconfig || return 1
 
@@ -254,15 +202,14 @@ reload() {
 	celery_chdir
 	restart_workers || cr=1
 	stop_beat && start_beat || cr=1
-	stop_ev && start_ev || cr=1
 
 	eoutdent
-	eend $cr
+	eend ${cr}
 }
 
 status() {
 	checkconfig || return 1
 
 	celery_chdir && \
-	    ${CELERYCTL} status
+		${CELERYCTL} status
 }
