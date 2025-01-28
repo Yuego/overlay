@@ -44,6 +44,7 @@ RDEPEND="${RDEPEND}
 		>=dev-python/celery-5.4.0[${PYTHON_USEDEP}]
 		>=dev-python/django-celery-beat-2.0.0[${PYTHON_USEDEP}]
 		>=dev-python/celery-once-3.0.0[${PYTHON_USEDEP}]
+		>=dev-python/celery-progress-0.4[${PYTHON_USEDEP}]
 		>=dev-python/flower-0.9.5[${PYTHON_USEDEP}]
 	)
 "
