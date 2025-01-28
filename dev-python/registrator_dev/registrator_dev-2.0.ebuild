@@ -65,7 +65,7 @@ RDEPEND="${RDEPEND}
 	sys-apps/file[python]
 
 	dev-python/django-downloadview[${PYTHON_USEDEP}]
-	>=dev-python/property-mapper-0.3[${PYTHON_USEDEP}]
+	>=dev-python/property-mapper-1.0.6[${PYTHON_USEDEP}]
 
 	>=dev-python/django-cacheops-4.2[${PYTHON_USEDEP}]
 	>=dev-python/django-redis-4.11.0[${PYTHON_USEDEP}]
