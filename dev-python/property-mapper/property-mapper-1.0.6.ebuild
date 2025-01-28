@@ -3,19 +3,19 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{10..13} pypy3 )
+PYTHON_COMPAT=( python3_{9..13} pypy3 )
 DISTUTILS_USE_PEP517=setuptools
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="Python dict to object property mapper module"
-HOMEPAGE="https://github.com/Yuego/property-mapper"
+HOMEPAGE="https://github.com/Yuego/python-property-mapper"
 
-EGIT_REPO_URI="https://github.com/Yuego/property-mapper.git"
+SRC_URI="https://github.com/Yuego/property-mapper/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 RESTRICT="test"
 
