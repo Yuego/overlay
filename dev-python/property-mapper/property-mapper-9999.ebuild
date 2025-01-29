@@ -15,7 +15,7 @@ EGIT_REPO_URI="https://github.com/Yuego/property-mapper.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 RESTRICT="test"
 
