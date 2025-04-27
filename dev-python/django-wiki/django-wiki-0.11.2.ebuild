@@ -2,8 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=7
-PYTHON_COMPAT=( python3_{6..9} pypy3 )
+EAPI=8
+PYTHON_COMPAT=( python3_{10..13} pypy3 )
+DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1
 
@@ -18,31 +19,34 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE="test"
+RESTRICT="test"
 
 S="${WORKDIR}/${PN}-releases-${PV}/"
 
 RDEPEND="
-	>=dev-python/django-2.1[${PYTHON_USEDEP}]
-	<dev-python/django-3.2
+	>=dev-python/django-4.2[${PYTHON_USEDEP}]
+	<dev-python/django-5.2
 
-	>=dev-python/bleach-3.3.0[${PYTHON_USEDEP}]
-	<dev-python/bleach-3.4
+	>=dev-python/bleach-6[${PYTHON_USEDEP}]
+	<dev-python/bleach-7[${PYTHON_USEDEP}]
 
 	dev-python/pillow[${PYTHON_USEDEP}]
 
-	>=dev-python/django-nyt-1.2[${PYTHON_USEDEP}]
-	<dev-python/django-nyt-1.3
+	>=dev-python/django-nyt-1.4.1[${PYTHON_USEDEP}]
+	<dev-python/django-nyt-1.5
 
-	>=dev-python/django-mptt-0.11[${PYTHON_USEDEP}]
-	<dev-python/django-mptt-0.12
+	>=dev-python/django-mptt-0.13[${PYTHON_USEDEP}]
+	<dev-python/django-mptt-0.17[${PYTHON_USEDEP}]
 
 	>=dev-python/django-sekizai-1.1.0[${PYTHON_USEDEP}]
 
-	>=dev-python/sorl-thumbnail-12.6.2[${PYTHON_USEDEP}]
-	<dev-python/sorl-thumbnail-13
+	>=dev-python/sorl-thumbnail-12.8[${PYTHON_USEDEP}]
+	<dev-python/sorl-thumbnail-13[${PYTHON_USEDEP}]
 
-	>=dev-python/markdown-3.1[${PYTHON_USEDEP}]
-	<dev-python/markdown-3.3.0
+	>=dev-python/markdown-3.4[${PYTHON_USEDEP}]
+	<dev-python/markdown-3.7[${PYTHON_USEDEP}]
+
+	>=dev-python/pymdown-extensions-10.5[${PYTHON_USEDEP}]
 "
 
 DEPEND="
