@@ -51,14 +51,10 @@ RDEPEND="
 "
 
 DEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/hatchling[${PYTHON_USEDEP}]
+	dev-python/hatch-build-scripts[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest-runner[${PYTHON_USEDEP}]
 	)
 "
 
-src_prepare(){
-	sed -i "s/\"pytest-runner\",//g" setup.py
-	distutils-r1_src_prepare
-}
