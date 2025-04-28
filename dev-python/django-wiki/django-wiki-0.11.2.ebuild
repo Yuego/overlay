@@ -52,6 +52,7 @@ RDEPEND="
 
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/hatchling[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest-runner[${PYTHON_USEDEP}]
 	)
