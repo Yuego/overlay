@@ -3,7 +3,8 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{7..10} pypy3 )
+PYTHON_COMPAT=( python3_{10..13} pypy3 )
+DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1
 
@@ -18,13 +19,17 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
+RESTRICT="test"
 
 S="${WORKDIR}/${PN}-stable-${PV}"
 
 
 RDEPEND="
 	>=dev-python/django-2.2[${PYTHON_USEDEP}]
-	<dev-python/django-4.1[${PYTHON_USEDEP}]
+	<dev-python/django-5.3[${PYTHON_USEDEP}]
 "
 
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+DEPEND="
+	dev-python/hatchling[${PYTHON_USEDEP}]
+	dev-python/setuptools[${PYTHON_USEDEP}]
+"
