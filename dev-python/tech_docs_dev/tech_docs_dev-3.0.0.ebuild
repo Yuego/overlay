@@ -53,6 +53,7 @@ RDEPEND="
 	dev-python/python-slugify[${PYTHON_USEDEP}]
 	dev-python/django-cookie-consent[${PYTHON_USEDEP}]
 	dev-python/django-cors-headers[${PYTHON_USEDEP}]
+	dev-python/django-wiki[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
