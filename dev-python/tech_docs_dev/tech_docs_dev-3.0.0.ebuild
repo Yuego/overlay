@@ -50,6 +50,8 @@ RDEPEND="
 	dev-python/tqdm[${PYTHON_USEDEP}]
 
 	dev-python/django-rest-framework[${PYTHON_USEDEP}]
+	dev-python/drf-spectacular[${PYTHON_USEDEP}]
+	dev-python/simplejwt[${PYTHON_USEDEP}]
 	dev-python/python-slugify[${PYTHON_USEDEP}]
 	dev-python/django-cookie-consent[${PYTHON_USEDEP}]
 	dev-python/django-cors-headers[${PYTHON_USEDEP}]
