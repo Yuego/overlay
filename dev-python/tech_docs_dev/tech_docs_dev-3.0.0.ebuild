@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} pypy3 )
+DISTUTILS_USE_PEP517=no
 
 inherit distutils-r1
 
@@ -51,6 +52,7 @@ RDEPEND="
 	dev-python/django-rest-framework[${PYTHON_USEDEP}]
 	dev-python/python-slugify[${PYTHON_USEDEP}]
 	dev-python/django-cookie-consent[${PYTHON_USEDEP}]
+	dev-python/django-cors-headers[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
