@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..13} pypy3 )
+PYTHON_COMPAT=( python3_{10..13} pypy3 )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 git-r3
@@ -17,7 +17,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
-RESTRICT="tests"
+RESTRICT="test"
 
 RDEPEND="
 	=dev-python/tech_docs_dev-${PV}[${PYTHON_USEDEP}]
