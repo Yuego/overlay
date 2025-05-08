@@ -17,6 +17,8 @@ KEYWORDS="amd64"
 IUSE="+scrapy"
 
 RDEPEND="
+	dev-python/hpt_core[${PYTHON_USEDEP}]
+
 	sys-apps/file[python]
 
 	>=dev-python/django-4.2[${PYTHON_USEDEP}]
