@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} pypy3 )
+DISTUTILS_USE_PEP517=no
 
 inherit distutils-r1
 
@@ -15,6 +16,7 @@ HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
@@ -30,6 +32,7 @@ RDEPEND="${RDEPEND}
 
 # Apps
 RDEPEND="${RDEPEND}
+	dev-python/hpt_core[${PYTHON_USEDEP}]
 	dev-python/tech_docs_dev[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/django-templated-email[${PYTHON_USEDEP}]
