@@ -18,6 +18,7 @@ IUSE=""
 RESTRICT="test"
 
 RDEPEND="
+	dev-python/user_agent[$PYTHON_USEDEP]
 "
 
 DEPEND=""
