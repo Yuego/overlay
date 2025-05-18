@@ -15,7 +15,7 @@ DESCRIPTION="HPT Meta"
 HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
-IUSE=""
+IUSE="-debug"
 RESTRICT="test"
 
 RDEPEND="
@@ -59,6 +59,10 @@ RDEPEND="${RDEPEND}
 	dev-python/utm-tracker[${PYTHON_USEDEP}]
 
 	dev-python/shortuuid[${PYTHON_USEDEP}]
+
+	debug? (
+		dev-python/django-debug-toolbar[${PYTHON_USEDEP}]
+	)
 "
 
 # Frontend
