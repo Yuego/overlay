@@ -55,6 +55,7 @@ RDEPEND="${RDEPEND}
 
 	>=dev-python/django-phonenumber-field-8.0.0[${PYTHON_USEDEP}]
 	>=dev-python/django-better-admin-arrayfield-1.4.1[${PYTHON_USEDEP}]
+	>=dev-python/django-cookie-consent-0.8.0[${PYTHON_USEDEP}]
 
 	dev-python/utm-tracker[${PYTHON_USEDEP}]
 
