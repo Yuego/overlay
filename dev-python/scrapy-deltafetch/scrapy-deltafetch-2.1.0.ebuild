@@ -2,8 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
+EAPI=8
+PYTHON_COMPAT=( python3_{9..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -16,9 +17,9 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/scrapy-1.2.0[${PYTHON_USEDEP}]
-	dev-python/bsddb3[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
