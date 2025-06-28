@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="Parsel lets you extract data from XML/HTML documents using XPath or CSS selectors"
+DESCRIPTION="Extract data from XML/HTML documents using XPath or CSS selectors"
 HOMEPAGE="https://github.com/scrapy/parsel"
 
 SRC_URI="https://github.com/scrapy/parsel/archive/v${PV}.tar.gz -> ${P}.tar.gz"
