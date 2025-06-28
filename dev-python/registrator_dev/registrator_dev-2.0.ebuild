@@ -4,6 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{9..13} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -15,6 +16,7 @@ HOMEPAGE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE="+celery +scrapy"
+RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-5.0[${PYTHON_USEDEP}]
