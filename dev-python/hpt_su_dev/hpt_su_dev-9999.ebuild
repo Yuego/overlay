@@ -36,6 +36,7 @@ RDEPEND="${RDEPEND}
 	dev-python/tech_docs_dev[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/django-templated-email[${PYTHON_USEDEP}]
+	dev-python/django-experiments[${PYTHON_USEDEP}]
 "
 
 # Libs
