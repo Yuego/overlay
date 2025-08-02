@@ -56,6 +56,8 @@ RDEPEND="
 	dev-python/django-cookie-consent[${PYTHON_USEDEP}]
 	dev-python/django-cors-headers[${PYTHON_USEDEP}]
 	dev-python/django-wiki[${PYTHON_USEDEP}]
+
+	dev-python/redis-lock[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
