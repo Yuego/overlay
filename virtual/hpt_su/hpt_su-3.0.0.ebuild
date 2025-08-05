@@ -18,7 +18,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="
-	dev-python/hpt_su_dev[${PYTHON_USEDEP}]
+	=dev-python/hpt_su_dev-${PV}[${PYTHON_USEDEP}]
 	dev-python/tech_docs[${PYTHON_USEDEP}]
 "
 
