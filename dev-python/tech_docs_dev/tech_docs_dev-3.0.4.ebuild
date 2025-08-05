@@ -58,6 +58,7 @@ RDEPEND="
 	dev-python/django-wiki[${PYTHON_USEDEP}]
 
 	dev-python/redis-lock[${PYTHON_USEDEP}]
+	dev-python/dal[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
