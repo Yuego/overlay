@@ -21,6 +21,8 @@ RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
+
+	>=dev-python/django-querysetsequence-0.11[${PYTHON_USEDEP}]
 "
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 
