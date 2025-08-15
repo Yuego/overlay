@@ -48,6 +48,8 @@ RDEPEND="
 
 	>=dev-python/pymdown-extensions-10.5[${PYTHON_USEDEP}]
 	<dev-python/pymdown-extensions-10.6[${PYTHON_USEDEP}]
+
+	dev-python/tinycss2[$PYTHON_USEDEP]
 "
 
 DEPEND="
