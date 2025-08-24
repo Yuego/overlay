@@ -34,6 +34,7 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-python/hpt_core[${PYTHON_USEDEP}]
 	>=dev-python/tech_docs_dev-3.0.4[${PYTHON_USEDEP}]
+	dev-python/django-environ[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
 	dev-python/django-templated-email[${PYTHON_USEDEP}]
 	dev-python/django-experiments[${PYTHON_USEDEP}]
