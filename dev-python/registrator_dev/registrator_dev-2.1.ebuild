@@ -38,6 +38,7 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	dev-python/rarfile[${PYTHON_USEDEP}]
 	app-admin/apache-tools
+	dev-python/django-environ[${PYTHON_USEDEP}]
 "
 
 # Celery
