@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..13} pypy3 )
+PYTHON_COMPAT=( python3_{8..14} pypy3 )
 DISTUTILS_USE_PEP517=no
 
 inherit distutils-r1
@@ -17,7 +17,7 @@ KEYWORDS="amd64"
 IUSE="+scrapy"
 
 RDEPEND="
-	>=dev-python/hpt_core-0.0.2[${PYTHON_USEDEP}]
+	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
 
 	sys-apps/file[python]
 

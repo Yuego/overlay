@@ -3,7 +3,7 @@
 # $Header: Exp $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..13} pypy3 )
+PYTHON_COMPAT=( python3_{8..14} pypy3 )
 DISTUTILS_USE_PEP517=no
 
 inherit distutils-r1
