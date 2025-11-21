@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{10..13} pypy3 )
+PYTHON_COMPAT=( python3_{10..14} pypy3 )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 git-r3
@@ -18,8 +18,8 @@ IUSE=""
 RESTRICT="test"
 
 RDEPEND="
-	dev-python/hpt_core[${PYTHON_USEDEP}]
-	dev-python/property-mapper[${PYTHON_USEDEP}]
+	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/property-mapper-1.0.10[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
