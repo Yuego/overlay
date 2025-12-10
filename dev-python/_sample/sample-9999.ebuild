@@ -3,8 +3,8 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{9..13} pypy3 )
-# DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{9..14} pypy3 )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 git-r3
 
