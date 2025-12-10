@@ -19,9 +19,10 @@ IUSE=""
 
 RDEPEND="
 	=dev-python/hpt_su_dev-${PV}[${PYTHON_USEDEP}]
-	
+
 	dev-python/hpt_accs[${PYTHON_USEDEP}]
 	dev-python/hpt_pay[${PYTHON_USEDEP}]
+	dev-python/hpt_orgs[${PYTHON_USEDEP}]
 
 	dev-python/tech_docs[${PYTHON_USEDEP}]
 "
