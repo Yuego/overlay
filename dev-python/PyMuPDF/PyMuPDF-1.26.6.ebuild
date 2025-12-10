@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8..12} pypy3 )
+PYTHON_COMPAT=( python3_{8..14} pypy3 )
 DISTUTILS_USE_PEP517=no
 
 inherit distutils-r1
@@ -11,7 +11,7 @@ inherit distutils-r1
 DESCRIPTION="PyMuPDF is a Python binding for MuPDF"
 HOMEPAGE="https://github.com/pymupdf/PyMuPDF"
 
-MUPDF_VER="1.25.1"
+MUPDF_VER="1.26.11"
 SRC_URI="
 	https://github.com/pymupdf/PyMuPDF/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
 	https://mupdf.com/downloads/archive/mupdf-${MUPDF_VER}-source.tar.gz -> mupdf-tmp-${MUPDF_VER}.tar.gz
@@ -25,7 +25,7 @@ RESTRICT="test"
 
 RDEPEND="
 	>=app-text/mupdf-$MUPDF_VER
-	<app-text/mupdf-1.26
+	<app-text/mupdf-1.27
 
 	media-libs/harfbuzz
 	media-libs/jbig2dec
@@ -54,6 +54,9 @@ src_compile() {
 }
 
 distutils-r1_python_install(){
+	# Дебильный хак...
+	mv "${S}/dist/pymupdf-${PV}-cp${EPYTHON//[a-zA-Z.]/}-none-linux_x86_64.whl" "${S}/dist/pymupdf-${PV}-cp${EPYTHON//[a-zA-Z.]/}-abi3-linux_x86_64.whl"
+
 	distutils_wheel_install "$D" "${S}/dist/pymupdf-${PV}-cp${EPYTHON//[a-zA-Z.]/}-abi3-linux_x86_64.whl"
 
 	mv "$D/usr/bin/pymupdf" "$D/usr/bin/pymupdf-${EPYTHON//[a-zA-Z]/}"
