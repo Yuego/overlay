@@ -16,6 +16,8 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE="+scrapy"
 
+# TODO: избавиться от js2py или заменить на что-то посвежее
+
 RDEPEND="
 	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
 
