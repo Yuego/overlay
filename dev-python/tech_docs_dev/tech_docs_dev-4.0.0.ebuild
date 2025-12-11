@@ -21,7 +21,7 @@ IUSE="+scrapy"
 RDEPEND="
 	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
 
-	sys-apps/file[python]
+	sys-apps/file[${PYTHON_USEDEP}]
 
 	>=dev-python/django-4.2[${PYTHON_USEDEP}]
 	dev-python/django-constance[${PYTHON_USEDEP}]
