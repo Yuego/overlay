@@ -17,7 +17,7 @@ KEYWORDS="amd64"
 
 DEPEND="
 	dev-db/postgresql:*[server]
-	www-servers/nginx
+	www-servers/nginx:stable
 	www-servers/uwsgi[python,${PYTHON_USEDEP}]
 	net-libs/nodejs
 	dev-db/postgis
