@@ -10,11 +10,10 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="FSA Database Apps"
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/fsa.git"
-EGIT_TAG="0.1.0"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 RESTRICT="test"
 
