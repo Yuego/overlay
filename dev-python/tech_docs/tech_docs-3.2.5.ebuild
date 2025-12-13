@@ -9,13 +9,14 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Tech Docs Setup Package"
-HOMEPAGE="https://github.com/Yuego/tech_docs"
+HOMEPAGE="https://github.com/HPT-SU/tech_docs"
 
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/tech_docs.git"
+EGIT_TAG="3.2.5"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 RESTRICT="test"
 
