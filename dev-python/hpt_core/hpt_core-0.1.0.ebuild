@@ -9,7 +9,7 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
 
 DESCRIPTION="HPT Core Utils"
-EGIT_REPO_URI="git@github.com-hpt_core:Yuego/hpt_core.git"
+EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/hpt_core.git"
 
 LICENSE="MIT"
 SLOT="0"

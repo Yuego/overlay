@@ -9,7 +9,7 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
 
 DESCRIPTION="HPT Accounts Apps"
-EGIT_REPO_URI="git@github.com-hpt_accs:Yuego/hpt_accs.git"
+EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/hpt_accs.git"
 
 LICENSE="MIT"
 SLOT="0"
