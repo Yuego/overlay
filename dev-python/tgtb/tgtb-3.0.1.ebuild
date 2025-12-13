@@ -17,6 +17,7 @@ HOMEPAGE=""
 SLOT="0"
 KEYWORDS="amd64"
 IUSE="windscribe nordvpn"
+RESTRICT="test"
 
 RDEPEND="
 
