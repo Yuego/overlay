@@ -13,7 +13,7 @@ SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="+scrapy"
 
 # TODO: избавиться от js2py или заменить на что-то посвежее
