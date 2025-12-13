@@ -9,7 +9,7 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
 
 DESCRIPTION="FSA Database Apps"
-EGIT_REPO_URI="git@github.com-fsa:Yuego/fsa.git"
+EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/fsa.git"
 
 LICENSE="MIT"
 SLOT="0"
