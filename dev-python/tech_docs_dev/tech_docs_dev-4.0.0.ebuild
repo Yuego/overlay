@@ -19,6 +19,8 @@ IUSE="+scrapy"
 # TODO: избавиться от js2py или заменить на что-то посвежее
 
 RDEPEND="
+	virtual/web_server_common[${PYTHON_USEDEP}]
+
 	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
 
 	sys-apps/file[${PYTHON_USEDEP}]

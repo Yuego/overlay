@@ -22,12 +22,9 @@ RDEPEND="
 	>=dev-python/django-3.0[${PYTHON_USEDEP}]
 "
 
-# Servers
+# Main Virtual
 RDEPEND="${RDEPEND}
-	dev-db/postgresql:*[server]
-	www-servers/nginx
-	www-servers/uwsgi[python,${PYTHON_USEDEP}]
-
+	virtual/web_server_common[${PYTHON_USEDEP}]
 "
 
 # Apps
@@ -42,12 +39,9 @@ RDEPEND="${RDEPEND}
 
 # Libs
 RDEPEND="${RDEPEND}
-	dev-python/psycopg:0[${PYTHON_USEDEP}]
 	dev-python/django-cacheops[${PYTHON_USEDEP}]
 	dev-python/django-maintenance-mode[${PYTHON_USEDEP}]
 	dev-python/django-redis[${PYTHON_USEDEP}]
-	dev-python/hiredis[${PYTHON_USEDEP}]
-	dev-python/pyyaml[${PYTHON_USEDEP}]
 
 	dev-python/vk_api[${PYTHON_USEDEP}]
 

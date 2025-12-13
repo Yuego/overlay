@@ -22,16 +22,9 @@ RDEPEND="
 	>=dev-python/django-5.0[${PYTHON_USEDEP}]
 "
 
-# Servers
+# Main Virtual
 RDEPEND="${RDEPEND}
-	dev-db/postgresql:*[server]
-	www-servers/nginx:0
-	www-servers/uwsgi[python]
-
-	net-libs/nodejs
-	dev-db/postgis
-	dev-python/psycopg:0[${PYTHON_USEDEP}]
-
+	virtual/web_server_common[${PYTHON_USEDEP}]
 "
 
 # Apps
