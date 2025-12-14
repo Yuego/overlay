@@ -12,7 +12,7 @@ DESCRIPTION="Tech Docs Setup Package"
 HOMEPAGE="https://github.com/HPT-SU/tech_docs"
 
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/tech_docs.git"
-EGIT_TAG="3.2.5"
+EGIT_COMMIT="416e530f487bcee63fe309484f14e2d3d3f56e1b"
 
 LICENSE="MIT"
 SLOT="0"
