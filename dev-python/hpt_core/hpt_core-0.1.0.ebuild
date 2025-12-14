@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="HPT Core Utils"
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/hpt_core.git"
-EGIT_TAG="0.1.0"
+EGIT_COMMIT="646e36224922f7fcdee0c13b51c51d583c43f37f"
 
 LICENSE="MIT"
 SLOT="0"
