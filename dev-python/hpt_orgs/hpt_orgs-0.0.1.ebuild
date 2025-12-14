@@ -19,6 +19,7 @@ RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/hpt_core-0.1.0[$PYTHON_USEDEP]
+	>=dev-python/fsa-0.1.0[$PYTHON_USEDEP]
 "
 
 DEPEND=""
