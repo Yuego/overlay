@@ -12,7 +12,7 @@ DESCRIPTION="Tech Docs Setup Package"
 HOMEPAGE="https://github.com/Yuego/tech_docs"
 
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/tech_docs.git"
-EGIT_COMMIT="f66ded7bd7308612c8c00a15947720cc4f091552"
+EGIT_COMMIT="1847361be87f82dc37c3ce8698bde08b9c5980f5"
 
 LICENSE="MIT"
 SLOT="0"
