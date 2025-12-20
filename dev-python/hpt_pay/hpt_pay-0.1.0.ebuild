@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="HPT Payment Apps"
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/hpt_pay.git"
-EGIT_COMMIT="2f1192fb8a9fdab98b5fb664e3e40d2b239a7120"
+EGIT_COMMIT="4e57c0b003dc2b39b2e97faa27d14e81773bedf4"
 
 LICENSE="MIT"
 SLOT="0"
