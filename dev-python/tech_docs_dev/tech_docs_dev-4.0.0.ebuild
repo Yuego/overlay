@@ -21,7 +21,7 @@ IUSE="+scrapy"
 RDEPEND="
 	virtual/web_server_common[${PYTHON_USEDEP}]
 
-	>=dev-python/hpt_core-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/hpt_core-0.2.0[${PYTHON_USEDEP}]
 
 	sys-apps/file[${PYTHON_USEDEP}]
 
