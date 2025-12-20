@@ -21,6 +21,7 @@ RESTRICT="test"
 
 RDEPEND="
 	>=dev-python/twisted-21.7.0[${PYTHON_USEDEP}]
+	<dev-python/twisted-25.0.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-37.0.0[${PYTHON_USEDEP}]
 	>=dev-python/cssselect-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/itemloaders-1.0.1[${PYTHON_USEDEP}]
