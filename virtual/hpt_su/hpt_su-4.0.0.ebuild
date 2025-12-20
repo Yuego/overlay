@@ -20,11 +20,11 @@ IUSE=""
 RDEPEND="
 	=dev-python/hpt_su_dev-${PV}[${PYTHON_USEDEP}]
 
-	dev-python/hpt_accs[${PYTHON_USEDEP}]
-	dev-python/hpt_pay[${PYTHON_USEDEP}]
-	dev-python/hpt_orgs[${PYTHON_USEDEP}]
+	>=dev-python/hpt_accs-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/hpt_pay-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/hpt_orgs-0.1.0[${PYTHON_USEDEP}]
 
-	dev-python/tech_docs[${PYTHON_USEDEP}]
+	>=dev-python/tech_docs-4.0.0[${PYTHON_USEDEP}]
 "
 
 DEPEND=""
