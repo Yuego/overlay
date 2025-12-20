@@ -10,6 +10,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="HPT Accounts Apps"
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/hpt_accs.git"
+EGIT_COMMIT="0a32072bac3b13e7e00361950ca4fa41c08d31e8"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,7 +19,7 @@ IUSE=""
 RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/hpt_core-0.1.0[$PYTHON_USEDEP]
+	>=dev-python/hpt_core-0.2.0[$PYTHON_USEDEP]
 "
 
 DEPEND=""
