@@ -13,7 +13,7 @@ SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="+scrapy"
 
 # TODO: избавиться от js2py или заменить на что-то посвежее
@@ -21,7 +21,7 @@ IUSE="+scrapy"
 RDEPEND="
 	virtual/web_server_common[${PYTHON_USEDEP}]
 
-	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/hpt_core-1.0.0[${PYTHON_USEDEP}]
 
 	sys-apps/file[${PYTHON_USEDEP}]
 
