@@ -10,15 +10,16 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="FSA Database Apps"
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/fsa.git"
+EGIT_COMMIT="3d3fbe5ea53b20b95293083307c279154442f0fa"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/hpt_core-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/hpt_core-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/property-mapper-1.0.10[${PYTHON_USEDEP}]
 "
 
