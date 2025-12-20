@@ -10,6 +10,8 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="HPT Organizations Apps"
 EGIT_REPO_URI="git@github.com-hptsu:HPT-SU/hpt_orgs.git"
+EGIT_COMMIT="4e634a93c310b6928270547fd55c1c4a1375871b"
+
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,8 +20,8 @@ IUSE=""
 RESTRICT="test"
 
 RDEPEND="
-	>=dev-python/hpt_core-0.1.0[$PYTHON_USEDEP]
-	>=dev-python/fsa-0.1.0[$PYTHON_USEDEP]
+	>=dev-python/hpt_core-0.2.0[$PYTHON_USEDEP]
+	>=dev-python/fsa-0.2.0[$PYTHON_USEDEP]
 "
 
 DEPEND=""
