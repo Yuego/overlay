@@ -10,7 +10,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="App to make Django some OK"
 EGIT_REPO_URI="https://github.com/Yuego/djok.git"
-EGIT_COMMIT="c3480b5c107d16f1997aa49afc84feffa347b5aa"
+EGIT_COMMIT="ec8eabbac103477051b674176bd9b31396d183d1"
 
 LICENSE="MIT"
 SLOT="0"
