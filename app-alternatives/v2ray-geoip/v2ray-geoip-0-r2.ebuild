@@ -11,7 +11,7 @@ ALTERNATIVES=(
 inherit app-alternatives
 
 DESCRIPTION="symlink for v2ray-geoip"
-KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~loong ~riscv ~x86"
 
 src_install() {
 	dosym -r "/usr/share/geoip/$(get_alternative).dat" /usr/share/v2ray/geoip.dat

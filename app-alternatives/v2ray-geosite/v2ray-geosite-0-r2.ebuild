@@ -11,7 +11,7 @@ ALTERNATIVES=(
 inherit app-alternatives
 
 DESCRIPTION="symlink for v2ray-geosite"
-KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~loong ~riscv ~x86"
 
 src_install() {
 	dosym -r "/usr/share/geosite/$(get_alternative).dat" /usr/share/v2ray/geosite.dat
