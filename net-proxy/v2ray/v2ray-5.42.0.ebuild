@@ -14,7 +14,7 @@ S="${WORKDIR}/${PN}-core-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~loong ~riscv ~x86"
 
 DEPEND="!net-proxy/v2ray-bin
 	app-alternatives/v2ray-geoip
