@@ -20,7 +20,7 @@ SRC_URI+="
 
 LICENSE="AGPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~loong"
+KEYWORDS="amd64 ~arm64 ~loong"
 IUSE="xray"
 
 RDEPEND="
