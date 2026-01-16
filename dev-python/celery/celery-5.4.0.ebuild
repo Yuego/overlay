@@ -20,7 +20,7 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="examples"
+IUSE="examples develop"
 # Tests require a lot of dependencies that are not packaged for Gentoo
 RESTRICT="test"
 
@@ -43,6 +43,10 @@ RDEPEND="
 		>=dev-python/sphinx-click-2.5.0[${PYTHON_USEDEP}]
 		dev-python/jinja2[${PYTHON_USEDEP}]
 		dev-python/sqlalchemy[${PYTHON_USEDEP}]
+	)
+
+	develop? (
+		dev-python/celery-types[${PYTHON_USEDEP}]
 	)
 "
 DEPEND="${RDEPEND}"
