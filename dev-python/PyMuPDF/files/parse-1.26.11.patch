@@ -1,0 +1,15 @@
+--- a/scripts/wrap/parse.py
++++ b/scripts/wrap/parse.py
+@@ -509,8 +509,10 @@
+     #
+     if verbose:
+         jlib.log( '## Looking at args of {cursor.spelling=}')
+-    key = tu, cursor.location.file, cursor.location.line, include_fz_context, skip_first_alt
+-    ret = get_args_cache.get( key)
++    #key = tu, cursor.location.file, cursor.location.line, include_fz_context, skip_first_alt
++    #ret = get_args_cache.get( key)
++    key = None
++    ret = None
+     if not verbose and state.state_.show_details(cursor.spelling):
+         verbose = True
+     if ret is None:

@@ -44,6 +44,12 @@ distutils-r1_python_compile(){
 	$EPYTHON setup.py bdist_wheel
 }
 
+src_prepare() {
+	default
+
+	patch -p1 -f -g0 --no-backup-if-mismatch -d "${WORKDIR}/mupdf-${MUPDF_VER}-source" < "${FILESDIR}/parse-${MUPDF_VER}.patch"
+}
+
 src_compile() {
 	export PYMUPDF_SETUP_MUPDF_CLEAN=1
 	export PYMUPDF_SETUP_MUPDF_BUILD="${WORKDIR}/mupdf-${MUPDF_VER}-source"
