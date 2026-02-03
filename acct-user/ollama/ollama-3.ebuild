@@ -13,19 +13,19 @@ ACCT_USER_GROUPS=( ollama )
 
 KEYWORDS="amd64"
 
-IUSE="cuda"
+IUSE="xcuda"
 
 acct-user_add_deps
 
 RDEPEND+="
-	cuda? (
+	xcuda? (
 		acct-group/video
 	)
 "
 
 pkg_setup() {
-	# sci-ml/ollama[cuda]
-	if use cuda; then
+	# sci-ml/ollama[xcuda]
+	if use xcuda; then
 		ACCT_USER_GROUPS+=( video )
 	fi
 }
