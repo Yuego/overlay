@@ -39,7 +39,7 @@ X86_CPU_FLAGS=(
 	avx_vnni
 )
 CPU_FLAGS=( "${X86_CPU_FLAGS[@]/#/cpu_flags_x86_}" )
-IUSE="blas ${CPU_FLAGS[*]} cuda mkl rocm vulkan"
+IUSE="blas ${CPU_FLAGS[*]} xcuda mkl rocm vulkan"
 # IUSE+=" opencl"
 
 RESTRICT="mirror test"
@@ -53,7 +53,7 @@ COMMON_DEPEND="
 			sci-libs/mkl[llvm-openmp]
 		)
 	)
-	cuda? (
+	xcuda? (
 		dev-util/nvidia-cuda-toolkit:=
 	)
 	rocm? (
@@ -77,7 +77,7 @@ BDEPEND="
 RDEPEND="
 	${COMMON_DEPEND}
 	acct-group/${PN}
-	>=acct-user/${PN}-3[cuda?]
+	>=acct-user/${PN}-3[xcuda?]
 "
 
 PATCHES=(
@@ -216,7 +216,7 @@ src_prepare() {
 		# ml/backend/ggml/ggml/src/CMakeLists.txt
 	fi
 
-	if use cuda; then
+	if use xcuda; then
 		cuda_src_prepare
 	fi
 
@@ -268,7 +268,7 @@ src_configure() {
 		fi
 	fi
 
-	if use cuda; then
+	if use xcuda; then
 		local -x CUDAHOSTCXX CUDAHOSTLD
 		CUDAHOSTCXX="$(cuda_gccdir)"
 		CUDAHOSTLD="$(tc-getCXX)"
@@ -360,8 +360,8 @@ pkg_postinst() {
 		einfo "See available models at https://ollama.com/library"
 	fi
 
-	if use cuda ; then
+	if use xcuda ; then
 		einfo "When using cuda the user running ${PN} has to be in the video group or it won't detect devices."
-		einfo "The ebuild ensures this for user ${PN} via acct-user/${PN}[cuda]"
+		einfo "The ebuild ensures this for user ${PN} via acct-user/${PN}[xcuda]"
 	fi
 }
