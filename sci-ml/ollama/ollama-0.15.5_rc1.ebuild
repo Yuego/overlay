@@ -19,7 +19,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/ollama/ollama.git"
 else
 	SRC_URI="
-		https://github.com/ollama/${PN}/archive/refs/tags/v${MY_PV}.tar.gz -> ${P}.gh.tar.gz
+		https://github.com/ollama/${PN}/archive/refs/tags/v${MY_PV}.tar.gz -> ${PN}-${MY_PV}.gh.tar.gz
 		https://github.com/gentoo-golang-dist/${PN}/releases/download/v${MY_PV}/${PN}-${MY_PV}-deps.tar.xz
 	"
 	KEYWORDS="~amd64"
@@ -85,6 +85,8 @@ RDEPEND="
 PATCHES=(
 	"${FILESDIR}/${PN}-9999-use-GNUInstallDirs.patch"
 )
+
+S="$WORKDIR/$PN-$MY_PV"
 
 pkg_pretend() {
 	if use amd64; then
