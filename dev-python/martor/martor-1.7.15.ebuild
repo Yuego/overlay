@@ -4,7 +4,7 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} pypy3 )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1
 
@@ -23,11 +23,12 @@ RDEPEND="
 	>=dev-python/django-3.2[${PYTHON_USEDEP}]
 
 	>=dev-python/markdown-3.3.4[${PYTHON_USEDEP}]
-	<dev-python/markdown-3.6[${PYTHON_USEDEP}]
 
 	>=dev-python/requests-2.12.4[${PYTHON_USEDEP}]
 
 	dev-python/bleach[${PYTHON_USEDEP}]
+	dev-python/urllib3[${PYTHON_USEDEP}]
+	dev-python/zipp[${PYTHON_USEDEP}]
 	dev-python/tzdata[${PYTHON_USEDEP}]
 "
 
